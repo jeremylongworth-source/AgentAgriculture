@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agentagriculture:schema:workflow-registry:1",
+  "title": "workflow-registry",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "registry_type": {
+      "const": "workflow_readiness"
+    },
+    "workflows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "workflow_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_-]+$"
+          },
+          "scope": {
+            "type": "string",
+            "minLength": 1
+          },
+          "readiness": {
+            "enum": [
+              "proposed",
+              "specified",
+              "synthetic-tested",
+              "practitioner-reviewed",
+              "pilot-tested",
+              "released",
+              "suspended"
+            ]
+          },
+          "version": {
+            "const": "1.0.0"
+          },
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1
+          },
+          "limits": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "workflow_id",
+          "scope",
+          "readiness",
+          "version",
+          "date",
+          "evidence",
+          "limits"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "registry_type",
+    "workflows"
+  ],
+  "additionalProperties": false
+}

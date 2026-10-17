@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "task-partial-export",
+  "purpose": "Prepare selected synthetic records for review",
+  "question": "Which purchase and receiving records need clarification?",
+  "enterprise_id": "ENT-001",
+  "activity_location": {
+    "jurisdiction": "CA-ON",
+    "description": "Synthetic routing context only; no regional support claim"
+  },
+  "reporting_period": {
+    "start": "2026-09-01",
+    "end": "2026-09-30"
+  },
+  "language": "en",
+  "preferred_units": [
+    "kg"
+  ],
+  "currency": "CAD",
+  "transaction_basis": "purchase_records",
+  "roles": [
+    {
+      "role": "operator",
+      "participant_alias": "synthetic-operator"
+    }
+  ],
+  "current_tools": [
+    "synthetic CSV export"
+  ],
+  "recipient_scope": "local synthetic review only",
+  "permission": {
+    "authority_confirmed": true,
+    "purpose": "Read synthetic fixture records locally",
+    "allowed_operation": "local_read",
+    "selected_source_ids": [
+      "purchases"
+    ],
+    "destination": "local_review_package",
+    "expires_at": null
+  }
+}

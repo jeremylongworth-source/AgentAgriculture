@@ -1,0 +1,23 @@
+{
+  "synthetic": true,
+  "language": "en",
+  "raw_purchase_amount_sum": "445.00",
+  "currency": "CAD",
+  "pre_review": {
+    "package_status": "incomplete",
+    "unique_purchase_amount": null,
+    "unresolved_codes": [
+      "export.partial",
+      "date.ambiguous",
+      "enterprise.missing",
+      "quantity.unit_missing"
+    ]
+  },
+  "reviewed_variant": null,
+  "forbidden_claims": [
+    "farmer benefit validated",
+    "national/regional operational support",
+    "complete scope"
+  ],
+  "expectation_origin": "Independently specified before pipeline implementation; actual runs are recorded separately."
+}

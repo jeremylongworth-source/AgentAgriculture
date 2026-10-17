@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agentagriculture:schema:original-record:1",
+  "title": "original-record",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "kind": {
+      "enum": [
+        "purchase",
+        "receiving"
+      ]
+    },
+    "source": {
+      "$ref": "urn:agentagriculture:schema:common:1#/$defs/source-ref"
+    },
+    "entity_type": {
+      "const": "enterprise"
+    },
+    "entity_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "event_time": {
+      "type": "object",
+      "properties": {
+        "original": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "timezone": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "confirmed",
+            "unresolved",
+            "missing"
+          ]
+        }
+      },
+      "required": [
+        "original",
+        "date",
+        "timezone",
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "measurement_method": {
+      "enum": [
+        "csv_export",
+        "checked_transcription"
+      ]
+    },
+    "observer": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "recorder": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "attachment_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "review_status": {
+      "enum": [
+        "unchecked",
+        "needs_clarification",
+        "conflict",
+        "reviewed"
+      ]
+    },
+    "original_fields": {
+      "$ref": "urn:agentagriculture:schema:common:1#/$defs/original"
+    }
+  },
+  "required": [
+    "schema_version",
+    "record_id",
+    "version",
+    "kind",
+    "source",
+    "entity_type",
+    "entity_id",
+    "event_time",
+    "measurement_method",
+    "observer",
+    "recorder",
+    "attachment_refs",
+    "review_status",
+    "original_fields"
+  ],
+  "additionalProperties": false
+}

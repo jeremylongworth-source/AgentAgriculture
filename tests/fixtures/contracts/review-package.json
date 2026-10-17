@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "package_id": "package-contract-example",
+  "task_id": "task-en-baseline",
+  "version": 1,
+  "created_at": "2026-10-16T12:00:00-04:00",
+  "language": "en",
+  "question": "Which records need clarification?",
+  "scope": {
+    "enterprise_id": "ENT-001",
+    "reporting_period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "currency": "CAD",
+    "transaction_basis": "purchase_records",
+    "completeness": "partial"
+  },
+  "status": "incomplete",
+  "delivery_state": "draft_not_saved",
+  "input_manifest_id": "manifest-en-baseline",
+  "source_refs": [
+    {
+      "source_id": "purchases",
+      "source_record_id": "A-01",
+      "row_number": 2,
+      "sha256": "5d4e0f35e25808e275a74c950232d5910809f308e422746f8fcddfa73ff4410d"
+    },
+    {
+      "source_id": "purchases",
+      "source_record_id": "A-04",
+      "row_number": 5,
+      "sha256": "5d4e0f35e25808e275a74c950232d5910809f308e422746f8fcddfa73ff4410d"
+    }
+  ],
+  "checked_calculation_ids": [],
+  "exception_ids": [
+    "EX-unit-missing"
+  ],
+  "assumptions": [
+    "Contract example only; no generated package or pipeline run."
+  ],
+  "omissions": [
+    "Only illustrative source references included in this contract example."
+  ],
+  "unresolved_questions": [
+    "Confirm the unit on INV-003."
+  ],
+  "freshness_note": "Synthetic September records supplied for development; no external sources refreshed.",
+  "intended_recipient_scope": "local synthetic review only",
+  "export_manifest": []
+}

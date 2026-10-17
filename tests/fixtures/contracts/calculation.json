@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "calculation_id": "calc-reviewed-purchase-amount",
+  "task_id": "task-en-baseline",
+  "method": {
+    "name": "sum",
+    "version": "1.0.0"
+  },
+  "inputs": [
+    {
+      "record_id": "purchases:A-01",
+      "record_version": 1,
+      "field": "amount",
+      "value": "250.00",
+      "unit": "CAD",
+      "source": {
+        "source_id": "purchases",
+        "source_record_id": "A-01",
+        "row_number": 2,
+        "sha256": "5d4e0f35e25808e275a74c950232d5910809f308e422746f8fcddfa73ff4410d"
+      }
+    },
+    {
+      "record_id": "purchases:A-02",
+      "record_version": 1,
+      "field": "amount",
+      "value": "120.00",
+      "unit": "CAD",
+      "source": {
+        "source_id": "purchases",
+        "source_record_id": "A-02",
+        "row_number": 3,
+        "sha256": "5d4e0f35e25808e275a74c950232d5910809f308e422746f8fcddfa73ff4410d"
+      }
+    },
+    {
+      "record_id": "purchases:A-04",
+      "record_version": 1,
+      "field": "amount",
+      "value": "75.00",
+      "unit": "CAD",
+      "source": {
+        "source_id": "purchases",
+        "source_record_id": "A-04",
+        "row_number": 5,
+        "sha256": "5d4e0f35e25808e275a74c950232d5910809f308e422746f8fcddfa73ff4410d"
+      }
+    },
+    {
+      "record_id": "purchases:A-05",
+      "record_version": 1,
+      "field": "amount",
+      "value": "100.00",
+      "unit": "CAD",
+      "source": {
+        "source_id": "purchases",
+        "source_record_id": "A-05",
+        "row_number": 6,
+        "sha256": "5d4e0f35e25808e275a74c950232d5910809f308e422746f8fcddfa73ff4410d"
+      }
+    }
+  ],
+  "formula": "250.00 + 120.00 + 75.00 + 100.00",
+  "result": {
+    "value": "545.00",
+    "unit": "CAD"
+  },
+  "precision": 2,
+  "rounding": "ROUND_HALF_EVEN",
+  "assumptions": [
+    "Explicit synthetic DUP-001 review excludes A-03; purchase evidence only."
+  ],
+  "status": "checked",
+  "dependent_output_refs": [
+    "review.summary.purchase_amount"
+  ]
+}

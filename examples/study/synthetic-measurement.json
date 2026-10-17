@@ -1,0 +1,176 @@
+{
+  "synthetic": true,
+  "time_axis": "shared_synthetic_minute_axis",
+  "allocation_rule": "equal_actual_started_comparable_episodes",
+  "groups": [
+    {
+      "participant": "SYN-P1",
+      "condition": "N",
+      "operation": "SYN-F1",
+      "overhead_complete": true
+    },
+    {
+      "participant": "SYN-P1",
+      "condition": "P",
+      "operation": "SYN-F1",
+      "overhead_complete": true
+    }
+  ],
+  "episodes": [
+    {
+      "id": "SYN-N1",
+      "participant": "SYN-P1",
+      "condition": "N",
+      "started": true,
+      "outcome": "useful",
+      "assisted": false,
+      "comparable": true,
+      "comparison_eligible": true,
+      "is_repeat": true,
+      "effort_complete": true,
+      "attempt_ids": [
+        "SYN-N1-A1"
+      ],
+      "pair_id": "SYN-PAIR1"
+    },
+    {
+      "id": "SYN-P1",
+      "participant": "SYN-P1",
+      "condition": "P",
+      "started": true,
+      "outcome": "useful",
+      "assisted": true,
+      "comparable": true,
+      "comparison_eligible": true,
+      "is_repeat": true,
+      "effort_complete": true,
+      "attempt_ids": [
+        "SYN-P1-A1"
+      ],
+      "pair_id": "SYN-PAIR1"
+    },
+    {
+      "id": "SYN-P2",
+      "participant": "SYN-P1",
+      "condition": "P",
+      "started": true,
+      "outcome": "failed",
+      "assisted": false,
+      "comparable": true,
+      "comparison_eligible": true,
+      "is_repeat": true,
+      "effort_complete": true,
+      "attempt_ids": [
+        "SYN-P2-A1",
+        "SYN-P2-A2"
+      ],
+      "pair_id": null
+    },
+    {
+      "id": "SYN-P3",
+      "participant": "SYN-P1",
+      "condition": "P",
+      "started": true,
+      "outcome": "abandoned",
+      "assisted": false,
+      "comparable": true,
+      "comparison_eligible": true,
+      "is_repeat": true,
+      "effort_complete": true,
+      "attempt_ids": [
+        "SYN-P3-A1"
+      ],
+      "pair_id": null
+    }
+  ],
+  "effort": [
+    {
+      "id": "SYN-WP1",
+      "participant": "SYN-P1",
+      "condition": "P",
+      "episode_id": "SYN-P1",
+      "start_minute": "0",
+      "end_minute": "10",
+      "kind": "episode",
+      "actor": "SYN-ACTOR",
+      "measurement": "timed"
+    },
+    {
+      "id": "SYN-WP2",
+      "participant": "SYN-P1",
+      "condition": "P",
+      "episode_id": "SYN-P2",
+      "start_minute": "10",
+      "end_minute": "15",
+      "kind": "episode",
+      "actor": "SYN-ACTOR",
+      "measurement": "timed"
+    },
+    {
+      "id": "SYN-WP3",
+      "participant": "SYN-P1",
+      "condition": "P",
+      "episode_id": "SYN-P3",
+      "start_minute": "15",
+      "end_minute": "18",
+      "kind": "episode",
+      "actor": "SYN-ACTOR",
+      "measurement": "timed"
+    },
+    {
+      "id": "SYN-SP",
+      "participant": "SYN-P1",
+      "condition": "P",
+      "episode_id": null,
+      "start_minute": "18",
+      "end_minute": "24",
+      "kind": "overhead",
+      "actor": "SYN-ACTOR",
+      "measurement": "timed"
+    },
+    {
+      "id": "SYN-WN",
+      "participant": "SYN-P1",
+      "condition": "N",
+      "episode_id": "SYN-N1",
+      "start_minute": "24",
+      "end_minute": "44",
+      "kind": "episode",
+      "actor": "SYN-ACTOR",
+      "measurement": "timed"
+    },
+    {
+      "id": "SYN-SN",
+      "participant": "SYN-P1",
+      "condition": "N",
+      "episode_id": null,
+      "start_minute": "44",
+      "end_minute": "48",
+      "kind": "overhead",
+      "actor": "SYN-ACTOR",
+      "measurement": "timed"
+    },
+    {
+      "id": "SYN-ADMIN",
+      "participant": "SYN-P1",
+      "condition": "P",
+      "episode_id": null,
+      "start_minute": "48",
+      "end_minute": "53",
+      "kind": "research",
+      "actor": "SYN-ACTOR",
+      "measurement": "timed"
+    },
+    {
+      "id": "SYN-WAIT",
+      "participant": "SYN-P1",
+      "condition": "P",
+      "episode_id": null,
+      "start_minute": "0",
+      "end_minute": "60",
+      "kind": "waiting",
+      "actor": "SYN-ACTOR",
+      "measurement": "timed"
+    }
+  ]
+}

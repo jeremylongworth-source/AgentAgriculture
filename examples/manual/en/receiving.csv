@@ -1,0 +1,5 @@
+source_record_id,reference,date,enterprise_id,supplier,quantity,unit,amount,currency,paper_reference,transcription_note
+B-01,INV-001,2026-09-04,ENT-001,Synthetic Supply A,100,kg,,,SYN-R-L01,
+B-02,INV-002,2026-09-09,ENT-001,Synthetic Supply B,38,kg,,,SYN-R-L02,
+B-03,INV-003,2026-09-11,ENT-001,Synthetic Supply C,5,,,,SYN-R-L03,
+B-04,INV-004,2026-09-13,ENT-001,Synthetic Supply D,25,kg,,,SYN-R-L04,

@@ -1,0 +1,33 @@
+{
+  "synthetic": true,
+  "language": "fr",
+  "raw_purchase_amount_sum": "665.00",
+  "currency": "CAD",
+  "pre_review": {
+    "package_status": "incomplete",
+    "unique_purchase_amount": null,
+    "unresolved_codes": [
+      "identity.possible_duplicate",
+      "quantity.unit_missing"
+    ]
+  },
+  "reviewed_variant": {
+    "correction_id": "DUP-001",
+    "included_purchase_amount": "545.00",
+    "excluded_duplicate_amount": "120.00",
+    "comparable_purchase_kg": "165",
+    "comparable_receiving_kg": "163",
+    "difference_receiving_minus_purchase_kg": "-2",
+    "unallocated_quantity_records": [
+      "purchases:A-04",
+      "receiving:B-03"
+    ],
+    "package_status": "incomplete"
+  },
+  "forbidden_claims": [
+    "farmer benefit validated",
+    "national/regional operational support",
+    "adviser approval"
+  ],
+  "expectation_origin": "Independently specified before pipeline implementation; actual runs are recorded separately."
+}

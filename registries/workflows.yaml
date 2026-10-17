@@ -1,0 +1,23 @@
+schema_version: 1.0.0
+registry_type: workflow_readiness
+workflows:
+- workflow_id: records-to-review
+  scope: One enterprise/period, up to two selected CSV or checked-transcription sources; synthetic local
+    English/French tasks only.
+  readiness: synthetic-tested
+  version: 1.0.0
+  date: '2026-10-16'
+  evidence:
+  - docs/release/initial-preview.md
+  - tests/fixtures/README.md
+  - schemas/v1/
+  - tests/test_pipeline.py
+  - tests/test_preview.py
+  - examples/records-to-review/
+  - tests/test_bundle.py
+  - docs/release/public-provenance.json
+  limits:
+  - Private v0.1 technical preview qualified for Windows/CPython local files only; no participant or supported
+    release evidence.
+  - No intended-user, practitioner, pilot or regional support evidence.
+  - French terminology remains a draft pending appropriate review.

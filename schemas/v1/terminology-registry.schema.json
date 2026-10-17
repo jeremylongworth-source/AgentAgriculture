@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agentagriculture:schema:terminology-registry:1",
+  "title": "terminology-registry",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "registry_type": {
+      "const": "terminology"
+    },
+    "baseline_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "identifier_rules": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "terms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "term_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_-]+$"
+          },
+          "en": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fr": {
+            "type": "string",
+            "minLength": 1
+          },
+          "meaning": {
+            "type": "string",
+            "minLength": 1
+          },
+          "review_status": {
+            "const": "draft"
+          }
+        },
+        "required": [
+          "term_id",
+          "en",
+          "fr",
+          "meaning",
+          "review_status"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "registry_type",
+    "baseline_date",
+    "identifier_rules",
+    "terms"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,6 @@
+identifiant_source;référence;date;entreprise;fournisseur;quantité;unité;montant;devise
+A-01;INV-001;2026-09-03;ENT-001;Fournisseur synthétique A;100;kg;250,00;CAD
+A-02;INV-002;2026-09-08;ENT-001;Fournisseur synthétique B;40;kg;120,00;CAD
+A-03;inv 002;2026-09-08;ENT-001;Fournisseur synthétique B;40;kg;120,00;CAD
+A-04;INV-003;2026-09-10;ENT-001;Fournisseur synthétique C;5;;75,00;CAD
+A-05;INV-004;2026-09-12;ENT-001;Fournisseur synthétique D;25;kg;100,00;CAD

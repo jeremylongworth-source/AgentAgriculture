@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "manifest_id": "manifest-fr-equivalent",
+  "task_id": "task-fr-equivalent",
+  "version": 1,
+  "inputs": [
+    {
+      "source_id": "purchases",
+      "path": "purchases.csv",
+      "sha256": "83bb920906135d1b9829da1cdea4fb76fcfc5937648630bc079840f197e4a505",
+      "record_kind": "purchase",
+      "format": "csv",
+      "encoding": "utf-8",
+      "delimiter": ";",
+      "decimal_separator": ",",
+      "date_format": "iso8601",
+      "field_mapping": {
+        "source_record_id": "identifiant_source",
+        "reference": "référence",
+        "date": "date",
+        "enterprise_id": "entreprise",
+        "supplier": "fournisseur",
+        "quantity": "quantité",
+        "unit": "unité",
+        "amount": "montant",
+        "currency": "devise"
+      },
+      "mapping_confirmed": true,
+      "acquisition": "selected_file",
+      "transcription_checked": false,
+      "declared_period": {
+        "start": "2026-09-01",
+        "end": "2026-09-30"
+      },
+      "completeness": "complete",
+      "filters": [],
+      "included_sections": [
+        "purchase rows"
+      ],
+      "omitted_sections": [],
+      "declared_record_count": 5,
+      "received_at": "2026-10-16T12:00:00-04:00"
+    },
+    {
+      "source_id": "receiving",
+      "path": "receiving.csv",
+      "sha256": "1607a3899fd2ee4acdbf13304caece12ea3105dcf6d61b5f92cd3e6c3096f9ee",
+      "record_kind": "receiving",
+      "format": "csv",
+      "encoding": "utf-8",
+      "delimiter": ";",
+      "decimal_separator": ",",
+      "date_format": "iso8601",
+      "field_mapping": {
+        "source_record_id": "identifiant_source",
+        "reference": "référence",
+        "date": "date",
+        "enterprise_id": "entreprise",
+        "supplier": "fournisseur",
+        "quantity": "quantité",
+        "unit": "unité",
+        "amount": "montant",
+        "currency": "devise"
+      },
+      "mapping_confirmed": true,
+      "acquisition": "selected_file",
+      "transcription_checked": false,
+      "declared_period": {
+        "start": "2026-09-01",
+        "end": "2026-09-30"
+      },
+      "completeness": "complete",
+      "filters": [],
+      "included_sections": [
+        "receiving rows"
+      ],
+      "omitted_sections": [],
+      "declared_record_count": 4,
+      "received_at": "2026-10-16T12:00:00-04:00"
+    }
+  ]
+}

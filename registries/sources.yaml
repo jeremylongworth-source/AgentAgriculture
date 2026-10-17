@@ -1,0 +1,1895 @@
+schema_version: 1.0.0
+registry_type: sources
+baseline_date: '2026-10-16'
+sources:
+- source_id: W1-city
+  provider: ECCC
+  product: City forecast XML
+  resource_id: null
+  acquisition_route:
+    method: GET
+    url: https://eccc-msc.github.io/open-data/msc-data/citypage-weather/readme_citypageweather-datamart_en/
+    scope: Documentation reviewed; no forecast payload validated.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: https://eccc-msc.github.io/open-data/licence/readme_en/
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Preserve official alert content/intent; confirm route-specific licence and retrieval policy.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: Recheck current policy. R04 records AMQPS for systematic Datamart retrieval; no directory
+      polling.
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: D
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - W01
+    - W06
+    - W07
+    finding: Documentation reviewed; no forecast payload validated.
+    limits:
+    - No operational weather or water workflow validated.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: W2-alerts
+  provider: ECCC
+  product: CAP weather alerts
+  resource_id: null
+  acquisition_route:
+    method: GET
+    url: https://eccc-msc.github.io/open-data/msc-data/alerts/readme_alerts-datamart_en/
+    scope: Documentation reviewed; alert location/lifecycle not tested.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: https://eccc-msc.github.io/open-data/licence/readme_en/
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Preserve official alert content/intent; confirm route-specific licence and retrieval policy.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: Recheck current policy. R04 records AMQPS for systematic Datamart retrieval; no directory
+      polling.
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: D
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - W02
+    - W06
+    - W07
+    finding: Documentation reviewed; alert location/lifecycle not tested.
+    limits:
+    - No operational weather or water workflow validated.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: W3-swob
+  provider: ECCC
+  product: SWOB-ML station observations
+  resource_id: null
+  acquisition_route:
+    method: GET
+    url: https://eccc-msc.github.io/open-data/msc-data/obs_station/readme_obs_insitu_swobdatamart_en/
+    scope: Documentation reviewed; station observation payload not tested.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: https://eccc-msc.github.io/open-data/licence/readme_en/
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Preserve official alert content/intent; confirm route-specific licence and retrieval policy.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: Recheck current policy. R04 records AMQPS for systematic Datamart retrieval; no directory
+      polling.
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: D
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - W03
+    - W06
+    - W07
+    finding: Documentation reviewed; station observation payload not tested.
+    limits:
+    - No operational weather or water workflow validated.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: W4-climate
+  provider: ECCC
+  product: Historical climate observations
+  resource_id: null
+  acquisition_route:
+    method: GET
+    url: https://eccc-msc.github.io/open-data/msc-data/climate_obs/readme_climateobs_en/
+    scope: Documentation reviewed; archive data and observation windows not parsed.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: https://eccc-msc.github.io/open-data/licence/readme_en/
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Preserve official alert content/intent; confirm route-specific licence and retrieval policy.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: Recheck current policy. R04 records AMQPS for systematic Datamart retrieval; no directory
+      polling.
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: D
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - W04
+    - W06
+    - W07
+    finding: Documentation reviewed; archive data and observation windows not parsed.
+    limits:
+    - No operational weather or water workflow validated.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: W5-csv
+  provider: ECCC
+  product: Hydrometric Datamart CSV
+  resource_id: null
+  acquisition_route:
+    method: GET
+    url: https://eccc-msc.github.io/open-data/msc-data/obs_hydrometric/readme_hydrometric-datamart_en/
+    scope: CSV documentation reviewed; these CSV files were not parsed.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: https://eccc-msc.github.io/open-data/licence/readme_en/
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Preserve official alert content/intent; confirm route-specific licence and retrieval policy.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: Recheck current policy. R04 records AMQPS for systematic Datamart retrieval; no directory
+      polling.
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: D
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - W05
+    - W06
+    - W07
+    finding: CSV documentation reviewed; these CSV files were not parsed.
+    limits:
+    - No operational weather or water workflow validated.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: W5-api-default
+  provider: ECCC
+  product: Hydrometric GeoMet bounded sample
+  resource_id: null
+  acquisition_route:
+    method: GET
+    url: https://api.weather.gc.ca/collections/hydrometric-realtime/items?f=json&limit=1
+    scope: One-record default query returned an older observation.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: null
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Confirm rights for this route and intended use before implementation.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: Response retrieval time differs from observation time.
+    timezone: null
+  operation:
+    refresh: null
+    pagination: Bound and paginate; first row is not necessarily newest.
+    completeness: One returned record only.
+    retention_exit: null
+  evidence:
+    state: S
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - W08
+    finding: One-record default query returned an older observation.
+    limits:
+    - No newest-value selection, full pagination or operational reliability established.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: W5-api-dated
+  provider: ECCC
+  product: Hydrometric GeoMet bounded sample
+  resource_id: null
+  acquisition_route:
+    method: GET
+    url: https://api.weather.gc.ca/collections/hydrometric-realtime/items?f=json&limit=1&STATION_NUMBER=05BH016&datetime=2026-10-16T00%3A00%3A00Z%2F2026-10-16T17%3A10%3A00Z
+    scope: Station/date-bounded request returned one record and 194 matches.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: null
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Confirm rights for this route and intended use before implementation.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: Response retrieval time differs from observation time.
+    timezone: null
+  operation:
+    refresh: null
+    pagination: Bound and paginate; first row is not necessarily newest.
+    completeness: One returned record only.
+    retention_exit: null
+  evidence:
+    state: S
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - W08
+    finding: Station/date-bounded request returned one record and 194 matches.
+    limits:
+    - No newest-value selection, full pagination or operational reliability established.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: G1-aci-metadata
+  provider: AAFC
+  product: Annual Crop Inventory 2025
+  resource_id: null
+  acquisition_route:
+    method: GET
+    url: https://agriculture.canada.ca/imagery-images/rest/services/annual_crop_inventory/2025/ImageServer?f=pjson
+    scope: Bounded service description read.
+    schema_version: null
+  applicability:
+    geography: All provinces and Yukon; do not extend to NWT/Nunavut
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: '2025'
+    spatial_resolution: 30 m classification
+  rights:
+    terms_url: https://open.canada.ca/en/open-government-licence-canada
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Confirm rights for this route and intended use before implementation.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: '2025'
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: Metadata or one catalogue row only; no raster ingestion.
+    retention_exit: null
+  evidence:
+    state: M
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - G01
+    - G02
+    finding: Bounded service description read.
+    limits:
+    - Classification metadata only; no farm intersection or declared planting validated.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: G4-drought-metadata
+  provider: AAFC
+  product: Drought Monitor service metadata
+  resource_id: null
+  acquisition_route:
+    method: GET
+    url: https://agriculture.canada.ca/imagery-images/rest/services/canadian_drought_monitor/ImageServer?f=pjson
+    scope: Bounded service description read.
+    schema_version: null
+  applicability:
+    geography: Verify exact dataset geography
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: 5 km service pixels
+  rights:
+    terms_url: https://open.canada.ca/en/open-government-licence-canada
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Confirm rights for this route and intended use before implementation.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: Metadata or one catalogue row only; no raster ingestion.
+    retention_exit: null
+  evidence:
+    state: M
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - G06
+    - G07
+    finding: Bounded service description read.
+    limits:
+    - Service metadata only; no raster/polygon accuracy validated.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: G5-gdd-metadata
+  provider: AAFC
+  product: Growing Degree Days service metadata
+  resource_id: null
+  acquisition_route:
+    method: GET
+    url: https://agriculture.canada.ca/imagery-images/rest/services/agclimate/growing_degree_days/ImageServer?f=pjson
+    scope: Bounded service description read.
+    schema_version: null
+  applicability:
+    geography: Verify exact dataset geography
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: 1 km service pixels
+  rights:
+    terms_url: https://open.canada.ca/en/open-government-licence-canada
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Confirm rights for this route and intended use before implementation.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: Metadata or one catalogue row only; no raster ingestion.
+    retention_exit: null
+  evidence:
+    state: M
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - G08
+    - G09
+    finding: Bounded service description read.
+    limits:
+    - Correct service name inspected; catalogue REST resource links pointed to dry-spell service.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: G3-silt-metadata
+  provider: AAFC
+  product: Soil Landscape Grids silt
+  resource_id: null
+  acquisition_route:
+    method: GET
+    url: https://www.agr.gc.ca/imagery-images/rest/services/soil_landscape_grids_100m/silt/ImageServer?f=pjson
+    scope: Bounded service description read.
+    schema_version: null
+  applicability:
+    geography: Verify exact dataset geography
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: 100 m modelled grid
+  rights:
+    terms_url: https://open.canada.ca/en/open-government-licence-canada
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Confirm rights for this route and intended use before implementation.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: Metadata or one catalogue row only; no raster ingestion.
+    retention_exit: null
+  evidence:
+    state: M
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - G04
+    - G05
+    finding: Bounded service description read.
+    limits:
+    - No raster value test; property, depth, units and NoData remain to be checked.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: G4-drought-sample
+  provider: AAFC
+  product: Drought Monitor catalogue record
+  resource_id: null
+  acquisition_route:
+    method: GET
+    url: https://agriculture.canada.ca/imagery-images/rest/services/canadian_drought_monitor/ImageServer/query?f=json&where=1%3D1&outFields=Name%2CdateEnd&orderByFields=dateEnd+DESC&resultRecordCount=1&returnGeometry=false
+    scope: One catalogue row parsed.
+    schema_version: null
+  applicability:
+    geography: Verify exact dataset geography
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: https://open.canada.ca/en/open-government-licence-canada
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Confirm rights for this route and intended use before implementation.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: Metadata or one catalogue row only; no raster ingestion.
+    retention_exit: null
+  evidence:
+    state: S
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - G06
+    - G07
+    finding: One catalogue row parsed.
+    limits:
+    - Record name 2026-09-30 differs from dateEnd equivalent to 2026-09-28 12:00 UTC; unresolved.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: G5-gdd-sample
+  provider: AAFC
+  product: GDD catalogue record
+  resource_id: null
+  acquisition_route:
+    method: GET
+    url: https://agriculture.canada.ca/imagery-images/rest/services/agclimate/growing_degree_days/ImageServer/query?f=json&where=1%3D1&outFields=Name%2CdateEnd&orderByFields=dateEnd+DESC&resultRecordCount=1&returnGeometry=false
+    scope: One catalogue row parsed.
+    schema_version: null
+  applicability:
+    geography: Verify exact dataset geography
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: https://open.canada.ca/en/open-government-licence-canada
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Confirm rights for this route and intended use before implementation.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: Metadata or one catalogue row only; no raster ingestion.
+    retention_exit: null
+  evidence:
+    state: S
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - G08
+    - G09
+    finding: One catalogue row parsed.
+    limits:
+    - One catalogue record, not a raster-value or crop-stage test; resource-link mismatch unresolved.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: G2-slc
+  provider: AAFC
+  product: Soil Landscapes of Canada v3.2
+  resource_id: null
+  acquisition_route:
+    method: GET
+    url: https://sis.agr.gc.ca/cansis/nsdb/slc/v3.2/index.html
+    scope: Documentation and downloads reviewed.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: 1:1 million legacy landscape polygons
+  rights:
+    terms_url: null
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Dataset-specific acknowledgement and redistribution notice; do not infer another soil product licence.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: D
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - G03
+    finding: Documentation and downloads reviewed.
+    limits:
+    - ZIP contents and polygon/component/layer joins not examined.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: B1-metadata
+  provider: Statistics Canada
+  product: Farm financial table metadata
+  resource_id: null
+  acquisition_route:
+    method: POST
+    url: https://www150.statcan.gc.ca/t1/wds/rest/getCubeMetadata
+    scope: getCubeMetadata body contains productId 32100046 and 32100049; R04 batch also included 32100359.
+    schema_version: null
+  applicability:
+    geography: Canada and ten provinces for these tables
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: https://www.statcan.gc.ca/en/terms-conditions/open-licence
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Confirm rights for this route and intended use before implementation.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: Cash receipts through 2026 Q2; expenses through 2025 at R04 cutoff.
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: M
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - B01
+    - B04
+    - B05
+    finding: Batch metadata for 32100046 and 32100049 inspected.
+    limits:
+    - Regional totals are context; no whole-table ingestion validated.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: B1-csv-link
+  provider: Statistics Canada
+  product: Cash receipts CSV download-link response
+  resource_id: null
+  acquisition_route:
+    method: GET
+    url: https://www150.statcan.gc.ca/t1/wds/rest/getFullTableDownloadCSV/32100046/en
+    scope: Download-link response returned a ZIP URL.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: https://www.statcan.gc.ca/en/terms-conditions/open-licence
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Confirm rights for this route and intended use before implementation.
+  meaning:
+    units: Preserve units and scalar as separate fields.
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: Link response only, not downloaded table.
+    retention_exit: null
+  evidence:
+    state: M
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - B01
+    - B02
+    - B04
+    finding: Download-link response returned a ZIP URL.
+    limits:
+    - ZIP content was not downloaded or parsed; not S-level table data.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: B2-metadata
+  provider: Statistics Canada
+  product: Principal field crops metadata
+  resource_id: null
+  acquisition_route:
+    method: POST
+    url: https://www150.statcan.gc.ca/t1/wds/rest/getCubeMetadata
+    scope: getCubeMetadata body includes productId 32100359.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: https://www.statcan.gc.ca/en/terms-conditions/open-licence
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Confirm rights for this route and intended use before implementation.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: M
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - B01
+    - B06
+    finding: Dimensions and release metadata inspected for 32100359.
+    limits:
+    - Periods vary by crop and measure; no full-table CSV workflow tested.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: B3-infohort
+  provider: AAFC
+  product: Infohort wholesale asking prices
+  resource_id: null
+  acquisition_route:
+    method: GET
+    url: https://od-do.agr.gc.ca/DailyWholesalePrices_PrixDeGrossistesQuotidiens.csv
+    scope: First 2 KB of CSV returned header and an older row.
+    schema_version: null
+  applicability:
+    geography: Toronto/Montreal wholesale markets
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: https://open.canada.ca/en/open-government-licence-canada
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Confirm rights for this route and intended use before implementation.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: Documentation weekday publication and catalogue weekly maintenance differ.
+    pagination: null
+    completeness: Partial file only.
+    retention_exit: null
+  evidence:
+    state: S
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - B07
+    - B08
+    - B09
+    finding: First 2 KB of CSV returned header and an older row.
+    limits:
+    - Latest record and whole-file completeness not checked; asking prices are not completed sales.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: B4-aimis
+  provider: AAFC
+  product: AIMIS W042C report interface
+  resource_id: null
+  acquisition_route:
+    method: referral
+    url: https://agriculture.canada.ca/en/market-information-system/rp/index-eng.cfm?action=pR&pdctc=&r=84
+    scope: Report selection interface documented.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: null
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Confirm rights for this route and intended use before implementation.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: D
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - B10
+    finding: Report selection interface documented.
+    limits:
+    - No generated report or stable API/export schema tested.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: B5-agpal
+  provider: AgPal
+  product: Program discovery
+  resource_id: null
+  acquisition_route:
+    method: referral
+    url: https://agpal.ca/en/terms-of-use
+    scope: Program discovery and terms reviewed.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: https://agpal.ca/en/terms-of-use
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - R04 records conditions on noncommercial reproduction and prior permission for commercial redistribution.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: D
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - B11
+    finding: Program discovery and terms reviewed.
+    limits:
+    - Verify the current program owner/manual; no API or eligibility determination.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: P1-soil-sample
+  provider: Ontario
+  product: Ontario Soil Survey Complex attribute sample
+  resource_id: null
+  acquisition_route:
+    method: GET
+    url: https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/9/query?where=1%3D1&outFields=OBJECTID%2CMAPUNIT%2CSOIL_NAME1%2CPERCENT1%2CLOCATION_ACCURACY&returnGeometry=false&resultRecordCount=1&f=json
+    scope: One CLEGG map-unit attribute record parsed; location accuracy null.
+    schema_version: null
+  applicability:
+    geography: Ontario, subject to actual survey coverage
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: null
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Confirm rights for this route and intended use before implementation.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: Continue when transfer-limit flag is set; advertised maximum 2000 records.
+    completeness: One deliberately limited row.
+    retention_exit: null
+  evidence:
+    state: S
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - P01
+    finding: One CLEGG map-unit attribute record parsed; location accuracy null.
+    limits:
+    - No farm intersection; transfer-limit flag means incomplete result.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: P2-agrometeo
+  provider: Quebec
+  product: Agrometeo help and station metadata
+  resource_id: null
+  acquisition_route:
+    method: referral
+    url: https://agrometeo.solutions-mesonet.org/weather/help/
+    scope: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: null
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Currently linked terms limit personal/noncommercial use; broader reuse unresolved.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: D
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - P02
+    finding: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    limits:
+    - Station-metadata CSV is not evidence of a weather-series API.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: P2-rap
+  provider: Quebec
+  product: Reseau avertissements phytosanitaires
+  resource_id: null
+  acquisition_route:
+    method: referral
+    url: https://www.agrireseau.net/rap/
+    scope: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: null
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - RAP rights are separate from Agrometeo; verify intended use.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: D
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - P04
+    finding: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    limits:
+    - Crop advisories and dates need separate applicability checks.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: P3-nb
+  provider: New Brunswick
+  product: Potato weather export interface
+  resource_id: null
+  acquisition_route:
+    method: referral
+    url: https://agri.gnb.ca/010-001/WebServiceData.aspx
+    scope: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: null
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Confirm rights for this route and intended use before implementation.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: D
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - P05
+    finding: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    limits:
+    - Header, timezone, missing codes, actual output and reuse rights unverified.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: P4-perennia
+  provider: Perennia
+  product: Farm weather tools
+  resource_id: null
+  acquisition_route:
+    method: referral
+    url: https://www.docs.perennia.ca/farmDataTools/farmWeatherTools
+    scope: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: null
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Confirm rights for this route and intended use before implementation.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: D
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - P06
+    finding: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    limits:
+    - UI export documentation only; entitlement, API and export licence unverified.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: P5-bc-weather
+  provider: British Columbia
+  product: AgriWeather
+  resource_id: null
+  acquisition_route:
+    method: referral
+    url: https://farmwest.com/home/about-us/
+    scope: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: null
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Confirm rights for this route and intended use before implementation.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: D
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - P07
+    finding: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    limits:
+    - Current app reached; no data payload or automated-use licence verified.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: P5-bc-das
+  provider: BC DAS
+  product: Decision Aid System
+  resource_id: null
+  acquisition_route:
+    method: referral
+    url: https://ca.decisionaid.systems/about
+    scope: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: null
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Confirm rights for this route and intended use before implementation.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: D
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - P08
+    finding: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    limits:
+    - API/model reuse remains unresolved; not the same route as weather downloads.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: P6-acis-viewer
+  provider: Alberta
+  product: ACIS viewer
+  resource_id: null
+  acquisition_route:
+    method: referral
+    url: https://www.acis.alberta.ca/acis/weather-data-viewer.jsp
+    scope: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: null
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Confirm rights for this route and intended use before implementation.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: D
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - P09
+    finding: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    limits:
+    - Data can be retrospectively corrected; viewer/export path not qualified.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: P6-acis-custom
+  provider: Alberta
+  product: ACIS custom request terms
+  resource_id: null
+  acquisition_route:
+    method: referral
+    url: https://www.acis.alberta.ca/acis/app/data/request/terms
+    scope: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: null
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Approved-purpose use, deletion after work and no redistribution under reviewed custom terms.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: D
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - P11
+    finding: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    limits:
+    - No approved custom export was obtained.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: I1-agriwebb
+  provider: AgriWebb
+  product: Partner API and generated reports
+  resource_id: null
+  acquisition_route:
+    method: referral
+    url: https://docs.agriwebb.com/authentication
+    scope: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: null
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - R04 flags distinct customer data/Data Services terms, cached reports and expiring download redirects.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: D
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - I01
+    finding: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    limits:
+    - Canadian entitlement, report fields and partner agreement unverified.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: I2-farmos
+  provider: farmOS
+  product: Instance API and selected CSV exports
+  resource_id: null
+  acquisition_route:
+    method: referral
+    url: https://farmos.org/development/api/authentication/
+    scope: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: null
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - CSV omits some data; backup/migration needs separate attachment and completeness checks.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: D
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - I04
+    finding: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    limits:
+    - Installed version/modules, instance rights and complete export path unverified.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: I3-transfer
+  provider: FieldView/AgExpert
+  product: Existing one-way connector
+  resource_id: null
+  acquisition_route:
+    method: referral
+    url: https://climate.com/en-ca/partners/agexpert-field.html
+    scope: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: null
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Selected activities transfer one way; account plans, consent and input matching required.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: D
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - I06
+    finding: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    limits:
+    - Existing guide is not a general API entitlement for this project.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: I4-dairytrace
+  provider: DairyTrace
+  product: Documented software compatibility
+  resource_id: null
+  acquisition_route:
+    method: referral
+    url: https://dairytrace.ca/value-chain-participants/
+    scope: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: null
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Confirm rights for this route and intended use before implementation.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: D
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - I09
+    finding: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    limits:
+    - No developer contract, approved submission schema or account authorization verified.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: I4-pigtrace
+  provider: PigTRACE
+  product: Documented reporting routes
+  resource_id: null
+  acquisition_route:
+    method: referral
+    url: https://www.cpc-ccp.com/movement-reporting-info
+    scope: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: null
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Confirm rights for this route and intended use before implementation.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: D
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - I10
+    finding: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    limits:
+    - Reporting routes do not establish authorized event submissions.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: I4-routing
+  provider: CFIA
+  product: Species/jurisdiction administrator routing
+  resource_id: null
+  acquisition_route:
+    method: referral
+    url: https://inspection.canada.ca/en/animal-health/terrestrial-animals/traceability/administrators
+    scope: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: null
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Confirm rights for this route and intended use before implementation.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: D
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - I11
+    finding: Documentation/referral reviewed; no authorized account or end-to-end export trial.
+    limits:
+    - Verify exact species, jurisdiction, event and official destination.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: X1-ckan
+  provider: Open Government
+  product: CKAN package metadata
+  resource_id: null
+  acquisition_route:
+    method: GET
+    url: https://open.canada.ca/data/en/api/3/action/package_show?id=89073037-d2fc-4a6d-9ce9-f0b1bcb48745
+    scope: Selected public package_show records returned structured metadata.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: null
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Confirm rights for this route and intended use before implementation.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: M
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - X01
+    finding: Selected public package_show records returned structured metadata.
+    limits:
+    - Catalogue metadata and underlying delivery are separate; source-specific rights apply.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: X2-ppid-catalogue
+  provider: Health Canada
+  product: PPID catalogue metadata
+  resource_id: null
+  acquisition_route:
+    method: GET
+    url: https://open.canada.ca/data/en/api/3/action/package_show?id=e10b0d6e-04ac-4014-a64a-666c3874bbe0
+    scope: Catalogue metadata inspected; bilingual extract routes listed.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: null
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Confirm rights for this route and intended use before implementation.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: null
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: M
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - X02
+    finding: Catalogue metadata inspected; bilingual extract routes listed.
+    limits:
+    - No pesticide extract parsed; consult the applicable official PDF label.
+  maintenance_owner: null
+  workflow_operationally_validated: false
+- source_id: X2-ppid-guide
+  provider: Health Canada
+  product: PPID API guide
+  resource_id: null
+  acquisition_route:
+    method: referral
+    url: https://open.canada.ca/data/dataset/e10b0d6e-04ac-4014-a64a-666c3874bbe0/resource/a4c00b7a-f5f2-4d35-8c72-4342a976b6f8/download/ppid-api-doc-eng.html
+    scope: API guide reviewed.
+    schema_version: null
+  applicability:
+    geography: Unconfirmed for a specific task
+    enterprise: Select and verify for the task
+    languages_confirmed: []
+    period: null
+    spatial_resolution: null
+  rights:
+    terms_url: null
+    check_date: '2026-10-16'
+    basis: R04 snapshot; not rechecked in AG-01
+    permitted_use: null
+    attribution: null
+    redistribution: null
+    fees: null
+    restrictions:
+    - Confirm rights for this route and intended use before implementation.
+  meaning:
+    units: null
+    missing_quality_codes: null
+    identifiers_dimensions: null
+  time:
+    represented_period: null
+    issue_valid_revision: Documented extraction daily; maintenance 02:30–03:30 EST; do not infer daylight-saving
+      behaviour.
+    timezone: null
+  operation:
+    refresh: null
+    pagination: null
+    completeness: null
+    retention_exit: null
+  evidence:
+    state: D
+    checked_at: '2026-10-16'
+    report: docs/release/public-provenance.json
+    source_refs:
+    - X03
+    finding: API guide reviewed.
+    limits:
+    - Guide is documentation, not a parsed data payload or pesticide-use authority.
+  maintenance_owner: null
+  workflow_operationally_validated: false

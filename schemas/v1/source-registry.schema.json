@@ -1,0 +1,380 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agentagriculture:schema:source-registry:1",
+  "title": "source-registry",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "registry_type": {
+      "const": "sources"
+    },
+    "baseline_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_-]+$"
+          },
+          "provider": {
+            "type": "string",
+            "minLength": 1
+          },
+          "product": {
+            "type": "string",
+            "minLength": 1
+          },
+          "resource_id": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          },
+          "acquisition_route": {
+            "type": "object",
+            "properties": {
+              "method": {
+                "enum": [
+                  "GET",
+                  "POST",
+                  "referral"
+                ]
+              },
+              "url": {
+                "type": "string",
+                "minLength": 1
+              },
+              "scope": {
+                "type": "string",
+                "minLength": 1
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              }
+            },
+            "required": [
+              "method",
+              "url",
+              "scope",
+              "schema_version"
+            ],
+            "additionalProperties": false
+          },
+          "applicability": {
+            "type": "object",
+            "properties": {
+              "geography": {
+                "type": "string",
+                "minLength": 1
+              },
+              "enterprise": {
+                "type": "string",
+                "minLength": 1
+              },
+              "languages_confirmed": {
+                "type": "array",
+                "items": {
+                  "enum": [
+                    "en",
+                    "fr"
+                  ]
+                },
+                "minItems": 0
+              },
+              "period": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "spatial_resolution": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              }
+            },
+            "required": [
+              "geography",
+              "enterprise",
+              "languages_confirmed",
+              "period",
+              "spatial_resolution"
+            ],
+            "additionalProperties": false
+          },
+          "rights": {
+            "type": "object",
+            "properties": {
+              "terms_url": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "check_date": {
+                "type": "string",
+                "format": "date"
+              },
+              "basis": {
+                "const": "R04 snapshot; not rechecked in AG-01"
+              },
+              "permitted_use": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "attribution": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "redistribution": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "fees": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "restrictions": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              }
+            },
+            "required": [
+              "terms_url",
+              "check_date",
+              "basis",
+              "permitted_use",
+              "attribution",
+              "redistribution",
+              "fees",
+              "restrictions"
+            ],
+            "additionalProperties": false
+          },
+          "meaning": {
+            "type": "object",
+            "properties": {
+              "units": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "missing_quality_codes": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "identifiers_dimensions": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              }
+            },
+            "required": [
+              "units",
+              "missing_quality_codes",
+              "identifiers_dimensions"
+            ],
+            "additionalProperties": false
+          },
+          "time": {
+            "type": "object",
+            "properties": {
+              "represented_period": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "issue_valid_revision": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "timezone": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              }
+            },
+            "required": [
+              "represented_period",
+              "issue_valid_revision",
+              "timezone"
+            ],
+            "additionalProperties": false
+          },
+          "operation": {
+            "type": "object",
+            "properties": {
+              "refresh": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "pagination": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "completeness": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "retention_exit": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              }
+            },
+            "required": [
+              "refresh",
+              "pagination",
+              "completeness",
+              "retention_exit"
+            ],
+            "additionalProperties": false
+          },
+          "evidence": {
+            "type": "object",
+            "properties": {
+              "state": {
+                "enum": [
+                  "D",
+                  "M",
+                  "S",
+                  "O"
+                ]
+              },
+              "checked_at": {
+                "type": "string",
+                "format": "date"
+              },
+              "report": {
+                "enum": [
+                  "docs/research/R04.md",
+                  "docs/release/public-provenance.json"
+                ]
+              },
+              "source_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1
+              },
+              "finding": {
+                "type": "string",
+                "minLength": 1
+              },
+              "limits": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1
+              }
+            },
+            "required": [
+              "state",
+              "checked_at",
+              "report",
+              "source_refs",
+              "finding",
+              "limits"
+            ],
+            "additionalProperties": false
+          },
+          "maintenance_owner": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          },
+          "workflow_operationally_validated": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "source_id",
+          "provider",
+          "product",
+          "resource_id",
+          "acquisition_route",
+          "applicability",
+          "rights",
+          "meaning",
+          "time",
+          "operation",
+          "evidence",
+          "maintenance_owner",
+          "workflow_operationally_validated"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "registry_type",
+    "baseline_date",
+    "sources"
+  ],
+  "additionalProperties": false
+}

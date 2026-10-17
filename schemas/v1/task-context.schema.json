@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agentagriculture:schema:task-context:1",
+  "title": "task-context",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "task_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]+$"
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1
+    },
+    "question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "enterprise_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "activity_location": {
+      "type": "object",
+      "properties": {
+        "jurisdiction": {
+          "enum": [
+            "CA-BC",
+            "CA-AB",
+            "CA-SK",
+            "CA-MB",
+            "CA-ON",
+            "CA-QC",
+            "CA-NB",
+            "CA-NS",
+            "CA-PE",
+            "CA-NL",
+            "CA-YT",
+            "CA-NT",
+            "CA-NU"
+          ]
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      },
+      "required": [
+        "jurisdiction",
+        "description"
+      ],
+      "additionalProperties": false
+    },
+    "reporting_period": {
+      "$ref": "urn:agentagriculture:schema:common:1#/$defs/period"
+    },
+    "language": {
+      "enum": [
+        "en",
+        "fr"
+      ]
+    },
+    "preferred_units": {
+      "type": "array",
+      "items": {
+        "const": "kg"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "currency": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "transaction_basis": {
+      "const": "purchase_records"
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "role": {
+            "type": "string",
+            "minLength": 1
+          },
+          "participant_alias": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          }
+        },
+        "required": [
+          "role",
+          "participant_alias"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "current_tools": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "recipient_scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "permission": {
+      "type": "object",
+      "properties": {
+        "authority_confirmed": {
+          "type": "boolean"
+        },
+        "purpose": {
+          "type": "string",
+          "minLength": 1
+        },
+        "allowed_operation": {
+          "const": "local_read"
+        },
+        "selected_source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_-]+$"
+          },
+          "minItems": 1,
+          "maxItems": 2
+        },
+        "destination": {
+          "const": "local_review_package"
+        },
+        "expires_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "(Z|[+-][0-9]{2}:[0-9]{2})$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "authority_confirmed",
+        "purpose",
+        "allowed_operation",
+        "selected_source_ids",
+        "destination",
+        "expires_at"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "task_id",
+    "purpose",
+    "question",
+    "enterprise_id",
+    "activity_location",
+    "reporting_period",
+    "language",
+    "preferred_units",
+    "currency",
+    "transaction_basis",
+    "roles",
+    "current_tools",
+    "recipient_scope",
+    "permission"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling==1.32.4"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agent-agriculture"
+version = "0.1.0a3"
+description = "Local, traceable record preparation for the AgentAgriculture project"
+readme = "README.md"
+requires-python = ">=3.14,<3.15"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+dependencies = ["jsonschema==4.26.0", "referencing==0.37.0", "PyYAML==6.0.3"]
+
+[project.scripts]
+agent-agriculture = "agent_agriculture.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/agent_agriculture"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"schemas/v1" = "agent_agriculture/schemas/v1"
+
+[tool.hatch.build.targets.sdist]
+only-include = ["src", "schemas", "pyproject.toml", "README.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "requirements-validation.lock", "requirements-build.lock"]

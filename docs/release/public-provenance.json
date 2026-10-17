@@ -1,0 +1,914 @@
+{
+  "index_version": "1.0.0",
+  "status": "historical_and_synthetic_provenance_not_rights_clearance",
+  "authored_on": "2026-10-17",
+  "purpose": "Resolve public source-tree references without reproducing unavailable historical research or fabricating evidence.",
+  "evidence_boundary": "Public path closure is not independent verification of historical D/M/S assertions, current provider permissions or operational/field usefulness.",
+  "historical_research": [
+    {
+      "label": "R02",
+      "snapshot_sha256": "d52b6a33c45e8ec7edba29fa8a81958b65bb15b0e0cabcef85477d84fc5db5e4",
+      "snapshot_bytes": 48787,
+      "public_access": "not_distributed_in_this_source_draft",
+      "public_evidence_status": "unavailable_for_independent_review_from_this_draft",
+      "meaning": "Digest identifies an owner-side historical snapshot; it does not make its content accessible or grant redistribution rights."
+    },
+    {
+      "label": "R04",
+      "snapshot_sha256": "014ec177512e6e36cd1e0cdf7e8bc3adf6f4cad12f75c50507680b0fc5bec89a",
+      "snapshot_bytes": 46626,
+      "public_access": "not_distributed_in_this_source_draft",
+      "public_evidence_status": "unavailable_for_independent_review_from_this_draft",
+      "meaning": "Digest identifies an owner-side historical snapshot; it does not make its content accessible or grant redistribution rights."
+    }
+  ],
+  "public_documentation_checks": [
+    {
+      "check_id": "public-doc-eccc-city",
+      "url": "https://eccc-msc.github.io/open-data/msc-data/citypage-weather/readme_citypageweather-datamart_en/",
+      "provider": "Environment and Climate Change Canada",
+      "authored_summary": "Public documentation for the city weather product was readable through web text retrieval.",
+      "checked_on": "2026-10-17",
+      "method": "readable web text retrieval",
+      "http_status": null,
+      "scope": "Documentation availability only; no provider payload, accuracy, applicability or rights validation."
+    },
+    {
+      "check_id": "public-doc-eccc-alerts",
+      "url": "https://eccc-msc.github.io/open-data/msc-data/alerts/readme_alerts-datamart_en/",
+      "provider": "Environment and Climate Change Canada",
+      "authored_summary": "Public documentation for the alert product was readable through web text retrieval.",
+      "checked_on": "2026-10-17",
+      "method": "readable web text retrieval",
+      "http_status": null,
+      "scope": "Documentation availability only; no live alert, geographic/lifecycle or rights validation."
+    },
+    {
+      "check_id": "public-doc-statcan-wds",
+      "url": "https://www.statcan.gc.ca/en/developers/wds",
+      "provider": "Statistics Canada",
+      "authored_summary": "Public Web Data Service documentation was readable through web text retrieval.",
+      "checked_on": "2026-10-17",
+      "method": "readable web text retrieval",
+      "http_status": null,
+      "scope": "Documentation availability only; no table ingestion, farm interpretation or rights validation."
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "W1-city",
+      "provider": "ECCC",
+      "product": "City forecast XML",
+      "authored_summary": "Historical registry entry for ECCC: City forecast XML. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "D",
+      "historical_reference_ids": [
+        "W01",
+        "W06",
+        "W07"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://eccc-msc.github.io/open-data/msc-data/citypage-weather/readme_citypageweather-datamart_en/",
+      "public_url_check_id": "public-doc-eccc-city",
+      "listed_url_status": "readable_documentation_checked_only",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "W2-alerts",
+      "provider": "ECCC",
+      "product": "CAP weather alerts",
+      "authored_summary": "Historical registry entry for ECCC: CAP weather alerts. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "D",
+      "historical_reference_ids": [
+        "W02",
+        "W06",
+        "W07"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://eccc-msc.github.io/open-data/msc-data/alerts/readme_alerts-datamart_en/",
+      "public_url_check_id": "public-doc-eccc-alerts",
+      "listed_url_status": "readable_documentation_checked_only",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "W3-swob",
+      "provider": "ECCC",
+      "product": "SWOB-ML station observations",
+      "authored_summary": "Historical registry entry for ECCC: SWOB-ML station observations. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "D",
+      "historical_reference_ids": [
+        "W03",
+        "W06",
+        "W07"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://eccc-msc.github.io/open-data/msc-data/obs_station/readme_obs_insitu_swobdatamart_en/",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "W4-climate",
+      "provider": "ECCC",
+      "product": "Historical climate observations",
+      "authored_summary": "Historical registry entry for ECCC: Historical climate observations. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "D",
+      "historical_reference_ids": [
+        "W04",
+        "W06",
+        "W07"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://eccc-msc.github.io/open-data/msc-data/climate_obs/readme_climateobs_en/",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "W5-csv",
+      "provider": "ECCC",
+      "product": "Hydrometric Datamart CSV",
+      "authored_summary": "Historical registry entry for ECCC: Hydrometric Datamart CSV. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "D",
+      "historical_reference_ids": [
+        "W05",
+        "W06",
+        "W07"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://eccc-msc.github.io/open-data/msc-data/obs_hydrometric/readme_hydrometric-datamart_en/",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "W5-api-default",
+      "provider": "ECCC",
+      "product": "Hydrometric GeoMet bounded sample",
+      "authored_summary": "Historical registry entry for ECCC: Hydrometric GeoMet bounded sample. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "S",
+      "historical_reference_ids": [
+        "W08"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://api.weather.gc.ca/collections/hydrometric-realtime/items?f=json&limit=1",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "W5-api-dated",
+      "provider": "ECCC",
+      "product": "Hydrometric GeoMet bounded sample",
+      "authored_summary": "Historical registry entry for ECCC: Hydrometric GeoMet bounded sample. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "S",
+      "historical_reference_ids": [
+        "W08"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://api.weather.gc.ca/collections/hydrometric-realtime/items?f=json&limit=1&STATION_NUMBER=05BH016&datetime=2026-10-16T00%3A00%3A00Z%2F2026-10-16T17%3A10%3A00Z",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "G1-aci-metadata",
+      "provider": "AAFC",
+      "product": "Annual Crop Inventory 2025",
+      "authored_summary": "Historical registry entry for AAFC: Annual Crop Inventory 2025. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "M",
+      "historical_reference_ids": [
+        "G01",
+        "G02"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://agriculture.canada.ca/imagery-images/rest/services/annual_crop_inventory/2025/ImageServer?f=pjson",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "G4-drought-metadata",
+      "provider": "AAFC",
+      "product": "Drought Monitor service metadata",
+      "authored_summary": "Historical registry entry for AAFC: Drought Monitor service metadata. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "M",
+      "historical_reference_ids": [
+        "G06",
+        "G07"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://agriculture.canada.ca/imagery-images/rest/services/canadian_drought_monitor/ImageServer?f=pjson",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "G5-gdd-metadata",
+      "provider": "AAFC",
+      "product": "Growing Degree Days service metadata",
+      "authored_summary": "Historical registry entry for AAFC: Growing Degree Days service metadata. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "M",
+      "historical_reference_ids": [
+        "G08",
+        "G09"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://agriculture.canada.ca/imagery-images/rest/services/agclimate/growing_degree_days/ImageServer?f=pjson",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "G3-silt-metadata",
+      "provider": "AAFC",
+      "product": "Soil Landscape Grids silt",
+      "authored_summary": "Historical registry entry for AAFC: Soil Landscape Grids silt. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "M",
+      "historical_reference_ids": [
+        "G04",
+        "G05"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://www.agr.gc.ca/imagery-images/rest/services/soil_landscape_grids_100m/silt/ImageServer?f=pjson",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "G4-drought-sample",
+      "provider": "AAFC",
+      "product": "Drought Monitor catalogue record",
+      "authored_summary": "Historical registry entry for AAFC: Drought Monitor catalogue record. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "S",
+      "historical_reference_ids": [
+        "G06",
+        "G07"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://agriculture.canada.ca/imagery-images/rest/services/canadian_drought_monitor/ImageServer/query?f=json&where=1%3D1&outFields=Name%2CdateEnd&orderByFields=dateEnd+DESC&resultRecordCount=1&returnGeometry=false",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "G5-gdd-sample",
+      "provider": "AAFC",
+      "product": "GDD catalogue record",
+      "authored_summary": "Historical registry entry for AAFC: GDD catalogue record. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "S",
+      "historical_reference_ids": [
+        "G08",
+        "G09"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://agriculture.canada.ca/imagery-images/rest/services/agclimate/growing_degree_days/ImageServer/query?f=json&where=1%3D1&outFields=Name%2CdateEnd&orderByFields=dateEnd+DESC&resultRecordCount=1&returnGeometry=false",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "G2-slc",
+      "provider": "AAFC",
+      "product": "Soil Landscapes of Canada v3.2",
+      "authored_summary": "Historical registry entry for AAFC: Soil Landscapes of Canada v3.2. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "D",
+      "historical_reference_ids": [
+        "G03"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://sis.agr.gc.ca/cansis/nsdb/slc/v3.2/index.html",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "B1-metadata",
+      "provider": "Statistics Canada",
+      "product": "Farm financial table metadata",
+      "authored_summary": "Historical registry entry for Statistics Canada: Farm financial table metadata. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "M",
+      "historical_reference_ids": [
+        "B01",
+        "B04",
+        "B05"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://www150.statcan.gc.ca/t1/wds/rest/getCubeMetadata",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "B1-csv-link",
+      "provider": "Statistics Canada",
+      "product": "Cash receipts CSV download-link response",
+      "authored_summary": "Historical registry entry for Statistics Canada: Cash receipts CSV download-link response. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "M",
+      "historical_reference_ids": [
+        "B01",
+        "B02",
+        "B04"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://www150.statcan.gc.ca/t1/wds/rest/getFullTableDownloadCSV/32100046/en",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "B2-metadata",
+      "provider": "Statistics Canada",
+      "product": "Principal field crops metadata",
+      "authored_summary": "Historical registry entry for Statistics Canada: Principal field crops metadata. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "M",
+      "historical_reference_ids": [
+        "B01",
+        "B06"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://www150.statcan.gc.ca/t1/wds/rest/getCubeMetadata",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "B3-infohort",
+      "provider": "AAFC",
+      "product": "Infohort wholesale asking prices",
+      "authored_summary": "Historical registry entry for AAFC: Infohort wholesale asking prices. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "S",
+      "historical_reference_ids": [
+        "B07",
+        "B08",
+        "B09"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://od-do.agr.gc.ca/DailyWholesalePrices_PrixDeGrossistesQuotidiens.csv",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "B4-aimis",
+      "provider": "AAFC",
+      "product": "AIMIS W042C report interface",
+      "authored_summary": "Historical registry entry for AAFC: AIMIS W042C report interface. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "D",
+      "historical_reference_ids": [
+        "B10"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://agriculture.canada.ca/en/market-information-system/rp/index-eng.cfm?action=pR&pdctc=&r=84",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "B5-agpal",
+      "provider": "AgPal",
+      "product": "Program discovery",
+      "authored_summary": "Historical registry entry for AgPal: Program discovery. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "D",
+      "historical_reference_ids": [
+        "B11"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://agpal.ca/en/terms-of-use",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "P1-soil-sample",
+      "provider": "Ontario",
+      "product": "Ontario Soil Survey Complex attribute sample",
+      "authored_summary": "Historical registry entry for Ontario: Ontario Soil Survey Complex attribute sample. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "S",
+      "historical_reference_ids": [
+        "P01"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/9/query?where=1%3D1&outFields=OBJECTID%2CMAPUNIT%2CSOIL_NAME1%2CPERCENT1%2CLOCATION_ACCURACY&returnGeometry=false&resultRecordCount=1&f=json",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "P2-agrometeo",
+      "provider": "Quebec",
+      "product": "Agrometeo help and station metadata",
+      "authored_summary": "Historical registry entry for Quebec: Agrometeo help and station metadata. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "D",
+      "historical_reference_ids": [
+        "P02"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://agrometeo.solutions-mesonet.org/weather/help/",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "P2-rap",
+      "provider": "Quebec",
+      "product": "Reseau avertissements phytosanitaires",
+      "authored_summary": "Historical registry entry for Quebec: Reseau avertissements phytosanitaires. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "D",
+      "historical_reference_ids": [
+        "P04"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://www.agrireseau.net/rap/",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "P3-nb",
+      "provider": "New Brunswick",
+      "product": "Potato weather export interface",
+      "authored_summary": "Historical registry entry for New Brunswick: Potato weather export interface. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "D",
+      "historical_reference_ids": [
+        "P05"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://agri.gnb.ca/010-001/WebServiceData.aspx",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "P4-perennia",
+      "provider": "Perennia",
+      "product": "Farm weather tools",
+      "authored_summary": "Historical registry entry for Perennia: Farm weather tools. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "D",
+      "historical_reference_ids": [
+        "P06"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://www.docs.perennia.ca/farmDataTools/farmWeatherTools",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "P5-bc-weather",
+      "provider": "British Columbia",
+      "product": "AgriWeather",
+      "authored_summary": "Historical registry entry for British Columbia: AgriWeather. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "D",
+      "historical_reference_ids": [
+        "P07"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://farmwest.com/home/about-us/",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "P5-bc-das",
+      "provider": "BC DAS",
+      "product": "Decision Aid System",
+      "authored_summary": "Historical registry entry for BC DAS: Decision Aid System. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "D",
+      "historical_reference_ids": [
+        "P08"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://ca.decisionaid.systems/about",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "P6-acis-viewer",
+      "provider": "Alberta",
+      "product": "ACIS viewer",
+      "authored_summary": "Historical registry entry for Alberta: ACIS viewer. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "D",
+      "historical_reference_ids": [
+        "P09"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://www.acis.alberta.ca/acis/weather-data-viewer.jsp",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "P6-acis-custom",
+      "provider": "Alberta",
+      "product": "ACIS custom request terms",
+      "authored_summary": "Historical registry entry for Alberta: ACIS custom request terms. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "D",
+      "historical_reference_ids": [
+        "P11"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://www.acis.alberta.ca/acis/app/data/request/terms",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "I1-agriwebb",
+      "provider": "AgriWebb",
+      "product": "Partner API and generated reports",
+      "authored_summary": "Historical registry entry for AgriWebb: Partner API and generated reports. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "D",
+      "historical_reference_ids": [
+        "I01"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://docs.agriwebb.com/authentication",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "I2-farmos",
+      "provider": "farmOS",
+      "product": "Instance API and selected CSV exports",
+      "authored_summary": "Historical registry entry for farmOS: Instance API and selected CSV exports. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "D",
+      "historical_reference_ids": [
+        "I04"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://farmos.org/development/api/authentication/",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "I3-transfer",
+      "provider": "FieldView/AgExpert",
+      "product": "Existing one-way connector",
+      "authored_summary": "Historical registry entry for FieldView/AgExpert: Existing one-way connector. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "D",
+      "historical_reference_ids": [
+        "I06"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://climate.com/en-ca/partners/agexpert-field.html",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "I4-dairytrace",
+      "provider": "DairyTrace",
+      "product": "Documented software compatibility",
+      "authored_summary": "Historical registry entry for DairyTrace: Documented software compatibility. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "D",
+      "historical_reference_ids": [
+        "I09"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://dairytrace.ca/value-chain-participants/",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "I4-pigtrace",
+      "provider": "PigTRACE",
+      "product": "Documented reporting routes",
+      "authored_summary": "Historical registry entry for PigTRACE: Documented reporting routes. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "D",
+      "historical_reference_ids": [
+        "I10"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://www.cpc-ccp.com/movement-reporting-info",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "I4-routing",
+      "provider": "CFIA",
+      "product": "Species/jurisdiction administrator routing",
+      "authored_summary": "Historical registry entry for CFIA: Species/jurisdiction administrator routing. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "D",
+      "historical_reference_ids": [
+        "I11"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://inspection.canada.ca/en/animal-health/terrestrial-animals/traceability/administrators",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "X1-ckan",
+      "provider": "Open Government",
+      "product": "CKAN package metadata",
+      "authored_summary": "Historical registry entry for Open Government: CKAN package metadata. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "M",
+      "historical_reference_ids": [
+        "X01"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://open.canada.ca/data/en/api/3/action/package_show?id=89073037-d2fc-4a6d-9ce9-f0b1bcb48745",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "X2-ppid-catalogue",
+      "provider": "Health Canada",
+      "product": "PPID catalogue metadata",
+      "authored_summary": "Historical registry entry for Health Canada: PPID catalogue metadata. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "M",
+      "historical_reference_ids": [
+        "X02"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://open.canada.ca/data/en/api/3/action/package_show?id=e10b0d6e-04ac-4014-a64a-666c3874bbe0",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    },
+    {
+      "source_id": "X2-ppid-guide",
+      "provider": "Health Canada",
+      "product": "PPID API guide",
+      "authored_summary": "Historical registry entry for Health Canada: PPID API guide. No operational connector or provider payload is supplied here.",
+      "historical_report_label": "R04",
+      "historical_checked_at": "2026-10-16",
+      "historical_state": "D",
+      "historical_reference_ids": [
+        "X03"
+      ],
+      "reference_id_meaning": "Opaque labels carried from unavailable historical research; no new public evidence is invented for them.",
+      "listed_route_url": "https://open.canada.ca/data/dataset/e10b0d6e-04ac-4014-a64a-666c3874bbe0/resource/a4c00b7a-f5f2-4d35-8c72-4342a976b6f8/download/ppid-api-doc-eng.html",
+      "public_url_check_id": null,
+      "listed_url_status": "listed_from_historical_registry_not_rechecked_in_P24",
+      "public_evidence_status": "historical_assertion_not_independently_reproduced",
+      "rights_status": "unresolved_for_owner_review; existing route-specific nulls retained"
+    }
+  ],
+  "jurisdictions": [
+    {
+      "jurisdiction": "CA-BC",
+      "name_en": "British Columbia",
+      "name_fr": "Colombie-Britannique",
+      "authored_summary": "Historical research-mapping entry only; agricultural context wording and local applicability are not independently established by this index.",
+      "historical_report_label": "R02",
+      "public_evidence_status": "historical_mapping_not_independently_reproduced",
+      "workflow_support": "unvalidated"
+    },
+    {
+      "jurisdiction": "CA-AB",
+      "name_en": "Alberta",
+      "name_fr": "Alberta",
+      "authored_summary": "Historical research-mapping entry only; agricultural context wording and local applicability are not independently established by this index.",
+      "historical_report_label": "R02",
+      "public_evidence_status": "historical_mapping_not_independently_reproduced",
+      "workflow_support": "unvalidated"
+    },
+    {
+      "jurisdiction": "CA-SK",
+      "name_en": "Saskatchewan",
+      "name_fr": "Saskatchewan",
+      "authored_summary": "Historical research-mapping entry only; agricultural context wording and local applicability are not independently established by this index.",
+      "historical_report_label": "R02",
+      "public_evidence_status": "historical_mapping_not_independently_reproduced",
+      "workflow_support": "unvalidated"
+    },
+    {
+      "jurisdiction": "CA-MB",
+      "name_en": "Manitoba",
+      "name_fr": "Manitoba",
+      "authored_summary": "Historical research-mapping entry only; agricultural context wording and local applicability are not independently established by this index.",
+      "historical_report_label": "R02",
+      "public_evidence_status": "historical_mapping_not_independently_reproduced",
+      "workflow_support": "unvalidated"
+    },
+    {
+      "jurisdiction": "CA-ON",
+      "name_en": "Ontario",
+      "name_fr": "Ontario",
+      "authored_summary": "Historical research-mapping entry only; agricultural context wording and local applicability are not independently established by this index.",
+      "historical_report_label": "R02",
+      "public_evidence_status": "historical_mapping_not_independently_reproduced",
+      "workflow_support": "unvalidated"
+    },
+    {
+      "jurisdiction": "CA-QC",
+      "name_en": "Quebec",
+      "name_fr": "Québec",
+      "authored_summary": "Historical research-mapping entry only; agricultural context wording and local applicability are not independently established by this index.",
+      "historical_report_label": "R02",
+      "public_evidence_status": "historical_mapping_not_independently_reproduced",
+      "workflow_support": "unvalidated"
+    },
+    {
+      "jurisdiction": "CA-NB",
+      "name_en": "New Brunswick",
+      "name_fr": "Nouveau-Brunswick",
+      "authored_summary": "Historical research-mapping entry only; agricultural context wording and local applicability are not independently established by this index.",
+      "historical_report_label": "R02",
+      "public_evidence_status": "historical_mapping_not_independently_reproduced",
+      "workflow_support": "unvalidated"
+    },
+    {
+      "jurisdiction": "CA-NS",
+      "name_en": "Nova Scotia",
+      "name_fr": "Nouvelle-Écosse",
+      "authored_summary": "Historical research-mapping entry only; agricultural context wording and local applicability are not independently established by this index.",
+      "historical_report_label": "R02",
+      "public_evidence_status": "historical_mapping_not_independently_reproduced",
+      "workflow_support": "unvalidated"
+    },
+    {
+      "jurisdiction": "CA-PE",
+      "name_en": "Prince Edward Island",
+      "name_fr": "Île-du-Prince-Édouard",
+      "authored_summary": "Historical research-mapping entry only; agricultural context wording and local applicability are not independently established by this index.",
+      "historical_report_label": "R02",
+      "public_evidence_status": "historical_mapping_not_independently_reproduced",
+      "workflow_support": "unvalidated"
+    },
+    {
+      "jurisdiction": "CA-NL",
+      "name_en": "Newfoundland and Labrador",
+      "name_fr": "Terre-Neuve-et-Labrador",
+      "authored_summary": "Historical research-mapping entry only; agricultural context wording and local applicability are not independently established by this index.",
+      "historical_report_label": "R02",
+      "public_evidence_status": "historical_mapping_not_independently_reproduced",
+      "workflow_support": "unvalidated"
+    },
+    {
+      "jurisdiction": "CA-YT",
+      "name_en": "Yukon",
+      "name_fr": "Yukon",
+      "authored_summary": "Historical research-mapping entry only; agricultural context wording and local applicability are not independently established by this index.",
+      "historical_report_label": "R02",
+      "public_evidence_status": "historical_mapping_not_independently_reproduced",
+      "workflow_support": "unvalidated"
+    },
+    {
+      "jurisdiction": "CA-NT",
+      "name_en": "Northwest Territories",
+      "name_fr": "Territoires du Nord-Ouest",
+      "authored_summary": "Historical research-mapping entry only; agricultural context wording and local applicability are not independently established by this index.",
+      "historical_report_label": "R02",
+      "public_evidence_status": "historical_mapping_not_independently_reproduced",
+      "workflow_support": "unvalidated"
+    },
+    {
+      "jurisdiction": "CA-NU",
+      "name_en": "Nunavut",
+      "name_fr": "Nunavut",
+      "authored_summary": "Historical research-mapping entry only; agricultural context wording and local applicability are not independently established by this index.",
+      "historical_report_label": "R02",
+      "public_evidence_status": "historical_mapping_not_independently_reproduced",
+      "workflow_support": "unvalidated"
+    }
+  ],
+  "workflows": [
+    {
+      "workflow_id": "records-to-review",
+      "public_evidence_status": "synthetic_test_code_and_instructions_shipped_not_field_validation",
+      "authored_summary": "The source includes deterministic record code, invented fixtures, failure tests and bilingual instructions. Execute the checks to obtain a local observation.",
+      "private_qualification_status": "Earlier AG-03/AG-04/P20/P22 logs and artifacts are not distributed here; no public receipt is invented.",
+      "shipped_methods": [
+        "tests/test_pipeline.py",
+        "tests/test_bundle.py",
+        "tests/test_preview.py",
+        "scripts/validate_contracts.py"
+      ],
+      "reproduce": [
+        "python scripts/validate_contracts.py",
+        "python -m unittest discover -s tests -v"
+      ],
+      "limits": [
+        "Finite synthetic checks only.",
+        "No actual participant, adviser, regional, operational or benefit claim.",
+        "Field study remains a separate post-launch subproject."
+      ]
+    }
+  ],
+  "unresolved_owner_review": [
+    "Authorship/provenance/attribution of source-derived registry wording and draft terminology.",
+    "Current rights for any later provider acquisition/payload redistribution; no O-level route.",
+    "Historical research assertions cannot be independently reproduced from this source draft.",
+    "Project licence/reporting/final publication decisions remain separate."
+  ]
+}

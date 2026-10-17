@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agentagriculture:schema:calculation:1",
+  "title": "calculation",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "calculation_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]+$"
+    },
+    "task_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]+$"
+    },
+    "method": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "enum": [
+            "sum",
+            "receiving_minus_purchase",
+            "paired_quantity_difference"
+          ]
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "name",
+        "version"
+      ],
+      "additionalProperties": false
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "record_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "record_version": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "field": {
+            "enum": [
+              "amount",
+              "quantity"
+            ]
+          },
+          "value": {
+            "type": "string",
+            "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+          },
+          "unit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source": {
+            "$ref": "urn:agentagriculture:schema:common:1#/$defs/source-ref"
+          },
+          "role": {
+            "enum": [
+              "purchase",
+              "receiving"
+            ]
+          }
+        },
+        "required": [
+          "record_id",
+          "record_version",
+          "field",
+          "value",
+          "unit",
+          "source"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "formula": {
+      "type": "string",
+      "minLength": 1
+    },
+    "result": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string",
+          "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+        },
+        "unit": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ],
+      "additionalProperties": false
+    },
+    "precision": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 8
+    },
+    "rounding": {
+      "enum": [
+        "ROUND_HALF_EVEN",
+        "ROUND_HALF_UP",
+        "none"
+      ]
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "status": {
+      "enum": [
+        "checked",
+        "incomplete",
+        "invalidated"
+      ]
+    },
+    "dependent_output_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    }
+  },
+  "required": [
+    "schema_version",
+    "calculation_id",
+    "task_id",
+    "method",
+    "inputs",
+    "formula",
+    "result",
+    "precision",
+    "rounding",
+    "assumptions",
+    "status",
+    "dependent_output_refs"
+  ],
+  "additionalProperties": false
+}

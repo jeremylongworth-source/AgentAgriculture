@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "purchases:A-04",
+  "version": 1,
+  "kind": "purchase",
+  "source": {
+    "source_id": "purchases",
+    "source_record_id": "A-04",
+    "row_number": 5,
+    "sha256": "5d4e0f35e25808e275a74c950232d5910809f308e422746f8fcddfa73ff4410d"
+  },
+  "original_fields": {
+    "source_record_id": "A-04",
+    "reference": "INV-003",
+    "date": "2026-09-10",
+    "enterprise_id": "ENT-001",
+    "supplier": "Synthetic Supply C",
+    "quantity": "5",
+    "unit": "",
+    "amount": "75.00",
+    "currency": "CAD"
+  },
+  "enterprise": {
+    "original": "ENT-001",
+    "value": "ENT-001",
+    "status": "confirmed",
+    "mapping_basis": "Explicit synthetic mapping"
+  },
+  "reference": {
+    "original": "INV-003",
+    "value": "INV-003",
+    "status": "confirmed",
+    "mapping_basis": "Explicit synthetic mapping"
+  },
+  "date": {
+    "original": "2026-09-10",
+    "value": "2026-09-10",
+    "status": "confirmed",
+    "mapping_basis": "Explicit synthetic mapping"
+  },
+  "quantity": {
+    "original_value": "5",
+    "original_unit": "",
+    "value": "5",
+    "unit": null,
+    "status": "unresolved",
+    "mapping_basis": null
+  },
+  "amount": {
+    "original_value": "75.00",
+    "original_currency": "CAD",
+    "value": "75.00",
+    "currency": "CAD",
+    "status": "confirmed",
+    "mapping_basis": "Explicit synthetic mapping"
+  },
+  "disposition": "unresolved",
+  "issue_codes": [
+    "quantity.unit_missing"
+  ],
+  "correction_ids": [],
+  "exclusion_reason": null
+}

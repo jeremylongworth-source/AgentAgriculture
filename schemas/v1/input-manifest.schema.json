@@ -1,0 +1,283 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agentagriculture:schema:input-manifest:1",
+  "title": "input-manifest",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "manifest_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]+$"
+    },
+    "task_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]+$"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "inputs": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_-]+$"
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "record_kind": {
+            "enum": [
+              "purchase",
+              "receiving"
+            ]
+          },
+          "format": {
+            "const": "csv"
+          },
+          "encoding": {
+            "const": "utf-8"
+          },
+          "delimiter": {
+            "enum": [
+              ",",
+              ";"
+            ]
+          },
+          "decimal_separator": {
+            "enum": [
+              ".",
+              ","
+            ]
+          },
+          "date_format": {
+            "enum": [
+              "iso8601",
+              "unconfirmed"
+            ]
+          },
+          "field_mapping": {
+            "type": "object",
+            "properties": {
+              "source_record_id": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "reference": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "date": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "enterprise_id": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "supplier": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "quantity": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "unit": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "amount": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "currency": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              }
+            },
+            "required": [
+              "source_record_id",
+              "reference",
+              "date",
+              "enterprise_id",
+              "supplier",
+              "quantity",
+              "unit",
+              "amount",
+              "currency"
+            ],
+            "additionalProperties": false
+          },
+          "mapping_confirmed": {
+            "type": "boolean"
+          },
+          "acquisition": {
+            "enum": [
+              "selected_file",
+              "checked_manual_transcription"
+            ]
+          },
+          "transcription_checked": {
+            "type": "boolean"
+          },
+          "declared_period": {
+            "$ref": "urn:agentagriculture:schema:common:1#/$defs/period"
+          },
+          "completeness": {
+            "enum": [
+              "complete",
+              "partial",
+              "unknown"
+            ]
+          },
+          "filters": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 0
+          },
+          "included_sections": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1
+          },
+          "omitted_sections": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 0
+          },
+          "declared_record_count": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "received_at": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "(Z|[+-][0-9]{2}:[0-9]{2})$"
+          }
+        },
+        "required": [
+          "source_id",
+          "path",
+          "sha256",
+          "record_kind",
+          "format",
+          "encoding",
+          "delimiter",
+          "decimal_separator",
+          "date_format",
+          "field_mapping",
+          "mapping_confirmed",
+          "acquisition",
+          "transcription_checked",
+          "declared_period",
+          "completeness",
+          "filters",
+          "included_sections",
+          "omitted_sections",
+          "declared_record_count",
+          "received_at"
+        ],
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "completeness": {
+                  "const": "partial"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "omitted_sections": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "minItems": 1
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "acquisition": {
+                  "const": "checked_manual_transcription"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "transcription_checked": {
+                  "const": true
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "manifest_id",
+    "task_id",
+    "version",
+    "inputs"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,4 @@
+source_record_id,reference,date,enterprise_id,supplier,quantity,unit,amount,currency
+A-01,INV-001,2026-09-03,ENT-001,Synthetic Supply A,100,kg,250.00,CAD
+A-02,INV-002,09/08/2026,,Synthetic Supply B,40,kg,120.00,CAD
+A-04,INV-003,2026-09-10,ENT-001,Synthetic Supply C,5,,75.00,CAD

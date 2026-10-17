@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agentagriculture:schema:normalized-record:1",
+  "title": "normalized-record",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "kind": {
+      "enum": [
+        "purchase",
+        "receiving"
+      ]
+    },
+    "source": {
+      "$ref": "urn:agentagriculture:schema:common:1#/$defs/source-ref"
+    },
+    "original_fields": {
+      "$ref": "urn:agentagriculture:schema:common:1#/$defs/original"
+    },
+    "enterprise": {
+      "$ref": "urn:agentagriculture:schema:common:1#/$defs/text-state"
+    },
+    "reference": {
+      "$ref": "urn:agentagriculture:schema:common:1#/$defs/text-state"
+    },
+    "date": {
+      "$ref": "urn:agentagriculture:schema:common:1#/$defs/text-state"
+    },
+    "quantity": {
+      "$ref": "urn:agentagriculture:schema:common:1#/$defs/quantity"
+    },
+    "amount": {
+      "$ref": "urn:agentagriculture:schema:common:1#/$defs/money"
+    },
+    "disposition": {
+      "enum": [
+        "accepted",
+        "unresolved",
+        "excluded"
+      ]
+    },
+    "issue_codes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "correction_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9_-]+$"
+      },
+      "minItems": 0
+    },
+    "exclusion_reason": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "record_id",
+    "version",
+    "kind",
+    "source",
+    "original_fields",
+    "enterprise",
+    "reference",
+    "date",
+    "quantity",
+    "amount",
+    "disposition",
+    "issue_codes",
+    "correction_ids",
+    "exclusion_reason"
+  ],
+  "additionalProperties": false
+}

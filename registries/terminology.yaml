@@ -1,0 +1,89 @@
+schema_version: 1.0.0
+registry_type: terminology
+baseline_date: '2026-10-16'
+identifier_rules:
+- Keep original identifier text byte-faithful in the source; retain leading zeros and accents.
+- Translate labels and explanations, never identifiers, quantities or unresolved states.
+- Use confirmed mappings for interpretation; do not normalize identity by guessing.
+- Decimal comma requires explicit format mapping; source strings remain available.
+terms:
+- term_id: enterprise
+  en: enterprise
+  fr: entreprise agricole
+  meaning: The explicitly selected production/business scope; not inferred from mailing address.
+  review_status: draft
+- term_id: record
+  en: source record
+  fr: enregistrement source
+  meaning: Original evidence retains its identifier and source pointer.
+  review_status: draft
+- term_id: purchase
+  en: purchase record
+  fr: pièce d’achat
+  meaning: Purchase evidence, distinct from cash payment, tax treatment or profitability.
+  review_status: draft
+- term_id: receiving
+  en: receiving record
+  fr: enregistrement de réception
+  meaning: Quantity receipt evidence; not an additional expense.
+  review_status: draft
+- term_id: reconciliation
+  en: reconciliation
+  fr: rapprochement
+  meaning: Check records and expose discrepancies without forcing agreement.
+  review_status: draft
+- term_id: duplicate
+  en: possible duplicate
+  fr: doublon possible
+  meaning: Requires explicit identity review; related events may be legitimate.
+  review_status: draft
+- term_id: unknown
+  en: unknown
+  fr: inconnu
+  meaning: Meaning or value not established; never a measured zero.
+  review_status: draft
+- term_id: missing
+  en: missing
+  fr: manquant
+  meaning: A required value is absent.
+  review_status: draft
+- term_id: suppressed
+  en: withheld by source
+  fr: valeur masquée par la source
+  meaning: Unavailable source value, distinct from deletion or exclusion.
+  review_status: draft
+- term_id: estimated
+  en: estimated
+  fr: estimé
+  meaning: Value is an estimate with an explicit basis, not a measurement.
+  review_status: draft
+- term_id: excluded
+  en: excluded from this total
+  fr: exclu de ce total
+  meaning: Original remains available with an explicit exclusion decision.
+  review_status: draft
+- term_id: unresolved
+  en: needs clarification
+  fr: à clarifier
+  meaning: Insufficient or conflicting evidence remains visible.
+  review_status: draft
+- term_id: currency
+  en: currency
+  fr: devise
+  meaning: An explicit currency code accompanies money; no inferred exchange conversion.
+  review_status: draft
+- term_id: period
+  en: reporting period
+  fr: période de déclaration
+  meaning: Inclusive start/end dates confirmed for this selected task.
+  review_status: draft
+- term_id: review
+  en: adviser review package
+  fr: dossier de révision pour le conseiller
+  meaning: Prepared evidence and questions; not adviser approval.
+  review_status: draft
+- term_id: saved
+  en: saved locally
+  fr: enregistré localement
+  meaning: Actual recoverable local storage confirmed; not external receipt.
+  review_status: draft

@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "manifest_id": "manifest-partial-export",
+  "task_id": "task-partial-export",
+  "version": 1,
+  "inputs": [
+    {
+      "source_id": "purchases",
+      "path": "purchases.csv",
+      "sha256": "6e4e6d70bf7d3a6eb1850137813b1a93645ce2fedda4004ca1198b3729708383",
+      "record_kind": "purchase",
+      "format": "csv",
+      "encoding": "utf-8",
+      "delimiter": ",",
+      "decimal_separator": ".",
+      "date_format": "iso8601",
+      "field_mapping": {
+        "source_record_id": "source_record_id",
+        "reference": "reference",
+        "date": "date",
+        "enterprise_id": "enterprise_id",
+        "supplier": "supplier",
+        "quantity": "quantity",
+        "unit": "unit",
+        "amount": "amount",
+        "currency": "currency"
+      },
+      "mapping_confirmed": true,
+      "acquisition": "selected_file",
+      "transcription_checked": false,
+      "declared_period": {
+        "start": "2026-09-01",
+        "end": "2026-09-30"
+      },
+      "completeness": "partial",
+      "filters": [
+        "Selected rows only; omitted rows not supplied"
+      ],
+      "included_sections": [
+        "purchase rows"
+      ],
+      "omitted_sections": [
+        "Other purchase records omitted by source export"
+      ],
+      "declared_record_count": 3,
+      "received_at": "2026-10-16T12:00:00-04:00"
+    }
+  ]
+}

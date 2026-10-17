@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agentagriculture:schema:coverage-registry:1",
+  "title": "coverage-registry",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "registry_type": {
+      "const": "coverage"
+    },
+    "baseline_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "jurisdictions": {
+      "type": "array",
+      "minItems": 13,
+      "maxItems": 13,
+      "items": {
+        "type": "object",
+        "properties": {
+          "jurisdiction": {
+            "enum": [
+              "CA-BC",
+              "CA-AB",
+              "CA-SK",
+              "CA-MB",
+              "CA-ON",
+              "CA-QC",
+              "CA-NB",
+              "CA-NS",
+              "CA-PE",
+              "CA-NL",
+              "CA-YT",
+              "CA-NT",
+              "CA-NU"
+            ]
+          },
+          "name_en": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name_fr": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contexts": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1
+          },
+          "research_status": {
+            "const": "mapped"
+          },
+          "workflow_support": {
+            "const": "unvalidated"
+          },
+          "supported_workflows": {
+            "type": "array",
+            "maxItems": 0
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1
+          },
+          "reviewed_at": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          }
+        },
+        "required": [
+          "jurisdiction",
+          "name_en",
+          "name_fr",
+          "contexts",
+          "research_status",
+          "workflow_support",
+          "supported_workflows",
+          "evidence",
+          "reviewed_at"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "registry_type",
+    "baseline_date",
+    "jurisdictions"
+  ],
+  "additionalProperties": false
+}

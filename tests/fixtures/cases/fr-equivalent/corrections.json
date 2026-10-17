@@ -1,0 +1,19 @@
+[
+  {
+    "schema_version": "1.0.0",
+    "correction_id": "DUP-001",
+    "task_id": "task-fr-equivalent",
+    "record_id": "purchases:A-03",
+    "base_version": 1,
+    "new_version": 2,
+    "supersedes": null,
+    "authorized_by": "synthetic-reviewer",
+    "confirmed_at": "2026-10-16T12:00:00-04:00",
+    "reason": "Synthetic reviewed variant confirms this row copies A-02; keep both originals.",
+    "operation": "confirm_duplicate",
+    "field": "identity",
+    "previous_value": "inv 002",
+    "value": "INV-002",
+    "duplicate_of": "purchases:A-02"
+  }
+]

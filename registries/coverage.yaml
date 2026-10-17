@@ -1,0 +1,163 @@
+schema_version: 1.0.0
+registry_type: coverage
+baseline_date: '2026-10-16'
+jurisdictions:
+- jurisdiction: CA-BC
+  name_en: British Columbia
+  name_fr: Colombie-Britannique
+  contexts:
+  - South Coast horticulture/livestock, Interior orchards/vines/forage, Peace field crops and remaining
+    subregional gaps.
+  research_status: mapped
+  workflow_support: unvalidated
+  supported_workflows: []
+  evidence:
+  - docs/release/public-provenance.json
+  - docs/release/public-provenance.md
+  reviewed_at: null
+- jurisdiction: CA-AB
+  name_en: Alberta
+  name_fr: Alberta
+  contexts:
+  - Beef/forage, cereals/oilseeds, irrigated southern systems and rainfed/Peace contexts.
+  research_status: mapped
+  workflow_support: unvalidated
+  supported_workflows: []
+  evidence:
+  - docs/release/public-provenance.json
+  - docs/release/public-provenance.md
+  reviewed_at: null
+- jurisdiction: CA-SK
+  name_en: Saskatchewan
+  name_fr: Saskatchewan
+  contexts:
+  - Cereals, oilseeds, pulses, cattle/forage, irrigation and subregional moisture differences.
+  research_status: mapped
+  workflow_support: unvalidated
+  supported_workflows: []
+  evidence:
+  - docs/release/public-provenance.json
+  - docs/release/public-provenance.md
+  reviewed_at: null
+- jurisdiction: CA-MB
+  name_en: Manitoba
+  name_fr: Manitoba
+  contexts:
+  - Field crops, hogs, cattle/forage, potatoes, excess-water and drought scenarios.
+  research_status: mapped
+  workflow_support: unvalidated
+  supported_workflows: []
+  evidence:
+  - docs/release/public-provenance.json
+  - docs/release/public-provenance.md
+  reviewed_at: null
+- jurisdiction: CA-ON
+  name_en: Ontario
+  name_fr: Ontario
+  contexts:
+  - Field crops, dairy/pigs/poultry, greenhouse and direct-market horticulture, mixed and northern operations.
+  research_status: mapped
+  workflow_support: unvalidated
+  supported_workflows: []
+  evidence:
+  - docs/release/public-provenance.json
+  - docs/release/public-provenance.md
+  reviewed_at: null
+- jurisdiction: CA-QC
+  name_en: Quebec
+  name_fr: Québec
+  contexts:
+  - Original French advisory/economic workflows, dairy/pigs, field crops, maple, horticulture and mixed
+    operations.
+  research_status: mapped
+  workflow_support: unvalidated
+  supported_workflows: []
+  evidence:
+  - docs/release/public-provenance.json
+  - docs/release/public-provenance.md
+  reviewed_at: null
+- jurisdiction: CA-NB
+  name_en: New Brunswick
+  name_fr: Nouveau-Brunswick
+  contexts:
+  - Potatoes, blueberries, maple, dairy/livestock and crop-specific local advisory coverage.
+  research_status: mapped
+  workflow_support: unvalidated
+  supported_workflows: []
+  evidence:
+  - docs/release/public-provenance.json
+  - docs/release/public-provenance.md
+  reviewed_at: null
+- jurisdiction: CA-NS
+  name_en: Nova Scotia
+  name_fr: Nouvelle-Écosse
+  contexts:
+  - Orchard, berry and vineyard systems; dairy/forage, direct market and relevant Perennia outputs.
+  research_status: mapped
+  workflow_support: unvalidated
+  supported_workflows: []
+  evidence:
+  - docs/release/public-provenance.json
+  - docs/release/public-provenance.md
+  reviewed_at: null
+- jurisdiction: CA-PE
+  name_en: Prince Edward Island
+  name_fr: Île-du-Prince-Édouard
+  contexts:
+  - Potato rotation/storage, dairy/cattle, grains and province-specific water context.
+  research_status: mapped
+  workflow_support: unvalidated
+  supported_workflows: []
+  evidence:
+  - docs/release/public-provenance.json
+  - docs/release/public-provenance.md
+  reviewed_at: null
+- jurisdiction: CA-NL
+  name_en: Newfoundland and Labrador
+  name_fr: Terre-Neuve-et-Labrador
+  contexts:
+  - Island livestock/forage/vegetables and Labrador growing/procurement contexts separately.
+  research_status: mapped
+  workflow_support: unvalidated
+  supported_workflows: []
+  evidence:
+  - docs/release/public-provenance.json
+  - docs/release/public-provenance.md
+  reviewed_at: null
+- jurisdiction: CA-YT
+  name_en: Yukon
+  name_fr: Yukon
+  contexts:
+  - Market, teaching and community farms; outdoor/protected growing, hay, procurement and continuity.
+  research_status: mapped
+  workflow_support: unvalidated
+  supported_workflows: []
+  evidence:
+  - docs/release/public-provenance.json
+  - docs/release/public-provenance.md
+  reviewed_at: null
+- jurisdiction: CA-NT
+  name_en: Northwest Territories
+  name_fr: Territoires du Nord-Ouest
+  contexts:
+  - Commercial operations and community greenhouse/garden contexts with distinct objectives and logistics.
+  research_status: mapped
+  workflow_support: unvalidated
+  supported_workflows: []
+  evidence:
+  - docs/release/public-provenance.json
+  - docs/release/public-provenance.md
+  reviewed_at: null
+- jurisdiction: CA-NU
+  name_en: Nunavut
+  name_fr: Nunavut
+  contexts:
+  - Community-defined protected production, maintenance, resupply and distribution; do not exclude it
+    through a commercial-farm-count rule.
+  research_status: mapped
+  workflow_support: unvalidated
+  supported_workflows: []
+  evidence:
+  - docs/release/public-provenance.json
+  - docs/release/public-provenance.md
+  reviewed_at: null

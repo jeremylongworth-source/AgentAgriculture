@@ -1,0 +1,614 @@
+{
+  "inventory_version": "1.0.0",
+  "status": "local_source_candidate_only",
+  "publication_authorized": false,
+  "strategy": "initial developer/research source preview; separate field study after launch",
+  "runtime_basis": "0.1.0a3 MIT source; a2 behavior with engine version change and declared public export schema alternative",
+  "excluded": [
+    "raw supplied research/snapshots",
+    "private Git history and metadata",
+    "study subproject and materials",
+    "private/farm/participant records",
+    "generated outputs/environments",
+    "vendored dependency wheels",
+    "development handoff/history dossiers"
+  ],
+  "files": [
+    {
+      "path": ".python-version",
+      "category": "source_install_and_governance",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "category": "source_install_and_governance",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "LICENSE",
+      "category": "source_install_and_governance",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "README.md",
+      "category": "public_source_overview",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "SECURITY.md",
+      "category": "source_install_and_governance",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "category": "licensing_scope_and_notices",
+      "rights_review": "MIT_project_owned_only; third_party_terms_retained"
+    },
+    {
+      "path": "docs/release/initial-preview.md",
+      "category": "public_developer_documentation",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "docs/release/licensing.md",
+      "category": "licensing_scope_and_notices",
+      "rights_review": "MIT_project_owned_only; third_party_terms_retained"
+    },
+    {
+      "path": "docs/release/public-preview-files.json",
+      "category": "public_developer_documentation",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "docs/release/public-provenance.json",
+      "category": "authored_public_provenance_with_explicit_evidence_gaps",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains; no provider rights clearance inferred"
+    },
+    {
+      "path": "docs/release/public-provenance.md",
+      "category": "authored_public_provenance_with_explicit_evidence_gaps",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains; no provider rights clearance inferred"
+    },
+    {
+      "path": "docs/release/research-tools.md",
+      "category": "public_developer_documentation",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "docs/workflows/host-responsibilities.md",
+      "category": "public_developer_documentation",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "docs/workflows/local-pipeline.md",
+      "category": "public_developer_documentation",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "examples/manual/en/corrections.json",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "examples/manual/en/purchases-paper.md",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "examples/manual/en/purchases.csv",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "examples/manual/en/receiving-paper.md",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "examples/manual/en/receiving.csv",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "examples/manual/fr/corrections.json",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "examples/manual/fr/purchases-paper.md",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "examples/manual/fr/purchases.csv",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "examples/manual/fr/receiving-paper.md",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "examples/manual/fr/receiving.csv",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "examples/records-to-review/en.md",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "examples/records-to-review/fr.md",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "examples/study/synthetic-measurement.json",
+      "category": "invented_arithmetic_example_only",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "pyproject.toml",
+      "category": "source_install_and_governance",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "registries/README.md",
+      "category": "dated_nonoperational_research_seed",
+      "rights_review": "owner_review_of_authored_or_derived_registry_content_pending"
+    },
+    {
+      "path": "registries/coverage.yaml",
+      "category": "dated_nonoperational_research_seed",
+      "rights_review": "owner_review_of_authored_or_derived_registry_content_pending",
+      "export_transform": "public-provenance-v1"
+    },
+    {
+      "path": "registries/sources.yaml",
+      "category": "dated_nonoperational_research_seed",
+      "rights_review": "owner_review_of_authored_or_derived_registry_content_pending",
+      "export_transform": "public-provenance-v1"
+    },
+    {
+      "path": "registries/terminology.yaml",
+      "category": "dated_nonoperational_research_seed",
+      "rights_review": "owner_review_of_authored_or_derived_registry_content_pending"
+    },
+    {
+      "path": "registries/workflows.yaml",
+      "category": "dated_nonoperational_research_seed",
+      "rights_review": "owner_review_of_authored_or_derived_registry_content_pending",
+      "export_transform": "public-provenance-v1"
+    },
+    {
+      "path": "requirements-build.lock",
+      "category": "source_install_and_governance",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "requirements-validation.lock",
+      "category": "source_install_and_governance",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "schemas/v1/calculation.schema.json",
+      "category": "schema",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "schemas/v1/common.schema.json",
+      "category": "schema",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "schemas/v1/correction.schema.json",
+      "category": "schema",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "schemas/v1/coverage-registry.schema.json",
+      "category": "schema",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "schemas/v1/input-manifest.schema.json",
+      "category": "schema",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "schemas/v1/normalized-record.schema.json",
+      "category": "schema",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "schemas/v1/original-record.schema.json",
+      "category": "schema",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "schemas/v1/review-package.schema.json",
+      "category": "schema",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "schemas/v1/source-registry.schema.json",
+      "category": "schema",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains",
+      "export_transform": "public-provenance-v1"
+    },
+    {
+      "path": "schemas/v1/task-context.schema.json",
+      "category": "schema",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "schemas/v1/terminology-registry.schema.json",
+      "category": "schema",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "schemas/v1/workflow-registry.schema.json",
+      "category": "schema",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "scripts/inspect_csv.py",
+      "category": "developer_research_or_source_preparation_utility",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "scripts/inventory_preview_rights.py",
+      "category": "developer_research_or_source_preparation_utility",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "scripts/prepare_public_preview.py",
+      "category": "developer_research_or_source_preparation_utility",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "scripts/public_provenance.py",
+      "category": "developer_research_or_source_preparation_utility",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains; no provider rights clearance inferred"
+    },
+    {
+      "path": "scripts/reconcile.py",
+      "category": "legacy_source_cli_compatibility_entrypoint",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "scripts/study_measurement_lab.py",
+      "category": "developer_research_or_source_preparation_utility",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "scripts/validate_contracts.py",
+      "category": "developer_research_or_source_preparation_utility",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "scripts/weather_evidence_lab.py",
+      "category": "developer_research_or_source_preparation_utility",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "skills/farm-adviser-package/SKILL.md",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "skills/farm-record-reconciliation/SKILL.md",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "skills/farm-task-intake/SKILL.md",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "src/agent_agriculture/__init__.py",
+      "category": "deterministic_runtime_source",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "src/agent_agriculture/__main__.py",
+      "category": "deterministic_runtime_source",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "src/agent_agriculture/capture.py",
+      "category": "deterministic_runtime_source",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "src/agent_agriculture/cli.py",
+      "category": "deterministic_runtime_source",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "src/agent_agriculture/contracts.py",
+      "category": "deterministic_runtime_source",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "src/agent_agriculture/errors.py",
+      "category": "deterministic_runtime_source",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "src/agent_agriculture/handoff.py",
+      "category": "deterministic_runtime_source",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "src/agent_agriculture/input_limits.py",
+      "category": "deterministic_runtime_source",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "src/agent_agriculture/language.py",
+      "category": "deterministic_runtime_source",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "src/agent_agriculture/pipeline.py",
+      "category": "deterministic_runtime_source",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "src/agent_agriculture/presentation.py",
+      "category": "deterministic_runtime_source",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "src/agent_agriculture/reconciliation.py",
+      "category": "deterministic_runtime_source",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "src/agent_agriculture/records.py",
+      "category": "deterministic_runtime_source",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "src/agent_agriculture/storage.py",
+      "category": "deterministic_runtime_source",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "templates/en/exceptions.md",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "templates/en/export.md",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "templates/en/intake.md",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "templates/en/manual-entry.csv",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "templates/en/mapping.md",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "templates/en/results.md",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "templates/fr/exceptions.md",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "templates/fr/export.md",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "templates/fr/intake.md",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "templates/fr/manual-entry.csv",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "templates/fr/mapping.md",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "templates/fr/results.md",
+      "category": "bilingual_synthetic_workflow",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/fixtures/README.md",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/fixtures/cases/en-baseline/corrections.json",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/fixtures/cases/en-baseline/expected.json",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/fixtures/cases/en-baseline/manifest.json",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/fixtures/cases/en-baseline/purchases.csv",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/fixtures/cases/en-baseline/receiving.csv",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/fixtures/cases/en-baseline/task.json",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/fixtures/cases/fr-equivalent/corrections.json",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/fixtures/cases/fr-equivalent/expected.json",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/fixtures/cases/fr-equivalent/manifest.json",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/fixtures/cases/fr-equivalent/purchases.csv",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/fixtures/cases/fr-equivalent/receiving.csv",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/fixtures/cases/fr-equivalent/task.json",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/fixtures/cases/partial-export/corrections.json",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/fixtures/cases/partial-export/expected.json",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/fixtures/cases/partial-export/manifest.json",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/fixtures/cases/partial-export/purchases.csv",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/fixtures/cases/partial-export/task.json",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/fixtures/contracts/calculation.json",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/fixtures/contracts/correction.json",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/fixtures/contracts/normalized-record.json",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/fixtures/contracts/original-record.json",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/fixtures/contracts/review-package.json",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/test_arithmetic_oracle.py",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/test_bundle.py",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/test_contracts.py",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/test_csv_inspection.py",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/test_input_limits.py",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/test_pipeline.py",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/test_preview.py",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/test_preview_rights_inventory.py",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/test_public_preview_preparation.py",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/test_study_measurement_lab.py",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    },
+    {
+      "path": "tests/test_weather_evidence_spec.py",
+      "category": "synthetic_regression_or_fixture",
+      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+    }
+  ],
+  "project_license_expression": "MIT",
+  "reporting_route_selected": "https://github.com/jeremylongworth-source/AgentAgriculture"
+}
