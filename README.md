@@ -1,42 +1,54 @@
-# AgentAgriculture developer/research preview
+# AgentAgriculture ecosystem developer preview
 
-**MIT-licensed local source candidate 0.1.0a3 for an initial developer preview.**
-The project-owned software and associated documentation use [MIT](LICENSE).
-See [licensing boundaries](docs/release/licensing.md) and
-[third-party notices](THIRD_PARTY_NOTICES.md). The selected GitHub repository is
-[jeremylongworth-source/AgentAgriculture](https://github.com/jeremylongworth-source/AgentAgriculture),
-verified private and empty on 2026-10-17. Nothing has been published or pushed;
-final content review, reporting activation and publication authority remain open.
+Portable Canadian agriculture skills and workflow compositions for AI agents.
+This is a local source release candidate, not yet authorized for publication.
+Candidate identity: ecosystem-preview-2026-11-03-rc1. The record engine remains
+0.1.0a3; the Python wheel contains that engine, not the portable skill catalog.
 
-Records to Review supplies four local deterministic commands: `capture`,
-`reconcile`, `verify` and `handoff`. Three project-scoped skills, EN/FR templates,
-invented examples and tests demonstrate explicit mappings, original-byte evidence,
-corrections, checked totals, unresolved states and portable CSV/JSON/Markdown output.
-No external service or account is needed for installed record processing.
+## Choose a workflow
 
-Read the [scope, installation and release limits](docs/release/initial-preview.md),
-[developer/research utilities](docs/release/research-tools.md),
-[contribution guidance](CONTRIBUTING.md) and [security/reporting status](SECURITY.md).
-Run the [English example](examples/records-to-review/en.md) or
-[French example](examples/records-to-review/fr.md) using invented data.
+| Job | Instructions |
+| --- | --- |
+| Selected record reconciliation | [Records to Review](skillsets/records-to-review/README.md) |
+| Conditional work windows | [Season/work](skillsets/season-work-planning/README.md) |
+| Crop observation history | [Crop review](skillsets/crop-production-review/README.md) |
+| Animal/group/feed records | [Livestock/feed](skillsets/livestock-record-review/README.md) |
+| Supplied procedures and handover | [Resource/team](skillsets/resource-team-coordination/README.md) |
+| Mass, lots and declared dispatch | [Harvest/delivery](skillsets/harvest-storage-delivery/README.md) |
+| Supplied financial assumptions | [Business scenarios](skillsets/business-stewardship-review/README.md) |
 
-The exercised runtime is CPython 3.14.3 on Windows x64/local NTFS. Source candidate 0.1.0a3
-enforces 16 MiB per selected CSV, 32 MiB combined and 10000 logical data records
-combined, with refusal rather than truncation. Other platforms and actual farm
-exports remain unqualified. Larger outputs, peak memory and elapsed time have no
-guarantee. No farmer benefit, operational agronomic/veterinary safety, eligibility,
-regulatory compliance, live alert coverage or national support is claimed.
+Read the selected composition, its ordered SKILL.md files and required references.
+Use [routing guidance](agents/AGENTS.ecosystem.md); a structured route selects
+instructions, not authority to execute actions. Helpers other than the record CLI
+accept invented inputs only. Do not relabel real records synthetic. Manual skills
+can guide appropriately authorized supplied-evidence preparation within their scope.
+No automatic host discovery or one-command skill installer is qualified.
 
-The field study is planned as a **separate subproject after launch**. Participant
-availability and study-session terms do not gate this synthetic developer preview.
-Real sessions/findings and their publication need their own authority and evidence.
-Never commit real farm records, participants, secrets or raw private study material.
+## Local setup and checks
 
-No supplied raw research reports, private Git history, credentials, generated
-outputs, environments, completed forms or study materials belong in this draft.
-Explicit file selection and tests do not replace final content/rights review.
+CPython3.14.3 Windows x64 is the exercised baseline; other platforms are unqualified.
 
-For the owner's full local worktree, the revised main plan is `roadmap.md` and
-the separate post-launch study plan is `subprojects/field-study/roadmap.md`.
-Those owner/history/study materials are intentionally outside this initial public
-source inventory; their criteria and private preparation records remain preserved.
+```powershell
+python -m venv .venv
+.venv/Scripts/python.exe -m pip install --require-hashes -r requirements-validation.lock
+.venv/Scripts/python.exe scripts/validate_ecosystem.py
+.venv/Scripts/python.exe -m unittest discover -s tests
+.venv/Scripts/python.exe -X utf8 scripts/run_farm_workflow.py --context tests/fixtures/ecosystem/context/crop-en.json --input examples/ecosystem/crop-en.json
+```
+
+Dependency installation uses the package index unless --no-index --find-links
+selects a local wheel directory. Keep hash checking. See [record setup](docs/workflows/local-pipeline.md)
+for source/installed record CLI use and [release scope](docs/release/initial-preview.md).
+The source catalog contains17 skills/seven compositions; finite deterministic
+checks do not prove natural-language routing, incremental model benefit, language
+conformance, real farm-export completeness or operational Canadian regional support.
+
+No participant study/focus-group program is planned. No agronomic/veterinary
+prescription, eligibility/compliance decision, safety clearance, live alert coverage,
+field benefit or national operational support is claimed. Keep unknowns and review
+requirements visible; appropriate sources/professionals govern corresponding decisions.
+No external sending, purchase, production write or account action is authorized.
+
+Read [contribution guidance](CONTRIBUTING.md), [security status](SECURITY.md),
+[roadmap](roadmap.md), [MIT](LICENSE) and [third-party notices](THIRD_PARTY_NOTICES.md).
+Do not include private records, credentials or restricted research in source/history.

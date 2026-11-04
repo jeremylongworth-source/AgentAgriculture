@@ -1,0 +1,186 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agentagriculture:ecosystem:composition:1",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]{0,79}$"
+    },
+    "workflow": {
+      "enum": [
+        "records-to-review",
+        "season-work-planning",
+        "crop-production-review",
+        "livestock-record-review",
+        "resource-team-coordination",
+        "harvest-storage-delivery",
+        "business-stewardship-review"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 30
+    },
+    "readiness": {
+      "enum": [
+        "draft",
+        "synthetic-tested",
+        "agent-evaluated"
+      ]
+    },
+    "description": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "en": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "fr": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        }
+      },
+      "required": [
+        "en",
+        "fr"
+      ]
+    },
+    "requires_context": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "enterprise_id",
+          "jurisdiction",
+          "period"
+        ]
+      },
+      "minItems": 0,
+      "maxItems": 3,
+      "uniqueItems": true
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "skill": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "depends_on": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 80
+            },
+            "minItems": 0,
+            "maxItems": 20,
+            "uniqueItems": true
+          },
+          "output": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1200
+          }
+        },
+        "required": [
+          "id",
+          "skill",
+          "depends_on",
+          "output"
+        ]
+      }
+    },
+    "review_requirements": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 100
+      },
+      "minItems": 1,
+      "maxItems": 40,
+      "uniqueItems": true
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 240
+      },
+      "minItems": 1,
+      "maxItems": 40,
+      "uniqueItems": true
+    },
+    "evaluation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "structural": {
+          "enum": [
+            "pending",
+            "passed"
+          ]
+        },
+        "synthetic": {
+          "enum": [
+            "pending",
+            "passed"
+          ]
+        },
+        "live_agent": {
+          "enum": [
+            "not_run",
+            "evaluated"
+          ]
+        },
+        "field": {
+          "const": "not_evaluated"
+        }
+      },
+      "required": [
+        "structural",
+        "synthetic",
+        "live_agent",
+        "field"
+      ]
+    },
+    "field_use_validated": {
+      "const": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "workflow",
+    "version",
+    "readiness",
+    "description",
+    "requires_context",
+    "steps",
+    "review_requirements",
+    "references",
+    "evaluation",
+    "field_use_validated"
+  ]
+}

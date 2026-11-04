@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "records-to-review",
+  "workflow": "records-to-review",
+  "version": "0.1.0",
+  "readiness": "synthetic-tested",
+  "description": {
+    "en": "Prepare selected purchase/receiving records and an inspectable local adviser copy, preserving unknowns and originals.",
+    "fr": "Préparer les registres sélectionnés et une copie locale à réviser, en conservant les inconnues et les originaux."
+  },
+  "requires_context": [
+    "enterprise_id",
+    "jurisdiction",
+    "period"
+  ],
+  "steps": [
+    {
+      "id": "intake",
+      "skill": "farm-task-intake",
+      "depends_on": [],
+      "output": "Confirmed question/scope, selected originals and task/manifest; uncertainty and omissions retained."
+    },
+    {
+      "id": "reconcile",
+      "skill": "farm-record-reconciliation",
+      "depends_on": [
+        "intake"
+      ],
+      "output": "Verified immutable record snapshot, checked ledger/totals and unresolved exceptions."
+    },
+    {
+      "id": "handoff",
+      "skill": "farm-adviser-package",
+      "depends_on": [
+        "reconcile"
+      ],
+      "output": "Verified minimal local review copy; source identity, omissions, questions and incomplete status retained."
+    }
+  ],
+  "review_requirements": [
+    "operator_scope_and_selected_file_authority",
+    "inspect_exceptions_and_recipient_scope"
+  ],
+  "references": [
+    "docs/architecture/ecosystem-contracts.md",
+    "examples/records-to-review/en.md",
+    "examples/records-to-review/fr.md",
+    "docs/workflows/host-responsibilities.md"
+  ],
+  "evaluation": {
+    "structural": "passed",
+    "synthetic": "passed",
+    "live_agent": "not_run",
+    "field": "not_evaluated"
+  },
+  "field_use_validated": false
+}

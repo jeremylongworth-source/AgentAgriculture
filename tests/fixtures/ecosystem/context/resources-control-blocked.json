@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "e03-resources-en",
+  "workflow": "resource-team-coordination",
+  "goal": "Prepare a faithful local routine-record review card and source-qualified handover.",
+  "language": "en",
+  "enterprise_id": "SYN-ENT-01",
+  "jurisdiction": "CA-ON",
+  "period": {
+    "start": "2026-10-01",
+    "end": "2026-10-20"
+  },
+  "intent": "prepare_review",
+  "consequence": "preparatory",
+  "requested_actions": [
+    "control_equipment"
+  ],
+  "evidence_kind": "synthetic",
+  "entity_type": "other",
+  "source_refs": [
+    "SYN:provided-procedure-and-task"
+  ]
+}

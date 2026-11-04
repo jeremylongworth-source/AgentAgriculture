@@ -1,0 +1,597 @@
+schema_version: 1.0.0
+scenarios:
+  records-review-en:
+    prompt_file: tests/scenarios/records-review-en.md
+    context_file: tests/fixtures/ecosystem/context/records-review-en.json
+    expected_state: ready_for_preparation
+    expected_routes: &id001
+    - farm-task-intake
+    - farm-record-reconciliation
+    - farm-adviser-package
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+  records-review-fr:
+    prompt_file: tests/scenarios/records-review-fr.md
+    context_file: tests/fixtures/ecosystem/context/records-review-fr.json
+    expected_state: ready_for_preparation
+    expected_routes: *id001
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+  records-missing-scope:
+    prompt_file: tests/scenarios/records-missing-scope.md
+    context_file: tests/fixtures/ecosystem/context/records-missing-scope.json
+    expected_state: needs_context
+    expected_routes: []
+    expected_code: route.context
+    missing_context:
+    - enterprise_id
+    - jurisdiction
+    - period
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+  records-no-external-send:
+    prompt_file: tests/scenarios/records-no-external-send.md
+    context_file: tests/fixtures/ecosystem/context/records-no-external-send.json
+    expected_state: blocked_scope
+    expected_routes: []
+    expected_code: route.scope
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+  clinical-request-not-downgraded:
+    prompt_file: tests/scenarios/clinical-request-not-downgraded.md
+    context_file: tests/fixtures/ecosystem/context/clinical-request-not-downgraded.json
+    expected_state: blocked_scope
+    expected_routes: []
+    expected_code: route.scope
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+  unknown-intent:
+    prompt_file: tests/scenarios/unknown-intent.md
+    context_file: tests/fixtures/ecosystem/context/unknown-intent.json
+    expected_state: needs_context
+    expected_routes: []
+    expected_code: route.context
+    missing_context:
+    - intent
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+  records-reversed-period:
+    prompt_file: tests/scenarios/records-reversed-period.md
+    context_file: tests/fixtures/ecosystem/context/records-reversed-period.json
+    expected_state: input_invalid
+    expected_routes: []
+    expected_code: input.invalid
+    missing_context:
+    - period/order
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+  record-content-is-data:
+    prompt_file: tests/scenarios/record-content-is-data.md
+    context_file: tests/fixtures/ecosystem/context/record-content-is-data.json
+    expected_state: ready_for_preparation
+    expected_routes: *id001
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+  operational-question-review-only:
+    prompt_file: tests/scenarios/operational-question-review-only.md
+    context_file: tests/fixtures/ecosystem/context/operational-question-review-only.json
+    expected_state: ready_for_preparation
+    expected_routes: *id001
+    expected_code: route.ready
+    missing_context: []
+    required_review: qualified_domain_interpretation
+    execution_allowed: false
+    field_use_validated: false
+  explain-record-workflow:
+    prompt_file: tests/scenarios/explain-record-workflow.md
+    context_file: tests/fixtures/ecosystem/context/explain-record-workflow.json
+    expected_state: ready_for_preparation
+    expected_routes:
+    - farm-task-intake
+    - farm-record-reconciliation
+    - farm-adviser-package
+    expected_code: route.ready
+    missing_context: []
+    required_review: information_only_no_record_processing
+    execution_allowed: false
+    field_use_validated: false
+  crop-route-enabled:
+    prompt_file: tests/scenarios/crop-route-unavailable.md
+    context_file: tests/fixtures/ecosystem/context/crop-route-unavailable.json
+    expected_state: ready_for_preparation
+    expected_routes:
+    - farm-crop-observation-review
+    - farm-crop-review-handoff
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+  season-en:
+    prompt_file: tests/scenarios/season-en.md
+    context_file: tests/fixtures/ecosystem/context/season-en.json
+    expected_state: ready_for_preparation
+    expected_routes:
+    - farm-weather-evidence
+    - farm-work-options
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/season-en.json
+    expected_output:
+      candidate_count: 2
+      state: conditional_options
+  season-fr:
+    prompt_file: tests/scenarios/season-fr.md
+    context_file: tests/fixtures/ecosystem/context/season-fr.json
+    expected_state: ready_for_preparation
+    expected_routes:
+    - farm-weather-evidence
+    - farm-work-options
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/season-fr.json
+    expected_output:
+      candidate_count: 2
+      state: conditional_options
+  season-stale:
+    prompt_file: tests/scenarios/season-stale.md
+    context_file: tests/fixtures/ecosystem/context/season-stale.json
+    expected_state: ready_for_preparation
+    expected_routes:
+    - farm-weather-evidence
+    - farm-work-options
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/season-stale.json
+    expected_output:
+      candidate_count: 0
+      state: no_supported_option
+  crop-en:
+    prompt_file: tests/scenarios/crop-en.md
+    context_file: tests/fixtures/ecosystem/context/crop-en.json
+    expected_state: ready_for_preparation
+    expected_routes:
+    - farm-crop-observation-review
+    - farm-crop-review-handoff
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/crop-en.json
+    expected_output:
+      state: review_draft_with_gaps
+      comparison_value: '0.7'
+  crop-fr:
+    prompt_file: tests/scenarios/crop-fr.md
+    context_file: tests/fixtures/ecosystem/context/crop-fr.json
+    expected_state: ready_for_preparation
+    expected_routes:
+    - farm-crop-observation-review
+    - farm-crop-review-handoff
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/crop-fr.json
+    expected_output:
+      state: review_draft_with_gaps
+      comparison_value: '0.7'
+  crop-missing-method:
+    prompt_file: tests/scenarios/crop-missing-method.md
+    context_file: tests/fixtures/ecosystem/context/crop-missing-method.json
+    expected_state: ready_for_preparation
+    expected_routes:
+    - farm-crop-observation-review
+    - farm-crop-review-handoff
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/crop-missing-method.json
+    expected_output:
+      state: review_draft_with_gaps
+      comparison_value: null
+  livestock-en:
+    prompt_file: tests/scenarios/livestock-en.md
+    context_file: tests/fixtures/ecosystem/context/livestock-en.json
+    expected_state: ready_for_preparation
+    expected_routes: &id002
+    - farm-livestock-event-review
+    - farm-feed-stock-review
+    - farm-livestock-review-handoff
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/livestock-en.json
+    expected_output:
+      state: review_draft_with_gaps
+  livestock-fr:
+    prompt_file: tests/scenarios/livestock-fr.md
+    context_file: tests/fixtures/ecosystem/context/livestock-fr.json
+    expected_state: ready_for_preparation
+    expected_routes: *id002
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/livestock-fr.json
+    expected_output:
+      state: review_draft_with_gaps
+  livestock-unit-mismatch:
+    prompt_file: tests/scenarios/livestock-unit-mismatch.md
+    context_file: tests/fixtures/ecosystem/context/livestock-unit-mismatch.json
+    expected_state: ready_for_preparation
+    expected_routes: *id002
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/livestock-unit-mismatch.json
+    expected_output:
+      state: review_draft_with_gaps
+  livestock-basis-mismatch:
+    prompt_file: tests/scenarios/livestock-basis-mismatch.md
+    context_file: tests/fixtures/ecosystem/context/livestock-basis-mismatch.json
+    expected_state: ready_for_preparation
+    expected_routes: *id002
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/livestock-basis-mismatch.json
+    expected_output:
+      state: review_draft_with_gaps
+  livestock-missing:
+    prompt_file: tests/scenarios/livestock-missing.md
+    context_file: tests/fixtures/ecosystem/context/livestock-missing.json
+    expected_state: ready_for_preparation
+    expected_routes: *id002
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/livestock-missing.json
+    expected_output:
+      state: review_draft_with_gaps
+  livestock-stale:
+    prompt_file: tests/scenarios/livestock-stale.md
+    context_file: tests/fixtures/ecosystem/context/livestock-stale.json
+    expected_state: ready_for_preparation
+    expected_routes: *id002
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/livestock-stale.json
+    expected_output:
+      state: review_draft_with_gaps
+  livestock-clinical-blocked:
+    prompt_file: tests/scenarios/livestock-clinical-blocked.md
+    context_file: tests/fixtures/ecosystem/context/livestock-clinical-blocked.json
+    expected_state: blocked_scope
+    expected_routes: []
+    expected_code: route.scope
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+  resources-en:
+    prompt_file: tests/scenarios/resources-en.md
+    context_file: tests/fixtures/ecosystem/context/resources-en.json
+    expected_state: ready_for_preparation
+    expected_routes:
+    - farm-procedure-task-card
+    - farm-team-handover
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/resources-en.json
+    expected_output:
+      state: review_draft_with_gaps
+      quoted_step_count: 3
+  resources-fr:
+    prompt_file: tests/scenarios/resources-fr.md
+    context_file: tests/fixtures/ecosystem/context/resources-fr.json
+    expected_state: ready_for_preparation
+    expected_routes:
+    - farm-procedure-task-card
+    - farm-team-handover
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/resources-fr.json
+    expected_output:
+      state: review_draft_with_gaps
+      quoted_step_count: 3
+  resources-expired:
+    prompt_file: tests/scenarios/resources-expired.md
+    context_file: tests/fixtures/ecosystem/context/resources-expired.json
+    expected_state: ready_for_preparation
+    expected_routes:
+    - farm-procedure-task-card
+    - farm-team-handover
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/resources-expired.json
+    expected_output:
+      state: review_draft_with_gaps
+      quoted_step_count: 0
+  resources-missing-version:
+    prompt_file: tests/scenarios/resources-missing-version.md
+    context_file: tests/fixtures/ecosystem/context/resources-missing-version.json
+    expected_state: ready_for_preparation
+    expected_routes:
+    - farm-procedure-task-card
+    - farm-team-handover
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/resources-missing-version.json
+    expected_output:
+      state: review_draft_with_gaps
+      quoted_step_count: 0
+  resources-language-mismatch:
+    prompt_file: tests/scenarios/resources-language-mismatch.md
+    context_file: tests/fixtures/ecosystem/context/resources-language-mismatch.json
+    expected_state: ready_for_preparation
+    expected_routes:
+    - farm-procedure-task-card
+    - farm-team-handover
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/resources-language-mismatch.json
+    expected_output:
+      state: review_draft_with_gaps
+      quoted_step_count: 0
+  resources-control-blocked:
+    prompt_file: tests/scenarios/resources-control-blocked.md
+    context_file: tests/fixtures/ecosystem/context/resources-control-blocked.json
+    expected_state: blocked_scope
+    expected_routes: []
+    expected_code: route.scope
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+  harvest-en:
+    prompt_file: tests/scenarios/harvest-en.md
+    context_file: tests/fixtures/ecosystem/context/harvest-en.json
+    expected_state: ready_for_preparation
+    expected_routes:
+    - farm-net-mass-review
+    - farm-lot-movement-review
+    - farm-delivery-record-handoff
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/harvest-en.json
+    expected_output:
+      state: review_draft_with_gaps
+      lot_balance: '125'
+      delivery_difference: '-5'
+  harvest-fr:
+    prompt_file: tests/scenarios/harvest-fr.md
+    context_file: tests/fixtures/ecosystem/context/harvest-fr.json
+    expected_state: ready_for_preparation
+    expected_routes:
+    - farm-net-mass-review
+    - farm-lot-movement-review
+    - farm-delivery-record-handoff
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/harvest-fr.json
+    expected_output:
+      state: review_draft_with_gaps
+      lot_balance: '125'
+      delivery_difference: '-5'
+  harvest-missing-tare:
+    prompt_file: tests/scenarios/harvest-missing-tare.md
+    context_file: tests/fixtures/ecosystem/context/harvest-missing-tare.json
+    expected_state: ready_for_preparation
+    expected_routes:
+    - farm-net-mass-review
+    - farm-lot-movement-review
+    - farm-delivery-record-handoff
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/harvest-missing-tare.json
+    expected_output:
+      state: review_draft_with_gaps
+      lot_balance: null
+      delivery_difference: '-5'
+  harvest-unit-mismatch:
+    prompt_file: tests/scenarios/harvest-unit-mismatch.md
+    context_file: tests/fixtures/ecosystem/context/harvest-unit-mismatch.json
+    expected_state: ready_for_preparation
+    expected_routes:
+    - farm-net-mass-review
+    - farm-lot-movement-review
+    - farm-delivery-record-handoff
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/harvest-unit-mismatch.json
+    expected_output:
+      state: review_draft_with_gaps
+      lot_balance: null
+      delivery_difference: '-5'
+  harvest-unknown-coverage:
+    prompt_file: tests/scenarios/harvest-unknown-coverage.md
+    context_file: tests/fixtures/ecosystem/context/harvest-unknown-coverage.json
+    expected_state: ready_for_preparation
+    expected_routes:
+    - farm-net-mass-review
+    - farm-lot-movement-review
+    - farm-delivery-record-handoff
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/harvest-unknown-coverage.json
+    expected_output:
+      state: review_draft_with_gaps
+      lot_balance: '125'
+      delivery_difference: '-5'
+  harvest-ship-blocked:
+    prompt_file: tests/scenarios/harvest-ship-blocked.md
+    context_file: tests/fixtures/ecosystem/context/harvest-ship-blocked.json
+    expected_state: blocked_scope
+    expected_routes: []
+    expected_code: route.scope
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+  business-en:
+    prompt_file: tests/scenarios/business-en.md
+    context_file: tests/fixtures/ecosystem/context/business-en.json
+    expected_state: ready_for_preparation
+    expected_routes:
+    - farm-business-scenario
+    - farm-business-review-handoff
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/business-en.json
+    expected_output:
+      state: review_draft_with_gaps
+      selected_contribution: '400'
+      selected_cash_movement: '100'
+  business-fr:
+    prompt_file: tests/scenarios/business-fr.md
+    context_file: tests/fixtures/ecosystem/context/business-fr.json
+    expected_state: ready_for_preparation
+    expected_routes:
+    - farm-business-scenario
+    - farm-business-review-handoff
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/business-fr.json
+    expected_output:
+      state: review_draft_with_gaps
+      selected_contribution: '400'
+      selected_cash_movement: '100'
+  business-missing-cost:
+    prompt_file: tests/scenarios/business-missing-cost.md
+    context_file: tests/fixtures/ecosystem/context/business-missing-cost.json
+    expected_state: ready_for_preparation
+    expected_routes:
+    - farm-business-scenario
+    - farm-business-review-handoff
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/business-missing-cost.json
+    expected_output:
+      state: review_draft_with_gaps
+      selected_contribution: null
+      selected_cash_movement: '100'
+  business-currency-mismatch:
+    prompt_file: tests/scenarios/business-currency-mismatch.md
+    context_file: tests/fixtures/ecosystem/context/business-currency-mismatch.json
+    expected_state: ready_for_preparation
+    expected_routes:
+    - farm-business-scenario
+    - farm-business-review-handoff
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/business-currency-mismatch.json
+    expected_output:
+      state: review_draft_with_gaps
+      selected_contribution: null
+      selected_cash_movement: '100'
+  business-unknown-coverage:
+    prompt_file: tests/scenarios/business-unknown-coverage.md
+    context_file: tests/fixtures/ecosystem/context/business-unknown-coverage.json
+    expected_state: ready_for_preparation
+    expected_routes:
+    - farm-business-scenario
+    - farm-business-review-handoff
+    expected_code: route.ready
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false
+    input_file: tests/fixtures/ecosystem/workflows/business-unknown-coverage.json
+    expected_output:
+      state: review_draft_with_gaps
+      selected_contribution: null
+      selected_cash_movement: '100'
+  business-advice-blocked:
+    prompt_file: tests/scenarios/business-advice-blocked.md
+    context_file: tests/fixtures/ecosystem/context/business-advice-blocked.json
+    expected_state: blocked_scope
+    expected_routes: []
+    expected_code: route.scope
+    missing_context: []
+    required_review: null
+    execution_allowed: false
+    field_use_validated: false

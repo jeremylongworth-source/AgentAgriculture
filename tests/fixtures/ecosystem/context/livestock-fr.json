@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "e03-livestock-fr",
+  "workflow": "livestock-record-review",
+  "goal": "Prepare source-linked invented animal/feed record questions without clinical or nutrition interpretation.",
+  "language": "fr",
+  "enterprise_id": "SYN-ENT-01",
+  "jurisdiction": "CA-QC",
+  "period": {
+    "start": "2026-10-01",
+    "end": "2026-10-20"
+  },
+  "intent": "prepare_review",
+  "consequence": "preparatory",
+  "requested_actions": [
+    "read_selected",
+    "write_local_draft"
+  ],
+  "evidence_kind": "synthetic",
+  "entity_type": "group",
+  "source_refs": [
+    "SYN:operator-selected-records"
+  ]
+}

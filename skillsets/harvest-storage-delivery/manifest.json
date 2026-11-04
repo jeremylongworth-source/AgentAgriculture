@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0.0",
+  "id": "harvest-storage-delivery",
+  "workflow": "harvest-storage-delivery",
+  "version": "0.1.1",
+  "readiness": "synthetic-tested",
+  "description": {
+    "en": "Review supplied mass/lot/dispatch records and declared commitment gaps.",
+    "fr": "RÃ©viser les masses, lots, expÃ©ditions et Ã©carts des engagements dÃ©clarÃ©s."
+  },
+  "requires_context": [
+    "enterprise_id",
+    "jurisdiction",
+    "period"
+  ],
+  "steps": [
+    {
+      "id": "mass",
+      "skill": "farm-net-mass-review",
+      "depends_on": [],
+      "output": "Original gross/tare/net worksheet with units, states and corrections."
+    },
+    {
+      "id": "lot",
+      "skill": "farm-lot-movement-review",
+      "depends_on": [
+        "mass"
+      ],
+      "output": "Enterprise lot balance, internal-transfer exclusions and coverage gaps."
+    },
+    {
+      "id": "handoff",
+      "skill": "farm-delivery-record-handoff",
+      "depends_on": [
+        "mass",
+        "lot"
+      ],
+      "output": "Local declared-commitment record comparison and unresolved evidence."
+    }
+  ],
+  "review_requirements": [
+    "inspect_supplied_source_meaning_and_scope",
+    "qualified_domain_review_for_operational_claims"
+  ],
+  "references": [
+    "docs/workflows/harvest-delivery-helper.md",
+    "schemas/ecosystem/v1/harvest-input.schema.json",
+    "schemas/ecosystem/v1/workflow-result.schema.json",
+    "workflow_tools/harvest.py",
+    "workflow_tools/harvest_render.py",
+    "workflow_tools/record_versions.py",
+    "workflow_tools/common.py",
+    "workflow_tools/execute.py",
+    "scripts/run_farm_workflow.py"
+  ],
+  "evaluation": {
+    "structural": "passed",
+    "synthetic": "passed",
+    "live_agent": "evaluated",
+    "field": "not_evaluated"
+  },
+  "field_use_validated": false
+}

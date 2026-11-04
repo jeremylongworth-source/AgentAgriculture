@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "e02-season-en",
+  "workflow": "season-work-planning",
+  "goal": "Prepare an invented local working review with evidence gaps.",
+  "language": "en",
+  "enterprise_id": "ENT-001",
+  "jurisdiction": "CA-ON",
+  "period": {
+    "start": "2026-10-20",
+    "end": "2026-10-20"
+  },
+  "intent": "plan_options",
+  "consequence": "preparatory",
+  "requested_actions": [
+    "read_selected",
+    "write_local_draft"
+  ],
+  "evidence_kind": "synthetic",
+  "source_refs": [
+    "SYN:explicit-invented-input"
+  ],
+  "entity_type": "field"
+}

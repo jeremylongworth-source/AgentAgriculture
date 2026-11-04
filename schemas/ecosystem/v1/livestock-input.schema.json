@@ -1,0 +1,377 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agentagriculture:ecosystem:livestock-input:1",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "synthetic_only": {
+      "const": true
+    },
+    "task_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "enterprise_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "jurisdiction": {
+      "enum": [
+        "CA-BC",
+        "CA-AB",
+        "CA-SK",
+        "CA-MB",
+        "CA-ON",
+        "CA-QC",
+        "CA-NB",
+        "CA-NS",
+        "CA-PE",
+        "CA-NL",
+        "CA-YT",
+        "CA-NT",
+        "CA-NU"
+      ]
+    },
+    "period": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date"
+        },
+        "end": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "start",
+        "end"
+      ]
+    },
+    "as_of": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "max_snapshot_age_seconds": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 31536000
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "kind": {
+            "enum": [
+              "animal",
+              "group",
+              "feed_lot"
+            ]
+          },
+          "species_as_reported": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "production_class_as_reported": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "identity_state": {
+            "enum": [
+              "declared",
+              "unknown"
+            ]
+          },
+          "identity_source_ref": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "species_as_reported",
+          "production_class_as_reported",
+          "identity_state",
+          "identity_source_ref"
+        ]
+      },
+      "maxItems": 64,
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "entity_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "kind": {
+            "enum": [
+              "opening",
+              "receipt",
+              "removal",
+              "closing",
+              "event"
+            ]
+          },
+          "quantity": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 60,
+                "pattern": "^(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "value_state": {
+            "enum": [
+              "measured",
+              "estimated",
+              "missing",
+              "trace",
+              "suppressed"
+            ]
+          },
+          "unit": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "basis": {
+            "enum": [
+              "head_count",
+              "as_fed",
+              "dry_matter",
+              null
+            ]
+          },
+          "event_state": {
+            "enum": [
+              "observed",
+              "planned",
+              "unknown"
+            ]
+          },
+          "observed_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "recorded_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "source_ref": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "supersedes": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "correction_reason": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 600
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "note": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "entity_id",
+          "kind",
+          "quantity",
+          "value_state",
+          "unit",
+          "basis",
+          "event_state",
+          "observed_at",
+          "recorded_at",
+          "source_ref",
+          "supersedes",
+          "correction_reason",
+          "note"
+        ]
+      },
+      "maxItems": 160,
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "reviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "entity_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "opening_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "movement_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 80
+            },
+            "maxItems": 100,
+            "minItems": 0,
+            "uniqueItems": true
+          },
+          "closing_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "coverage": {
+            "enum": [
+              "complete",
+              "partial",
+              "unknown"
+            ]
+          },
+          "coverage_source_ref": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "entity_id",
+          "opening_id",
+          "movement_ids",
+          "closing_id",
+          "coverage",
+          "coverage_source_ref"
+        ]
+      },
+      "maxItems": 16,
+      "minItems": 0,
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "schema_version",
+    "synthetic_only",
+    "task_id",
+    "enterprise_id",
+    "jurisdiction",
+    "period",
+    "as_of",
+    "max_snapshot_age_seconds",
+    "entities",
+    "records",
+    "reviews"
+  ]
+}

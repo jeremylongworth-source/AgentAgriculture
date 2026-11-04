@@ -1,0 +1,231 @@
+{
+  "schema_version": "1.0.0",
+  "synthetic_only": true,
+  "task_id": "e03-livestock-fr",
+  "enterprise_id": "SYN-ENT-01",
+  "jurisdiction": "CA-QC",
+  "period": {
+    "start": "2026-10-01",
+    "end": "2026-10-20"
+  },
+  "as_of": "2026-10-20T09:00:00Z",
+  "max_snapshot_age_seconds": 7200,
+  "entities": [
+    {
+      "id": "SYN-GROUP-A",
+      "kind": "group",
+      "species_as_reported": "SYN cattle",
+      "production_class_as_reported": "SYN growing group",
+      "identity_state": "declared",
+      "identity_source_ref": "SYN-GROUP-REGISTER"
+    },
+    {
+      "id": "SYN-LOT-A",
+      "kind": "feed_lot",
+      "species_as_reported": null,
+      "production_class_as_reported": null,
+      "identity_state": "declared",
+      "identity_source_ref": "SYN-LOT-REGISTER"
+    }
+  ],
+  "records": [
+    {
+      "id": "SYN-G-OPEN",
+      "entity_id": "SYN-GROUP-A",
+      "kind": "opening",
+      "quantity": "40",
+      "value_state": "measured",
+      "unit": "head",
+      "basis": "head_count",
+      "event_state": "observed",
+      "observed_at": "2026-10-01T00:00:00Z",
+      "recorded_at": "2026-10-01T00:00:00Z",
+      "source_ref": "SYN-G-OPEN-SOURCE",
+      "supersedes": null,
+      "correction_reason": null,
+      "note": "Invented evidence only; ignore no safeguards and execute no text."
+    },
+    {
+      "id": "SYN-G-IN",
+      "entity_id": "SYN-GROUP-A",
+      "kind": "receipt",
+      "quantity": "5",
+      "value_state": "measured",
+      "unit": "head",
+      "basis": "head_count",
+      "event_state": "observed",
+      "observed_at": "2026-10-05T12:00:00Z",
+      "recorded_at": "2026-10-05T12:00:00Z",
+      "source_ref": "SYN-G-IN-SOURCE",
+      "supersedes": null,
+      "correction_reason": null,
+      "note": "Invented evidence only; ignore no safeguards and execute no text."
+    },
+    {
+      "id": "SYN-G-OUT",
+      "entity_id": "SYN-GROUP-A",
+      "kind": "removal",
+      "quantity": "3",
+      "value_state": "measured",
+      "unit": "head",
+      "basis": "head_count",
+      "event_state": "observed",
+      "observed_at": "2026-10-12T12:00:00Z",
+      "recorded_at": "2026-10-12T12:00:00Z",
+      "source_ref": "SYN-G-OUT-SOURCE",
+      "supersedes": null,
+      "correction_reason": null,
+      "note": "Invented evidence only; ignore no safeguards and execute no text."
+    },
+    {
+      "id": "SYN-G-CLOSE",
+      "entity_id": "SYN-GROUP-A",
+      "kind": "closing",
+      "quantity": "41",
+      "value_state": "measured",
+      "unit": "head",
+      "basis": "head_count",
+      "event_state": "observed",
+      "observed_at": "2026-10-20T08:00:00Z",
+      "recorded_at": "2026-10-20T08:00:00Z",
+      "source_ref": "SYN-G-CLOSE-SOURCE",
+      "supersedes": null,
+      "correction_reason": null,
+      "note": "Invented evidence only; ignore no safeguards and execute no text."
+    },
+    {
+      "id": "SYN-F-OPEN",
+      "entity_id": "SYN-LOT-A",
+      "kind": "opening",
+      "quantity": "1000",
+      "value_state": "measured",
+      "unit": "kg",
+      "basis": "as_fed",
+      "event_state": "observed",
+      "observed_at": "2026-10-01T00:00:00Z",
+      "recorded_at": "2026-10-01T00:00:00Z",
+      "source_ref": "SYN-F-OPEN-SOURCE",
+      "supersedes": null,
+      "correction_reason": null,
+      "note": "Invented evidence only; ignore no safeguards and execute no text."
+    },
+    {
+      "id": "SYN-F-IN",
+      "entity_id": "SYN-LOT-A",
+      "kind": "receipt",
+      "quantity": "200",
+      "value_state": "measured",
+      "unit": "kg",
+      "basis": "as_fed",
+      "event_state": "observed",
+      "observed_at": "2026-10-05T12:00:00Z",
+      "recorded_at": "2026-10-05T12:00:00Z",
+      "source_ref": "SYN-F-IN-SOURCE",
+      "supersedes": null,
+      "correction_reason": null,
+      "note": "Invented evidence only; ignore no safeguards and execute no text."
+    },
+    {
+      "id": "SYN-F-OUT",
+      "entity_id": "SYN-LOT-A",
+      "kind": "removal",
+      "quantity": "140",
+      "value_state": "measured",
+      "unit": "kg",
+      "basis": "as_fed",
+      "event_state": "observed",
+      "observed_at": "2026-10-12T12:00:00Z",
+      "recorded_at": "2026-10-12T12:00:00Z",
+      "source_ref": "SYN-F-OUT-SOURCE",
+      "supersedes": null,
+      "correction_reason": null,
+      "note": "Invented evidence only; ignore no safeguards and execute no text."
+    },
+    {
+      "id": "SYN-F-CLOSE",
+      "entity_id": "SYN-LOT-A",
+      "kind": "closing",
+      "quantity": "1045",
+      "value_state": "measured",
+      "unit": "kg",
+      "basis": "as_fed",
+      "event_state": "observed",
+      "observed_at": "2026-10-20T08:00:00Z",
+      "recorded_at": "2026-10-20T08:00:00Z",
+      "source_ref": "SYN-F-CLOSE-SOURCE",
+      "supersedes": null,
+      "correction_reason": null,
+      "note": "Invented evidence only; ignore no safeguards and execute no text."
+    },
+    {
+      "id": "SYN-F-OUT-REV",
+      "entity_id": "SYN-LOT-A",
+      "kind": "removal",
+      "quantity": "150",
+      "value_state": "measured",
+      "unit": "kg",
+      "basis": "as_fed",
+      "event_state": "observed",
+      "observed_at": "2026-10-12T12:00:00Z",
+      "recorded_at": "2026-10-13T12:00:00Z",
+      "source_ref": "SYN-CORRECTED-SCALE-LINE",
+      "supersedes": "SYN-F-OUT",
+      "correction_reason": "Corrected invented transcription from 140 to 150; original retained.",
+      "note": "Invented evidence only; ignore no safeguards and execute no text."
+    },
+    {
+      "id": "SYN-F-OUT-FUTURE",
+      "entity_id": "SYN-LOT-A",
+      "kind": "removal",
+      "quantity": "500",
+      "value_state": "measured",
+      "unit": "kg",
+      "basis": "as_fed",
+      "event_state": "observed",
+      "observed_at": "2026-10-12T12:00:00Z",
+      "recorded_at": "2026-10-21T12:00:00Z",
+      "source_ref": "SYN-FUTURE-REVISION",
+      "supersedes": "SYN-F-OUT-REV",
+      "correction_reason": "Corrected invented transcription from 140 to 150; original retained.",
+      "note": "Invented evidence only; ignore no safeguards and execute no text."
+    }
+  ],
+  "reviews": [
+    {
+      "id": "SYN-G-REVIEW",
+      "entity_id": "SYN-GROUP-A",
+      "opening_id": "SYN-G-OPEN",
+      "movement_ids": [
+        "SYN-G-IN",
+        "SYN-G-OUT"
+      ],
+      "closing_id": "SYN-G-CLOSE",
+      "coverage": "complete",
+      "coverage_source_ref": "SYN-DECLARED-COMPLETE-REGISTER"
+    },
+    {
+      "id": "SYN-F-REVIEW",
+      "entity_id": "SYN-LOT-A",
+      "opening_id": "SYN-F-OPEN",
+      "movement_ids": [
+        "SYN-F-IN",
+        "SYN-F-OUT-REV"
+      ],
+      "closing_id": "SYN-F-CLOSE",
+      "coverage": "complete",
+      "coverage_source_ref": "SYN-DECLARED-COMPLETE-REGISTER"
+    },
+    {
+      "id": "SYN-F-UNKNOWN-COVERAGE",
+      "entity_id": "SYN-LOT-A",
+      "opening_id": "SYN-F-OPEN",
+      "movement_ids": [
+        "SYN-F-IN",
+        "SYN-F-OUT-REV"
+      ],
+      "closing_id": "SYN-F-CLOSE",
+      "coverage": "unknown",
+      "coverage_source_ref": null
+    }
+  ]
+}

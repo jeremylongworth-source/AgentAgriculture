@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "id": "resource-team-coordination",
+  "workflow": "resource-team-coordination",
+  "version": "0.1.1",
+  "readiness": "synthetic-tested",
+  "description": {
+    "en": "Prepare faithful supplied-procedure review cards and a local team handover.",
+    "fr": "Préparer des fiches fidèles à la procédure fournie et un relais local."
+  },
+  "requires_context": [
+    "enterprise_id",
+    "jurisdiction",
+    "period"
+  ],
+  "steps": [
+    {
+      "id": "card",
+      "skill": "farm-procedure-task-card",
+      "depends_on": [],
+      "output": "Source/version/context fidelity checks and quoted routine-review card or explicit gaps."
+    },
+    {
+      "id": "handover",
+      "skill": "farm-team-handover",
+      "depends_on": [
+        "card"
+      ],
+      "output": "Local task/resource/exception handover; completion, receipt and competence remain unverified."
+    }
+  ],
+  "review_requirements": [
+    "inspect_supplied_source_meaning_and_scope",
+    "qualified_domain_review_for_operational_claims"
+  ],
+  "references": [
+    "docs/workflows/resource-team-helper.md",
+    "schemas/ecosystem/v1/resource-input.schema.json",
+    "schemas/ecosystem/v1/workflow-result.schema.json",
+    "workflow_tools/resources.py",
+    "workflow_tools/resource_render.py",
+    "workflow_tools/common.py",
+    "workflow_tools/execute.py",
+    "scripts/run_farm_workflow.py"
+  ],
+  "evaluation": {
+    "structural": "passed",
+    "synthetic": "passed",
+    "live_agent": "evaluated",
+    "field": "not_evaluated"
+  },
+  "field_use_validated": false
+}

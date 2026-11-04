@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "e02-crop-fr",
+  "workflow": "crop-production-review",
+  "goal": "Préparer un dossier de travail inventé pour révision locale.",
+  "language": "fr",
+  "enterprise_id": "ENT-001",
+  "jurisdiction": "CA-QC",
+  "period": {
+    "start": "2026-10-01",
+    "end": "2026-10-20"
+  },
+  "intent": "prepare_review",
+  "consequence": "preparatory",
+  "requested_actions": [
+    "read_selected",
+    "write_local_draft"
+  ],
+  "evidence_kind": "synthetic",
+  "source_refs": [
+    "SYN:explicit-invented-input"
+  ],
+  "entity_type": "field"
+}

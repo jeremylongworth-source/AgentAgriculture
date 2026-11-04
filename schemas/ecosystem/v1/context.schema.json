@@ -1,0 +1,179 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agentagriculture:ecosystem:context:1",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "task_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,79}$"
+    },
+    "workflow": {
+      "enum": [
+        "records-to-review",
+        "season-work-planning",
+        "crop-production-review",
+        "livestock-record-review",
+        "resource-team-coordination",
+        "harvest-storage-delivery",
+        "business-stewardship-review",
+        "unknown"
+      ]
+    },
+    "goal": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    },
+    "language": {
+      "enum": [
+        "en",
+        "fr"
+      ]
+    },
+    "enterprise_id": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "jurisdiction": {
+      "enum": [
+        "CA-BC",
+        "CA-AB",
+        "CA-SK",
+        "CA-MB",
+        "CA-ON",
+        "CA-QC",
+        "CA-NB",
+        "CA-NS",
+        "CA-PE",
+        "CA-NL",
+        "CA-YT",
+        "CA-NT",
+        "CA-NU",
+        "unknown"
+      ]
+    },
+    "period": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "start": {
+              "type": "string",
+              "format": "date"
+            },
+            "end": {
+              "type": "string",
+              "format": "date"
+            }
+          },
+          "required": [
+            "start",
+            "end"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "intent": {
+      "enum": [
+        "explain",
+        "prepare_review",
+        "compare_supplied",
+        "plan_options",
+        "interpret_operational",
+        "execute_external",
+        "unknown"
+      ]
+    },
+    "consequence": {
+      "enum": [
+        "informational",
+        "preparatory",
+        "operational",
+        "unknown"
+      ]
+    },
+    "requested_actions": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "read_selected",
+          "write_local_draft",
+          "send_message",
+          "submit_filing",
+          "purchase",
+          "control_equipment",
+          "clinical_prescription",
+          "agronomic_prescription",
+          "certify",
+          "unknown"
+        ]
+      },
+      "minItems": 1,
+      "maxItems": 10,
+      "uniqueItems": true
+    },
+    "evidence_kind": {
+      "enum": [
+        "synthetic",
+        "supplied_unverified",
+        "public_research"
+      ]
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 160
+      },
+      "minItems": 0,
+      "maxItems": 40,
+      "uniqueItems": true
+    },
+    "entity_type": {
+      "enum": [
+        "enterprise",
+        "field",
+        "bed",
+        "block",
+        "house",
+        "facility",
+        "animal",
+        "group",
+        "lot",
+        "other",
+        "unknown"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "task_id",
+    "workflow",
+    "goal",
+    "language",
+    "enterprise_id",
+    "jurisdiction",
+    "period",
+    "intent",
+    "consequence",
+    "requested_actions",
+    "evidence_kind"
+  ]
+}

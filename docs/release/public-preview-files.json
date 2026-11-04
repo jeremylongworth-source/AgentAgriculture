@@ -1,614 +1,1735 @@
 {
-  "inventory_version": "1.0.0",
+  "inventory_version": "2.0.0",
   "status": "local_source_candidate_only",
   "publication_authorized": false,
-  "strategy": "initial developer/research source preview; separate field study after launch",
-  "runtime_basis": "0.1.0a3 MIT source; a2 behavior with engine version change and declared public export schema alternative",
-  "excluded": [
-    "raw supplied research/snapshots",
-    "private Git history and metadata",
-    "study subproject and materials",
-    "private/farm/participant records",
-    "generated outputs/environments",
-    "vendored dependency wheels",
-    "development handoff/history dossiers"
-  ],
+  "project_license_expression": "MIT",
+  "candidate_id": "ecosystem-preview-2026-11-03-rc1",
+  "reporting_route_selected": "https://github.com/jeremylongworth-source/AgentAgriculture",
   "files": [
     {
       "path": ".python-version",
-      "category": "source_install_and_governance",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "AGENTS.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "CONTRIBUTING.md",
-      "category": "source_install_and_governance",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "LICENSE",
-      "category": "source_install_and_governance",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "README.md",
-      "category": "public_source_overview",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "SECURITY.md",
-      "category": "source_install_and_governance",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "category": "licensing_scope_and_notices",
-      "rights_review": "MIT_project_owned_only; third_party_terms_retained"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "agents/AGENTS.ecosystem.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "docs/architecture/ecosystem-contracts.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "docs/release/ecosystem-files.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "docs/release/initial-preview.md",
-      "category": "public_developer_documentation",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "docs/release/licensing.md",
-      "category": "licensing_scope_and_notices",
-      "rights_review": "MIT_project_owned_only; third_party_terms_retained"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "docs/release/public-preview-files.json",
-      "category": "public_developer_documentation",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "docs/release/public-provenance.json",
-      "category": "authored_public_provenance_with_explicit_evidence_gaps",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains; no provider rights clearance inferred"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "docs/release/public-provenance.md",
-      "category": "authored_public_provenance_with_explicit_evidence_gaps",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains; no provider rights clearance inferred"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "docs/release/research-tools.md",
-      "category": "public_developer_documentation",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "docs/workflows/business-scenario-helper.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "docs/workflows/crop-review-helper.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "docs/workflows/harvest-delivery-helper.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "docs/workflows/host-responsibilities.md",
-      "category": "public_developer_documentation",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "docs/workflows/livestock-record-helper.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "docs/workflows/local-pipeline.md",
-      "category": "public_developer_documentation",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "docs/workflows/resource-team-helper.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "docs/workflows/season-work-helper.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "evaluation_tools/__init__.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "evaluation_tools/artifacts.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "examples/ecosystem/business-en.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "examples/ecosystem/business-fr.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "examples/ecosystem/crop-en.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "examples/ecosystem/crop-fr.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "examples/ecosystem/harvest-en.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "examples/ecosystem/harvest-fr.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "examples/ecosystem/livestock-en.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "examples/ecosystem/livestock-fr.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "examples/ecosystem/resources-en.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "examples/ecosystem/resources-fr.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "examples/ecosystem/season-en.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "examples/ecosystem/season-fr.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "examples/manual/en/corrections.json",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "examples/manual/en/purchases-paper.md",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "examples/manual/en/purchases.csv",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "examples/manual/en/receiving-paper.md",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "examples/manual/en/receiving.csv",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "examples/manual/fr/corrections.json",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "examples/manual/fr/purchases-paper.md",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "examples/manual/fr/purchases.csv",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "examples/manual/fr/receiving-paper.md",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "examples/manual/fr/receiving.csv",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "examples/records-to-review/en.md",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "examples/records-to-review/fr.md",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "examples/study/synthetic-measurement.json",
-      "category": "invented_arithmetic_example_only",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "pyproject.toml",
-      "category": "source_install_and_governance",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "registries/README.md",
-      "category": "dated_nonoperational_research_seed",
-      "rights_review": "owner_review_of_authored_or_derived_registry_content_pending"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "registries/coverage.yaml",
-      "category": "dated_nonoperational_research_seed",
-      "rights_review": "owner_review_of_authored_or_derived_registry_content_pending",
-      "export_transform": "public-provenance-v1"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "registries/sources.yaml",
-      "category": "dated_nonoperational_research_seed",
-      "rights_review": "owner_review_of_authored_or_derived_registry_content_pending",
-      "export_transform": "public-provenance-v1"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "registries/terminology.yaml",
-      "category": "dated_nonoperational_research_seed",
-      "rights_review": "owner_review_of_authored_or_derived_registry_content_pending"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "registries/workflows.yaml",
-      "category": "dated_nonoperational_research_seed",
-      "rights_review": "owner_review_of_authored_or_derived_registry_content_pending",
-      "export_transform": "public-provenance-v1"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "requirements-build.lock",
-      "category": "source_install_and_governance",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "requirements-validation.lock",
-      "category": "source_install_and_governance",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "roadmap.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "router/__init__.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "router/catalog.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "router/core.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "schemas/ecosystem/v1/business-input.schema.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "schemas/ecosystem/v1/composition.schema.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "schemas/ecosystem/v1/context.schema.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "schemas/ecosystem/v1/crop-input.schema.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "schemas/ecosystem/v1/harvest-input.schema.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "schemas/ecosystem/v1/livestock-input.schema.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "schemas/ecosystem/v1/resource-input.schema.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "schemas/ecosystem/v1/result.schema.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "schemas/ecosystem/v1/season-input.schema.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "schemas/ecosystem/v1/workflow-result.schema.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "schemas/v1/calculation.schema.json",
-      "category": "schema",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "schemas/v1/common.schema.json",
-      "category": "schema",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "schemas/v1/correction.schema.json",
-      "category": "schema",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "schemas/v1/coverage-registry.schema.json",
-      "category": "schema",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "schemas/v1/input-manifest.schema.json",
-      "category": "schema",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "schemas/v1/normalized-record.schema.json",
-      "category": "schema",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "schemas/v1/original-record.schema.json",
-      "category": "schema",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "schemas/v1/review-package.schema.json",
-      "category": "schema",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "schemas/v1/source-registry.schema.json",
-      "category": "schema",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains",
-      "export_transform": "public-provenance-v1"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "schemas/v1/task-context.schema.json",
-      "category": "schema",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "schemas/v1/terminology-registry.schema.json",
-      "category": "schema",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "schemas/v1/workflow-registry.schema.json",
-      "category": "schema",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "scripts/inspect_csv.py",
-      "category": "developer_research_or_source_preparation_utility",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "scripts/inventory_preview_rights.py",
-      "category": "developer_research_or_source_preparation_utility",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "scripts/prepare_ecosystem_preview.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "scripts/prepare_public_preview.py",
-      "category": "developer_research_or_source_preparation_utility",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "scripts/public_provenance.py",
-      "category": "developer_research_or_source_preparation_utility",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains; no provider rights clearance inferred"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "scripts/reconcile.py",
-      "category": "legacy_source_cli_compatibility_entrypoint",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "scripts/route_farm_task.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "scripts/run_farm_workflow.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "scripts/save_evaluation_artifact.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "scripts/study_measurement_lab.py",
-      "category": "developer_research_or_source_preparation_utility",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "scripts/validate_contracts.py",
-      "category": "developer_research_or_source_preparation_utility",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "scripts/validate_ecosystem.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "scripts/weather_evidence_lab.py",
-      "category": "developer_research_or_source_preparation_utility",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "skills/farm-adviser-package/SKILL.md",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-business-review-handoff/SKILL.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-business-review-handoff/references/scenario-method.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-business-scenario/SKILL.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-business-scenario/references/scenario-method.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-crop-observation-review/SKILL.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-crop-observation-review/references/observation-review.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-crop-review-handoff/SKILL.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-crop-review-handoff/references/handoff-checks.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-delivery-record-handoff/SKILL.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-delivery-record-handoff/references/quantity-source-rules.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-feed-stock-review/SKILL.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-feed-stock-review/references/record-rules.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-livestock-event-review/SKILL.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-livestock-event-review/references/record-rules.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-livestock-review-handoff/SKILL.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-livestock-review-handoff/references/record-rules.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-lot-movement-review/SKILL.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-lot-movement-review/references/quantity-source-rules.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-net-mass-review/SKILL.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-net-mass-review/references/quantity-source-rules.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-procedure-task-card/SKILL.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-procedure-task-card/references/source-fidelity.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "skills/farm-record-reconciliation/SKILL.md",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "skills/farm-task-intake/SKILL.md",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-team-handover/SKILL.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-team-handover/references/source-fidelity.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-weather-evidence/SKILL.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-weather-evidence/references/weather-evidence.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-work-options/SKILL.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skills/farm-work-options/references/calendar-options.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skillsets/business-stewardship-review/README.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skillsets/business-stewardship-review/SOURCE-PACKAGE.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skillsets/business-stewardship-review/manifest.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skillsets/crop-production-review/README.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skillsets/crop-production-review/SOURCE-PACKAGE.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skillsets/crop-production-review/manifest.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skillsets/harvest-storage-delivery/README.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skillsets/harvest-storage-delivery/SOURCE-PACKAGE.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skillsets/harvest-storage-delivery/manifest.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skillsets/livestock-record-review/README.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skillsets/livestock-record-review/SOURCE-PACKAGE.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skillsets/livestock-record-review/manifest.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skillsets/records-to-review/README.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skillsets/records-to-review/SOURCE-PACKAGE.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skillsets/records-to-review/manifest.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skillsets/resource-team-coordination/README.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skillsets/resource-team-coordination/SOURCE-PACKAGE.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skillsets/resource-team-coordination/manifest.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skillsets/season-work-planning/README.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skillsets/season-work-planning/SOURCE-PACKAGE.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "skillsets/season-work-planning/manifest.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "src/agent_agriculture/__init__.py",
-      "category": "deterministic_runtime_source",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "src/agent_agriculture/__main__.py",
-      "category": "deterministic_runtime_source",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "src/agent_agriculture/capture.py",
-      "category": "deterministic_runtime_source",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "src/agent_agriculture/cli.py",
-      "category": "deterministic_runtime_source",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "src/agent_agriculture/contracts.py",
-      "category": "deterministic_runtime_source",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "src/agent_agriculture/errors.py",
-      "category": "deterministic_runtime_source",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "src/agent_agriculture/handoff.py",
-      "category": "deterministic_runtime_source",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "src/agent_agriculture/input_limits.py",
-      "category": "deterministic_runtime_source",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "src/agent_agriculture/language.py",
-      "category": "deterministic_runtime_source",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "src/agent_agriculture/pipeline.py",
-      "category": "deterministic_runtime_source",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "src/agent_agriculture/presentation.py",
-      "category": "deterministic_runtime_source",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "src/agent_agriculture/reconciliation.py",
-      "category": "deterministic_runtime_source",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "src/agent_agriculture/records.py",
-      "category": "deterministic_runtime_source",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "src/agent_agriculture/storage.py",
-      "category": "deterministic_runtime_source",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "templates/en/exceptions.md",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "templates/en/export.md",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "templates/en/intake.md",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "templates/en/manual-entry.csv",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "templates/en/mapping.md",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "templates/en/results.md",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "templates/fr/exceptions.md",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "templates/fr/export.md",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "templates/fr/intake.md",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "templates/fr/manual-entry.csv",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "templates/fr/mapping.md",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "templates/fr/results.md",
-      "category": "bilingual_synthetic_workflow",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/expected-routing.yaml",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/fixtures/README.md",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/fixtures/cases/en-baseline/corrections.json",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/fixtures/cases/en-baseline/expected.json",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/fixtures/cases/en-baseline/manifest.json",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/fixtures/cases/en-baseline/purchases.csv",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/fixtures/cases/en-baseline/receiving.csv",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/fixtures/cases/en-baseline/task.json",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/fixtures/cases/fr-equivalent/corrections.json",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/fixtures/cases/fr-equivalent/expected.json",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/fixtures/cases/fr-equivalent/manifest.json",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/fixtures/cases/fr-equivalent/purchases.csv",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/fixtures/cases/fr-equivalent/receiving.csv",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/fixtures/cases/fr-equivalent/task.json",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/fixtures/cases/partial-export/corrections.json",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/fixtures/cases/partial-export/expected.json",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/fixtures/cases/partial-export/manifest.json",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/fixtures/cases/partial-export/purchases.csv",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/fixtures/cases/partial-export/task.json",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/fixtures/contracts/calculation.json",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/fixtures/contracts/correction.json",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/fixtures/contracts/normalized-record.json",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/fixtures/contracts/original-record.json",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/fixtures/contracts/review-package.json",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/business-advice-blocked.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/business-currency-mismatch.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/business-en.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/business-fr.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/business-missing-cost.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/business-unknown-coverage.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/clinical-request-not-downgraded.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/crop-en.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/crop-fr.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/crop-missing-method.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/crop-route-unavailable.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/explain-record-workflow.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/harvest-en.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/harvest-fr.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/harvest-missing-tare.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/harvest-ship-blocked.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/harvest-unit-mismatch.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/harvest-unknown-coverage.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/livestock-basis-mismatch.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/livestock-clinical-blocked.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/livestock-en.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/livestock-fr.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/livestock-missing.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/livestock-stale.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/livestock-unit-mismatch.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/operational-question-review-only.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/record-content-is-data.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/records-missing-scope.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/records-no-external-send.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/records-reversed-period.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/records-review-en.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/records-review-fr.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/resources-control-blocked.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/resources-en.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/resources-expired.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/resources-fr.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/resources-language-mismatch.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/resources-missing-version.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/season-en.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/season-fr.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/season-stale.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/unknown-intent.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/business-currency-mismatch.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/business-en.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/business-fr.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/business-missing-cost.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/business-unknown-coverage.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/crop-en.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/crop-fr.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/crop-missing-method.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/harvest-en.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/harvest-fr.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/harvest-missing-tare.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/harvest-unit-mismatch.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/harvest-unknown-coverage.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/livestock-basis-mismatch.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/livestock-en.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/livestock-fr.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/livestock-missing.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/livestock-stale.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/livestock-unit-mismatch.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/resources-en.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/resources-expired.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/resources-fr.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/resources-language-mismatch.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/resources-missing-version.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/season-en.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/season-fr.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/season-stale.json",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/business-advice-blocked.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/business-currency-mismatch.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/business-en.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/business-fr.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/business-missing-cost.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/business-unknown-coverage.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/clinical-request-not-downgraded.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/crop-en.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/crop-fr.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/crop-missing-method.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/crop-route-unavailable.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/explain-record-workflow.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/harvest-en.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/harvest-fr.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/harvest-missing-tare.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/harvest-ship-blocked.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/harvest-unit-mismatch.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/harvest-unknown-coverage.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/livestock-basis-mismatch.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/livestock-clinical-blocked.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/livestock-en.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/livestock-fr.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/livestock-missing.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/livestock-stale.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/livestock-unit-mismatch.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/operational-question-review-only.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/record-content-is-data.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/records-missing-scope.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/records-no-external-send.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/records-reversed-period.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/records-review-en.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/records-review-fr.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/resources-control-blocked.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/resources-en.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/resources-expired.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/resources-fr.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/resources-language-mismatch.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/resources-missing-version.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/season-en.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/season-fr.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/season-stale.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/scenarios/unknown-intent.md",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/test_arithmetic_oracle.py",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/test_bundle.py",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/test_business.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/test_contracts.py",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/test_csv_inspection.py",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/test_ecosystem.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/test_ecosystem_candidate.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/test_evaluation_artifacts.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/test_harvest.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/test_input_limits.py",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/test_livestock.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/test_pipeline.py",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/test_preview.py",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/test_preview_rights_inventory.py",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/test_public_preview_preparation.py",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/test_resources.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "tests/test_season_crop.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/test_study_measurement_lab.py",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     },
     {
       "path": "tests/test_weather_evidence_spec.py",
-      "category": "synthetic_regression_or_fixture",
-      "rights_review": "MIT_project_owned_only; included-content attribution review remains"
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "workflow_tools/__init__.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "workflow_tools/business.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "workflow_tools/business_render.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "workflow_tools/common.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "workflow_tools/crop.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "workflow_tools/execute.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "workflow_tools/harvest.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "workflow_tools/harvest_render.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "workflow_tools/livestock.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "workflow_tools/livestock_render.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "workflow_tools/record_versions.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "workflow_tools/render.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "workflow_tools/resource_render.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "workflow_tools/resources.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
+      "path": "workflow_tools/season.py",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
     }
-  ],
-  "project_license_expression": "MIT",
-  "reporting_route_selected": "https://github.com/jeremylongworth-source/AgentAgriculture"
+  ]
 }

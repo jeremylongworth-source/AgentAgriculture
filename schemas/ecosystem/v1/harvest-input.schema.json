@@ -1,0 +1,644 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agentagriculture:ecosystem:harvest-input:1",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "synthetic_only": {
+      "const": true
+    },
+    "task_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "enterprise_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "jurisdiction": {
+      "enum": [
+        "CA-BC",
+        "CA-AB",
+        "CA-SK",
+        "CA-MB",
+        "CA-ON",
+        "CA-QC",
+        "CA-NB",
+        "CA-NS",
+        "CA-PE",
+        "CA-NL",
+        "CA-YT",
+        "CA-NT",
+        "CA-NU"
+      ]
+    },
+    "period": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date"
+        },
+        "end": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "start",
+        "end"
+      ]
+    },
+    "as_of": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "commodity_as_reported": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 240
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "identity_state": {
+            "enum": [
+              "declared",
+              "unknown"
+            ]
+          },
+          "identity_source_ref": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 240
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "commodity_as_reported",
+          "identity_state",
+          "identity_source_ref"
+        ]
+      },
+      "maxItems": 40
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "lot_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "kind": {
+            "enum": [
+              "opening",
+              "receipt",
+              "dispatch",
+              "internal_move",
+              "closing"
+            ]
+          },
+          "observed_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "recorded_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "source_ref": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 240
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "supersedes": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "correction_reason": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 240
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "event_state": {
+            "enum": [
+              "observed",
+              "planned",
+              "unknown"
+            ]
+          },
+          "movement_scope": {
+            "enum": [
+              "snapshot",
+              "boundary",
+              "within_enterprise",
+              "unknown"
+            ]
+          },
+          "from_location_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "to_location_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "gross": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "value": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^(0|[1-9][0-9]{0,29})(\\.[0-9]{1,12})?$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "unit": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "kg",
+                      "g",
+                      "lb",
+                      "crate",
+                      "L",
+                      "unknown"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "state": {
+                "enum": [
+                  "measured",
+                  "estimated",
+                  "missing",
+                  "trace",
+                  "suppressed"
+                ]
+              }
+            },
+            "required": [
+              "value",
+              "unit",
+              "state"
+            ]
+          },
+          "tare": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "value": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^(0|[1-9][0-9]{0,29})(\\.[0-9]{1,12})?$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "unit": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "kg",
+                      "g",
+                      "lb",
+                      "crate",
+                      "L",
+                      "unknown"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "state": {
+                "enum": [
+                  "measured",
+                  "estimated",
+                  "missing",
+                  "trace",
+                  "suppressed"
+                ]
+              }
+            },
+            "required": [
+              "value",
+              "unit",
+              "state"
+            ]
+          },
+          "note": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 240
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "lot_id",
+          "kind",
+          "observed_at",
+          "recorded_at",
+          "source_ref",
+          "supersedes",
+          "correction_reason",
+          "event_state",
+          "movement_scope",
+          "from_location_id",
+          "to_location_id",
+          "gross",
+          "tare",
+          "note"
+        ]
+      },
+      "maxItems": 120
+    },
+    "lot_reviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "lot_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "opening_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "movement_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 80
+            },
+            "maxItems": 100
+          },
+          "closing_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "coverage": {
+            "enum": [
+              "complete",
+              "partial",
+              "unknown"
+            ]
+          },
+          "coverage_source_ref": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 240
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "snapshot_scope": {
+            "enum": [
+              "enterprise_lot",
+              "location_only",
+              "unknown"
+            ]
+          },
+          "snapshot_scope_source_ref": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 240
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "lot_id",
+          "opening_id",
+          "movement_ids",
+          "closing_id",
+          "coverage",
+          "coverage_source_ref",
+          "snapshot_scope",
+          "snapshot_scope_source_ref"
+        ]
+      },
+      "maxItems": 40
+    },
+    "commitments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "version": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "lot_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "quantity": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^(0|[1-9][0-9]{0,29})(\\.[0-9]{1,12})?$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "quantity_state": {
+            "enum": [
+              "declared",
+              "estimated",
+              "missing"
+            ]
+          },
+          "unit": {
+            "anyOf": [
+              {
+                "enum": [
+                  "kg",
+                  "g",
+                  "lb",
+                  "crate",
+                  "L",
+                  "unknown"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "basis": {
+            "anyOf": [
+              {
+                "enum": [
+                  "net_mass",
+                  "package_count",
+                  "unknown"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "source_ref": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 240
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "issued_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "due_on": {
+            "type": "string",
+            "format": "date"
+          },
+          "destination_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "dispatch_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 80
+            },
+            "maxItems": 100
+          },
+          "coverage": {
+            "enum": [
+              "complete",
+              "partial",
+              "unknown"
+            ]
+          },
+          "coverage_source_ref": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 240
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "version",
+          "lot_id",
+          "quantity",
+          "quantity_state",
+          "unit",
+          "basis",
+          "source_ref",
+          "issued_at",
+          "due_on",
+          "destination_id",
+          "dispatch_ids",
+          "coverage",
+          "coverage_source_ref"
+        ]
+      },
+      "maxItems": 40
+    },
+    "max_closing_age_seconds": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 31536000
+    },
+    "recipient_role": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "handover_purpose": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 240
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 240
+      },
+      "maxItems": 20
+    }
+  },
+  "required": [
+    "schema_version",
+    "synthetic_only",
+    "task_id",
+    "enterprise_id",
+    "jurisdiction",
+    "period",
+    "as_of",
+    "lots",
+    "records",
+    "lot_reviews",
+    "commitments",
+    "max_closing_age_seconds",
+    "recipient_role",
+    "handover_purpose",
+    "notes"
+  ]
+}

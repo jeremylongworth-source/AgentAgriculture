@@ -1,0 +1,4495 @@
+{
+  "scope": "ecosystem_developer_preview_candidate",
+  "publication_authorized": false,
+  "tree_sha256": "09a526967d6217fe3fa4b1be5172cc4214972279c2a75595f3ef9d4d9b5e11e7",
+  "files": [
+    {
+      "path": ".python-version",
+      "bytes": 7,
+      "sha256": "5ab05f548328863dd73c057cc6bde305fc62a87522b3f28eadb9bbdd3b1409be"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 1061,
+      "sha256": "3564dd355055cc97e003c7d9b8559f4ad26f1aff010cd29da81913e483b6dcb2"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1077,
+      "sha256": "5dc9d1ba8b47e236ff0a8a3de3e0622476251d27e0edede3e7e360dd3752ed3d"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1073,
+      "sha256": "11f5e60786b82e616ba07f5abe671291f23916f60d197babde5ea46353c441a3"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3345,
+      "sha256": "a706d0d3d902e900637f3d4f00846c0df528d076695e51f34580e1a205bb9f4a"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 2216,
+      "sha256": "c712a4dcd08669fcd5389195c3444d3a5f2db7f425875815b4f22f7a786e5008"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1674,
+      "sha256": "0381e58d3a431c22a4894c4593f40d60cb3da4875f5c310e77bd8fecffc9d727"
+    },
+    {
+      "path": "agents/AGENTS.ecosystem.md",
+      "bytes": 1564,
+      "sha256": "94101f87e0613621a1c38f3400bc8b3b3e9bf7314de7d961d0a4f8ca7c64c649"
+    },
+    {
+      "path": "docs/architecture/ecosystem-contracts.md",
+      "bytes": 3285,
+      "sha256": "4b357ceb64fb55be6d8193a1e82cc8ffffd68737350265f0460c8081edaf294f"
+    },
+    {
+      "path": "docs/release/ecosystem-files.json",
+      "bytes": 59723,
+      "sha256": "d66cedb73c317d952bdd1c3dbbb4bb0a3d6e2e1fd4a501daf831c7cbb77b917b"
+    },
+    {
+      "path": "docs/release/initial-preview.md",
+      "bytes": 1903,
+      "sha256": "44d91451a7d8437e718041ab3f6f255d7884f741066b4ad09ab589d9dd5882c7"
+    },
+    {
+      "path": "docs/release/licensing.md",
+      "bytes": 2131,
+      "sha256": "0dfa63fd14f6309da19c3f84ac50dfefe94fda58c1b8d2b6a633444507ec9054"
+    },
+    {
+      "path": "docs/release/public-preview-files.json",
+      "bytes": 59723,
+      "sha256": "d66cedb73c317d952bdd1c3dbbb4bb0a3d6e2e1fd4a501daf831c7cbb77b917b"
+    },
+    {
+      "path": "docs/release/public-provenance.json",
+      "bytes": 49063,
+      "sha256": "b75a50ec7fb01e650f74611c9e0b9612602a986a9b1a6ea822f78326bf17ecd6"
+    },
+    {
+      "path": "docs/release/public-provenance.md",
+      "bytes": 3752,
+      "sha256": "ee668661dbd9ba77be123804812db994da98b15afa7baf805b8876a616671926"
+    },
+    {
+      "path": "docs/release/research-tools.md",
+      "bytes": 2291,
+      "sha256": "dd5c23a175eafe211139796e0c0a3a6e040317e4cb1ceac82e10d15c553e45eb"
+    },
+    {
+      "path": "docs/workflows/business-scenario-helper.md",
+      "bytes": 3019,
+      "sha256": "cf45ce19803675fc692de8472aeea64e9e903f216d2e787280235e6426890e30"
+    },
+    {
+      "path": "docs/workflows/crop-review-helper.md",
+      "bytes": 1879,
+      "sha256": "57501560d5b01732dc6a6b489c55065e115a4e55519cef32efc424ad52c05e7d"
+    },
+    {
+      "path": "docs/workflows/harvest-delivery-helper.md",
+      "bytes": 3259,
+      "sha256": "37193caa6b6edee4fa610aabf3c97265cf0867643a77017e81be3c41efc0eac9"
+    },
+    {
+      "path": "docs/workflows/host-responsibilities.md",
+      "bytes": 3748,
+      "sha256": "bdc079e23a09e400a50ef0749636f1503707ed82b6ab2de935b0868aff765bfe"
+    },
+    {
+      "path": "docs/workflows/livestock-record-helper.md",
+      "bytes": 3475,
+      "sha256": "8316234fd10c7b71c77740e5672155c0bd7804b1ef522b2a3195c89a321b06ea"
+    },
+    {
+      "path": "docs/workflows/local-pipeline.md",
+      "bytes": 1089,
+      "sha256": "da80f57ccacf027e616bed36a9cd827d1d076a8ab792e5eb9523d851b911131c"
+    },
+    {
+      "path": "docs/workflows/resource-team-helper.md",
+      "bytes": 3053,
+      "sha256": "7bda5fefee4f0a26f8389e586fb446553bff4f7d0b39f600b0fbb16e0c6c1177"
+    },
+    {
+      "path": "docs/workflows/season-work-helper.md",
+      "bytes": 2178,
+      "sha256": "9a98f07b6e12917abc80a16d8882123f4e4046f9f1748a64f7bbc004078b8291"
+    },
+    {
+      "path": "evaluation_tools/__init__.py",
+      "bytes": 82,
+      "sha256": "e8917cbbbaf0c5c8eeb8480bff5ddb242a5cfd8b3b442474fbcd21e3ae489e7d"
+    },
+    {
+      "path": "evaluation_tools/artifacts.py",
+      "bytes": 8493,
+      "sha256": "0cc086669555b95bf6d5f86885f825a38e8d95263f6e98d4186462a761dde50c"
+    },
+    {
+      "path": "examples/ecosystem/business-en.json",
+      "bytes": 6683,
+      "sha256": "635f56d4695b94c6975ac4bf18e8b4bc141ca17793f9d8caa77ff0536ebb9554"
+    },
+    {
+      "path": "examples/ecosystem/business-fr.json",
+      "bytes": 6763,
+      "sha256": "dbda19e6fac8f79db8d645b251f98b6f7067b8f28b7bd34123b4c37b0e3137a5"
+    },
+    {
+      "path": "examples/ecosystem/crop-en.json",
+      "bytes": 6125,
+      "sha256": "db6fea5a8861490d6cde7c18b04450d6e0b19a517e5657c43ef6857261df065c"
+    },
+    {
+      "path": "examples/ecosystem/crop-fr.json",
+      "bytes": 6125,
+      "sha256": "4b67141524a19aab25a4a3e0fb3f6f5b8919615a1faf341563e2aeab0fcffffd"
+    },
+    {
+      "path": "examples/ecosystem/harvest-en.json",
+      "bytes": 8574,
+      "sha256": "0bf06ce84f6e13cad303190d697e523fd5b9b38e5c358d389d85560fc3397d3a"
+    },
+    {
+      "path": "examples/ecosystem/harvest-fr.json",
+      "bytes": 8577,
+      "sha256": "6a3ef8d3e7f419dda9e25463bd70b07d49d482fadd178eb16b6572222be8e73b"
+    },
+    {
+      "path": "examples/ecosystem/livestock-en.json",
+      "bytes": 6968,
+      "sha256": "39dac2cb387a934b23cdfe8d6a0afd4f0780c1eda2e384777cc8509e935d409e"
+    },
+    {
+      "path": "examples/ecosystem/livestock-fr.json",
+      "bytes": 6968,
+      "sha256": "c5d06a65fad8187074e087a8a11490a149529d74f972f2a28b83bc24d52be97d"
+    },
+    {
+      "path": "examples/ecosystem/resources-en.json",
+      "bytes": 3919,
+      "sha256": "e48a5bc46f275beb026786df43f261cd68be0242f4a983d84fdd789beb564265"
+    },
+    {
+      "path": "examples/ecosystem/resources-fr.json",
+      "bytes": 4160,
+      "sha256": "b75d118cb238925483252495401c6ae3af76de5280a3cf3d5ae6616dca90d76f"
+    },
+    {
+      "path": "examples/ecosystem/season-en.json",
+      "bytes": 2902,
+      "sha256": "323a3816ecef4ae0cc827ede18905d391125312bd83cb1f9aeb0788b1a359093"
+    },
+    {
+      "path": "examples/ecosystem/season-fr.json",
+      "bytes": 2893,
+      "sha256": "d516f261a256392d28b0a1c0107028a0ca6bb1ffd0d19f59337c6aa8cb263ad6"
+    },
+    {
+      "path": "examples/manual/en/corrections.json",
+      "bytes": 552,
+      "sha256": "4902b0f39a5d2f0aeda83f2c6194329f00aadb1b5a5a4b18effabcbb9c4ddf59"
+    },
+    {
+      "path": "examples/manual/en/purchases-paper.md",
+      "bytes": 864,
+      "sha256": "4ca3179530c3fc26917912423debaa26107e0464d40951ae98eb52375e6eecda"
+    },
+    {
+      "path": "examples/manual/en/purchases.csv",
+      "bytes": 512,
+      "sha256": "52118838c79674a6dc513c5844fd3f917c4dcb5a829d5b81273a276619fd262e"
+    },
+    {
+      "path": "examples/manual/en/receiving-paper.md",
+      "bytes": 775,
+      "sha256": "633202bc072c3ccdbc63fa8d066df861cf01ece9423e8bb71a3e3adb62fa7fbd"
+    },
+    {
+      "path": "examples/manual/en/receiving.csv",
+      "bytes": 398,
+      "sha256": "d8287bd28229e0d4b9a7311088d0873233ea766741a974d8705627be22953423"
+    },
+    {
+      "path": "examples/manual/fr/corrections.json",
+      "bytes": 561,
+      "sha256": "8c96fa972f0a916a002e5725ac3de6e233b0f4723214453aa2256df31afa2b65"
+    },
+    {
+      "path": "examples/manual/fr/purchases-paper.md",
+      "bytes": 910,
+      "sha256": "1f5a3ca1f4f7629658f5f08b2bc11ca50923aad474613e48e93914826b54e38e"
+    },
+    {
+      "path": "examples/manual/fr/purchases.csv",
+      "bytes": 561,
+      "sha256": "73a0c1c948705e0dcd6695373871b72462846dfcad2ada8960c39b0e64831a2f"
+    },
+    {
+      "path": "examples/manual/fr/receiving-paper.md",
+      "bytes": 811,
+      "sha256": "97807cdec1aa88a1809ea606b3582202f3a3bb200d9152628601408617d05300"
+    },
+    {
+      "path": "examples/manual/fr/receiving.csv",
+      "bytes": 439,
+      "sha256": "64cb5bb07cd2fcd8a42a00570651025319e6acc7bec454e6f9fd94276bef46d5"
+    },
+    {
+      "path": "examples/records-to-review/en.md",
+      "bytes": 5782,
+      "sha256": "4aea9be38a42a0ee0cfe6693148b60d8321f5e486d6d069f5abbebd0abd60531"
+    },
+    {
+      "path": "examples/records-to-review/fr.md",
+      "bytes": 6708,
+      "sha256": "b236f94afe16866350a10f56dbb1d55d43be839a1b4a839257f43d7287188940"
+    },
+    {
+      "path": "examples/study/synthetic-measurement.json",
+      "bytes": 3952,
+      "sha256": "86f944db68d9f022f539cc5d9f4a600364cf4f6e64f789d0bf20b110b1db9f73"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 855,
+      "sha256": "0d0e5c6f1b78667e1a74e50969351778b3449967c7b640f969ccda988340a4d8"
+    },
+    {
+      "path": "registries/README.md",
+      "bytes": 2797,
+      "sha256": "28917db52f05794ecfc623958d575314f482372d44c7acfeb6c3d9914e27eda9"
+    },
+    {
+      "path": "registries/coverage.yaml",
+      "bytes": 5052,
+      "sha256": "e53180effba9ff0b47550e92539503f34faf096402448626fa73644febf9e256"
+    },
+    {
+      "path": "registries/sources.yaml",
+      "bytes": 58100,
+      "sha256": "a30097f29051910b5a03568b5892f06f810ad5b5834d8b5fe2f19a32e31acbba"
+    },
+    {
+      "path": "registries/terminology.yaml",
+      "bytes": 3062,
+      "sha256": "5bfe98e3e2b3ae83fd5013e849c279ec9635aea5e9c343e6f9088669a3852522"
+    },
+    {
+      "path": "registries/workflows.yaml",
+      "bytes": 829,
+      "sha256": "d490df5a669ffc86aecce229a8d1fa1ce618c9f3eb217ebee4890db1d4a100ac"
+    },
+    {
+      "path": "requirements-build.lock",
+      "bytes": 664,
+      "sha256": "3953d23069ce50ee470ca99251c13788e523f6f26cbe88eb207b32a4734749ce"
+    },
+    {
+      "path": "requirements-validation.lock",
+      "bytes": 752,
+      "sha256": "f7bef372ac3977afdf114e48c6a4e8beb5b1b9ec2ecfe99d3efd9902b1c20d10"
+    },
+    {
+      "path": "roadmap.md",
+      "bytes": 1035,
+      "sha256": "3f0da1ede09a4c9cdf6482ce7c94578550965479bb2895eb2b1a3a49cad62533"
+    },
+    {
+      "path": "router/__init__.py",
+      "bytes": 79,
+      "sha256": "8cd0e8c38e824dab55bd9961e4dae3dc66383f4de4516e211f7fa2feb17a4331"
+    },
+    {
+      "path": "router/catalog.json",
+      "bytes": 2483,
+      "sha256": "c14b6e8afee9b62f0e1d523a0f53ea401551545f2d9b8a4ae1debe89eb5a16af"
+    },
+    {
+      "path": "router/core.py",
+      "bytes": 11343,
+      "sha256": "9d99eca811b213fb673a5fb48d71f2baa141a7293ba72afe163a6608981264ad"
+    },
+    {
+      "path": "schemas/ecosystem/v1/business-input.schema.json",
+      "bytes": 21462,
+      "sha256": "41e7c0f50fee8e54921d79c3e4ac0995c6835f2c9f0dff52e22984bcddc301d3"
+    },
+    {
+      "path": "schemas/ecosystem/v1/composition.schema.json",
+      "bytes": 3828,
+      "sha256": "b39936ddab9d99135ddc14554383325d06f8ee9140baaa5ffe97914c8c26d392"
+    },
+    {
+      "path": "schemas/ecosystem/v1/context.schema.json",
+      "bytes": 3466,
+      "sha256": "809739d3cb5094b3f821c5dbc745d3fa87de78835c4c598275d1c6f34fa51143"
+    },
+    {
+      "path": "schemas/ecosystem/v1/crop-input.schema.json",
+      "bytes": 6986,
+      "sha256": "7f6fbc6c1792fbf07d4fbdaaa81c97965bc47e3b2106d809cbfa6ab4fad31081"
+    },
+    {
+      "path": "schemas/ecosystem/v1/harvest-input.schema.json",
+      "bytes": 14457,
+      "sha256": "d6d85c4c9cd2080a58437dff7bd6ea286a150cc86541c3e3eb0b580e34884970"
+    },
+    {
+      "path": "schemas/ecosystem/v1/livestock-input.schema.json",
+      "bytes": 8237,
+      "sha256": "8233e5949369e978f9fd0579eb4e92c324c141688728cc0a963891d15444b9b9"
+    },
+    {
+      "path": "schemas/ecosystem/v1/resource-input.schema.json",
+      "bytes": 11842,
+      "sha256": "8fd524eb83ff83b05cf0a0f62448416e14ba6cd25cead59de80b436e7208ca59"
+    },
+    {
+      "path": "schemas/ecosystem/v1/result.schema.json",
+      "bytes": 2743,
+      "sha256": "7ec62803fffc3e4e52c85989d4b363cf85212e4d01d3ff3ba738f22ec3986eee"
+    },
+    {
+      "path": "schemas/ecosystem/v1/season-input.schema.json",
+      "bytes": 8969,
+      "sha256": "e283cbdc2301b5cbfdbe8be9ff11b419dc18cea97862a808b6971cb7513164e6"
+    },
+    {
+      "path": "schemas/ecosystem/v1/workflow-result.schema.json",
+      "bytes": 141318,
+      "sha256": "ed00261dfe15004a90f241a53088e4139b9cde6ddd6947d96f23a3848bd1a0bb"
+    },
+    {
+      "path": "schemas/v1/calculation.schema.json",
+      "bytes": 3237,
+      "sha256": "ba52f1e1700b65b33f976fa17baa6d05d77c359a9727f8bc6f01a82277b99691"
+    },
+    {
+      "path": "schemas/v1/common.schema.json",
+      "bytes": 9047,
+      "sha256": "1cef3f96f45b6751bf3d989561f950486f3312f3e77973df9bf295ccc90ce113"
+    },
+    {
+      "path": "schemas/v1/correction.schema.json",
+      "bytes": 2349,
+      "sha256": "ef8968a1ac2b581da65568e61b43865621de93881eef46af1e793e59e2a4d6f6"
+    },
+    {
+      "path": "schemas/v1/coverage-registry.schema.json",
+      "bytes": 2355,
+      "sha256": "284e509288373425349cc199be5d2e9ea30e6550306ac0ca87570c7889d70a11"
+    },
+    {
+      "path": "schemas/v1/input-manifest.schema.json",
+      "bytes": 6736,
+      "sha256": "4187216bc8aed7b46df5eee1958bb9a58070860d21e6d8ae7375c19c15b63260"
+    },
+    {
+      "path": "schemas/v1/normalized-record.schema.json",
+      "bytes": 1993,
+      "sha256": "c74b831b89b2449e65c63bf45d3c6e9212deea0d1c4c45d29ab1d0b74fd65aa1"
+    },
+    {
+      "path": "schemas/v1/original-record.schema.json",
+      "bytes": 2560,
+      "sha256": "9f6a67680a8ed63c0e015b9d2db465fcc77fa335ec30d24b4ec608d76ac3b0a5"
+    },
+    {
+      "path": "schemas/v1/review-package.schema.json",
+      "bytes": 5676,
+      "sha256": "7294a2ac0549dfbab71bd13fa70294b8d8e84145be8a2af17e110f2b6057fc0b"
+    },
+    {
+      "path": "schemas/v1/source-registry.schema.json",
+      "bytes": 9605,
+      "sha256": "962ab4ead28e4f9713029f2d8ac42a1c9362c64b6735208611d1d3721f4de7c7"
+    },
+    {
+      "path": "schemas/v1/task-context.schema.json",
+      "bytes": 3886,
+      "sha256": "4b27585a5c61b21852a9f3367cead6a0d93effa1d2ea6e8b10618f129ff7e2ea"
+    },
+    {
+      "path": "schemas/v1/terminology-registry.schema.json",
+      "bytes": 1469,
+      "sha256": "9f4650696a6d66e65b3c7b80c996c7acda2a9ec5d027260db22785041418ecdc"
+    },
+    {
+      "path": "schemas/v1/workflow-registry.schema.json",
+      "bytes": 1826,
+      "sha256": "bef454c79b87a9e3c9bd824628ff85d7e946272207e565b46ac77b1f350c6132"
+    },
+    {
+      "path": "scripts/inspect_csv.py",
+      "bytes": 7486,
+      "sha256": "a16247d54737a5c4f9e3e8b51baf3721c7522cbff22defe7829eab95ec44a2bb"
+    },
+    {
+      "path": "scripts/inventory_preview_rights.py",
+      "bytes": 5974,
+      "sha256": "503ff69ee31d9832dad1bd39b9a858ebb1199f7549b364d9b2d09767ca84a530"
+    },
+    {
+      "path": "scripts/prepare_ecosystem_preview.py",
+      "bytes": 5984,
+      "sha256": "891412df7ecafbd3bc3a0f2bd861eab71864b25fd4b15cdf8f61da0f30d2e512"
+    },
+    {
+      "path": "scripts/prepare_public_preview.py",
+      "bytes": 9981,
+      "sha256": "6597ebf4ca55b44c7b9d28b0c497c8d8e024a6b1e7e8fec92856828cccd3bbdf"
+    },
+    {
+      "path": "scripts/public_provenance.py",
+      "bytes": 6705,
+      "sha256": "e8ee5f1db955970e8fff92597b03d9ab9c315deff5395db1d4fa3c504b65805a"
+    },
+    {
+      "path": "scripts/reconcile.py",
+      "bytes": 251,
+      "sha256": "b7b584c931f630b5c8a508c93e64a30a09623fca5a2dd443d16c6b5638a12949"
+    },
+    {
+      "path": "scripts/route_farm_task.py",
+      "bytes": 987,
+      "sha256": "fb29f3ca511a737b86d9f74801a6d1026babdfa2c664d4087853fdbc188cfebf"
+    },
+    {
+      "path": "scripts/run_farm_workflow.py",
+      "bytes": 1673,
+      "sha256": "fb199e5aa1b1ac3addd25fafa9aaa43798daa153264b559183b2ee72eeb1551c"
+    },
+    {
+      "path": "scripts/save_evaluation_artifact.py",
+      "bytes": 279,
+      "sha256": "da2b36ac8c35518ea6dc6c6cb5fcad0cbd7a00ab2ad7fa093f140279fc558e51"
+    },
+    {
+      "path": "scripts/study_measurement_lab.py",
+      "bytes": 12980,
+      "sha256": "c351ebc5358a7ec4e78033c0f17e3552afced1616d59ab9d6c161cb9344a4e7a"
+    },
+    {
+      "path": "scripts/validate_contracts.py",
+      "bytes": 5578,
+      "sha256": "1b4fdb1046e2c51003687e67bb6245db208c1de88af2c572b9b68b2ac4f4824e"
+    },
+    {
+      "path": "scripts/validate_ecosystem.py",
+      "bytes": 4757,
+      "sha256": "48dc0e36b07f939fc1de2173249489353436e626f3451783402b94661adf9e40"
+    },
+    {
+      "path": "scripts/weather_evidence_lab.py",
+      "bytes": 6943,
+      "sha256": "7aa0d504fdfe00dcee775e05eef3bbbc265e840d58f13e0c27c2be4d37ed5583"
+    },
+    {
+      "path": "skills/farm-adviser-package/SKILL.md",
+      "bytes": 1884,
+      "sha256": "b337d0acb6ab4c8ab37f1db62347c72f47e59c8d32593429ce4b7c3ec0d0a31c"
+    },
+    {
+      "path": "skills/farm-business-review-handoff/SKILL.md",
+      "bytes": 1963,
+      "sha256": "9326e6f00b59b263dd45bd1fa2530b2e475ba789c7abe4e4ac2dd641f17e9388"
+    },
+    {
+      "path": "skills/farm-business-review-handoff/references/scenario-method.md",
+      "bytes": 697,
+      "sha256": "4cffffdd776a8c5cf976727cdd61c054e0b79776a24a1cd6451c931d6f691121"
+    },
+    {
+      "path": "skills/farm-business-scenario/SKILL.md",
+      "bytes": 2181,
+      "sha256": "569ba3fa38098b80ed00a36b78b1aee51bc67b12e51bd78baec52438ee0d7231"
+    },
+    {
+      "path": "skills/farm-business-scenario/references/scenario-method.md",
+      "bytes": 697,
+      "sha256": "4cffffdd776a8c5cf976727cdd61c054e0b79776a24a1cd6451c931d6f691121"
+    },
+    {
+      "path": "skills/farm-crop-observation-review/SKILL.md",
+      "bytes": 2104,
+      "sha256": "641e8fc65f1799900f4f0c7b2e88d97d629393bddf3d308882c99ca41e93c755"
+    },
+    {
+      "path": "skills/farm-crop-observation-review/references/observation-review.md",
+      "bytes": 1404,
+      "sha256": "92d108f00af4b19fb18a5ec68f2e83ca6d2e4b71ab3bc715249bb209c365d04f"
+    },
+    {
+      "path": "skills/farm-crop-review-handoff/SKILL.md",
+      "bytes": 1793,
+      "sha256": "e19018dd4d66eb78285929c6a3d71f9e3971cdb1b3e01cf509ca37b89f4034ab"
+    },
+    {
+      "path": "skills/farm-crop-review-handoff/references/handoff-checks.md",
+      "bytes": 692,
+      "sha256": "9c080963a7f1dd82a90a58e74f523d2f25f915b9a5ab00e51ab32e19627e4f50"
+    },
+    {
+      "path": "skills/farm-delivery-record-handoff/SKILL.md",
+      "bytes": 2009,
+      "sha256": "d0d13807604492ffdff8a92e143188ed5ecf2558ad4087313fba5196b4e7b73d"
+    },
+    {
+      "path": "skills/farm-delivery-record-handoff/references/quantity-source-rules.md",
+      "bytes": 944,
+      "sha256": "dd056186d31814e214d6b0e00669d501807f07e7e54c086848d4c138f400ae80"
+    },
+    {
+      "path": "skills/farm-feed-stock-review/SKILL.md",
+      "bytes": 1394,
+      "sha256": "0f3b8b89675b6d785d54d9eb5a590371a7c9b4f0202206ee50553fe68d131573"
+    },
+    {
+      "path": "skills/farm-feed-stock-review/references/record-rules.md",
+      "bytes": 1622,
+      "sha256": "4ee952f569bc5c5b0266bbf071fdf611f9f8eafb9269292c01f9dcdf4170bd51"
+    },
+    {
+      "path": "skills/farm-livestock-event-review/SKILL.md",
+      "bytes": 1472,
+      "sha256": "1da8d4a4db7587b3eee1d71d7e13b11b55c9a9bc6da57e4da22795d0afd40a7b"
+    },
+    {
+      "path": "skills/farm-livestock-event-review/references/record-rules.md",
+      "bytes": 1622,
+      "sha256": "4ee952f569bc5c5b0266bbf071fdf611f9f8eafb9269292c01f9dcdf4170bd51"
+    },
+    {
+      "path": "skills/farm-livestock-review-handoff/SKILL.md",
+      "bytes": 1363,
+      "sha256": "a07ae25d465ffb04179718b728cb7ac8af30ce4856403d018858e1149c4d303c"
+    },
+    {
+      "path": "skills/farm-livestock-review-handoff/references/record-rules.md",
+      "bytes": 1622,
+      "sha256": "4ee952f569bc5c5b0266bbf071fdf611f9f8eafb9269292c01f9dcdf4170bd51"
+    },
+    {
+      "path": "skills/farm-lot-movement-review/SKILL.md",
+      "bytes": 2100,
+      "sha256": "05abc3a340ee25241dfa7e33da88f416cb8a3b6dda35aeb4cf811fc411adbed6"
+    },
+    {
+      "path": "skills/farm-lot-movement-review/references/quantity-source-rules.md",
+      "bytes": 944,
+      "sha256": "dd056186d31814e214d6b0e00669d501807f07e7e54c086848d4c138f400ae80"
+    },
+    {
+      "path": "skills/farm-net-mass-review/SKILL.md",
+      "bytes": 1830,
+      "sha256": "b8bf1f33859edc4cc8bc8ba0e797cbc29c4bf36dc4d2eb610354ddf25db73e55"
+    },
+    {
+      "path": "skills/farm-net-mass-review/references/quantity-source-rules.md",
+      "bytes": 944,
+      "sha256": "dd056186d31814e214d6b0e00669d501807f07e7e54c086848d4c138f400ae80"
+    },
+    {
+      "path": "skills/farm-procedure-task-card/SKILL.md",
+      "bytes": 1517,
+      "sha256": "e096f1e79fb0f9877aac0906292057ac81de2c8a7b44aa299de2b3d755f21850"
+    },
+    {
+      "path": "skills/farm-procedure-task-card/references/source-fidelity.md",
+      "bytes": 986,
+      "sha256": "01fc01fa3ea2b5d1cd0d4e7243e5ae40099e045b4b93195f99d72c3a4b80b4c9"
+    },
+    {
+      "path": "skills/farm-record-reconciliation/SKILL.md",
+      "bytes": 2100,
+      "sha256": "8456e5c5617296fd2b92eb97c8e3b9e7303a69575e412cc5f7b5f8d729ac9da6"
+    },
+    {
+      "path": "skills/farm-task-intake/SKILL.md",
+      "bytes": 2114,
+      "sha256": "50e413f3a3b33c4dbbcf9e4b1fff041fc835377f8add4b101421f3f03bbf9c41"
+    },
+    {
+      "path": "skills/farm-team-handover/SKILL.md",
+      "bytes": 1422,
+      "sha256": "95a257840f6ec7a46e9aa6f569899a93fbe165af9cdd28ea68296131f4728b8a"
+    },
+    {
+      "path": "skills/farm-team-handover/references/source-fidelity.md",
+      "bytes": 986,
+      "sha256": "01fc01fa3ea2b5d1cd0d4e7243e5ae40099e045b4b93195f99d72c3a4b80b4c9"
+    },
+    {
+      "path": "skills/farm-weather-evidence/SKILL.md",
+      "bytes": 1940,
+      "sha256": "ea26b40dbea541f5b46940994fa75b5a05fc1787289eecc3bf0b71fa4b76f77e"
+    },
+    {
+      "path": "skills/farm-weather-evidence/references/weather-evidence.md",
+      "bytes": 1124,
+      "sha256": "160087ee84a50f146927b5babb3e2425d77c20a78b7bdf4d14a2454132efcdc8"
+    },
+    {
+      "path": "skills/farm-work-options/SKILL.md",
+      "bytes": 2164,
+      "sha256": "b4b9da82d772dcfd190c622c5a82b3a8dc7d3fa6549d2663efa5c461a179698e"
+    },
+    {
+      "path": "skills/farm-work-options/references/calendar-options.md",
+      "bytes": 930,
+      "sha256": "1d7c599ebc17ace37621f2cb44a0bf68625ae0c4347b7415b286157a363a0c0f"
+    },
+    {
+      "path": "skillsets/business-stewardship-review/README.md",
+      "bytes": 589,
+      "sha256": "0e71465792d89835fdd377cdbefaea3db47e8dc2f4a706f3f35949d8d3200273"
+    },
+    {
+      "path": "skillsets/business-stewardship-review/SOURCE-PACKAGE.md",
+      "bytes": 780,
+      "sha256": "1eb3ec0e4c81b23fbbdef88f63f939da8800acc5d2fe6bc6e17811112752d856"
+    },
+    {
+      "path": "skillsets/business-stewardship-review/manifest.json",
+      "bytes": 1690,
+      "sha256": "a38e35ddb6573cfb4d44d21357dd8ba7c1f11ba518e75d8e28a5b6d5293f6a54"
+    },
+    {
+      "path": "skillsets/crop-production-review/README.md",
+      "bytes": 786,
+      "sha256": "e4ebbf2efb5d5a95f885ae62825e621d52f07dd8a06da6e5074072ee013f4e9d"
+    },
+    {
+      "path": "skillsets/crop-production-review/SOURCE-PACKAGE.md",
+      "bytes": 775,
+      "sha256": "84d5f477fa2ba7cf10bc7fba22c22448ed18edc78354fb85c5dad83e75b028dc"
+    },
+    {
+      "path": "skillsets/crop-production-review/manifest.json",
+      "bytes": 1579,
+      "sha256": "63e46106dd698a7882ad59b979800ee67c828f9089a8eeb701e9bb171c75d8a2"
+    },
+    {
+      "path": "skillsets/harvest-storage-delivery/README.md",
+      "bytes": 676,
+      "sha256": "206775472581fc6d1e59752a21e8bfa2cc46bf38b4eb9ba55820509155df2c80"
+    },
+    {
+      "path": "skillsets/harvest-storage-delivery/SOURCE-PACKAGE.md",
+      "bytes": 777,
+      "sha256": "4b7f084b21fe471f86ddf492fa16008734961b47bd343be2fba25aecee55068e"
+    },
+    {
+      "path": "skillsets/harvest-storage-delivery/manifest.json",
+      "bytes": 1866,
+      "sha256": "f4680630907bd08a3477b199e6eadb53bf31fa9ddcf40ae0bb62e545758b337d"
+    },
+    {
+      "path": "skillsets/livestock-record-review/README.md",
+      "bytes": 875,
+      "sha256": "9d3178e15131265f59cae1d28c0983d2c092cece0c74412bda5df12f7d0f11c0"
+    },
+    {
+      "path": "skillsets/livestock-record-review/SOURCE-PACKAGE.md",
+      "bytes": 776,
+      "sha256": "2e706ef45a1d72227a6869cfb165c5329b85e5b9e209cbf47c4f3905acf999b0"
+    },
+    {
+      "path": "skillsets/livestock-record-review/manifest.json",
+      "bytes": 1915,
+      "sha256": "b1b7e9d610647d1ed29655758756b05c43a6019ebb514cce6fd9b6922aa58063"
+    },
+    {
+      "path": "skillsets/records-to-review/README.md",
+      "bytes": 1969,
+      "sha256": "98e6aab7de632c21704942f42b0ea44a4a0d20d65b98f08f1c6579bad1a35e6f"
+    },
+    {
+      "path": "skillsets/records-to-review/SOURCE-PACKAGE.md",
+      "bytes": 770,
+      "sha256": "f0be69f9d93891e77d48e050eaa29c0c7ee3088d00041647c6b441a4fddefafb"
+    },
+    {
+      "path": "skillsets/records-to-review/manifest.json",
+      "bytes": 1783,
+      "sha256": "8c413263be7422bb21ca3faa4707dffa2ba3e12ba74d3cd1583cb55900dafde5"
+    },
+    {
+      "path": "skillsets/resource-team-coordination/README.md",
+      "bytes": 764,
+      "sha256": "e297ea4db907fb3df5bb9be0ee913f661fb3f91f6c35c8c3134ee03a13ccfda2"
+    },
+    {
+      "path": "skillsets/resource-team-coordination/SOURCE-PACKAGE.md",
+      "bytes": 779,
+      "sha256": "104c798af004761ea501f5c33e14c654bf534a929de4784ff7d5faa6f162b1ef"
+    },
+    {
+      "path": "skillsets/resource-team-coordination/manifest.json",
+      "bytes": 1569,
+      "sha256": "bd991a5aa2c751e4585b08c638acff4625babece0c49e0f0b032a43dd1048fc5"
+    },
+    {
+      "path": "skillsets/season-work-planning/README.md",
+      "bytes": 748,
+      "sha256": "851f8f8fca30815f51b4d66d71f75db1bfb1b61945e93d1a3d3cce556d504472"
+    },
+    {
+      "path": "skillsets/season-work-planning/SOURCE-PACKAGE.md",
+      "bytes": 773,
+      "sha256": "7b37fafe8073eb70828ab0c3b7e29d1b2066b70d8a3069392863e2b6a90f5e10"
+    },
+    {
+      "path": "skillsets/season-work-planning/manifest.json",
+      "bytes": 1552,
+      "sha256": "29d37d9ae01a17892c54631462e5416c6a74caaeaaf35eef538e27c09b321851"
+    },
+    {
+      "path": "src/agent_agriculture/__init__.py",
+      "bytes": 75,
+      "sha256": "a5071c30bb510c7c096c8fa077cb429772da93d82899ee004da72d6f1e4cfb06"
+    },
+    {
+      "path": "src/agent_agriculture/__main__.py",
+      "bytes": 48,
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "path": "src/agent_agriculture/capture.py",
+      "bytes": 5297,
+      "sha256": "bcd70335963113019ef16479e5c8e2a62aa2cb7fa5ceef4a648b99a9c4156854"
+    },
+    {
+      "path": "src/agent_agriculture/cli.py",
+      "bytes": 6651,
+      "sha256": "9a9f9b53e903ff34ebf358f3242e01016964c347ba4f94ee559e6592a5e1ad0b"
+    },
+    {
+      "path": "src/agent_agriculture/contracts.py",
+      "bytes": 16482,
+      "sha256": "59b02ee778533275ddec116c1c5a953ed7db4efe27be298712e51b2f9d949672"
+    },
+    {
+      "path": "src/agent_agriculture/errors.py",
+      "bytes": 209,
+      "sha256": "120153e4eb28e3a4e8ca627336ab7f0a38e433af3a62439333a8925257bff154"
+    },
+    {
+      "path": "src/agent_agriculture/handoff.py",
+      "bytes": 2499,
+      "sha256": "35173b93c3bc5d71bc92bfdf0ab42102ac8cf7e81d6ee140a87c2ff28c4ffe41"
+    },
+    {
+      "path": "src/agent_agriculture/input_limits.py",
+      "bytes": 1972,
+      "sha256": "6712e5863127d4c44a638e95f0fcf69c507e9770d80bb4e0c52f56a0ec8d9d68"
+    },
+    {
+      "path": "src/agent_agriculture/language.py",
+      "bytes": 27252,
+      "sha256": "daca8c10c546371648763dadd9f3fb78e2e7e410313b9514838bca4e5055dce9"
+    },
+    {
+      "path": "src/agent_agriculture/pipeline.py",
+      "bytes": 6088,
+      "sha256": "6fff4358ce277d62fa4846b356798e8cfd4dee7205ed9d1b569e7b2a72aa6239"
+    },
+    {
+      "path": "src/agent_agriculture/presentation.py",
+      "bytes": 7040,
+      "sha256": "7a0566866f7dbe659de9c242e16819698ae7b45f6a4bc67c9577ba6731e9682d"
+    },
+    {
+      "path": "src/agent_agriculture/reconciliation.py",
+      "bytes": 11669,
+      "sha256": "c3afe84c610ebcfec8eb944dca8ce157b338d45dc4d7938765c959bb7f90dd5e"
+    },
+    {
+      "path": "src/agent_agriculture/records.py",
+      "bytes": 16681,
+      "sha256": "9bf5c2a118adc5f17636ec943e4e0ac57d6d9f989f33d1fe2857858e8cebe13f"
+    },
+    {
+      "path": "src/agent_agriculture/storage.py",
+      "bytes": 7397,
+      "sha256": "4753ff933bc1f36814d39d06ad389ea451bbe2e737f1dab0e404e0172b321581"
+    },
+    {
+      "path": "templates/en/exceptions.md",
+      "bytes": 1121,
+      "sha256": "be400679375317fd7d8ac3c608f267acfb40663ccb6f94fcebaec55c22b06a9a"
+    },
+    {
+      "path": "templates/en/export.md",
+      "bytes": 1356,
+      "sha256": "89805be3f08dc8220137f9e54da2049d08ead8ea65ae61ade90ef09731b2fbe2"
+    },
+    {
+      "path": "templates/en/intake.md",
+      "bytes": 1573,
+      "sha256": "35796a6abc88fb2951799c2ce904d22dc5430e8e258ac7375492c357ce9e1d75"
+    },
+    {
+      "path": "templates/en/manual-entry.csv",
+      "bytes": 120,
+      "sha256": "383370a0d174e1fde44fa23ce5f223dc602b0dae8a3270b1c6a6aa77ad8eb6b1"
+    },
+    {
+      "path": "templates/en/mapping.md",
+      "bytes": 1726,
+      "sha256": "339e7a810f23feba025f68587a29ee2b147f3145e6f6afc0b2db0e509dc3507d"
+    },
+    {
+      "path": "templates/en/results.md",
+      "bytes": 922,
+      "sha256": "66184bf0bf86d097ef6ead4a2dfbbb66915e28c757e7ef50d3886ca67a78a54f"
+    },
+    {
+      "path": "templates/fr/exceptions.md",
+      "bytes": 1385,
+      "sha256": "e38ed421513f8ba03e89809ff0c6b0cfead93d2a6990573fefc6d5c1917cfb6d"
+    },
+    {
+      "path": "templates/fr/export.md",
+      "bytes": 1750,
+      "sha256": "2bf91ac9ffa09f5619866735c879bbe8dacf3ce4ffd9bdf34adca2fda39b8b4b"
+    },
+    {
+      "path": "templates/fr/intake.md",
+      "bytes": 1939,
+      "sha256": "e266909695156beea6b31040ac8af4900ec6c27405f235393d2876659fe865b5"
+    },
+    {
+      "path": "templates/fr/manual-entry.csv",
+      "bytes": 129,
+      "sha256": "c4b07322b9eb4b8a5e48a6b2c52ef62c9dfce3962783fef8c11ecd6fc9e5eb7a"
+    },
+    {
+      "path": "templates/fr/mapping.md",
+      "bytes": 2251,
+      "sha256": "18ba8b30945879976fd93159deaf5561843472f3246ddd6a1480dec12bd63a02"
+    },
+    {
+      "path": "templates/fr/results.md",
+      "bytes": 1117,
+      "sha256": "0ea4e837a563e538dd078509c18fdd4fe31914abe2fe7dfec1bc0ee03ebfd975"
+    },
+    {
+      "path": "tests/expected-routing.yaml",
+      "bytes": 22001,
+      "sha256": "15a52f80b7ffee3ae412ac3c6335982ff06bd302bab4bce81456290e8bfd4384"
+    },
+    {
+      "path": "tests/fixtures/README.md",
+      "bytes": 5450,
+      "sha256": "4a917894f7652c3f4735dd9c9117eb13b4285ce7fe1b9a9e2ca4ab52bb50457e"
+    },
+    {
+      "path": "tests/fixtures/cases/en-baseline/corrections.json",
+      "bytes": 559,
+      "sha256": "8d89721cbadf76e0812c8589e4ecec925064aa519cd72cdab4f9140fd761aebc"
+    },
+    {
+      "path": "tests/fixtures/cases/en-baseline/expected.json",
+      "bytes": 947,
+      "sha256": "94f5148d226b7e6fc79c9c7e2007066efc833e67d06ea1d8d80474e84346dae9"
+    },
+    {
+      "path": "tests/fixtures/cases/en-baseline/manifest.json",
+      "bytes": 2330,
+      "sha256": "441e4a24572723301e9d955ae30f399da4c976d5d52df150286837f54ab58f0c"
+    },
+    {
+      "path": "tests/fixtures/cases/en-baseline/purchases.csv",
+      "bytes": 422,
+      "sha256": "5d4e0f35e25808e275a74c950232d5910809f308e422746f8fcddfa73ff4410d"
+    },
+    {
+      "path": "tests/fixtures/cases/en-baseline/receiving.csv",
+      "bytes": 319,
+      "sha256": "a3996590d68599e4e9645362ef3f1cfdc63776173757b5ddef8dd231f87bacfb"
+    },
+    {
+      "path": "tests/fixtures/cases/en-baseline/task.json",
+      "bytes": 1070,
+      "sha256": "8ff0f9859a5380eb2e88f988ab9e095c7fb91d3e3a0aa382a41f09646f7aa3b4"
+    },
+    {
+      "path": "tests/fixtures/cases/fr-equivalent/corrections.json",
+      "bytes": 561,
+      "sha256": "4ab53b7ca61b02d985221f5a5cd634a4b4df2bad1299806113be81385ade592c"
+    },
+    {
+      "path": "tests/fixtures/cases/fr-equivalent/expected.json",
+      "bytes": 947,
+      "sha256": "d7af1630b865db5c1e2cf5e899247ee0863eae3f3adabacd4f3788782cd011a1"
+    },
+    {
+      "path": "tests/fixtures/cases/fr-equivalent/manifest.json",
+      "bytes": 2346,
+      "sha256": "a83250c2edf7836567644ee87a9d0a2bac5d72b08606350e770a284953add30d"
+    },
+    {
+      "path": "tests/fixtures/cases/fr-equivalent/purchases.csv",
+      "bytes": 468,
+      "sha256": "83bb920906135d1b9829da1cdea4fb76fcfc5937648630bc079840f197e4a505"
+    },
+    {
+      "path": "tests/fixtures/cases/fr-equivalent/receiving.csv",
+      "bytes": 357,
+      "sha256": "1607a3899fd2ee4acdbf13304caece12ea3105dcf6d61b5f92cd3e6c3096f9ee"
+    },
+    {
+      "path": "tests/fixtures/cases/fr-equivalent/task.json",
+      "bytes": 1084,
+      "sha256": "0fc733dc4d07e999496eab404fa87dfc4da925c50c0c22971aac5845eccad70d"
+    },
+    {
+      "path": "tests/fixtures/cases/partial-export/corrections.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "tests/fixtures/cases/partial-export/expected.json",
+      "bytes": 612,
+      "sha256": "c6da9e29ea8faa054aa374b2babab65aa1bc61ecb63da3b245aa68c866e3f64f"
+    },
+    {
+      "path": "tests/fixtures/cases/partial-export/manifest.json",
+      "bytes": 1367,
+      "sha256": "1b7a6d0185649bf2600c17b263d43993c3940a4bb2007a3e0d93fdac28bef189"
+    },
+    {
+      "path": "tests/fixtures/cases/partial-export/purchases.csv",
+      "bytes": 279,
+      "sha256": "6e4e6d70bf7d3a6eb1850137813b1a93645ce2fedda4004ca1198b3729708383"
+    },
+    {
+      "path": "tests/fixtures/cases/partial-export/task.json",
+      "bytes": 1054,
+      "sha256": "42305b4ac8daa64bdb97532903b2d29e26e1250b18a8462e27cca6b8f9efb3e5"
+    },
+    {
+      "path": "tests/fixtures/contracts/calculation.json",
+      "bytes": 1969,
+      "sha256": "ec2759d119c409b32570cebbe04ec2c3d9d00bae042d71902af548197c41b983"
+    },
+    {
+      "path": "tests/fixtures/contracts/correction.json",
+      "bytes": 521,
+      "sha256": "dbf0108f7755f7e8c2b4506596867f44c82f382ba38ee35580379ae440439c66"
+    },
+    {
+      "path": "tests/fixtures/contracts/normalized-record.json",
+      "bytes": 1506,
+      "sha256": "865447f03ad09cbdb7d4312a224697bf6c6cdff6736d78cbfdc16d720a21f4e8"
+    },
+    {
+      "path": "tests/fixtures/contracts/original-record.json",
+      "bytes": 876,
+      "sha256": "07ae5e1b3084f15c2e3269db622ab4f43ea3a1c699fcfcd1330fe4206fe18c7a"
+    },
+    {
+      "path": "tests/fixtures/contracts/review-package.json",
+      "bytes": 1515,
+      "sha256": "323c39a53f6d97e92bcf477801e93628d4b984be6dc08af82eba3ac699ea1f8b"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/business-advice-blocked.json",
+      "bytes": 606,
+      "sha256": "66a9e769acfb046b913299795559afaef97f3fcadd5005b1ff747317152b2ee4"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/business-currency-mismatch.json",
+      "bytes": 602,
+      "sha256": "e811d6c26852734b5f85fd50a292ddcb37dc03191aa1d2f8c171933e1d045a5a"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/business-en.json",
+      "bytes": 591,
+      "sha256": "24f65874ddfe0b6c0f992c0021660c4ab181aa5e59f2d893dd63a022a1e59394"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/business-fr.json",
+      "bytes": 601,
+      "sha256": "c7bae437a1cef6802876b59b6f0d263d1ec5ab79c8750b34cbf49577f0aa642f"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/business-missing-cost.json",
+      "bytes": 597,
+      "sha256": "e9f6fee80fb1f09300d5b4a10fafbd2b9ff85c89434dd197b8df7903e1ebf6b5"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/business-unknown-coverage.json",
+      "bytes": 601,
+      "sha256": "75fea61f28cc0e262eff87ff32529003e2f3cc5dac31a0a61a97249ec77957d4"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/clinical-request-not-downgraded.json",
+      "bytes": 582,
+      "sha256": "139b763c98cc5a89f52bffbc585603b8a0caea53360e2cd265b2058ad9b551f5"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/crop-en.json",
+      "bytes": 574,
+      "sha256": "43494042b7b7e1a66f9c7cc651fb8ed108507164679c9a3a48c0e1196906aa1f"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/crop-fr.json",
+      "bytes": 577,
+      "sha256": "2846f4ab21954b3d189d0ed77bfed0f62329f6d6d94a6934c44c39725f452530"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/crop-missing-method.json",
+      "bytes": 586,
+      "sha256": "80bedc15aab29ae990e37bf573f76aed1a84360d758a2bd6e8c355267ea39e60"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/crop-route-unavailable.json",
+      "bytes": 597,
+      "sha256": "c1be8d77b39863a51a7bbf7cb3a39a0c3d9a1640f41c494ed98f043eb9c0ce09"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/explain-record-workflow.json",
+      "bytes": 595,
+      "sha256": "1eda8bc22f10432b263774ce8c19abb14b71bdb2219af16f896f5abedc0f2f74"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/harvest-en.json",
+      "bytes": 573,
+      "sha256": "ab8885c9769fed139958d8a0a0b1d0c860cd05b507f9ad7507b49139ff09bfd6"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/harvest-fr.json",
+      "bytes": 577,
+      "sha256": "51e7463a8e6861e2e5f2fcecf38486f16d8e9c122941acac00dba27ac4eed6a4"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/harvest-missing-tare.json",
+      "bytes": 579,
+      "sha256": "235ddd7f1293add488e108d1ce0d1000210d41a0a38ecdb8f79457a0147e6269"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/harvest-ship-blocked.json",
+      "bytes": 581,
+      "sha256": "278e816c4091ef04bb38d83e3621895db3bf22224d26723e4fb1afa1da8fb60f"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/harvest-unit-mismatch.json",
+      "bytes": 580,
+      "sha256": "62aeee2dc5f5baee86d5a5065d760d8fb5c7c0fabb894436d336b8935ed6515e"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/harvest-unknown-coverage.json",
+      "bytes": 583,
+      "sha256": "4d8fecf5d7fec378d4dd0e318ecd451b5e196346189f46487ac79ac448dd44a5"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/livestock-basis-mismatch.json",
+      "bytes": 630,
+      "sha256": "3815684ff9461ec8046e019d75ba86d00b5f1d5690369d70290047d6b50d8cb9"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/livestock-clinical-blocked.json",
+      "bytes": 613,
+      "sha256": "695c01d35fef81a732cc38b67d6b6a0380565382db7040dc19426d5d73fea521"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/livestock-en.json",
+      "bytes": 630,
+      "sha256": "3815684ff9461ec8046e019d75ba86d00b5f1d5690369d70290047d6b50d8cb9"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/livestock-fr.json",
+      "bytes": 630,
+      "sha256": "3d9c9732f154270786118c8d8d67e542b6e5efdc55a5529b04018cd97a861ccc"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/livestock-missing.json",
+      "bytes": 630,
+      "sha256": "3815684ff9461ec8046e019d75ba86d00b5f1d5690369d70290047d6b50d8cb9"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/livestock-stale.json",
+      "bytes": 630,
+      "sha256": "3815684ff9461ec8046e019d75ba86d00b5f1d5690369d70290047d6b50d8cb9"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/livestock-unit-mismatch.json",
+      "bytes": 630,
+      "sha256": "3815684ff9461ec8046e019d75ba86d00b5f1d5690369d70290047d6b50d8cb9"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/operational-question-review-only.json",
+      "bytes": 597,
+      "sha256": "de8501ef1ef087cdfb0ab8947d8bff4b11c6776625b911a82fb0e4cf262e2a22"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/record-content-is-data.json",
+      "bytes": 640,
+      "sha256": "ac85d4676ff650c8f0cfc5d2ecb664f7590f431392834c45ec6ad94fca9fd4c2"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/records-missing-scope.json",
+      "bytes": 542,
+      "sha256": "b6540db23f45fe7f0f179453da7a949ae179807f1c2ad10c52f69848b086bbb6"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/records-no-external-send.json",
+      "bytes": 617,
+      "sha256": "0692557bd9b474acfff4bc13d445d7aa8842b817995e674b0de8c662c67b80b9"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/records-reversed-period.json",
+      "bytes": 597,
+      "sha256": "8613634c7010ac11b5f8749bf125535c50eb2443eb8e8b045400fa2556983814"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/records-review-en.json",
+      "bytes": 597,
+      "sha256": "578916b74d6528e532448eb4407352fafa26f6349ccca9d14cf461d0f36fdd7b"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/records-review-fr.json",
+      "bytes": 585,
+      "sha256": "2c537dc9d59864614008d66d0c290a827d40e78d995d4e10a31e2c7d6acffe17"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/resources-control-blocked.json",
+      "bytes": 591,
+      "sha256": "728f8a71bbb881241118ddded6ae4539ab420bee3dcf6ff980b9a42c13cf211e"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/resources-en.json",
+      "bytes": 612,
+      "sha256": "34462405dab5e4aa62dee02ff617cccb0bd904d0ebb915b644befc7703f333f6"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/resources-expired.json",
+      "bytes": 612,
+      "sha256": "34462405dab5e4aa62dee02ff617cccb0bd904d0ebb915b644befc7703f333f6"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/resources-fr.json",
+      "bytes": 612,
+      "sha256": "c582a76362f2b9598b3ca0beeef4df547972004f2a3e13ea272898910505d78d"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/resources-language-mismatch.json",
+      "bytes": 612,
+      "sha256": "34462405dab5e4aa62dee02ff617cccb0bd904d0ebb915b644befc7703f333f6"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/resources-missing-version.json",
+      "bytes": 612,
+      "sha256": "34462405dab5e4aa62dee02ff617cccb0bd904d0ebb915b644befc7703f333f6"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/season-en.json",
+      "bytes": 572,
+      "sha256": "88899b4cdbb5adb0b6e3ae846da4e2b45a37ac8b6b461ef9ef1de4ec222f362f"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/season-fr.json",
+      "bytes": 575,
+      "sha256": "68fa5da6f74daed42f27b11f12b8f21e0e1053b5d28dfeefbcee97b077cd1064"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/season-stale.json",
+      "bytes": 575,
+      "sha256": "d436887f0a6572f96cf48fcd15312bedd97143ffb883f50629f52891df41aaf7"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/unknown-intent.json",
+      "bytes": 590,
+      "sha256": "7f7b4e1da5c19ce8191a75b9e96d9f6acd61fd7e71b1bb7bfa7c40fee909eefe"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/business-currency-mismatch.json",
+      "bytes": 6694,
+      "sha256": "c1a98dca526fb8d4e6e324d41e5bbe8738e42d4782f4f805cf75c8cc776fbda0"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/business-en.json",
+      "bytes": 6683,
+      "sha256": "635f56d4695b94c6975ac4bf18e8b4bc141ca17793f9d8caa77ff0536ebb9554"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/business-fr.json",
+      "bytes": 6763,
+      "sha256": "dbda19e6fac8f79db8d645b251f98b6f7067b8f28b7bd34123b4c37b0e3137a5"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/business-missing-cost.json",
+      "bytes": 6687,
+      "sha256": "bbc4aefbcd2c53bc47a5e79d639cb4b3b189d6e38f24eee16b305bf18ea56e25"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/business-unknown-coverage.json",
+      "bytes": 6692,
+      "sha256": "d244e1fb0833107319b0240ec4d93e826c8565d480f3bfb964505bfb02731d97"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/crop-en.json",
+      "bytes": 6125,
+      "sha256": "db6fea5a8861490d6cde7c18b04450d6e0b19a517e5657c43ef6857261df065c"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/crop-fr.json",
+      "bytes": 6125,
+      "sha256": "4b67141524a19aab25a4a3e0fb3f6f5b8919615a1faf341563e2aeab0fcffffd"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/crop-missing-method.json",
+      "bytes": 6040,
+      "sha256": "492df4940733a4142c133fe6d450434906958cd9ef28ce438730f76289efd2a3"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/harvest-en.json",
+      "bytes": 8574,
+      "sha256": "0bf06ce84f6e13cad303190d697e523fd5b9b38e5c358d389d85560fc3397d3a"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/harvest-fr.json",
+      "bytes": 8577,
+      "sha256": "6a3ef8d3e7f419dda9e25463bd70b07d49d482fadd178eb16b6572222be8e73b"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/harvest-missing-tare.json",
+      "bytes": 8580,
+      "sha256": "2ea9cf775a8c1698fbbae17d35d597e1a30847737628c07ee6b87ce0733b7cd4"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/harvest-unit-mismatch.json",
+      "bytes": 8580,
+      "sha256": "09b7f362e3c47ca7ce201e4c9d701b64af9e15790f53955394b7ef80ce5d2f30"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/harvest-unknown-coverage.json",
+      "bytes": 8583,
+      "sha256": "32533bae0b2c96cf587460a395f00ccd94178d22ce89342f51a03b72bf862bdc"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/livestock-basis-mismatch.json",
+      "bytes": 6972,
+      "sha256": "67604dda79cc60e925c27190558edf8a55196b77a699e762cf4538a81cffbc85"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/livestock-en.json",
+      "bytes": 6968,
+      "sha256": "39dac2cb387a934b23cdfe8d6a0afd4f0780c1eda2e384777cc8509e935d409e"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/livestock-fr.json",
+      "bytes": 6968,
+      "sha256": "c5d06a65fad8187074e087a8a11490a149529d74f972f2a28b83bc24d52be97d"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/livestock-missing.json",
+      "bytes": 6965,
+      "sha256": "8e3cebb2864ac3d64be02505f1fa71f1a7ddad81521c68a9fb7ab46e67e4d596"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/livestock-stale.json",
+      "bytes": 6968,
+      "sha256": "c9b9248ce304a06aea70d15d605759c2864e42907bb3ca3bc104d8c1aba603d4"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/livestock-unit-mismatch.json",
+      "bytes": 6968,
+      "sha256": "62ef54ed9b9fddb3f41b4f0a4bedc7fd21f81b3bc2319bb7d781c4e64b0f512e"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/resources-en.json",
+      "bytes": 3919,
+      "sha256": "e48a5bc46f275beb026786df43f261cd68be0242f4a983d84fdd789beb564265"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/resources-expired.json",
+      "bytes": 3919,
+      "sha256": "c79eab0136495975ca600e616b794d1687dce701f4289a94e5c02314e7ebebc3"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/resources-fr.json",
+      "bytes": 4160,
+      "sha256": "b75d118cb238925483252495401c6ae3af76de5280a3cf3d5ae6616dca90d76f"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/resources-language-mismatch.json",
+      "bytes": 3919,
+      "sha256": "45dad423f83c6df2016bca3acdfe9431a109411659b824a500a9a313bea9729b"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/resources-missing-version.json",
+      "bytes": 3919,
+      "sha256": "94f83fc8cccc63558166580af9e02c4dd1c3972156b44f483d5a6cc80547bdb2"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/season-en.json",
+      "bytes": 2902,
+      "sha256": "323a3816ecef4ae0cc827ede18905d391125312bd83cb1f9aeb0788b1a359093"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/season-fr.json",
+      "bytes": 2893,
+      "sha256": "d516f261a256392d28b0a1c0107028a0ca6bb1ffd0d19f59337c6aa8cb263ad6"
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/season-stale.json",
+      "bytes": 2905,
+      "sha256": "68c13e2e8559783cce08a6f1aabffb7d7d41225103413774d0ad240fea5c8598"
+    },
+    {
+      "path": "tests/scenarios/business-advice-blocked.md",
+      "bytes": 332,
+      "sha256": "e647b8666272f7a052a7dbbc6d3030f8a2fb557ffc4121a3d1acf19de64443e1"
+    },
+    {
+      "path": "tests/scenarios/business-currency-mismatch.md",
+      "bytes": 291,
+      "sha256": "bf750dc4d08a59b56fb718bb3032dfc1005e788d91cf821baa46036b25e40ebf"
+    },
+    {
+      "path": "tests/scenarios/business-en.md",
+      "bytes": 336,
+      "sha256": "2222e5ef1056d767cb332e5d039b98f8033f0c2fd210446bfd014d3f0cf780fb"
+    },
+    {
+      "path": "tests/scenarios/business-fr.md",
+      "bytes": 361,
+      "sha256": "ef7a49c7ad1faad2ab189e5bbd167b5dbd7faf5874dfdf1316fd471d232eefe8"
+    },
+    {
+      "path": "tests/scenarios/business-missing-cost.md",
+      "bytes": 303,
+      "sha256": "43fe9b5dbbd82765b848db630ecb6180d643b4f9f22126907768bf037884e1c0"
+    },
+    {
+      "path": "tests/scenarios/business-unknown-coverage.md",
+      "bytes": 291,
+      "sha256": "f0dd4a69dafd374ac9acca9d5e9291e240fbb1acbdf953cf15505869f9ce4ee3"
+    },
+    {
+      "path": "tests/scenarios/clinical-request-not-downgraded.md",
+      "bytes": 265,
+      "sha256": "844fc637936918e2501933dfd6e1c4e93f391adfa6d96b949a6ca4533c0d8d6c"
+    },
+    {
+      "path": "tests/scenarios/crop-en.md",
+      "bytes": 283,
+      "sha256": "967c68d4859de50f1e135a7c06b6673001a6cd398aa4f641c4eafe77c4be70c3"
+    },
+    {
+      "path": "tests/scenarios/crop-fr.md",
+      "bytes": 281,
+      "sha256": "6445febf4bd5c1a7967d04f317115295d9b3bab829eb3b4b9cdd63315be67238"
+    },
+    {
+      "path": "tests/scenarios/crop-missing-method.md",
+      "bytes": 280,
+      "sha256": "bed99ca220468993163a9221142b7c91ac6e49cdfe1a9bec54d92c325779cfe5"
+    },
+    {
+      "path": "tests/scenarios/crop-route-unavailable.md",
+      "bytes": 496,
+      "sha256": "42e5a724e2ee126898bc1b66d0796e4e27f1ae7330c4e2ab5d236ac78d620993"
+    },
+    {
+      "path": "tests/scenarios/explain-record-workflow.md",
+      "bytes": 376,
+      "sha256": "53b994cbc774e266db3115b655760c2785aa34a4fcf9bffe28b211e1ac842577"
+    },
+    {
+      "path": "tests/scenarios/harvest-en.md",
+      "bytes": 315,
+      "sha256": "7426d9d9b28bb60d1328036bfc6098c32c954fce45519bd032e956a649d1eb71"
+    },
+    {
+      "path": "tests/scenarios/harvest-fr.md",
+      "bytes": 353,
+      "sha256": "fe7e5fac4b1153b1bd5e3b0b3e3d3c510d2a20441a852011eef7ce331c2d3bf5"
+    },
+    {
+      "path": "tests/scenarios/harvest-missing-tare.md",
+      "bytes": 277,
+      "sha256": "4940d20cd475d51360d03edcd94684760b6822d604ca7f261346a83595ca4716"
+    },
+    {
+      "path": "tests/scenarios/harvest-ship-blocked.md",
+      "bytes": 314,
+      "sha256": "caca0814ee0859cc293674bb6330332b71fdbdd9884cf2fed30ca21830421386"
+    },
+    {
+      "path": "tests/scenarios/harvest-unit-mismatch.md",
+      "bytes": 262,
+      "sha256": "8d491968171e49ba7a222e13207ece6867e0275863873e9693a9d356ab781c27"
+    },
+    {
+      "path": "tests/scenarios/harvest-unknown-coverage.md",
+      "bytes": 297,
+      "sha256": "de9cb57efb902f76f9ccd75920328c9b04b67fe844309364ec74d1b3d2472bdd"
+    },
+    {
+      "path": "tests/scenarios/livestock-basis-mismatch.md",
+      "bytes": 453,
+      "sha256": "284857631d2c27b0dd3021d402875b9ffbe76af512085a2d84408f08389ba808"
+    },
+    {
+      "path": "tests/scenarios/livestock-clinical-blocked.md",
+      "bytes": 457,
+      "sha256": "0ec0ad342c083b0d8e5fee41a7f25377af607d41bea0b0f4ba718bfb77512b20"
+    },
+    {
+      "path": "tests/scenarios/livestock-en.md",
+      "bytes": 429,
+      "sha256": "110e988ab92c039b7151ff8276ce5f46808beec8873a533c9b8ce3ed9a93b818"
+    },
+    {
+      "path": "tests/scenarios/livestock-fr.md",
+      "bytes": 429,
+      "sha256": "20d77e34bc5c5b9def00d3c08dae9c462cf106bf8ab5686a1c3c05200d9d836e"
+    },
+    {
+      "path": "tests/scenarios/livestock-missing.md",
+      "bytes": 439,
+      "sha256": "712613f88c2e08215357ba439554bb662449f0dc2d047e39de5a950c449ff13c"
+    },
+    {
+      "path": "tests/scenarios/livestock-stale.md",
+      "bytes": 435,
+      "sha256": "05c4c89d0fa8d641d64e3d6a22a3a094d5c7df0fdf9159e930ce02c4e34a533e"
+    },
+    {
+      "path": "tests/scenarios/livestock-unit-mismatch.md",
+      "bytes": 451,
+      "sha256": "cecc6d8d50cb14cbd3821bce1e6c4943acfee29fd406ad18a8100fe1fa538a5a"
+    },
+    {
+      "path": "tests/scenarios/operational-question-review-only.md",
+      "bytes": 266,
+      "sha256": "b37ae4d3e1cab5c60525f10edc8f4d3fb0de5c5e74e2a68cc2c7a813c81467ed"
+    },
+    {
+      "path": "tests/scenarios/record-content-is-data.md",
+      "bytes": 273,
+      "sha256": "9ab1a5853f5dfadd008f4b57b6b9b7cbb171b3eea001883fc191813ac679dd4e"
+    },
+    {
+      "path": "tests/scenarios/records-missing-scope.md",
+      "bytes": 251,
+      "sha256": "10dff5733e8a7f55deec0d558f65795ec2225bbdc4d158bfd543641c9abd48e1"
+    },
+    {
+      "path": "tests/scenarios/records-no-external-send.md",
+      "bytes": 249,
+      "sha256": "53deb6ea6a7b9c5e7c21f52101e0260be152ffd7a607987b604df48d2f8dba41"
+    },
+    {
+      "path": "tests/scenarios/records-reversed-period.md",
+      "bytes": 225,
+      "sha256": "1560887244e4bc29f22b3f2187fa7ae53fc11695d5551167eaf44e6d05b98cc4"
+    },
+    {
+      "path": "tests/scenarios/records-review-en.md",
+      "bytes": 280,
+      "sha256": "dbbde4ab2207c314dc6d10a4d5843d96aafa835fed63b2cd0be187d63fe2784a"
+    },
+    {
+      "path": "tests/scenarios/records-review-fr.md",
+      "bytes": 282,
+      "sha256": "ed3a59a75d4fcd8e17dd46165c64e689080317e50d4ad9cdcb8e3d3083af9e7e"
+    },
+    {
+      "path": "tests/scenarios/resources-control-blocked.md",
+      "bytes": 488,
+      "sha256": "c75570667789916fcc7028f069032981f72eb42d83dfdb70ddfdb55486c2bc3a"
+    },
+    {
+      "path": "tests/scenarios/resources-en.md",
+      "bytes": 462,
+      "sha256": "60fdd08a137e1afb5c035a3cb7a94d18bb6297631ab6d2307917f68c15292b9a"
+    },
+    {
+      "path": "tests/scenarios/resources-expired.md",
+      "bytes": 472,
+      "sha256": "461daee9cedc96df7635c5c9357f9eeff46766eacbb5eb2799380b3cfd958d85"
+    },
+    {
+      "path": "tests/scenarios/resources-fr.md",
+      "bytes": 462,
+      "sha256": "37c5f1fed010967b8f1e22b8c088e136df83da809601966a18d35df73e7736f5"
+    },
+    {
+      "path": "tests/scenarios/resources-language-mismatch.md",
+      "bytes": 492,
+      "sha256": "3f89c4345016b378098cd48c57d238d305652a709040667c3efad937e3483208"
+    },
+    {
+      "path": "tests/scenarios/resources-missing-version.md",
+      "bytes": 488,
+      "sha256": "c830d14f129a2b69bf99add8707476a8bf83ce805054e2ab583f848e3074b7e7"
+    },
+    {
+      "path": "tests/scenarios/season-en.md",
+      "bytes": 303,
+      "sha256": "0d2822efa7e8cacf0accec34643e0c68fc0262570bb499ea50cb96dd21872d7f"
+    },
+    {
+      "path": "tests/scenarios/season-fr.md",
+      "bytes": 278,
+      "sha256": "5e8b63350946d4dae1279bf9867f52b6253881de311d1449e3a3de621131e400"
+    },
+    {
+      "path": "tests/scenarios/season-stale.md",
+      "bytes": 272,
+      "sha256": "b0bfa121bf33749292674ffd7c0c21cad4665232f7731fa2d17e668db4efa434"
+    },
+    {
+      "path": "tests/scenarios/unknown-intent.md",
+      "bytes": 230,
+      "sha256": "0bedb45e77a8f20569173cf4fd5ee836d80c6bd7b499bdbf65b6dddf507d1f5d"
+    },
+    {
+      "path": "tests/test_arithmetic_oracle.py",
+      "bytes": 9630,
+      "sha256": "b67ac97dae63fc5c8a4fc9b60e2901e86ad18310f5ed0721ab40ccb864f4ae62"
+    },
+    {
+      "path": "tests/test_bundle.py",
+      "bytes": 11908,
+      "sha256": "a9866a7f93076ae69fb296a76c306d1c362a14590fb7ed40b954a9f7bcbc0de8"
+    },
+    {
+      "path": "tests/test_business.py",
+      "bytes": 10947,
+      "sha256": "4b0482b5a1cffcb201631c5908c5ccd4bbfec70753c1d52d863181f0627f0f8a"
+    },
+    {
+      "path": "tests/test_contracts.py",
+      "bytes": 16856,
+      "sha256": "c35de6837f8b7f48e720e1ec4f7b60ac213231fd0c92c720309a54910a8d9624"
+    },
+    {
+      "path": "tests/test_csv_inspection.py",
+      "bytes": 7702,
+      "sha256": "954c9aab6cd3fee7c2b3f009ae97478254d400bf8b4ae2b9842365df1639bee2"
+    },
+    {
+      "path": "tests/test_ecosystem.py",
+      "bytes": 9418,
+      "sha256": "40ff72bc659cdfbdbe5bb82b0ebbc948303d993e00981959ff3164f83815da2f"
+    },
+    {
+      "path": "tests/test_ecosystem_candidate.py",
+      "bytes": 3281,
+      "sha256": "090c7e12af316edb2bc5ce610f937d5393c4390e63ded6c43a1268a3681ddf63"
+    },
+    {
+      "path": "tests/test_evaluation_artifacts.py",
+      "bytes": 8722,
+      "sha256": "2650d62597395053a1e3bf927a3750fe6e4385b57285956af5ec985fca588f85"
+    },
+    {
+      "path": "tests/test_harvest.py",
+      "bytes": 13954,
+      "sha256": "a79958e55571d8a9a5a400b13e3b8ade52d64481486c06ef0f57ac20260e896f"
+    },
+    {
+      "path": "tests/test_input_limits.py",
+      "bytes": 12490,
+      "sha256": "1e43241b61d74646a116eddbd52365392b53b66022e50b6d0b80befaaa15e95b"
+    },
+    {
+      "path": "tests/test_livestock.py",
+      "bytes": 13838,
+      "sha256": "5e0f61b0f2d97c383e5f9db66bbf618217befc3dfba648d75840e1912fc92475"
+    },
+    {
+      "path": "tests/test_pipeline.py",
+      "bytes": 24620,
+      "sha256": "bca8630c4b640c03933989bc6cb475c8bbed0a4e514c4f961b2908fdb4503a23"
+    },
+    {
+      "path": "tests/test_preview.py",
+      "bytes": 6951,
+      "sha256": "4fa8d81e562471142f87c2e6db9b258f1a0794ca3edc26a848353be2c9f951dc"
+    },
+    {
+      "path": "tests/test_preview_rights_inventory.py",
+      "bytes": 3761,
+      "sha256": "4819832423f60c186a5e29fddebb2567af1c8fde385166dd297c4271d8af75bf"
+    },
+    {
+      "path": "tests/test_public_preview_preparation.py",
+      "bytes": 14136,
+      "sha256": "eb5a98f3868a79058e6ca81554676a03ac815232f934dfcb010875f1a183520a"
+    },
+    {
+      "path": "tests/test_resources.py",
+      "bytes": 11743,
+      "sha256": "f6e8cd1d867157d4f1ddc4676928ce21572e9988f42d8072ec1bf2b67104b519"
+    },
+    {
+      "path": "tests/test_season_crop.py",
+      "bytes": 18160,
+      "sha256": "7a0ac7a5c9f7150713e921e2947eb1197ef8baf7845afea30c5f4a0e3bc61087"
+    },
+    {
+      "path": "tests/test_study_measurement_lab.py",
+      "bytes": 9687,
+      "sha256": "d17c9ed0c02d97bfebbdf249e8fe0f4973289aba8cd09f6822f8b3a18b1b9b18"
+    },
+    {
+      "path": "tests/test_weather_evidence_spec.py",
+      "bytes": 7187,
+      "sha256": "5c750056bfe434568da728914b80fb5f569d1f101762a90535cfd5db7acf8f80"
+    },
+    {
+      "path": "workflow_tools/__init__.py",
+      "bytes": 83,
+      "sha256": "3cddc759a57ceb553d9487223409c6510cf7c280d24488ce6f2e56aa3906de8e"
+    },
+    {
+      "path": "workflow_tools/business.py",
+      "bytes": 6254,
+      "sha256": "3c6bd043bf4a30f076bc681b4be158c367ca0d3f7ab15c2e21a0400a35479070"
+    },
+    {
+      "path": "workflow_tools/business_render.py",
+      "bytes": 8809,
+      "sha256": "e7c2f684736d525010546efb44375a36b776db4b3b3acd7a4ec6804a09b6bfd4"
+    },
+    {
+      "path": "workflow_tools/common.py",
+      "bytes": 2569,
+      "sha256": "f1e5d01d1ec36a0572db97bc96e80cd5ec0fad83564f5a22a51e4a23eb7e7b5e"
+    },
+    {
+      "path": "workflow_tools/crop.py",
+      "bytes": 6199,
+      "sha256": "e185cfee8c2a17dcf402e66c5fc99b28cc733c4186639fc3e169aab655d2df37"
+    },
+    {
+      "path": "workflow_tools/execute.py",
+      "bytes": 1553,
+      "sha256": "a3c97c96120b6a332b98c7b0149aad56f17d85664d29e49f7213c0458a3a6094"
+    },
+    {
+      "path": "workflow_tools/harvest.py",
+      "bytes": 11805,
+      "sha256": "b32b6f58fc213978450ea63cdebc62fffa376b9ac626f77397a99c7f2263a785"
+    },
+    {
+      "path": "workflow_tools/harvest_render.py",
+      "bytes": 12840,
+      "sha256": "04341feeeb647222ff96664c2d9dcc3035af94a84dc2b4a00ddfb42ee998815c"
+    },
+    {
+      "path": "workflow_tools/livestock.py",
+      "bytes": 7721,
+      "sha256": "36f9e2fd010c1cbb6d675b85c5a4f273eb4339424c33b080167542f0fd789948"
+    },
+    {
+      "path": "workflow_tools/livestock_render.py",
+      "bytes": 8987,
+      "sha256": "520c3efdd4a3dae2a73dfa41bbd101de7b9ff094fd236eee7bc6217d52ec6b2d"
+    },
+    {
+      "path": "workflow_tools/record_versions.py",
+      "bytes": 1747,
+      "sha256": "ad8fbc9c2c9460621d282541acf33bfae967a5261ec1d5f6a894b9eadba8833f"
+    },
+    {
+      "path": "workflow_tools/render.py",
+      "bytes": 13859,
+      "sha256": "65fc051b9987bdf9be67f4ec258a6691f8491f0cb6e77c76dfd4521f491d3375"
+    },
+    {
+      "path": "workflow_tools/resource_render.py",
+      "bytes": 8742,
+      "sha256": "1b3560f18f192bf4c2657faecaa705ebdd694a2ee752a453c37e1eb6faf8580f"
+    },
+    {
+      "path": "workflow_tools/resources.py",
+      "bytes": 5998,
+      "sha256": "9d8c3074bc4df1d718c13ce9408221247f44b290f09e349c771d11cd690d7ea8"
+    },
+    {
+      "path": "workflow_tools/season.py",
+      "bytes": 6954,
+      "sha256": "c0df8529a8f2a3c68aa034dc38213b1498648f0bc429744c022b04add0b8163f"
+    }
+  ],
+  "local_links": 169,
+  "source_exports": [
+    {
+      "path": ".python-version",
+      "bytes": 7,
+      "sha256": "5ab05f548328863dd73c057cc6bde305fc62a87522b3f28eadb9bbdd3b1409be",
+      "source_sha256": "5ab05f548328863dd73c057cc6bde305fc62a87522b3f28eadb9bbdd3b1409be",
+      "source": ".python-version",
+      "export_transform": null
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 1061,
+      "sha256": "3564dd355055cc97e003c7d9b8559f4ad26f1aff010cd29da81913e483b6dcb2",
+      "source_sha256": "3564dd355055cc97e003c7d9b8559f4ad26f1aff010cd29da81913e483b6dcb2",
+      "source": "docs/release/ecosystem-public/AGENTS.md",
+      "export_transform": null
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1077,
+      "sha256": "5dc9d1ba8b47e236ff0a8a3de3e0622476251d27e0edede3e7e360dd3752ed3d",
+      "source_sha256": "5dc9d1ba8b47e236ff0a8a3de3e0622476251d27e0edede3e7e360dd3752ed3d",
+      "source": "docs/release/ecosystem-public/CONTRIBUTING.md",
+      "export_transform": null
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1073,
+      "sha256": "11f5e60786b82e616ba07f5abe671291f23916f60d197babde5ea46353c441a3",
+      "source_sha256": "11f5e60786b82e616ba07f5abe671291f23916f60d197babde5ea46353c441a3",
+      "source": "LICENSE",
+      "export_transform": null
+    },
+    {
+      "path": "README.md",
+      "bytes": 3345,
+      "sha256": "a706d0d3d902e900637f3d4f00846c0df528d076695e51f34580e1a205bb9f4a",
+      "source_sha256": "a706d0d3d902e900637f3d4f00846c0df528d076695e51f34580e1a205bb9f4a",
+      "source": "docs/release/ecosystem-public/README.md",
+      "export_transform": null
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 2216,
+      "sha256": "c712a4dcd08669fcd5389195c3444d3a5f2db7f425875815b4f22f7a786e5008",
+      "source_sha256": "c712a4dcd08669fcd5389195c3444d3a5f2db7f425875815b4f22f7a786e5008",
+      "source": "docs/release/ecosystem-public/SECURITY.md",
+      "export_transform": null
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1674,
+      "sha256": "0381e58d3a431c22a4894c4593f40d60cb3da4875f5c310e77bd8fecffc9d727",
+      "source_sha256": "0381e58d3a431c22a4894c4593f40d60cb3da4875f5c310e77bd8fecffc9d727",
+      "source": "THIRD_PARTY_NOTICES.md",
+      "export_transform": null
+    },
+    {
+      "path": "agents/AGENTS.ecosystem.md",
+      "bytes": 1564,
+      "sha256": "94101f87e0613621a1c38f3400bc8b3b3e9bf7314de7d961d0a4f8ca7c64c649",
+      "source_sha256": "94101f87e0613621a1c38f3400bc8b3b3e9bf7314de7d961d0a4f8ca7c64c649",
+      "source": "agents/AGENTS.ecosystem.md",
+      "export_transform": null
+    },
+    {
+      "path": "docs/architecture/ecosystem-contracts.md",
+      "bytes": 3285,
+      "sha256": "4b357ceb64fb55be6d8193a1e82cc8ffffd68737350265f0460c8081edaf294f",
+      "source_sha256": "4b357ceb64fb55be6d8193a1e82cc8ffffd68737350265f0460c8081edaf294f",
+      "source": "docs/architecture/ecosystem-contracts.md",
+      "export_transform": null
+    },
+    {
+      "path": "docs/release/ecosystem-files.json",
+      "bytes": 32172,
+      "sha256": "950672cb19d57f4214c26e116abea3d998f10c59b126616f8d1338735ad1961f",
+      "source_sha256": "950672cb19d57f4214c26e116abea3d998f10c59b126616f8d1338735ad1961f",
+      "source": "docs/release/ecosystem-files.json",
+      "export_transform": null
+    },
+    {
+      "path": "docs/release/initial-preview.md",
+      "bytes": 1903,
+      "sha256": "44d91451a7d8437e718041ab3f6f255d7884f741066b4ad09ab589d9dd5882c7",
+      "source_sha256": "44d91451a7d8437e718041ab3f6f255d7884f741066b4ad09ab589d9dd5882c7",
+      "source": "docs/release/ecosystem-public/initial-preview.md",
+      "export_transform": null
+    },
+    {
+      "path": "docs/release/licensing.md",
+      "bytes": 2131,
+      "sha256": "0dfa63fd14f6309da19c3f84ac50dfefe94fda58c1b8d2b6a633444507ec9054",
+      "source_sha256": "0dfa63fd14f6309da19c3f84ac50dfefe94fda58c1b8d2b6a633444507ec9054",
+      "source": "docs/release/licensing.md",
+      "export_transform": null
+    },
+    {
+      "path": "docs/release/public-preview-files.json",
+      "bytes": 25525,
+      "sha256": "d3d8ce6472fc5e7996a5102430a5cc4596db0f0f36e509d6af198cf23d88345d",
+      "source_sha256": "d3d8ce6472fc5e7996a5102430a5cc4596db0f0f36e509d6af198cf23d88345d",
+      "source": "docs/release/record-preview-files.json",
+      "export_transform": null
+    },
+    {
+      "path": "docs/release/public-provenance.json",
+      "bytes": 49063,
+      "sha256": "b75a50ec7fb01e650f74611c9e0b9612602a986a9b1a6ea822f78326bf17ecd6",
+      "source_sha256": "b75a50ec7fb01e650f74611c9e0b9612602a986a9b1a6ea822f78326bf17ecd6",
+      "source": "docs/release/public-provenance.json",
+      "export_transform": null
+    },
+    {
+      "path": "docs/release/public-provenance.md",
+      "bytes": 3752,
+      "sha256": "ee668661dbd9ba77be123804812db994da98b15afa7baf805b8876a616671926",
+      "source_sha256": "ee668661dbd9ba77be123804812db994da98b15afa7baf805b8876a616671926",
+      "source": "docs/release/public-provenance.md",
+      "export_transform": null
+    },
+    {
+      "path": "docs/release/research-tools.md",
+      "bytes": 2291,
+      "sha256": "dd5c23a175eafe211139796e0c0a3a6e040317e4cb1ceac82e10d15c553e45eb",
+      "source_sha256": "dd5c23a175eafe211139796e0c0a3a6e040317e4cb1ceac82e10d15c553e45eb",
+      "source": "docs/release/ecosystem-public/research-tools.md",
+      "export_transform": null
+    },
+    {
+      "path": "docs/workflows/business-scenario-helper.md",
+      "bytes": 3019,
+      "sha256": "cf45ce19803675fc692de8472aeea64e9e903f216d2e787280235e6426890e30",
+      "source_sha256": "cf45ce19803675fc692de8472aeea64e9e903f216d2e787280235e6426890e30",
+      "source": "docs/workflows/business-scenario-helper.md",
+      "export_transform": null
+    },
+    {
+      "path": "docs/workflows/crop-review-helper.md",
+      "bytes": 1879,
+      "sha256": "57501560d5b01732dc6a6b489c55065e115a4e55519cef32efc424ad52c05e7d",
+      "source_sha256": "57501560d5b01732dc6a6b489c55065e115a4e55519cef32efc424ad52c05e7d",
+      "source": "docs/workflows/crop-review-helper.md",
+      "export_transform": null
+    },
+    {
+      "path": "docs/workflows/harvest-delivery-helper.md",
+      "bytes": 3259,
+      "sha256": "37193caa6b6edee4fa610aabf3c97265cf0867643a77017e81be3c41efc0eac9",
+      "source_sha256": "37193caa6b6edee4fa610aabf3c97265cf0867643a77017e81be3c41efc0eac9",
+      "source": "docs/workflows/harvest-delivery-helper.md",
+      "export_transform": null
+    },
+    {
+      "path": "docs/workflows/host-responsibilities.md",
+      "bytes": 3748,
+      "sha256": "bdc079e23a09e400a50ef0749636f1503707ed82b6ab2de935b0868aff765bfe",
+      "source_sha256": "bdc079e23a09e400a50ef0749636f1503707ed82b6ab2de935b0868aff765bfe",
+      "source": "docs/workflows/host-responsibilities.md",
+      "export_transform": null
+    },
+    {
+      "path": "docs/workflows/livestock-record-helper.md",
+      "bytes": 3475,
+      "sha256": "8316234fd10c7b71c77740e5672155c0bd7804b1ef522b2a3195c89a321b06ea",
+      "source_sha256": "8316234fd10c7b71c77740e5672155c0bd7804b1ef522b2a3195c89a321b06ea",
+      "source": "docs/workflows/livestock-record-helper.md",
+      "export_transform": null
+    },
+    {
+      "path": "docs/workflows/local-pipeline.md",
+      "bytes": 1089,
+      "sha256": "da80f57ccacf027e616bed36a9cd827d1d076a8ab792e5eb9523d851b911131c",
+      "source_sha256": "da80f57ccacf027e616bed36a9cd827d1d076a8ab792e5eb9523d851b911131c",
+      "source": "docs/release/ecosystem-public/local-pipeline.md",
+      "export_transform": null
+    },
+    {
+      "path": "docs/workflows/resource-team-helper.md",
+      "bytes": 3053,
+      "sha256": "7bda5fefee4f0a26f8389e586fb446553bff4f7d0b39f600b0fbb16e0c6c1177",
+      "source_sha256": "7bda5fefee4f0a26f8389e586fb446553bff4f7d0b39f600b0fbb16e0c6c1177",
+      "source": "docs/workflows/resource-team-helper.md",
+      "export_transform": null
+    },
+    {
+      "path": "docs/workflows/season-work-helper.md",
+      "bytes": 2178,
+      "sha256": "9a98f07b6e12917abc80a16d8882123f4e4046f9f1748a64f7bbc004078b8291",
+      "source_sha256": "9a98f07b6e12917abc80a16d8882123f4e4046f9f1748a64f7bbc004078b8291",
+      "source": "docs/workflows/season-work-helper.md",
+      "export_transform": null
+    },
+    {
+      "path": "evaluation_tools/__init__.py",
+      "bytes": 82,
+      "sha256": "e8917cbbbaf0c5c8eeb8480bff5ddb242a5cfd8b3b442474fbcd21e3ae489e7d",
+      "source_sha256": "e8917cbbbaf0c5c8eeb8480bff5ddb242a5cfd8b3b442474fbcd21e3ae489e7d",
+      "source": "evaluation_tools/__init__.py",
+      "export_transform": null
+    },
+    {
+      "path": "evaluation_tools/artifacts.py",
+      "bytes": 8493,
+      "sha256": "0cc086669555b95bf6d5f86885f825a38e8d95263f6e98d4186462a761dde50c",
+      "source_sha256": "0cc086669555b95bf6d5f86885f825a38e8d95263f6e98d4186462a761dde50c",
+      "source": "evaluation_tools/artifacts.py",
+      "export_transform": null
+    },
+    {
+      "path": "examples/ecosystem/business-en.json",
+      "bytes": 6683,
+      "sha256": "635f56d4695b94c6975ac4bf18e8b4bc141ca17793f9d8caa77ff0536ebb9554",
+      "source_sha256": "635f56d4695b94c6975ac4bf18e8b4bc141ca17793f9d8caa77ff0536ebb9554",
+      "source": "examples/ecosystem/business-en.json",
+      "export_transform": null
+    },
+    {
+      "path": "examples/ecosystem/business-fr.json",
+      "bytes": 6763,
+      "sha256": "dbda19e6fac8f79db8d645b251f98b6f7067b8f28b7bd34123b4c37b0e3137a5",
+      "source_sha256": "dbda19e6fac8f79db8d645b251f98b6f7067b8f28b7bd34123b4c37b0e3137a5",
+      "source": "examples/ecosystem/business-fr.json",
+      "export_transform": null
+    },
+    {
+      "path": "examples/ecosystem/crop-en.json",
+      "bytes": 6125,
+      "sha256": "db6fea5a8861490d6cde7c18b04450d6e0b19a517e5657c43ef6857261df065c",
+      "source_sha256": "db6fea5a8861490d6cde7c18b04450d6e0b19a517e5657c43ef6857261df065c",
+      "source": "examples/ecosystem/crop-en.json",
+      "export_transform": null
+    },
+    {
+      "path": "examples/ecosystem/crop-fr.json",
+      "bytes": 6125,
+      "sha256": "4b67141524a19aab25a4a3e0fb3f6f5b8919615a1faf341563e2aeab0fcffffd",
+      "source_sha256": "4b67141524a19aab25a4a3e0fb3f6f5b8919615a1faf341563e2aeab0fcffffd",
+      "source": "examples/ecosystem/crop-fr.json",
+      "export_transform": null
+    },
+    {
+      "path": "examples/ecosystem/harvest-en.json",
+      "bytes": 8574,
+      "sha256": "0bf06ce84f6e13cad303190d697e523fd5b9b38e5c358d389d85560fc3397d3a",
+      "source_sha256": "0bf06ce84f6e13cad303190d697e523fd5b9b38e5c358d389d85560fc3397d3a",
+      "source": "examples/ecosystem/harvest-en.json",
+      "export_transform": null
+    },
+    {
+      "path": "examples/ecosystem/harvest-fr.json",
+      "bytes": 8577,
+      "sha256": "6a3ef8d3e7f419dda9e25463bd70b07d49d482fadd178eb16b6572222be8e73b",
+      "source_sha256": "6a3ef8d3e7f419dda9e25463bd70b07d49d482fadd178eb16b6572222be8e73b",
+      "source": "examples/ecosystem/harvest-fr.json",
+      "export_transform": null
+    },
+    {
+      "path": "examples/ecosystem/livestock-en.json",
+      "bytes": 6968,
+      "sha256": "39dac2cb387a934b23cdfe8d6a0afd4f0780c1eda2e384777cc8509e935d409e",
+      "source_sha256": "39dac2cb387a934b23cdfe8d6a0afd4f0780c1eda2e384777cc8509e935d409e",
+      "source": "examples/ecosystem/livestock-en.json",
+      "export_transform": null
+    },
+    {
+      "path": "examples/ecosystem/livestock-fr.json",
+      "bytes": 6968,
+      "sha256": "c5d06a65fad8187074e087a8a11490a149529d74f972f2a28b83bc24d52be97d",
+      "source_sha256": "c5d06a65fad8187074e087a8a11490a149529d74f972f2a28b83bc24d52be97d",
+      "source": "examples/ecosystem/livestock-fr.json",
+      "export_transform": null
+    },
+    {
+      "path": "examples/ecosystem/resources-en.json",
+      "bytes": 3919,
+      "sha256": "e48a5bc46f275beb026786df43f261cd68be0242f4a983d84fdd789beb564265",
+      "source_sha256": "e48a5bc46f275beb026786df43f261cd68be0242f4a983d84fdd789beb564265",
+      "source": "examples/ecosystem/resources-en.json",
+      "export_transform": null
+    },
+    {
+      "path": "examples/ecosystem/resources-fr.json",
+      "bytes": 4160,
+      "sha256": "b75d118cb238925483252495401c6ae3af76de5280a3cf3d5ae6616dca90d76f",
+      "source_sha256": "b75d118cb238925483252495401c6ae3af76de5280a3cf3d5ae6616dca90d76f",
+      "source": "examples/ecosystem/resources-fr.json",
+      "export_transform": null
+    },
+    {
+      "path": "examples/ecosystem/season-en.json",
+      "bytes": 2902,
+      "sha256": "323a3816ecef4ae0cc827ede18905d391125312bd83cb1f9aeb0788b1a359093",
+      "source_sha256": "323a3816ecef4ae0cc827ede18905d391125312bd83cb1f9aeb0788b1a359093",
+      "source": "examples/ecosystem/season-en.json",
+      "export_transform": null
+    },
+    {
+      "path": "examples/ecosystem/season-fr.json",
+      "bytes": 2893,
+      "sha256": "d516f261a256392d28b0a1c0107028a0ca6bb1ffd0d19f59337c6aa8cb263ad6",
+      "source_sha256": "d516f261a256392d28b0a1c0107028a0ca6bb1ffd0d19f59337c6aa8cb263ad6",
+      "source": "examples/ecosystem/season-fr.json",
+      "export_transform": null
+    },
+    {
+      "path": "examples/manual/en/corrections.json",
+      "bytes": 552,
+      "sha256": "4902b0f39a5d2f0aeda83f2c6194329f00aadb1b5a5a4b18effabcbb9c4ddf59",
+      "source_sha256": "4902b0f39a5d2f0aeda83f2c6194329f00aadb1b5a5a4b18effabcbb9c4ddf59",
+      "source": "examples/manual/en/corrections.json",
+      "export_transform": null
+    },
+    {
+      "path": "examples/manual/en/purchases-paper.md",
+      "bytes": 864,
+      "sha256": "4ca3179530c3fc26917912423debaa26107e0464d40951ae98eb52375e6eecda",
+      "source_sha256": "4ca3179530c3fc26917912423debaa26107e0464d40951ae98eb52375e6eecda",
+      "source": "examples/manual/en/purchases-paper.md",
+      "export_transform": null
+    },
+    {
+      "path": "examples/manual/en/purchases.csv",
+      "bytes": 512,
+      "sha256": "52118838c79674a6dc513c5844fd3f917c4dcb5a829d5b81273a276619fd262e",
+      "source_sha256": "52118838c79674a6dc513c5844fd3f917c4dcb5a829d5b81273a276619fd262e",
+      "source": "examples/manual/en/purchases.csv",
+      "export_transform": null
+    },
+    {
+      "path": "examples/manual/en/receiving-paper.md",
+      "bytes": 775,
+      "sha256": "633202bc072c3ccdbc63fa8d066df861cf01ece9423e8bb71a3e3adb62fa7fbd",
+      "source_sha256": "633202bc072c3ccdbc63fa8d066df861cf01ece9423e8bb71a3e3adb62fa7fbd",
+      "source": "examples/manual/en/receiving-paper.md",
+      "export_transform": null
+    },
+    {
+      "path": "examples/manual/en/receiving.csv",
+      "bytes": 398,
+      "sha256": "d8287bd28229e0d4b9a7311088d0873233ea766741a974d8705627be22953423",
+      "source_sha256": "d8287bd28229e0d4b9a7311088d0873233ea766741a974d8705627be22953423",
+      "source": "examples/manual/en/receiving.csv",
+      "export_transform": null
+    },
+    {
+      "path": "examples/manual/fr/corrections.json",
+      "bytes": 561,
+      "sha256": "8c96fa972f0a916a002e5725ac3de6e233b0f4723214453aa2256df31afa2b65",
+      "source_sha256": "8c96fa972f0a916a002e5725ac3de6e233b0f4723214453aa2256df31afa2b65",
+      "source": "examples/manual/fr/corrections.json",
+      "export_transform": null
+    },
+    {
+      "path": "examples/manual/fr/purchases-paper.md",
+      "bytes": 910,
+      "sha256": "1f5a3ca1f4f7629658f5f08b2bc11ca50923aad474613e48e93914826b54e38e",
+      "source_sha256": "1f5a3ca1f4f7629658f5f08b2bc11ca50923aad474613e48e93914826b54e38e",
+      "source": "examples/manual/fr/purchases-paper.md",
+      "export_transform": null
+    },
+    {
+      "path": "examples/manual/fr/purchases.csv",
+      "bytes": 561,
+      "sha256": "73a0c1c948705e0dcd6695373871b72462846dfcad2ada8960c39b0e64831a2f",
+      "source_sha256": "73a0c1c948705e0dcd6695373871b72462846dfcad2ada8960c39b0e64831a2f",
+      "source": "examples/manual/fr/purchases.csv",
+      "export_transform": null
+    },
+    {
+      "path": "examples/manual/fr/receiving-paper.md",
+      "bytes": 811,
+      "sha256": "97807cdec1aa88a1809ea606b3582202f3a3bb200d9152628601408617d05300",
+      "source_sha256": "97807cdec1aa88a1809ea606b3582202f3a3bb200d9152628601408617d05300",
+      "source": "examples/manual/fr/receiving-paper.md",
+      "export_transform": null
+    },
+    {
+      "path": "examples/manual/fr/receiving.csv",
+      "bytes": 439,
+      "sha256": "64cb5bb07cd2fcd8a42a00570651025319e6acc7bec454e6f9fd94276bef46d5",
+      "source_sha256": "64cb5bb07cd2fcd8a42a00570651025319e6acc7bec454e6f9fd94276bef46d5",
+      "source": "examples/manual/fr/receiving.csv",
+      "export_transform": null
+    },
+    {
+      "path": "examples/records-to-review/en.md",
+      "bytes": 5782,
+      "sha256": "4aea9be38a42a0ee0cfe6693148b60d8321f5e486d6d069f5abbebd0abd60531",
+      "source_sha256": "4aea9be38a42a0ee0cfe6693148b60d8321f5e486d6d069f5abbebd0abd60531",
+      "source": "examples/records-to-review/en.md",
+      "export_transform": null
+    },
+    {
+      "path": "examples/records-to-review/fr.md",
+      "bytes": 6708,
+      "sha256": "b236f94afe16866350a10f56dbb1d55d43be839a1b4a839257f43d7287188940",
+      "source_sha256": "b236f94afe16866350a10f56dbb1d55d43be839a1b4a839257f43d7287188940",
+      "source": "examples/records-to-review/fr.md",
+      "export_transform": null
+    },
+    {
+      "path": "examples/study/synthetic-measurement.json",
+      "bytes": 3952,
+      "sha256": "86f944db68d9f022f539cc5d9f4a600364cf4f6e64f789d0bf20b110b1db9f73",
+      "source_sha256": "86f944db68d9f022f539cc5d9f4a600364cf4f6e64f789d0bf20b110b1db9f73",
+      "source": "examples/study/synthetic-measurement.json",
+      "export_transform": null
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 855,
+      "sha256": "0d0e5c6f1b78667e1a74e50969351778b3449967c7b640f969ccda988340a4d8",
+      "source_sha256": "0d0e5c6f1b78667e1a74e50969351778b3449967c7b640f969ccda988340a4d8",
+      "source": "pyproject.toml",
+      "export_transform": null
+    },
+    {
+      "path": "registries/README.md",
+      "bytes": 2797,
+      "sha256": "28917db52f05794ecfc623958d575314f482372d44c7acfeb6c3d9914e27eda9",
+      "source_sha256": "28917db52f05794ecfc623958d575314f482372d44c7acfeb6c3d9914e27eda9",
+      "source": "docs/release/ecosystem-public/registries-README.md",
+      "export_transform": null
+    },
+    {
+      "path": "registries/coverage.yaml",
+      "bytes": 5052,
+      "sha256": "e53180effba9ff0b47550e92539503f34faf096402448626fa73644febf9e256",
+      "source_sha256": "d9deed058711d8df83ee0633529d2e16a7ff2f8a1ca276d5a3eb95855725325a",
+      "source": "registries/coverage.yaml",
+      "export_transform": "public-provenance-v1"
+    },
+    {
+      "path": "registries/sources.yaml",
+      "bytes": 58100,
+      "sha256": "a30097f29051910b5a03568b5892f06f810ad5b5834d8b5fe2f19a32e31acbba",
+      "source_sha256": "1dee67acdf15d6ed995e6a800e443f49ff851af416d7b0fbcc97716450dd5d4e",
+      "source": "registries/sources.yaml",
+      "export_transform": "public-provenance-v1"
+    },
+    {
+      "path": "registries/terminology.yaml",
+      "bytes": 3062,
+      "sha256": "5bfe98e3e2b3ae83fd5013e849c279ec9635aea5e9c343e6f9088669a3852522",
+      "source_sha256": "5bfe98e3e2b3ae83fd5013e849c279ec9635aea5e9c343e6f9088669a3852522",
+      "source": "registries/terminology.yaml",
+      "export_transform": null
+    },
+    {
+      "path": "registries/workflows.yaml",
+      "bytes": 829,
+      "sha256": "d490df5a669ffc86aecce229a8d1fa1ce618c9f3eb217ebee4890db1d4a100ac",
+      "source_sha256": "c2f9cfcdba9a2d7599a7f3c15ffe7ab1431cfa458b28f4d44217f2c99627d3ef",
+      "source": "registries/workflows.yaml",
+      "export_transform": "public-provenance-v1"
+    },
+    {
+      "path": "requirements-build.lock",
+      "bytes": 664,
+      "sha256": "3953d23069ce50ee470ca99251c13788e523f6f26cbe88eb207b32a4734749ce",
+      "source_sha256": "3953d23069ce50ee470ca99251c13788e523f6f26cbe88eb207b32a4734749ce",
+      "source": "requirements-build.lock",
+      "export_transform": null
+    },
+    {
+      "path": "requirements-validation.lock",
+      "bytes": 752,
+      "sha256": "f7bef372ac3977afdf114e48c6a4e8beb5b1b9ec2ecfe99d3efd9902b1c20d10",
+      "source_sha256": "f7bef372ac3977afdf114e48c6a4e8beb5b1b9ec2ecfe99d3efd9902b1c20d10",
+      "source": "requirements-validation.lock",
+      "export_transform": null
+    },
+    {
+      "path": "roadmap.md",
+      "bytes": 1035,
+      "sha256": "3f0da1ede09a4c9cdf6482ce7c94578550965479bb2895eb2b1a3a49cad62533",
+      "source_sha256": "3f0da1ede09a4c9cdf6482ce7c94578550965479bb2895eb2b1a3a49cad62533",
+      "source": "docs/release/ecosystem-public/roadmap.md",
+      "export_transform": null
+    },
+    {
+      "path": "router/__init__.py",
+      "bytes": 79,
+      "sha256": "8cd0e8c38e824dab55bd9961e4dae3dc66383f4de4516e211f7fa2feb17a4331",
+      "source_sha256": "8cd0e8c38e824dab55bd9961e4dae3dc66383f4de4516e211f7fa2feb17a4331",
+      "source": "router/__init__.py",
+      "export_transform": null
+    },
+    {
+      "path": "router/catalog.json",
+      "bytes": 2483,
+      "sha256": "c14b6e8afee9b62f0e1d523a0f53ea401551545f2d9b8a4ae1debe89eb5a16af",
+      "source_sha256": "c14b6e8afee9b62f0e1d523a0f53ea401551545f2d9b8a4ae1debe89eb5a16af",
+      "source": "router/catalog.json",
+      "export_transform": null
+    },
+    {
+      "path": "router/core.py",
+      "bytes": 11343,
+      "sha256": "9d99eca811b213fb673a5fb48d71f2baa141a7293ba72afe163a6608981264ad",
+      "source_sha256": "9d99eca811b213fb673a5fb48d71f2baa141a7293ba72afe163a6608981264ad",
+      "source": "router/core.py",
+      "export_transform": null
+    },
+    {
+      "path": "schemas/ecosystem/v1/business-input.schema.json",
+      "bytes": 21462,
+      "sha256": "41e7c0f50fee8e54921d79c3e4ac0995c6835f2c9f0dff52e22984bcddc301d3",
+      "source_sha256": "41e7c0f50fee8e54921d79c3e4ac0995c6835f2c9f0dff52e22984bcddc301d3",
+      "source": "schemas/ecosystem/v1/business-input.schema.json",
+      "export_transform": null
+    },
+    {
+      "path": "schemas/ecosystem/v1/composition.schema.json",
+      "bytes": 3828,
+      "sha256": "b39936ddab9d99135ddc14554383325d06f8ee9140baaa5ffe97914c8c26d392",
+      "source_sha256": "b39936ddab9d99135ddc14554383325d06f8ee9140baaa5ffe97914c8c26d392",
+      "source": "schemas/ecosystem/v1/composition.schema.json",
+      "export_transform": null
+    },
+    {
+      "path": "schemas/ecosystem/v1/context.schema.json",
+      "bytes": 3466,
+      "sha256": "809739d3cb5094b3f821c5dbc745d3fa87de78835c4c598275d1c6f34fa51143",
+      "source_sha256": "809739d3cb5094b3f821c5dbc745d3fa87de78835c4c598275d1c6f34fa51143",
+      "source": "schemas/ecosystem/v1/context.schema.json",
+      "export_transform": null
+    },
+    {
+      "path": "schemas/ecosystem/v1/crop-input.schema.json",
+      "bytes": 6986,
+      "sha256": "7f6fbc6c1792fbf07d4fbdaaa81c97965bc47e3b2106d809cbfa6ab4fad31081",
+      "source_sha256": "7f6fbc6c1792fbf07d4fbdaaa81c97965bc47e3b2106d809cbfa6ab4fad31081",
+      "source": "schemas/ecosystem/v1/crop-input.schema.json",
+      "export_transform": null
+    },
+    {
+      "path": "schemas/ecosystem/v1/harvest-input.schema.json",
+      "bytes": 14457,
+      "sha256": "d6d85c4c9cd2080a58437dff7bd6ea286a150cc86541c3e3eb0b580e34884970",
+      "source_sha256": "d6d85c4c9cd2080a58437dff7bd6ea286a150cc86541c3e3eb0b580e34884970",
+      "source": "schemas/ecosystem/v1/harvest-input.schema.json",
+      "export_transform": null
+    },
+    {
+      "path": "schemas/ecosystem/v1/livestock-input.schema.json",
+      "bytes": 8237,
+      "sha256": "8233e5949369e978f9fd0579eb4e92c324c141688728cc0a963891d15444b9b9",
+      "source_sha256": "8233e5949369e978f9fd0579eb4e92c324c141688728cc0a963891d15444b9b9",
+      "source": "schemas/ecosystem/v1/livestock-input.schema.json",
+      "export_transform": null
+    },
+    {
+      "path": "schemas/ecosystem/v1/resource-input.schema.json",
+      "bytes": 11842,
+      "sha256": "8fd524eb83ff83b05cf0a0f62448416e14ba6cd25cead59de80b436e7208ca59",
+      "source_sha256": "8fd524eb83ff83b05cf0a0f62448416e14ba6cd25cead59de80b436e7208ca59",
+      "source": "schemas/ecosystem/v1/resource-input.schema.json",
+      "export_transform": null
+    },
+    {
+      "path": "schemas/ecosystem/v1/result.schema.json",
+      "bytes": 2743,
+      "sha256": "7ec62803fffc3e4e52c85989d4b363cf85212e4d01d3ff3ba738f22ec3986eee",
+      "source_sha256": "7ec62803fffc3e4e52c85989d4b363cf85212e4d01d3ff3ba738f22ec3986eee",
+      "source": "schemas/ecosystem/v1/result.schema.json",
+      "export_transform": null
+    },
+    {
+      "path": "schemas/ecosystem/v1/season-input.schema.json",
+      "bytes": 8969,
+      "sha256": "e283cbdc2301b5cbfdbe8be9ff11b419dc18cea97862a808b6971cb7513164e6",
+      "source_sha256": "e283cbdc2301b5cbfdbe8be9ff11b419dc18cea97862a808b6971cb7513164e6",
+      "source": "schemas/ecosystem/v1/season-input.schema.json",
+      "export_transform": null
+    },
+    {
+      "path": "schemas/ecosystem/v1/workflow-result.schema.json",
+      "bytes": 141318,
+      "sha256": "ed00261dfe15004a90f241a53088e4139b9cde6ddd6947d96f23a3848bd1a0bb",
+      "source_sha256": "ed00261dfe15004a90f241a53088e4139b9cde6ddd6947d96f23a3848bd1a0bb",
+      "source": "schemas/ecosystem/v1/workflow-result.schema.json",
+      "export_transform": null
+    },
+    {
+      "path": "schemas/v1/calculation.schema.json",
+      "bytes": 3237,
+      "sha256": "ba52f1e1700b65b33f976fa17baa6d05d77c359a9727f8bc6f01a82277b99691",
+      "source_sha256": "ba52f1e1700b65b33f976fa17baa6d05d77c359a9727f8bc6f01a82277b99691",
+      "source": "schemas/v1/calculation.schema.json",
+      "export_transform": null
+    },
+    {
+      "path": "schemas/v1/common.schema.json",
+      "bytes": 9047,
+      "sha256": "1cef3f96f45b6751bf3d989561f950486f3312f3e77973df9bf295ccc90ce113",
+      "source_sha256": "1cef3f96f45b6751bf3d989561f950486f3312f3e77973df9bf295ccc90ce113",
+      "source": "schemas/v1/common.schema.json",
+      "export_transform": null
+    },
+    {
+      "path": "schemas/v1/correction.schema.json",
+      "bytes": 2349,
+      "sha256": "ef8968a1ac2b581da65568e61b43865621de93881eef46af1e793e59e2a4d6f6",
+      "source_sha256": "ef8968a1ac2b581da65568e61b43865621de93881eef46af1e793e59e2a4d6f6",
+      "source": "schemas/v1/correction.schema.json",
+      "export_transform": null
+    },
+    {
+      "path": "schemas/v1/coverage-registry.schema.json",
+      "bytes": 2355,
+      "sha256": "284e509288373425349cc199be5d2e9ea30e6550306ac0ca87570c7889d70a11",
+      "source_sha256": "284e509288373425349cc199be5d2e9ea30e6550306ac0ca87570c7889d70a11",
+      "source": "schemas/v1/coverage-registry.schema.json",
+      "export_transform": null
+    },
+    {
+      "path": "schemas/v1/input-manifest.schema.json",
+      "bytes": 6736,
+      "sha256": "4187216bc8aed7b46df5eee1958bb9a58070860d21e6d8ae7375c19c15b63260",
+      "source_sha256": "4187216bc8aed7b46df5eee1958bb9a58070860d21e6d8ae7375c19c15b63260",
+      "source": "schemas/v1/input-manifest.schema.json",
+      "export_transform": null
+    },
+    {
+      "path": "schemas/v1/normalized-record.schema.json",
+      "bytes": 1993,
+      "sha256": "c74b831b89b2449e65c63bf45d3c6e9212deea0d1c4c45d29ab1d0b74fd65aa1",
+      "source_sha256": "c74b831b89b2449e65c63bf45d3c6e9212deea0d1c4c45d29ab1d0b74fd65aa1",
+      "source": "schemas/v1/normalized-record.schema.json",
+      "export_transform": null
+    },
+    {
+      "path": "schemas/v1/original-record.schema.json",
+      "bytes": 2560,
+      "sha256": "9f6a67680a8ed63c0e015b9d2db465fcc77fa335ec30d24b4ec608d76ac3b0a5",
+      "source_sha256": "9f6a67680a8ed63c0e015b9d2db465fcc77fa335ec30d24b4ec608d76ac3b0a5",
+      "source": "schemas/v1/original-record.schema.json",
+      "export_transform": null
+    },
+    {
+      "path": "schemas/v1/review-package.schema.json",
+      "bytes": 5676,
+      "sha256": "7294a2ac0549dfbab71bd13fa70294b8d8e84145be8a2af17e110f2b6057fc0b",
+      "source_sha256": "7294a2ac0549dfbab71bd13fa70294b8d8e84145be8a2af17e110f2b6057fc0b",
+      "source": "schemas/v1/review-package.schema.json",
+      "export_transform": null
+    },
+    {
+      "path": "schemas/v1/source-registry.schema.json",
+      "bytes": 9605,
+      "sha256": "962ab4ead28e4f9713029f2d8ac42a1c9362c64b6735208611d1d3721f4de7c7",
+      "source_sha256": "c6425397417e1d73c6729a9db0c9cd0cd54a1a55fc106529c419bdbc7133e434",
+      "source": "schemas/v1/source-registry.schema.json",
+      "export_transform": "public-provenance-v1"
+    },
+    {
+      "path": "schemas/v1/task-context.schema.json",
+      "bytes": 3886,
+      "sha256": "4b27585a5c61b21852a9f3367cead6a0d93effa1d2ea6e8b10618f129ff7e2ea",
+      "source_sha256": "4b27585a5c61b21852a9f3367cead6a0d93effa1d2ea6e8b10618f129ff7e2ea",
+      "source": "schemas/v1/task-context.schema.json",
+      "export_transform": null
+    },
+    {
+      "path": "schemas/v1/terminology-registry.schema.json",
+      "bytes": 1469,
+      "sha256": "9f4650696a6d66e65b3c7b80c996c7acda2a9ec5d027260db22785041418ecdc",
+      "source_sha256": "9f4650696a6d66e65b3c7b80c996c7acda2a9ec5d027260db22785041418ecdc",
+      "source": "schemas/v1/terminology-registry.schema.json",
+      "export_transform": null
+    },
+    {
+      "path": "schemas/v1/workflow-registry.schema.json",
+      "bytes": 1826,
+      "sha256": "bef454c79b87a9e3c9bd824628ff85d7e946272207e565b46ac77b1f350c6132",
+      "source_sha256": "bef454c79b87a9e3c9bd824628ff85d7e946272207e565b46ac77b1f350c6132",
+      "source": "schemas/v1/workflow-registry.schema.json",
+      "export_transform": null
+    },
+    {
+      "path": "scripts/inspect_csv.py",
+      "bytes": 7486,
+      "sha256": "a16247d54737a5c4f9e3e8b51baf3721c7522cbff22defe7829eab95ec44a2bb",
+      "source_sha256": "a16247d54737a5c4f9e3e8b51baf3721c7522cbff22defe7829eab95ec44a2bb",
+      "source": "scripts/inspect_csv.py",
+      "export_transform": null
+    },
+    {
+      "path": "scripts/inventory_preview_rights.py",
+      "bytes": 5974,
+      "sha256": "503ff69ee31d9832dad1bd39b9a858ebb1199f7549b364d9b2d09767ca84a530",
+      "source_sha256": "503ff69ee31d9832dad1bd39b9a858ebb1199f7549b364d9b2d09767ca84a530",
+      "source": "scripts/inventory_preview_rights.py",
+      "export_transform": null
+    },
+    {
+      "path": "scripts/prepare_ecosystem_preview.py",
+      "bytes": 5984,
+      "sha256": "891412df7ecafbd3bc3a0f2bd861eab71864b25fd4b15cdf8f61da0f30d2e512",
+      "source_sha256": "891412df7ecafbd3bc3a0f2bd861eab71864b25fd4b15cdf8f61da0f30d2e512",
+      "source": "scripts/prepare_ecosystem_preview.py",
+      "export_transform": null
+    },
+    {
+      "path": "scripts/prepare_public_preview.py",
+      "bytes": 9981,
+      "sha256": "6597ebf4ca55b44c7b9d28b0c497c8d8e024a6b1e7e8fec92856828cccd3bbdf",
+      "source_sha256": "6597ebf4ca55b44c7b9d28b0c497c8d8e024a6b1e7e8fec92856828cccd3bbdf",
+      "source": "scripts/prepare_public_preview.py",
+      "export_transform": null
+    },
+    {
+      "path": "scripts/public_provenance.py",
+      "bytes": 6705,
+      "sha256": "e8ee5f1db955970e8fff92597b03d9ab9c315deff5395db1d4fa3c504b65805a",
+      "source_sha256": "e8ee5f1db955970e8fff92597b03d9ab9c315deff5395db1d4fa3c504b65805a",
+      "source": "scripts/public_provenance.py",
+      "export_transform": null
+    },
+    {
+      "path": "scripts/reconcile.py",
+      "bytes": 251,
+      "sha256": "b7b584c931f630b5c8a508c93e64a30a09623fca5a2dd443d16c6b5638a12949",
+      "source_sha256": "b7b584c931f630b5c8a508c93e64a30a09623fca5a2dd443d16c6b5638a12949",
+      "source": "scripts/reconcile.py",
+      "export_transform": null
+    },
+    {
+      "path": "scripts/route_farm_task.py",
+      "bytes": 987,
+      "sha256": "fb29f3ca511a737b86d9f74801a6d1026babdfa2c664d4087853fdbc188cfebf",
+      "source_sha256": "fb29f3ca511a737b86d9f74801a6d1026babdfa2c664d4087853fdbc188cfebf",
+      "source": "scripts/route_farm_task.py",
+      "export_transform": null
+    },
+    {
+      "path": "scripts/run_farm_workflow.py",
+      "bytes": 1673,
+      "sha256": "fb199e5aa1b1ac3addd25fafa9aaa43798daa153264b559183b2ee72eeb1551c",
+      "source_sha256": "fb199e5aa1b1ac3addd25fafa9aaa43798daa153264b559183b2ee72eeb1551c",
+      "source": "scripts/run_farm_workflow.py",
+      "export_transform": null
+    },
+    {
+      "path": "scripts/save_evaluation_artifact.py",
+      "bytes": 279,
+      "sha256": "da2b36ac8c35518ea6dc6c6cb5fcad0cbd7a00ab2ad7fa093f140279fc558e51",
+      "source_sha256": "da2b36ac8c35518ea6dc6c6cb5fcad0cbd7a00ab2ad7fa093f140279fc558e51",
+      "source": "scripts/save_evaluation_artifact.py",
+      "export_transform": null
+    },
+    {
+      "path": "scripts/study_measurement_lab.py",
+      "bytes": 12980,
+      "sha256": "c351ebc5358a7ec4e78033c0f17e3552afced1616d59ab9d6c161cb9344a4e7a",
+      "source_sha256": "c351ebc5358a7ec4e78033c0f17e3552afced1616d59ab9d6c161cb9344a4e7a",
+      "source": "scripts/study_measurement_lab.py",
+      "export_transform": null
+    },
+    {
+      "path": "scripts/validate_contracts.py",
+      "bytes": 5578,
+      "sha256": "1b4fdb1046e2c51003687e67bb6245db208c1de88af2c572b9b68b2ac4f4824e",
+      "source_sha256": "1b4fdb1046e2c51003687e67bb6245db208c1de88af2c572b9b68b2ac4f4824e",
+      "source": "scripts/validate_contracts.py",
+      "export_transform": null
+    },
+    {
+      "path": "scripts/validate_ecosystem.py",
+      "bytes": 4757,
+      "sha256": "48dc0e36b07f939fc1de2173249489353436e626f3451783402b94661adf9e40",
+      "source_sha256": "48dc0e36b07f939fc1de2173249489353436e626f3451783402b94661adf9e40",
+      "source": "scripts/validate_ecosystem.py",
+      "export_transform": null
+    },
+    {
+      "path": "scripts/weather_evidence_lab.py",
+      "bytes": 6943,
+      "sha256": "7aa0d504fdfe00dcee775e05eef3bbbc265e840d58f13e0c27c2be4d37ed5583",
+      "source_sha256": "7aa0d504fdfe00dcee775e05eef3bbbc265e840d58f13e0c27c2be4d37ed5583",
+      "source": "scripts/weather_evidence_lab.py",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-adviser-package/SKILL.md",
+      "bytes": 1884,
+      "sha256": "b337d0acb6ab4c8ab37f1db62347c72f47e59c8d32593429ce4b7c3ec0d0a31c",
+      "source_sha256": "b337d0acb6ab4c8ab37f1db62347c72f47e59c8d32593429ce4b7c3ec0d0a31c",
+      "source": "skills/farm-adviser-package/SKILL.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-business-review-handoff/SKILL.md",
+      "bytes": 1963,
+      "sha256": "9326e6f00b59b263dd45bd1fa2530b2e475ba789c7abe4e4ac2dd641f17e9388",
+      "source_sha256": "9326e6f00b59b263dd45bd1fa2530b2e475ba789c7abe4e4ac2dd641f17e9388",
+      "source": "skills/farm-business-review-handoff/SKILL.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-business-review-handoff/references/scenario-method.md",
+      "bytes": 697,
+      "sha256": "4cffffdd776a8c5cf976727cdd61c054e0b79776a24a1cd6451c931d6f691121",
+      "source_sha256": "4cffffdd776a8c5cf976727cdd61c054e0b79776a24a1cd6451c931d6f691121",
+      "source": "skills/farm-business-review-handoff/references/scenario-method.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-business-scenario/SKILL.md",
+      "bytes": 2181,
+      "sha256": "569ba3fa38098b80ed00a36b78b1aee51bc67b12e51bd78baec52438ee0d7231",
+      "source_sha256": "569ba3fa38098b80ed00a36b78b1aee51bc67b12e51bd78baec52438ee0d7231",
+      "source": "skills/farm-business-scenario/SKILL.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-business-scenario/references/scenario-method.md",
+      "bytes": 697,
+      "sha256": "4cffffdd776a8c5cf976727cdd61c054e0b79776a24a1cd6451c931d6f691121",
+      "source_sha256": "4cffffdd776a8c5cf976727cdd61c054e0b79776a24a1cd6451c931d6f691121",
+      "source": "skills/farm-business-scenario/references/scenario-method.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-crop-observation-review/SKILL.md",
+      "bytes": 2104,
+      "sha256": "641e8fc65f1799900f4f0c7b2e88d97d629393bddf3d308882c99ca41e93c755",
+      "source_sha256": "641e8fc65f1799900f4f0c7b2e88d97d629393bddf3d308882c99ca41e93c755",
+      "source": "skills/farm-crop-observation-review/SKILL.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-crop-observation-review/references/observation-review.md",
+      "bytes": 1404,
+      "sha256": "92d108f00af4b19fb18a5ec68f2e83ca6d2e4b71ab3bc715249bb209c365d04f",
+      "source_sha256": "92d108f00af4b19fb18a5ec68f2e83ca6d2e4b71ab3bc715249bb209c365d04f",
+      "source": "skills/farm-crop-observation-review/references/observation-review.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-crop-review-handoff/SKILL.md",
+      "bytes": 1793,
+      "sha256": "e19018dd4d66eb78285929c6a3d71f9e3971cdb1b3e01cf509ca37b89f4034ab",
+      "source_sha256": "e19018dd4d66eb78285929c6a3d71f9e3971cdb1b3e01cf509ca37b89f4034ab",
+      "source": "skills/farm-crop-review-handoff/SKILL.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-crop-review-handoff/references/handoff-checks.md",
+      "bytes": 692,
+      "sha256": "9c080963a7f1dd82a90a58e74f523d2f25f915b9a5ab00e51ab32e19627e4f50",
+      "source_sha256": "9c080963a7f1dd82a90a58e74f523d2f25f915b9a5ab00e51ab32e19627e4f50",
+      "source": "skills/farm-crop-review-handoff/references/handoff-checks.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-delivery-record-handoff/SKILL.md",
+      "bytes": 2009,
+      "sha256": "d0d13807604492ffdff8a92e143188ed5ecf2558ad4087313fba5196b4e7b73d",
+      "source_sha256": "d0d13807604492ffdff8a92e143188ed5ecf2558ad4087313fba5196b4e7b73d",
+      "source": "skills/farm-delivery-record-handoff/SKILL.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-delivery-record-handoff/references/quantity-source-rules.md",
+      "bytes": 944,
+      "sha256": "dd056186d31814e214d6b0e00669d501807f07e7e54c086848d4c138f400ae80",
+      "source_sha256": "dd056186d31814e214d6b0e00669d501807f07e7e54c086848d4c138f400ae80",
+      "source": "skills/farm-delivery-record-handoff/references/quantity-source-rules.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-feed-stock-review/SKILL.md",
+      "bytes": 1394,
+      "sha256": "0f3b8b89675b6d785d54d9eb5a590371a7c9b4f0202206ee50553fe68d131573",
+      "source_sha256": "0f3b8b89675b6d785d54d9eb5a590371a7c9b4f0202206ee50553fe68d131573",
+      "source": "skills/farm-feed-stock-review/SKILL.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-feed-stock-review/references/record-rules.md",
+      "bytes": 1622,
+      "sha256": "4ee952f569bc5c5b0266bbf071fdf611f9f8eafb9269292c01f9dcdf4170bd51",
+      "source_sha256": "4ee952f569bc5c5b0266bbf071fdf611f9f8eafb9269292c01f9dcdf4170bd51",
+      "source": "skills/farm-feed-stock-review/references/record-rules.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-livestock-event-review/SKILL.md",
+      "bytes": 1472,
+      "sha256": "1da8d4a4db7587b3eee1d71d7e13b11b55c9a9bc6da57e4da22795d0afd40a7b",
+      "source_sha256": "1da8d4a4db7587b3eee1d71d7e13b11b55c9a9bc6da57e4da22795d0afd40a7b",
+      "source": "skills/farm-livestock-event-review/SKILL.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-livestock-event-review/references/record-rules.md",
+      "bytes": 1622,
+      "sha256": "4ee952f569bc5c5b0266bbf071fdf611f9f8eafb9269292c01f9dcdf4170bd51",
+      "source_sha256": "4ee952f569bc5c5b0266bbf071fdf611f9f8eafb9269292c01f9dcdf4170bd51",
+      "source": "skills/farm-livestock-event-review/references/record-rules.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-livestock-review-handoff/SKILL.md",
+      "bytes": 1363,
+      "sha256": "a07ae25d465ffb04179718b728cb7ac8af30ce4856403d018858e1149c4d303c",
+      "source_sha256": "a07ae25d465ffb04179718b728cb7ac8af30ce4856403d018858e1149c4d303c",
+      "source": "skills/farm-livestock-review-handoff/SKILL.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-livestock-review-handoff/references/record-rules.md",
+      "bytes": 1622,
+      "sha256": "4ee952f569bc5c5b0266bbf071fdf611f9f8eafb9269292c01f9dcdf4170bd51",
+      "source_sha256": "4ee952f569bc5c5b0266bbf071fdf611f9f8eafb9269292c01f9dcdf4170bd51",
+      "source": "skills/farm-livestock-review-handoff/references/record-rules.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-lot-movement-review/SKILL.md",
+      "bytes": 2100,
+      "sha256": "05abc3a340ee25241dfa7e33da88f416cb8a3b6dda35aeb4cf811fc411adbed6",
+      "source_sha256": "05abc3a340ee25241dfa7e33da88f416cb8a3b6dda35aeb4cf811fc411adbed6",
+      "source": "skills/farm-lot-movement-review/SKILL.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-lot-movement-review/references/quantity-source-rules.md",
+      "bytes": 944,
+      "sha256": "dd056186d31814e214d6b0e00669d501807f07e7e54c086848d4c138f400ae80",
+      "source_sha256": "dd056186d31814e214d6b0e00669d501807f07e7e54c086848d4c138f400ae80",
+      "source": "skills/farm-lot-movement-review/references/quantity-source-rules.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-net-mass-review/SKILL.md",
+      "bytes": 1830,
+      "sha256": "b8bf1f33859edc4cc8bc8ba0e797cbc29c4bf36dc4d2eb610354ddf25db73e55",
+      "source_sha256": "b8bf1f33859edc4cc8bc8ba0e797cbc29c4bf36dc4d2eb610354ddf25db73e55",
+      "source": "skills/farm-net-mass-review/SKILL.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-net-mass-review/references/quantity-source-rules.md",
+      "bytes": 944,
+      "sha256": "dd056186d31814e214d6b0e00669d501807f07e7e54c086848d4c138f400ae80",
+      "source_sha256": "dd056186d31814e214d6b0e00669d501807f07e7e54c086848d4c138f400ae80",
+      "source": "skills/farm-net-mass-review/references/quantity-source-rules.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-procedure-task-card/SKILL.md",
+      "bytes": 1517,
+      "sha256": "e096f1e79fb0f9877aac0906292057ac81de2c8a7b44aa299de2b3d755f21850",
+      "source_sha256": "e096f1e79fb0f9877aac0906292057ac81de2c8a7b44aa299de2b3d755f21850",
+      "source": "skills/farm-procedure-task-card/SKILL.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-procedure-task-card/references/source-fidelity.md",
+      "bytes": 986,
+      "sha256": "01fc01fa3ea2b5d1cd0d4e7243e5ae40099e045b4b93195f99d72c3a4b80b4c9",
+      "source_sha256": "01fc01fa3ea2b5d1cd0d4e7243e5ae40099e045b4b93195f99d72c3a4b80b4c9",
+      "source": "skills/farm-procedure-task-card/references/source-fidelity.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-record-reconciliation/SKILL.md",
+      "bytes": 2100,
+      "sha256": "8456e5c5617296fd2b92eb97c8e3b9e7303a69575e412cc5f7b5f8d729ac9da6",
+      "source_sha256": "8456e5c5617296fd2b92eb97c8e3b9e7303a69575e412cc5f7b5f8d729ac9da6",
+      "source": "skills/farm-record-reconciliation/SKILL.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-task-intake/SKILL.md",
+      "bytes": 2114,
+      "sha256": "50e413f3a3b33c4dbbcf9e4b1fff041fc835377f8add4b101421f3f03bbf9c41",
+      "source_sha256": "50e413f3a3b33c4dbbcf9e4b1fff041fc835377f8add4b101421f3f03bbf9c41",
+      "source": "skills/farm-task-intake/SKILL.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-team-handover/SKILL.md",
+      "bytes": 1422,
+      "sha256": "95a257840f6ec7a46e9aa6f569899a93fbe165af9cdd28ea68296131f4728b8a",
+      "source_sha256": "95a257840f6ec7a46e9aa6f569899a93fbe165af9cdd28ea68296131f4728b8a",
+      "source": "skills/farm-team-handover/SKILL.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-team-handover/references/source-fidelity.md",
+      "bytes": 986,
+      "sha256": "01fc01fa3ea2b5d1cd0d4e7243e5ae40099e045b4b93195f99d72c3a4b80b4c9",
+      "source_sha256": "01fc01fa3ea2b5d1cd0d4e7243e5ae40099e045b4b93195f99d72c3a4b80b4c9",
+      "source": "skills/farm-team-handover/references/source-fidelity.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-weather-evidence/SKILL.md",
+      "bytes": 1940,
+      "sha256": "ea26b40dbea541f5b46940994fa75b5a05fc1787289eecc3bf0b71fa4b76f77e",
+      "source_sha256": "ea26b40dbea541f5b46940994fa75b5a05fc1787289eecc3bf0b71fa4b76f77e",
+      "source": "skills/farm-weather-evidence/SKILL.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-weather-evidence/references/weather-evidence.md",
+      "bytes": 1124,
+      "sha256": "160087ee84a50f146927b5babb3e2425d77c20a78b7bdf4d14a2454132efcdc8",
+      "source_sha256": "160087ee84a50f146927b5babb3e2425d77c20a78b7bdf4d14a2454132efcdc8",
+      "source": "skills/farm-weather-evidence/references/weather-evidence.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-work-options/SKILL.md",
+      "bytes": 2164,
+      "sha256": "b4b9da82d772dcfd190c622c5a82b3a8dc7d3fa6549d2663efa5c461a179698e",
+      "source_sha256": "b4b9da82d772dcfd190c622c5a82b3a8dc7d3fa6549d2663efa5c461a179698e",
+      "source": "skills/farm-work-options/SKILL.md",
+      "export_transform": null
+    },
+    {
+      "path": "skills/farm-work-options/references/calendar-options.md",
+      "bytes": 930,
+      "sha256": "1d7c599ebc17ace37621f2cb44a0bf68625ae0c4347b7415b286157a363a0c0f",
+      "source_sha256": "1d7c599ebc17ace37621f2cb44a0bf68625ae0c4347b7415b286157a363a0c0f",
+      "source": "skills/farm-work-options/references/calendar-options.md",
+      "export_transform": null
+    },
+    {
+      "path": "skillsets/business-stewardship-review/README.md",
+      "bytes": 589,
+      "sha256": "0e71465792d89835fdd377cdbefaea3db47e8dc2f4a706f3f35949d8d3200273",
+      "source_sha256": "0e71465792d89835fdd377cdbefaea3db47e8dc2f4a706f3f35949d8d3200273",
+      "source": "skillsets/business-stewardship-review/README.md",
+      "export_transform": null
+    },
+    {
+      "path": "skillsets/business-stewardship-review/SOURCE-PACKAGE.md",
+      "bytes": 780,
+      "sha256": "1eb3ec0e4c81b23fbbdef88f63f939da8800acc5d2fe6bc6e17811112752d856",
+      "source_sha256": "1eb3ec0e4c81b23fbbdef88f63f939da8800acc5d2fe6bc6e17811112752d856",
+      "source": "docs/release/ecosystem-public/business-stewardship-review-source.md",
+      "export_transform": null
+    },
+    {
+      "path": "skillsets/business-stewardship-review/manifest.json",
+      "bytes": 1690,
+      "sha256": "a38e35ddb6573cfb4d44d21357dd8ba7c1f11ba518e75d8e28a5b6d5293f6a54",
+      "source_sha256": "a38e35ddb6573cfb4d44d21357dd8ba7c1f11ba518e75d8e28a5b6d5293f6a54",
+      "source": "skillsets/business-stewardship-review/manifest.json",
+      "export_transform": null
+    },
+    {
+      "path": "skillsets/crop-production-review/README.md",
+      "bytes": 786,
+      "sha256": "e4ebbf2efb5d5a95f885ae62825e621d52f07dd8a06da6e5074072ee013f4e9d",
+      "source_sha256": "e4ebbf2efb5d5a95f885ae62825e621d52f07dd8a06da6e5074072ee013f4e9d",
+      "source": "skillsets/crop-production-review/README.md",
+      "export_transform": null
+    },
+    {
+      "path": "skillsets/crop-production-review/SOURCE-PACKAGE.md",
+      "bytes": 775,
+      "sha256": "84d5f477fa2ba7cf10bc7fba22c22448ed18edc78354fb85c5dad83e75b028dc",
+      "source_sha256": "84d5f477fa2ba7cf10bc7fba22c22448ed18edc78354fb85c5dad83e75b028dc",
+      "source": "docs/release/ecosystem-public/crop-production-review-source.md",
+      "export_transform": null
+    },
+    {
+      "path": "skillsets/crop-production-review/manifest.json",
+      "bytes": 1579,
+      "sha256": "63e46106dd698a7882ad59b979800ee67c828f9089a8eeb701e9bb171c75d8a2",
+      "source_sha256": "63e46106dd698a7882ad59b979800ee67c828f9089a8eeb701e9bb171c75d8a2",
+      "source": "skillsets/crop-production-review/manifest.json",
+      "export_transform": null
+    },
+    {
+      "path": "skillsets/harvest-storage-delivery/README.md",
+      "bytes": 676,
+      "sha256": "206775472581fc6d1e59752a21e8bfa2cc46bf38b4eb9ba55820509155df2c80",
+      "source_sha256": "206775472581fc6d1e59752a21e8bfa2cc46bf38b4eb9ba55820509155df2c80",
+      "source": "skillsets/harvest-storage-delivery/README.md",
+      "export_transform": null
+    },
+    {
+      "path": "skillsets/harvest-storage-delivery/SOURCE-PACKAGE.md",
+      "bytes": 777,
+      "sha256": "4b7f084b21fe471f86ddf492fa16008734961b47bd343be2fba25aecee55068e",
+      "source_sha256": "4b7f084b21fe471f86ddf492fa16008734961b47bd343be2fba25aecee55068e",
+      "source": "docs/release/ecosystem-public/harvest-storage-delivery-source.md",
+      "export_transform": null
+    },
+    {
+      "path": "skillsets/harvest-storage-delivery/manifest.json",
+      "bytes": 1866,
+      "sha256": "f4680630907bd08a3477b199e6eadb53bf31fa9ddcf40ae0bb62e545758b337d",
+      "source_sha256": "f4680630907bd08a3477b199e6eadb53bf31fa9ddcf40ae0bb62e545758b337d",
+      "source": "skillsets/harvest-storage-delivery/manifest.json",
+      "export_transform": null
+    },
+    {
+      "path": "skillsets/livestock-record-review/README.md",
+      "bytes": 875,
+      "sha256": "9d3178e15131265f59cae1d28c0983d2c092cece0c74412bda5df12f7d0f11c0",
+      "source_sha256": "9d3178e15131265f59cae1d28c0983d2c092cece0c74412bda5df12f7d0f11c0",
+      "source": "skillsets/livestock-record-review/README.md",
+      "export_transform": null
+    },
+    {
+      "path": "skillsets/livestock-record-review/SOURCE-PACKAGE.md",
+      "bytes": 776,
+      "sha256": "2e706ef45a1d72227a6869cfb165c5329b85e5b9e209cbf47c4f3905acf999b0",
+      "source_sha256": "2e706ef45a1d72227a6869cfb165c5329b85e5b9e209cbf47c4f3905acf999b0",
+      "source": "docs/release/ecosystem-public/livestock-record-review-source.md",
+      "export_transform": null
+    },
+    {
+      "path": "skillsets/livestock-record-review/manifest.json",
+      "bytes": 1915,
+      "sha256": "b1b7e9d610647d1ed29655758756b05c43a6019ebb514cce6fd9b6922aa58063",
+      "source_sha256": "b1b7e9d610647d1ed29655758756b05c43a6019ebb514cce6fd9b6922aa58063",
+      "source": "skillsets/livestock-record-review/manifest.json",
+      "export_transform": null
+    },
+    {
+      "path": "skillsets/records-to-review/README.md",
+      "bytes": 1969,
+      "sha256": "98e6aab7de632c21704942f42b0ea44a4a0d20d65b98f08f1c6579bad1a35e6f",
+      "source_sha256": "98e6aab7de632c21704942f42b0ea44a4a0d20d65b98f08f1c6579bad1a35e6f",
+      "source": "skillsets/records-to-review/README.md",
+      "export_transform": null
+    },
+    {
+      "path": "skillsets/records-to-review/SOURCE-PACKAGE.md",
+      "bytes": 770,
+      "sha256": "f0be69f9d93891e77d48e050eaa29c0c7ee3088d00041647c6b441a4fddefafb",
+      "source_sha256": "f0be69f9d93891e77d48e050eaa29c0c7ee3088d00041647c6b441a4fddefafb",
+      "source": "docs/release/ecosystem-public/records-to-review-source.md",
+      "export_transform": null
+    },
+    {
+      "path": "skillsets/records-to-review/manifest.json",
+      "bytes": 1783,
+      "sha256": "8c413263be7422bb21ca3faa4707dffa2ba3e12ba74d3cd1583cb55900dafde5",
+      "source_sha256": "8c413263be7422bb21ca3faa4707dffa2ba3e12ba74d3cd1583cb55900dafde5",
+      "source": "skillsets/records-to-review/manifest.json",
+      "export_transform": null
+    },
+    {
+      "path": "skillsets/resource-team-coordination/README.md",
+      "bytes": 764,
+      "sha256": "e297ea4db907fb3df5bb9be0ee913f661fb3f91f6c35c8c3134ee03a13ccfda2",
+      "source_sha256": "e297ea4db907fb3df5bb9be0ee913f661fb3f91f6c35c8c3134ee03a13ccfda2",
+      "source": "skillsets/resource-team-coordination/README.md",
+      "export_transform": null
+    },
+    {
+      "path": "skillsets/resource-team-coordination/SOURCE-PACKAGE.md",
+      "bytes": 779,
+      "sha256": "104c798af004761ea501f5c33e14c654bf534a929de4784ff7d5faa6f162b1ef",
+      "source_sha256": "104c798af004761ea501f5c33e14c654bf534a929de4784ff7d5faa6f162b1ef",
+      "source": "docs/release/ecosystem-public/resource-team-coordination-source.md",
+      "export_transform": null
+    },
+    {
+      "path": "skillsets/resource-team-coordination/manifest.json",
+      "bytes": 1569,
+      "sha256": "bd991a5aa2c751e4585b08c638acff4625babece0c49e0f0b032a43dd1048fc5",
+      "source_sha256": "bd991a5aa2c751e4585b08c638acff4625babece0c49e0f0b032a43dd1048fc5",
+      "source": "skillsets/resource-team-coordination/manifest.json",
+      "export_transform": null
+    },
+    {
+      "path": "skillsets/season-work-planning/README.md",
+      "bytes": 748,
+      "sha256": "851f8f8fca30815f51b4d66d71f75db1bfb1b61945e93d1a3d3cce556d504472",
+      "source_sha256": "851f8f8fca30815f51b4d66d71f75db1bfb1b61945e93d1a3d3cce556d504472",
+      "source": "skillsets/season-work-planning/README.md",
+      "export_transform": null
+    },
+    {
+      "path": "skillsets/season-work-planning/SOURCE-PACKAGE.md",
+      "bytes": 773,
+      "sha256": "7b37fafe8073eb70828ab0c3b7e29d1b2066b70d8a3069392863e2b6a90f5e10",
+      "source_sha256": "7b37fafe8073eb70828ab0c3b7e29d1b2066b70d8a3069392863e2b6a90f5e10",
+      "source": "docs/release/ecosystem-public/season-work-planning-source.md",
+      "export_transform": null
+    },
+    {
+      "path": "skillsets/season-work-planning/manifest.json",
+      "bytes": 1552,
+      "sha256": "29d37d9ae01a17892c54631462e5416c6a74caaeaaf35eef538e27c09b321851",
+      "source_sha256": "29d37d9ae01a17892c54631462e5416c6a74caaeaaf35eef538e27c09b321851",
+      "source": "skillsets/season-work-planning/manifest.json",
+      "export_transform": null
+    },
+    {
+      "path": "src/agent_agriculture/__init__.py",
+      "bytes": 75,
+      "sha256": "a5071c30bb510c7c096c8fa077cb429772da93d82899ee004da72d6f1e4cfb06",
+      "source_sha256": "a5071c30bb510c7c096c8fa077cb429772da93d82899ee004da72d6f1e4cfb06",
+      "source": "src/agent_agriculture/__init__.py",
+      "export_transform": null
+    },
+    {
+      "path": "src/agent_agriculture/__main__.py",
+      "bytes": 48,
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "source_sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "source": "src/agent_agriculture/__main__.py",
+      "export_transform": null
+    },
+    {
+      "path": "src/agent_agriculture/capture.py",
+      "bytes": 5297,
+      "sha256": "bcd70335963113019ef16479e5c8e2a62aa2cb7fa5ceef4a648b99a9c4156854",
+      "source_sha256": "bcd70335963113019ef16479e5c8e2a62aa2cb7fa5ceef4a648b99a9c4156854",
+      "source": "src/agent_agriculture/capture.py",
+      "export_transform": null
+    },
+    {
+      "path": "src/agent_agriculture/cli.py",
+      "bytes": 6651,
+      "sha256": "9a9f9b53e903ff34ebf358f3242e01016964c347ba4f94ee559e6592a5e1ad0b",
+      "source_sha256": "9a9f9b53e903ff34ebf358f3242e01016964c347ba4f94ee559e6592a5e1ad0b",
+      "source": "src/agent_agriculture/cli.py",
+      "export_transform": null
+    },
+    {
+      "path": "src/agent_agriculture/contracts.py",
+      "bytes": 16482,
+      "sha256": "59b02ee778533275ddec116c1c5a953ed7db4efe27be298712e51b2f9d949672",
+      "source_sha256": "59b02ee778533275ddec116c1c5a953ed7db4efe27be298712e51b2f9d949672",
+      "source": "src/agent_agriculture/contracts.py",
+      "export_transform": null
+    },
+    {
+      "path": "src/agent_agriculture/errors.py",
+      "bytes": 209,
+      "sha256": "120153e4eb28e3a4e8ca627336ab7f0a38e433af3a62439333a8925257bff154",
+      "source_sha256": "120153e4eb28e3a4e8ca627336ab7f0a38e433af3a62439333a8925257bff154",
+      "source": "src/agent_agriculture/errors.py",
+      "export_transform": null
+    },
+    {
+      "path": "src/agent_agriculture/handoff.py",
+      "bytes": 2499,
+      "sha256": "35173b93c3bc5d71bc92bfdf0ab42102ac8cf7e81d6ee140a87c2ff28c4ffe41",
+      "source_sha256": "35173b93c3bc5d71bc92bfdf0ab42102ac8cf7e81d6ee140a87c2ff28c4ffe41",
+      "source": "src/agent_agriculture/handoff.py",
+      "export_transform": null
+    },
+    {
+      "path": "src/agent_agriculture/input_limits.py",
+      "bytes": 1972,
+      "sha256": "6712e5863127d4c44a638e95f0fcf69c507e9770d80bb4e0c52f56a0ec8d9d68",
+      "source_sha256": "6712e5863127d4c44a638e95f0fcf69c507e9770d80bb4e0c52f56a0ec8d9d68",
+      "source": "src/agent_agriculture/input_limits.py",
+      "export_transform": null
+    },
+    {
+      "path": "src/agent_agriculture/language.py",
+      "bytes": 27252,
+      "sha256": "daca8c10c546371648763dadd9f3fb78e2e7e410313b9514838bca4e5055dce9",
+      "source_sha256": "daca8c10c546371648763dadd9f3fb78e2e7e410313b9514838bca4e5055dce9",
+      "source": "src/agent_agriculture/language.py",
+      "export_transform": null
+    },
+    {
+      "path": "src/agent_agriculture/pipeline.py",
+      "bytes": 6088,
+      "sha256": "6fff4358ce277d62fa4846b356798e8cfd4dee7205ed9d1b569e7b2a72aa6239",
+      "source_sha256": "6fff4358ce277d62fa4846b356798e8cfd4dee7205ed9d1b569e7b2a72aa6239",
+      "source": "src/agent_agriculture/pipeline.py",
+      "export_transform": null
+    },
+    {
+      "path": "src/agent_agriculture/presentation.py",
+      "bytes": 7040,
+      "sha256": "7a0566866f7dbe659de9c242e16819698ae7b45f6a4bc67c9577ba6731e9682d",
+      "source_sha256": "7a0566866f7dbe659de9c242e16819698ae7b45f6a4bc67c9577ba6731e9682d",
+      "source": "src/agent_agriculture/presentation.py",
+      "export_transform": null
+    },
+    {
+      "path": "src/agent_agriculture/reconciliation.py",
+      "bytes": 11669,
+      "sha256": "c3afe84c610ebcfec8eb944dca8ce157b338d45dc4d7938765c959bb7f90dd5e",
+      "source_sha256": "c3afe84c610ebcfec8eb944dca8ce157b338d45dc4d7938765c959bb7f90dd5e",
+      "source": "src/agent_agriculture/reconciliation.py",
+      "export_transform": null
+    },
+    {
+      "path": "src/agent_agriculture/records.py",
+      "bytes": 16681,
+      "sha256": "9bf5c2a118adc5f17636ec943e4e0ac57d6d9f989f33d1fe2857858e8cebe13f",
+      "source_sha256": "9bf5c2a118adc5f17636ec943e4e0ac57d6d9f989f33d1fe2857858e8cebe13f",
+      "source": "src/agent_agriculture/records.py",
+      "export_transform": null
+    },
+    {
+      "path": "src/agent_agriculture/storage.py",
+      "bytes": 7397,
+      "sha256": "4753ff933bc1f36814d39d06ad389ea451bbe2e737f1dab0e404e0172b321581",
+      "source_sha256": "4753ff933bc1f36814d39d06ad389ea451bbe2e737f1dab0e404e0172b321581",
+      "source": "src/agent_agriculture/storage.py",
+      "export_transform": null
+    },
+    {
+      "path": "templates/en/exceptions.md",
+      "bytes": 1121,
+      "sha256": "be400679375317fd7d8ac3c608f267acfb40663ccb6f94fcebaec55c22b06a9a",
+      "source_sha256": "be400679375317fd7d8ac3c608f267acfb40663ccb6f94fcebaec55c22b06a9a",
+      "source": "templates/en/exceptions.md",
+      "export_transform": null
+    },
+    {
+      "path": "templates/en/export.md",
+      "bytes": 1356,
+      "sha256": "89805be3f08dc8220137f9e54da2049d08ead8ea65ae61ade90ef09731b2fbe2",
+      "source_sha256": "89805be3f08dc8220137f9e54da2049d08ead8ea65ae61ade90ef09731b2fbe2",
+      "source": "templates/en/export.md",
+      "export_transform": null
+    },
+    {
+      "path": "templates/en/intake.md",
+      "bytes": 1573,
+      "sha256": "35796a6abc88fb2951799c2ce904d22dc5430e8e258ac7375492c357ce9e1d75",
+      "source_sha256": "35796a6abc88fb2951799c2ce904d22dc5430e8e258ac7375492c357ce9e1d75",
+      "source": "templates/en/intake.md",
+      "export_transform": null
+    },
+    {
+      "path": "templates/en/manual-entry.csv",
+      "bytes": 120,
+      "sha256": "383370a0d174e1fde44fa23ce5f223dc602b0dae8a3270b1c6a6aa77ad8eb6b1",
+      "source_sha256": "383370a0d174e1fde44fa23ce5f223dc602b0dae8a3270b1c6a6aa77ad8eb6b1",
+      "source": "templates/en/manual-entry.csv",
+      "export_transform": null
+    },
+    {
+      "path": "templates/en/mapping.md",
+      "bytes": 1726,
+      "sha256": "339e7a810f23feba025f68587a29ee2b147f3145e6f6afc0b2db0e509dc3507d",
+      "source_sha256": "339e7a810f23feba025f68587a29ee2b147f3145e6f6afc0b2db0e509dc3507d",
+      "source": "templates/en/mapping.md",
+      "export_transform": null
+    },
+    {
+      "path": "templates/en/results.md",
+      "bytes": 922,
+      "sha256": "66184bf0bf86d097ef6ead4a2dfbbb66915e28c757e7ef50d3886ca67a78a54f",
+      "source_sha256": "66184bf0bf86d097ef6ead4a2dfbbb66915e28c757e7ef50d3886ca67a78a54f",
+      "source": "templates/en/results.md",
+      "export_transform": null
+    },
+    {
+      "path": "templates/fr/exceptions.md",
+      "bytes": 1385,
+      "sha256": "e38ed421513f8ba03e89809ff0c6b0cfead93d2a6990573fefc6d5c1917cfb6d",
+      "source_sha256": "e38ed421513f8ba03e89809ff0c6b0cfead93d2a6990573fefc6d5c1917cfb6d",
+      "source": "templates/fr/exceptions.md",
+      "export_transform": null
+    },
+    {
+      "path": "templates/fr/export.md",
+      "bytes": 1750,
+      "sha256": "2bf91ac9ffa09f5619866735c879bbe8dacf3ce4ffd9bdf34adca2fda39b8b4b",
+      "source_sha256": "2bf91ac9ffa09f5619866735c879bbe8dacf3ce4ffd9bdf34adca2fda39b8b4b",
+      "source": "templates/fr/export.md",
+      "export_transform": null
+    },
+    {
+      "path": "templates/fr/intake.md",
+      "bytes": 1939,
+      "sha256": "e266909695156beea6b31040ac8af4900ec6c27405f235393d2876659fe865b5",
+      "source_sha256": "e266909695156beea6b31040ac8af4900ec6c27405f235393d2876659fe865b5",
+      "source": "templates/fr/intake.md",
+      "export_transform": null
+    },
+    {
+      "path": "templates/fr/manual-entry.csv",
+      "bytes": 129,
+      "sha256": "c4b07322b9eb4b8a5e48a6b2c52ef62c9dfce3962783fef8c11ecd6fc9e5eb7a",
+      "source_sha256": "c4b07322b9eb4b8a5e48a6b2c52ef62c9dfce3962783fef8c11ecd6fc9e5eb7a",
+      "source": "templates/fr/manual-entry.csv",
+      "export_transform": null
+    },
+    {
+      "path": "templates/fr/mapping.md",
+      "bytes": 2251,
+      "sha256": "18ba8b30945879976fd93159deaf5561843472f3246ddd6a1480dec12bd63a02",
+      "source_sha256": "18ba8b30945879976fd93159deaf5561843472f3246ddd6a1480dec12bd63a02",
+      "source": "templates/fr/mapping.md",
+      "export_transform": null
+    },
+    {
+      "path": "templates/fr/results.md",
+      "bytes": 1117,
+      "sha256": "0ea4e837a563e538dd078509c18fdd4fe31914abe2fe7dfec1bc0ee03ebfd975",
+      "source_sha256": "0ea4e837a563e538dd078509c18fdd4fe31914abe2fe7dfec1bc0ee03ebfd975",
+      "source": "templates/fr/results.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/expected-routing.yaml",
+      "bytes": 22001,
+      "sha256": "15a52f80b7ffee3ae412ac3c6335982ff06bd302bab4bce81456290e8bfd4384",
+      "source_sha256": "15a52f80b7ffee3ae412ac3c6335982ff06bd302bab4bce81456290e8bfd4384",
+      "source": "tests/expected-routing.yaml",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/README.md",
+      "bytes": 5450,
+      "sha256": "4a917894f7652c3f4735dd9c9117eb13b4285ce7fe1b9a9e2ca4ab52bb50457e",
+      "source_sha256": "4a917894f7652c3f4735dd9c9117eb13b4285ce7fe1b9a9e2ca4ab52bb50457e",
+      "source": "tests/fixtures/README.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/cases/en-baseline/corrections.json",
+      "bytes": 559,
+      "sha256": "8d89721cbadf76e0812c8589e4ecec925064aa519cd72cdab4f9140fd761aebc",
+      "source_sha256": "8d89721cbadf76e0812c8589e4ecec925064aa519cd72cdab4f9140fd761aebc",
+      "source": "tests/fixtures/cases/en-baseline/corrections.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/cases/en-baseline/expected.json",
+      "bytes": 947,
+      "sha256": "94f5148d226b7e6fc79c9c7e2007066efc833e67d06ea1d8d80474e84346dae9",
+      "source_sha256": "94f5148d226b7e6fc79c9c7e2007066efc833e67d06ea1d8d80474e84346dae9",
+      "source": "tests/fixtures/cases/en-baseline/expected.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/cases/en-baseline/manifest.json",
+      "bytes": 2330,
+      "sha256": "441e4a24572723301e9d955ae30f399da4c976d5d52df150286837f54ab58f0c",
+      "source_sha256": "441e4a24572723301e9d955ae30f399da4c976d5d52df150286837f54ab58f0c",
+      "source": "tests/fixtures/cases/en-baseline/manifest.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/cases/en-baseline/purchases.csv",
+      "bytes": 422,
+      "sha256": "5d4e0f35e25808e275a74c950232d5910809f308e422746f8fcddfa73ff4410d",
+      "source_sha256": "5d4e0f35e25808e275a74c950232d5910809f308e422746f8fcddfa73ff4410d",
+      "source": "tests/fixtures/cases/en-baseline/purchases.csv",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/cases/en-baseline/receiving.csv",
+      "bytes": 319,
+      "sha256": "a3996590d68599e4e9645362ef3f1cfdc63776173757b5ddef8dd231f87bacfb",
+      "source_sha256": "a3996590d68599e4e9645362ef3f1cfdc63776173757b5ddef8dd231f87bacfb",
+      "source": "tests/fixtures/cases/en-baseline/receiving.csv",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/cases/en-baseline/task.json",
+      "bytes": 1070,
+      "sha256": "8ff0f9859a5380eb2e88f988ab9e095c7fb91d3e3a0aa382a41f09646f7aa3b4",
+      "source_sha256": "8ff0f9859a5380eb2e88f988ab9e095c7fb91d3e3a0aa382a41f09646f7aa3b4",
+      "source": "tests/fixtures/cases/en-baseline/task.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/cases/fr-equivalent/corrections.json",
+      "bytes": 561,
+      "sha256": "4ab53b7ca61b02d985221f5a5cd634a4b4df2bad1299806113be81385ade592c",
+      "source_sha256": "4ab53b7ca61b02d985221f5a5cd634a4b4df2bad1299806113be81385ade592c",
+      "source": "tests/fixtures/cases/fr-equivalent/corrections.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/cases/fr-equivalent/expected.json",
+      "bytes": 947,
+      "sha256": "d7af1630b865db5c1e2cf5e899247ee0863eae3f3adabacd4f3788782cd011a1",
+      "source_sha256": "d7af1630b865db5c1e2cf5e899247ee0863eae3f3adabacd4f3788782cd011a1",
+      "source": "tests/fixtures/cases/fr-equivalent/expected.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/cases/fr-equivalent/manifest.json",
+      "bytes": 2346,
+      "sha256": "a83250c2edf7836567644ee87a9d0a2bac5d72b08606350e770a284953add30d",
+      "source_sha256": "a83250c2edf7836567644ee87a9d0a2bac5d72b08606350e770a284953add30d",
+      "source": "tests/fixtures/cases/fr-equivalent/manifest.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/cases/fr-equivalent/purchases.csv",
+      "bytes": 468,
+      "sha256": "83bb920906135d1b9829da1cdea4fb76fcfc5937648630bc079840f197e4a505",
+      "source_sha256": "83bb920906135d1b9829da1cdea4fb76fcfc5937648630bc079840f197e4a505",
+      "source": "tests/fixtures/cases/fr-equivalent/purchases.csv",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/cases/fr-equivalent/receiving.csv",
+      "bytes": 357,
+      "sha256": "1607a3899fd2ee4acdbf13304caece12ea3105dcf6d61b5f92cd3e6c3096f9ee",
+      "source_sha256": "1607a3899fd2ee4acdbf13304caece12ea3105dcf6d61b5f92cd3e6c3096f9ee",
+      "source": "tests/fixtures/cases/fr-equivalent/receiving.csv",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/cases/fr-equivalent/task.json",
+      "bytes": 1084,
+      "sha256": "0fc733dc4d07e999496eab404fa87dfc4da925c50c0c22971aac5845eccad70d",
+      "source_sha256": "0fc733dc4d07e999496eab404fa87dfc4da925c50c0c22971aac5845eccad70d",
+      "source": "tests/fixtures/cases/fr-equivalent/task.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/cases/partial-export/corrections.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "source_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "source": "tests/fixtures/cases/partial-export/corrections.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/cases/partial-export/expected.json",
+      "bytes": 612,
+      "sha256": "c6da9e29ea8faa054aa374b2babab65aa1bc61ecb63da3b245aa68c866e3f64f",
+      "source_sha256": "c6da9e29ea8faa054aa374b2babab65aa1bc61ecb63da3b245aa68c866e3f64f",
+      "source": "tests/fixtures/cases/partial-export/expected.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/cases/partial-export/manifest.json",
+      "bytes": 1367,
+      "sha256": "1b7a6d0185649bf2600c17b263d43993c3940a4bb2007a3e0d93fdac28bef189",
+      "source_sha256": "1b7a6d0185649bf2600c17b263d43993c3940a4bb2007a3e0d93fdac28bef189",
+      "source": "tests/fixtures/cases/partial-export/manifest.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/cases/partial-export/purchases.csv",
+      "bytes": 279,
+      "sha256": "6e4e6d70bf7d3a6eb1850137813b1a93645ce2fedda4004ca1198b3729708383",
+      "source_sha256": "6e4e6d70bf7d3a6eb1850137813b1a93645ce2fedda4004ca1198b3729708383",
+      "source": "tests/fixtures/cases/partial-export/purchases.csv",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/cases/partial-export/task.json",
+      "bytes": 1054,
+      "sha256": "42305b4ac8daa64bdb97532903b2d29e26e1250b18a8462e27cca6b8f9efb3e5",
+      "source_sha256": "42305b4ac8daa64bdb97532903b2d29e26e1250b18a8462e27cca6b8f9efb3e5",
+      "source": "tests/fixtures/cases/partial-export/task.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/contracts/calculation.json",
+      "bytes": 1969,
+      "sha256": "ec2759d119c409b32570cebbe04ec2c3d9d00bae042d71902af548197c41b983",
+      "source_sha256": "ec2759d119c409b32570cebbe04ec2c3d9d00bae042d71902af548197c41b983",
+      "source": "tests/fixtures/contracts/calculation.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/contracts/correction.json",
+      "bytes": 521,
+      "sha256": "dbf0108f7755f7e8c2b4506596867f44c82f382ba38ee35580379ae440439c66",
+      "source_sha256": "dbf0108f7755f7e8c2b4506596867f44c82f382ba38ee35580379ae440439c66",
+      "source": "tests/fixtures/contracts/correction.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/contracts/normalized-record.json",
+      "bytes": 1506,
+      "sha256": "865447f03ad09cbdb7d4312a224697bf6c6cdff6736d78cbfdc16d720a21f4e8",
+      "source_sha256": "865447f03ad09cbdb7d4312a224697bf6c6cdff6736d78cbfdc16d720a21f4e8",
+      "source": "tests/fixtures/contracts/normalized-record.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/contracts/original-record.json",
+      "bytes": 876,
+      "sha256": "07ae5e1b3084f15c2e3269db622ab4f43ea3a1c699fcfcd1330fe4206fe18c7a",
+      "source_sha256": "07ae5e1b3084f15c2e3269db622ab4f43ea3a1c699fcfcd1330fe4206fe18c7a",
+      "source": "tests/fixtures/contracts/original-record.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/contracts/review-package.json",
+      "bytes": 1515,
+      "sha256": "323c39a53f6d97e92bcf477801e93628d4b984be6dc08af82eba3ac699ea1f8b",
+      "source_sha256": "323c39a53f6d97e92bcf477801e93628d4b984be6dc08af82eba3ac699ea1f8b",
+      "source": "tests/fixtures/contracts/review-package.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/business-advice-blocked.json",
+      "bytes": 606,
+      "sha256": "66a9e769acfb046b913299795559afaef97f3fcadd5005b1ff747317152b2ee4",
+      "source_sha256": "66a9e769acfb046b913299795559afaef97f3fcadd5005b1ff747317152b2ee4",
+      "source": "tests/fixtures/ecosystem/context/business-advice-blocked.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/business-currency-mismatch.json",
+      "bytes": 602,
+      "sha256": "e811d6c26852734b5f85fd50a292ddcb37dc03191aa1d2f8c171933e1d045a5a",
+      "source_sha256": "e811d6c26852734b5f85fd50a292ddcb37dc03191aa1d2f8c171933e1d045a5a",
+      "source": "tests/fixtures/ecosystem/context/business-currency-mismatch.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/business-en.json",
+      "bytes": 591,
+      "sha256": "24f65874ddfe0b6c0f992c0021660c4ab181aa5e59f2d893dd63a022a1e59394",
+      "source_sha256": "24f65874ddfe0b6c0f992c0021660c4ab181aa5e59f2d893dd63a022a1e59394",
+      "source": "tests/fixtures/ecosystem/context/business-en.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/business-fr.json",
+      "bytes": 601,
+      "sha256": "c7bae437a1cef6802876b59b6f0d263d1ec5ab79c8750b34cbf49577f0aa642f",
+      "source_sha256": "c7bae437a1cef6802876b59b6f0d263d1ec5ab79c8750b34cbf49577f0aa642f",
+      "source": "tests/fixtures/ecosystem/context/business-fr.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/business-missing-cost.json",
+      "bytes": 597,
+      "sha256": "e9f6fee80fb1f09300d5b4a10fafbd2b9ff85c89434dd197b8df7903e1ebf6b5",
+      "source_sha256": "e9f6fee80fb1f09300d5b4a10fafbd2b9ff85c89434dd197b8df7903e1ebf6b5",
+      "source": "tests/fixtures/ecosystem/context/business-missing-cost.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/business-unknown-coverage.json",
+      "bytes": 601,
+      "sha256": "75fea61f28cc0e262eff87ff32529003e2f3cc5dac31a0a61a97249ec77957d4",
+      "source_sha256": "75fea61f28cc0e262eff87ff32529003e2f3cc5dac31a0a61a97249ec77957d4",
+      "source": "tests/fixtures/ecosystem/context/business-unknown-coverage.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/clinical-request-not-downgraded.json",
+      "bytes": 582,
+      "sha256": "139b763c98cc5a89f52bffbc585603b8a0caea53360e2cd265b2058ad9b551f5",
+      "source_sha256": "139b763c98cc5a89f52bffbc585603b8a0caea53360e2cd265b2058ad9b551f5",
+      "source": "tests/fixtures/ecosystem/context/clinical-request-not-downgraded.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/crop-en.json",
+      "bytes": 574,
+      "sha256": "43494042b7b7e1a66f9c7cc651fb8ed108507164679c9a3a48c0e1196906aa1f",
+      "source_sha256": "43494042b7b7e1a66f9c7cc651fb8ed108507164679c9a3a48c0e1196906aa1f",
+      "source": "tests/fixtures/ecosystem/context/crop-en.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/crop-fr.json",
+      "bytes": 577,
+      "sha256": "2846f4ab21954b3d189d0ed77bfed0f62329f6d6d94a6934c44c39725f452530",
+      "source_sha256": "2846f4ab21954b3d189d0ed77bfed0f62329f6d6d94a6934c44c39725f452530",
+      "source": "tests/fixtures/ecosystem/context/crop-fr.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/crop-missing-method.json",
+      "bytes": 586,
+      "sha256": "80bedc15aab29ae990e37bf573f76aed1a84360d758a2bd6e8c355267ea39e60",
+      "source_sha256": "80bedc15aab29ae990e37bf573f76aed1a84360d758a2bd6e8c355267ea39e60",
+      "source": "tests/fixtures/ecosystem/context/crop-missing-method.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/crop-route-unavailable.json",
+      "bytes": 597,
+      "sha256": "c1be8d77b39863a51a7bbf7cb3a39a0c3d9a1640f41c494ed98f043eb9c0ce09",
+      "source_sha256": "c1be8d77b39863a51a7bbf7cb3a39a0c3d9a1640f41c494ed98f043eb9c0ce09",
+      "source": "tests/fixtures/ecosystem/context/crop-route-unavailable.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/explain-record-workflow.json",
+      "bytes": 595,
+      "sha256": "1eda8bc22f10432b263774ce8c19abb14b71bdb2219af16f896f5abedc0f2f74",
+      "source_sha256": "1eda8bc22f10432b263774ce8c19abb14b71bdb2219af16f896f5abedc0f2f74",
+      "source": "tests/fixtures/ecosystem/context/explain-record-workflow.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/harvest-en.json",
+      "bytes": 573,
+      "sha256": "ab8885c9769fed139958d8a0a0b1d0c860cd05b507f9ad7507b49139ff09bfd6",
+      "source_sha256": "ab8885c9769fed139958d8a0a0b1d0c860cd05b507f9ad7507b49139ff09bfd6",
+      "source": "tests/fixtures/ecosystem/context/harvest-en.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/harvest-fr.json",
+      "bytes": 577,
+      "sha256": "51e7463a8e6861e2e5f2fcecf38486f16d8e9c122941acac00dba27ac4eed6a4",
+      "source_sha256": "51e7463a8e6861e2e5f2fcecf38486f16d8e9c122941acac00dba27ac4eed6a4",
+      "source": "tests/fixtures/ecosystem/context/harvest-fr.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/harvest-missing-tare.json",
+      "bytes": 579,
+      "sha256": "235ddd7f1293add488e108d1ce0d1000210d41a0a38ecdb8f79457a0147e6269",
+      "source_sha256": "235ddd7f1293add488e108d1ce0d1000210d41a0a38ecdb8f79457a0147e6269",
+      "source": "tests/fixtures/ecosystem/context/harvest-missing-tare.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/harvest-ship-blocked.json",
+      "bytes": 581,
+      "sha256": "278e816c4091ef04bb38d83e3621895db3bf22224d26723e4fb1afa1da8fb60f",
+      "source_sha256": "278e816c4091ef04bb38d83e3621895db3bf22224d26723e4fb1afa1da8fb60f",
+      "source": "tests/fixtures/ecosystem/context/harvest-ship-blocked.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/harvest-unit-mismatch.json",
+      "bytes": 580,
+      "sha256": "62aeee2dc5f5baee86d5a5065d760d8fb5c7c0fabb894436d336b8935ed6515e",
+      "source_sha256": "62aeee2dc5f5baee86d5a5065d760d8fb5c7c0fabb894436d336b8935ed6515e",
+      "source": "tests/fixtures/ecosystem/context/harvest-unit-mismatch.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/harvest-unknown-coverage.json",
+      "bytes": 583,
+      "sha256": "4d8fecf5d7fec378d4dd0e318ecd451b5e196346189f46487ac79ac448dd44a5",
+      "source_sha256": "4d8fecf5d7fec378d4dd0e318ecd451b5e196346189f46487ac79ac448dd44a5",
+      "source": "tests/fixtures/ecosystem/context/harvest-unknown-coverage.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/livestock-basis-mismatch.json",
+      "bytes": 630,
+      "sha256": "3815684ff9461ec8046e019d75ba86d00b5f1d5690369d70290047d6b50d8cb9",
+      "source_sha256": "3815684ff9461ec8046e019d75ba86d00b5f1d5690369d70290047d6b50d8cb9",
+      "source": "tests/fixtures/ecosystem/context/livestock-basis-mismatch.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/livestock-clinical-blocked.json",
+      "bytes": 613,
+      "sha256": "695c01d35fef81a732cc38b67d6b6a0380565382db7040dc19426d5d73fea521",
+      "source_sha256": "695c01d35fef81a732cc38b67d6b6a0380565382db7040dc19426d5d73fea521",
+      "source": "tests/fixtures/ecosystem/context/livestock-clinical-blocked.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/livestock-en.json",
+      "bytes": 630,
+      "sha256": "3815684ff9461ec8046e019d75ba86d00b5f1d5690369d70290047d6b50d8cb9",
+      "source_sha256": "3815684ff9461ec8046e019d75ba86d00b5f1d5690369d70290047d6b50d8cb9",
+      "source": "tests/fixtures/ecosystem/context/livestock-en.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/livestock-fr.json",
+      "bytes": 630,
+      "sha256": "3d9c9732f154270786118c8d8d67e542b6e5efdc55a5529b04018cd97a861ccc",
+      "source_sha256": "3d9c9732f154270786118c8d8d67e542b6e5efdc55a5529b04018cd97a861ccc",
+      "source": "tests/fixtures/ecosystem/context/livestock-fr.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/livestock-missing.json",
+      "bytes": 630,
+      "sha256": "3815684ff9461ec8046e019d75ba86d00b5f1d5690369d70290047d6b50d8cb9",
+      "source_sha256": "3815684ff9461ec8046e019d75ba86d00b5f1d5690369d70290047d6b50d8cb9",
+      "source": "tests/fixtures/ecosystem/context/livestock-missing.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/livestock-stale.json",
+      "bytes": 630,
+      "sha256": "3815684ff9461ec8046e019d75ba86d00b5f1d5690369d70290047d6b50d8cb9",
+      "source_sha256": "3815684ff9461ec8046e019d75ba86d00b5f1d5690369d70290047d6b50d8cb9",
+      "source": "tests/fixtures/ecosystem/context/livestock-stale.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/livestock-unit-mismatch.json",
+      "bytes": 630,
+      "sha256": "3815684ff9461ec8046e019d75ba86d00b5f1d5690369d70290047d6b50d8cb9",
+      "source_sha256": "3815684ff9461ec8046e019d75ba86d00b5f1d5690369d70290047d6b50d8cb9",
+      "source": "tests/fixtures/ecosystem/context/livestock-unit-mismatch.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/operational-question-review-only.json",
+      "bytes": 597,
+      "sha256": "de8501ef1ef087cdfb0ab8947d8bff4b11c6776625b911a82fb0e4cf262e2a22",
+      "source_sha256": "de8501ef1ef087cdfb0ab8947d8bff4b11c6776625b911a82fb0e4cf262e2a22",
+      "source": "tests/fixtures/ecosystem/context/operational-question-review-only.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/record-content-is-data.json",
+      "bytes": 640,
+      "sha256": "ac85d4676ff650c8f0cfc5d2ecb664f7590f431392834c45ec6ad94fca9fd4c2",
+      "source_sha256": "ac85d4676ff650c8f0cfc5d2ecb664f7590f431392834c45ec6ad94fca9fd4c2",
+      "source": "tests/fixtures/ecosystem/context/record-content-is-data.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/records-missing-scope.json",
+      "bytes": 542,
+      "sha256": "b6540db23f45fe7f0f179453da7a949ae179807f1c2ad10c52f69848b086bbb6",
+      "source_sha256": "b6540db23f45fe7f0f179453da7a949ae179807f1c2ad10c52f69848b086bbb6",
+      "source": "tests/fixtures/ecosystem/context/records-missing-scope.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/records-no-external-send.json",
+      "bytes": 617,
+      "sha256": "0692557bd9b474acfff4bc13d445d7aa8842b817995e674b0de8c662c67b80b9",
+      "source_sha256": "0692557bd9b474acfff4bc13d445d7aa8842b817995e674b0de8c662c67b80b9",
+      "source": "tests/fixtures/ecosystem/context/records-no-external-send.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/records-reversed-period.json",
+      "bytes": 597,
+      "sha256": "8613634c7010ac11b5f8749bf125535c50eb2443eb8e8b045400fa2556983814",
+      "source_sha256": "8613634c7010ac11b5f8749bf125535c50eb2443eb8e8b045400fa2556983814",
+      "source": "tests/fixtures/ecosystem/context/records-reversed-period.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/records-review-en.json",
+      "bytes": 597,
+      "sha256": "578916b74d6528e532448eb4407352fafa26f6349ccca9d14cf461d0f36fdd7b",
+      "source_sha256": "578916b74d6528e532448eb4407352fafa26f6349ccca9d14cf461d0f36fdd7b",
+      "source": "tests/fixtures/ecosystem/context/records-review-en.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/records-review-fr.json",
+      "bytes": 585,
+      "sha256": "2c537dc9d59864614008d66d0c290a827d40e78d995d4e10a31e2c7d6acffe17",
+      "source_sha256": "2c537dc9d59864614008d66d0c290a827d40e78d995d4e10a31e2c7d6acffe17",
+      "source": "tests/fixtures/ecosystem/context/records-review-fr.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/resources-control-blocked.json",
+      "bytes": 591,
+      "sha256": "728f8a71bbb881241118ddded6ae4539ab420bee3dcf6ff980b9a42c13cf211e",
+      "source_sha256": "728f8a71bbb881241118ddded6ae4539ab420bee3dcf6ff980b9a42c13cf211e",
+      "source": "tests/fixtures/ecosystem/context/resources-control-blocked.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/resources-en.json",
+      "bytes": 612,
+      "sha256": "34462405dab5e4aa62dee02ff617cccb0bd904d0ebb915b644befc7703f333f6",
+      "source_sha256": "34462405dab5e4aa62dee02ff617cccb0bd904d0ebb915b644befc7703f333f6",
+      "source": "tests/fixtures/ecosystem/context/resources-en.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/resources-expired.json",
+      "bytes": 612,
+      "sha256": "34462405dab5e4aa62dee02ff617cccb0bd904d0ebb915b644befc7703f333f6",
+      "source_sha256": "34462405dab5e4aa62dee02ff617cccb0bd904d0ebb915b644befc7703f333f6",
+      "source": "tests/fixtures/ecosystem/context/resources-expired.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/resources-fr.json",
+      "bytes": 612,
+      "sha256": "c582a76362f2b9598b3ca0beeef4df547972004f2a3e13ea272898910505d78d",
+      "source_sha256": "c582a76362f2b9598b3ca0beeef4df547972004f2a3e13ea272898910505d78d",
+      "source": "tests/fixtures/ecosystem/context/resources-fr.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/resources-language-mismatch.json",
+      "bytes": 612,
+      "sha256": "34462405dab5e4aa62dee02ff617cccb0bd904d0ebb915b644befc7703f333f6",
+      "source_sha256": "34462405dab5e4aa62dee02ff617cccb0bd904d0ebb915b644befc7703f333f6",
+      "source": "tests/fixtures/ecosystem/context/resources-language-mismatch.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/resources-missing-version.json",
+      "bytes": 612,
+      "sha256": "34462405dab5e4aa62dee02ff617cccb0bd904d0ebb915b644befc7703f333f6",
+      "source_sha256": "34462405dab5e4aa62dee02ff617cccb0bd904d0ebb915b644befc7703f333f6",
+      "source": "tests/fixtures/ecosystem/context/resources-missing-version.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/season-en.json",
+      "bytes": 572,
+      "sha256": "88899b4cdbb5adb0b6e3ae846da4e2b45a37ac8b6b461ef9ef1de4ec222f362f",
+      "source_sha256": "88899b4cdbb5adb0b6e3ae846da4e2b45a37ac8b6b461ef9ef1de4ec222f362f",
+      "source": "tests/fixtures/ecosystem/context/season-en.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/season-fr.json",
+      "bytes": 575,
+      "sha256": "68fa5da6f74daed42f27b11f12b8f21e0e1053b5d28dfeefbcee97b077cd1064",
+      "source_sha256": "68fa5da6f74daed42f27b11f12b8f21e0e1053b5d28dfeefbcee97b077cd1064",
+      "source": "tests/fixtures/ecosystem/context/season-fr.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/season-stale.json",
+      "bytes": 575,
+      "sha256": "d436887f0a6572f96cf48fcd15312bedd97143ffb883f50629f52891df41aaf7",
+      "source_sha256": "d436887f0a6572f96cf48fcd15312bedd97143ffb883f50629f52891df41aaf7",
+      "source": "tests/fixtures/ecosystem/context/season-stale.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/context/unknown-intent.json",
+      "bytes": 590,
+      "sha256": "7f7b4e1da5c19ce8191a75b9e96d9f6acd61fd7e71b1bb7bfa7c40fee909eefe",
+      "source_sha256": "7f7b4e1da5c19ce8191a75b9e96d9f6acd61fd7e71b1bb7bfa7c40fee909eefe",
+      "source": "tests/fixtures/ecosystem/context/unknown-intent.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/business-currency-mismatch.json",
+      "bytes": 6694,
+      "sha256": "c1a98dca526fb8d4e6e324d41e5bbe8738e42d4782f4f805cf75c8cc776fbda0",
+      "source_sha256": "c1a98dca526fb8d4e6e324d41e5bbe8738e42d4782f4f805cf75c8cc776fbda0",
+      "source": "tests/fixtures/ecosystem/workflows/business-currency-mismatch.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/business-en.json",
+      "bytes": 6683,
+      "sha256": "635f56d4695b94c6975ac4bf18e8b4bc141ca17793f9d8caa77ff0536ebb9554",
+      "source_sha256": "635f56d4695b94c6975ac4bf18e8b4bc141ca17793f9d8caa77ff0536ebb9554",
+      "source": "tests/fixtures/ecosystem/workflows/business-en.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/business-fr.json",
+      "bytes": 6763,
+      "sha256": "dbda19e6fac8f79db8d645b251f98b6f7067b8f28b7bd34123b4c37b0e3137a5",
+      "source_sha256": "dbda19e6fac8f79db8d645b251f98b6f7067b8f28b7bd34123b4c37b0e3137a5",
+      "source": "tests/fixtures/ecosystem/workflows/business-fr.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/business-missing-cost.json",
+      "bytes": 6687,
+      "sha256": "bbc4aefbcd2c53bc47a5e79d639cb4b3b189d6e38f24eee16b305bf18ea56e25",
+      "source_sha256": "bbc4aefbcd2c53bc47a5e79d639cb4b3b189d6e38f24eee16b305bf18ea56e25",
+      "source": "tests/fixtures/ecosystem/workflows/business-missing-cost.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/business-unknown-coverage.json",
+      "bytes": 6692,
+      "sha256": "d244e1fb0833107319b0240ec4d93e826c8565d480f3bfb964505bfb02731d97",
+      "source_sha256": "d244e1fb0833107319b0240ec4d93e826c8565d480f3bfb964505bfb02731d97",
+      "source": "tests/fixtures/ecosystem/workflows/business-unknown-coverage.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/crop-en.json",
+      "bytes": 6125,
+      "sha256": "db6fea5a8861490d6cde7c18b04450d6e0b19a517e5657c43ef6857261df065c",
+      "source_sha256": "db6fea5a8861490d6cde7c18b04450d6e0b19a517e5657c43ef6857261df065c",
+      "source": "tests/fixtures/ecosystem/workflows/crop-en.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/crop-fr.json",
+      "bytes": 6125,
+      "sha256": "4b67141524a19aab25a4a3e0fb3f6f5b8919615a1faf341563e2aeab0fcffffd",
+      "source_sha256": "4b67141524a19aab25a4a3e0fb3f6f5b8919615a1faf341563e2aeab0fcffffd",
+      "source": "tests/fixtures/ecosystem/workflows/crop-fr.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/crop-missing-method.json",
+      "bytes": 6040,
+      "sha256": "492df4940733a4142c133fe6d450434906958cd9ef28ce438730f76289efd2a3",
+      "source_sha256": "492df4940733a4142c133fe6d450434906958cd9ef28ce438730f76289efd2a3",
+      "source": "tests/fixtures/ecosystem/workflows/crop-missing-method.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/harvest-en.json",
+      "bytes": 8574,
+      "sha256": "0bf06ce84f6e13cad303190d697e523fd5b9b38e5c358d389d85560fc3397d3a",
+      "source_sha256": "0bf06ce84f6e13cad303190d697e523fd5b9b38e5c358d389d85560fc3397d3a",
+      "source": "tests/fixtures/ecosystem/workflows/harvest-en.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/harvest-fr.json",
+      "bytes": 8577,
+      "sha256": "6a3ef8d3e7f419dda9e25463bd70b07d49d482fadd178eb16b6572222be8e73b",
+      "source_sha256": "6a3ef8d3e7f419dda9e25463bd70b07d49d482fadd178eb16b6572222be8e73b",
+      "source": "tests/fixtures/ecosystem/workflows/harvest-fr.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/harvest-missing-tare.json",
+      "bytes": 8580,
+      "sha256": "2ea9cf775a8c1698fbbae17d35d597e1a30847737628c07ee6b87ce0733b7cd4",
+      "source_sha256": "2ea9cf775a8c1698fbbae17d35d597e1a30847737628c07ee6b87ce0733b7cd4",
+      "source": "tests/fixtures/ecosystem/workflows/harvest-missing-tare.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/harvest-unit-mismatch.json",
+      "bytes": 8580,
+      "sha256": "09b7f362e3c47ca7ce201e4c9d701b64af9e15790f53955394b7ef80ce5d2f30",
+      "source_sha256": "09b7f362e3c47ca7ce201e4c9d701b64af9e15790f53955394b7ef80ce5d2f30",
+      "source": "tests/fixtures/ecosystem/workflows/harvest-unit-mismatch.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/harvest-unknown-coverage.json",
+      "bytes": 8583,
+      "sha256": "32533bae0b2c96cf587460a395f00ccd94178d22ce89342f51a03b72bf862bdc",
+      "source_sha256": "32533bae0b2c96cf587460a395f00ccd94178d22ce89342f51a03b72bf862bdc",
+      "source": "tests/fixtures/ecosystem/workflows/harvest-unknown-coverage.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/livestock-basis-mismatch.json",
+      "bytes": 6972,
+      "sha256": "67604dda79cc60e925c27190558edf8a55196b77a699e762cf4538a81cffbc85",
+      "source_sha256": "67604dda79cc60e925c27190558edf8a55196b77a699e762cf4538a81cffbc85",
+      "source": "tests/fixtures/ecosystem/workflows/livestock-basis-mismatch.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/livestock-en.json",
+      "bytes": 6968,
+      "sha256": "39dac2cb387a934b23cdfe8d6a0afd4f0780c1eda2e384777cc8509e935d409e",
+      "source_sha256": "39dac2cb387a934b23cdfe8d6a0afd4f0780c1eda2e384777cc8509e935d409e",
+      "source": "tests/fixtures/ecosystem/workflows/livestock-en.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/livestock-fr.json",
+      "bytes": 6968,
+      "sha256": "c5d06a65fad8187074e087a8a11490a149529d74f972f2a28b83bc24d52be97d",
+      "source_sha256": "c5d06a65fad8187074e087a8a11490a149529d74f972f2a28b83bc24d52be97d",
+      "source": "tests/fixtures/ecosystem/workflows/livestock-fr.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/livestock-missing.json",
+      "bytes": 6965,
+      "sha256": "8e3cebb2864ac3d64be02505f1fa71f1a7ddad81521c68a9fb7ab46e67e4d596",
+      "source_sha256": "8e3cebb2864ac3d64be02505f1fa71f1a7ddad81521c68a9fb7ab46e67e4d596",
+      "source": "tests/fixtures/ecosystem/workflows/livestock-missing.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/livestock-stale.json",
+      "bytes": 6968,
+      "sha256": "c9b9248ce304a06aea70d15d605759c2864e42907bb3ca3bc104d8c1aba603d4",
+      "source_sha256": "c9b9248ce304a06aea70d15d605759c2864e42907bb3ca3bc104d8c1aba603d4",
+      "source": "tests/fixtures/ecosystem/workflows/livestock-stale.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/livestock-unit-mismatch.json",
+      "bytes": 6968,
+      "sha256": "62ef54ed9b9fddb3f41b4f0a4bedc7fd21f81b3bc2319bb7d781c4e64b0f512e",
+      "source_sha256": "62ef54ed9b9fddb3f41b4f0a4bedc7fd21f81b3bc2319bb7d781c4e64b0f512e",
+      "source": "tests/fixtures/ecosystem/workflows/livestock-unit-mismatch.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/resources-en.json",
+      "bytes": 3919,
+      "sha256": "e48a5bc46f275beb026786df43f261cd68be0242f4a983d84fdd789beb564265",
+      "source_sha256": "e48a5bc46f275beb026786df43f261cd68be0242f4a983d84fdd789beb564265",
+      "source": "tests/fixtures/ecosystem/workflows/resources-en.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/resources-expired.json",
+      "bytes": 3919,
+      "sha256": "c79eab0136495975ca600e616b794d1687dce701f4289a94e5c02314e7ebebc3",
+      "source_sha256": "c79eab0136495975ca600e616b794d1687dce701f4289a94e5c02314e7ebebc3",
+      "source": "tests/fixtures/ecosystem/workflows/resources-expired.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/resources-fr.json",
+      "bytes": 4160,
+      "sha256": "b75d118cb238925483252495401c6ae3af76de5280a3cf3d5ae6616dca90d76f",
+      "source_sha256": "b75d118cb238925483252495401c6ae3af76de5280a3cf3d5ae6616dca90d76f",
+      "source": "tests/fixtures/ecosystem/workflows/resources-fr.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/resources-language-mismatch.json",
+      "bytes": 3919,
+      "sha256": "45dad423f83c6df2016bca3acdfe9431a109411659b824a500a9a313bea9729b",
+      "source_sha256": "45dad423f83c6df2016bca3acdfe9431a109411659b824a500a9a313bea9729b",
+      "source": "tests/fixtures/ecosystem/workflows/resources-language-mismatch.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/resources-missing-version.json",
+      "bytes": 3919,
+      "sha256": "94f83fc8cccc63558166580af9e02c4dd1c3972156b44f483d5a6cc80547bdb2",
+      "source_sha256": "94f83fc8cccc63558166580af9e02c4dd1c3972156b44f483d5a6cc80547bdb2",
+      "source": "tests/fixtures/ecosystem/workflows/resources-missing-version.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/season-en.json",
+      "bytes": 2902,
+      "sha256": "323a3816ecef4ae0cc827ede18905d391125312bd83cb1f9aeb0788b1a359093",
+      "source_sha256": "323a3816ecef4ae0cc827ede18905d391125312bd83cb1f9aeb0788b1a359093",
+      "source": "tests/fixtures/ecosystem/workflows/season-en.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/season-fr.json",
+      "bytes": 2893,
+      "sha256": "d516f261a256392d28b0a1c0107028a0ca6bb1ffd0d19f59337c6aa8cb263ad6",
+      "source_sha256": "d516f261a256392d28b0a1c0107028a0ca6bb1ffd0d19f59337c6aa8cb263ad6",
+      "source": "tests/fixtures/ecosystem/workflows/season-fr.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/fixtures/ecosystem/workflows/season-stale.json",
+      "bytes": 2905,
+      "sha256": "68c13e2e8559783cce08a6f1aabffb7d7d41225103413774d0ad240fea5c8598",
+      "source_sha256": "68c13e2e8559783cce08a6f1aabffb7d7d41225103413774d0ad240fea5c8598",
+      "source": "tests/fixtures/ecosystem/workflows/season-stale.json",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/business-advice-blocked.md",
+      "bytes": 332,
+      "sha256": "e647b8666272f7a052a7dbbc6d3030f8a2fb557ffc4121a3d1acf19de64443e1",
+      "source_sha256": "e647b8666272f7a052a7dbbc6d3030f8a2fb557ffc4121a3d1acf19de64443e1",
+      "source": "tests/scenarios/business-advice-blocked.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/business-currency-mismatch.md",
+      "bytes": 291,
+      "sha256": "bf750dc4d08a59b56fb718bb3032dfc1005e788d91cf821baa46036b25e40ebf",
+      "source_sha256": "bf750dc4d08a59b56fb718bb3032dfc1005e788d91cf821baa46036b25e40ebf",
+      "source": "tests/scenarios/business-currency-mismatch.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/business-en.md",
+      "bytes": 336,
+      "sha256": "2222e5ef1056d767cb332e5d039b98f8033f0c2fd210446bfd014d3f0cf780fb",
+      "source_sha256": "2222e5ef1056d767cb332e5d039b98f8033f0c2fd210446bfd014d3f0cf780fb",
+      "source": "tests/scenarios/business-en.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/business-fr.md",
+      "bytes": 361,
+      "sha256": "ef7a49c7ad1faad2ab189e5bbd167b5dbd7faf5874dfdf1316fd471d232eefe8",
+      "source_sha256": "ef7a49c7ad1faad2ab189e5bbd167b5dbd7faf5874dfdf1316fd471d232eefe8",
+      "source": "tests/scenarios/business-fr.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/business-missing-cost.md",
+      "bytes": 303,
+      "sha256": "43fe9b5dbbd82765b848db630ecb6180d643b4f9f22126907768bf037884e1c0",
+      "source_sha256": "43fe9b5dbbd82765b848db630ecb6180d643b4f9f22126907768bf037884e1c0",
+      "source": "tests/scenarios/business-missing-cost.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/business-unknown-coverage.md",
+      "bytes": 291,
+      "sha256": "f0dd4a69dafd374ac9acca9d5e9291e240fbb1acbdf953cf15505869f9ce4ee3",
+      "source_sha256": "f0dd4a69dafd374ac9acca9d5e9291e240fbb1acbdf953cf15505869f9ce4ee3",
+      "source": "tests/scenarios/business-unknown-coverage.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/clinical-request-not-downgraded.md",
+      "bytes": 265,
+      "sha256": "844fc637936918e2501933dfd6e1c4e93f391adfa6d96b949a6ca4533c0d8d6c",
+      "source_sha256": "844fc637936918e2501933dfd6e1c4e93f391adfa6d96b949a6ca4533c0d8d6c",
+      "source": "tests/scenarios/clinical-request-not-downgraded.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/crop-en.md",
+      "bytes": 283,
+      "sha256": "967c68d4859de50f1e135a7c06b6673001a6cd398aa4f641c4eafe77c4be70c3",
+      "source_sha256": "967c68d4859de50f1e135a7c06b6673001a6cd398aa4f641c4eafe77c4be70c3",
+      "source": "tests/scenarios/crop-en.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/crop-fr.md",
+      "bytes": 281,
+      "sha256": "6445febf4bd5c1a7967d04f317115295d9b3bab829eb3b4b9cdd63315be67238",
+      "source_sha256": "6445febf4bd5c1a7967d04f317115295d9b3bab829eb3b4b9cdd63315be67238",
+      "source": "tests/scenarios/crop-fr.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/crop-missing-method.md",
+      "bytes": 280,
+      "sha256": "bed99ca220468993163a9221142b7c91ac6e49cdfe1a9bec54d92c325779cfe5",
+      "source_sha256": "bed99ca220468993163a9221142b7c91ac6e49cdfe1a9bec54d92c325779cfe5",
+      "source": "tests/scenarios/crop-missing-method.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/crop-route-unavailable.md",
+      "bytes": 496,
+      "sha256": "42e5a724e2ee126898bc1b66d0796e4e27f1ae7330c4e2ab5d236ac78d620993",
+      "source_sha256": "42e5a724e2ee126898bc1b66d0796e4e27f1ae7330c4e2ab5d236ac78d620993",
+      "source": "tests/scenarios/crop-route-unavailable.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/explain-record-workflow.md",
+      "bytes": 376,
+      "sha256": "53b994cbc774e266db3115b655760c2785aa34a4fcf9bffe28b211e1ac842577",
+      "source_sha256": "53b994cbc774e266db3115b655760c2785aa34a4fcf9bffe28b211e1ac842577",
+      "source": "tests/scenarios/explain-record-workflow.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/harvest-en.md",
+      "bytes": 315,
+      "sha256": "7426d9d9b28bb60d1328036bfc6098c32c954fce45519bd032e956a649d1eb71",
+      "source_sha256": "7426d9d9b28bb60d1328036bfc6098c32c954fce45519bd032e956a649d1eb71",
+      "source": "tests/scenarios/harvest-en.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/harvest-fr.md",
+      "bytes": 353,
+      "sha256": "fe7e5fac4b1153b1bd5e3b0b3e3d3c510d2a20441a852011eef7ce331c2d3bf5",
+      "source_sha256": "fe7e5fac4b1153b1bd5e3b0b3e3d3c510d2a20441a852011eef7ce331c2d3bf5",
+      "source": "tests/scenarios/harvest-fr.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/harvest-missing-tare.md",
+      "bytes": 277,
+      "sha256": "4940d20cd475d51360d03edcd94684760b6822d604ca7f261346a83595ca4716",
+      "source_sha256": "4940d20cd475d51360d03edcd94684760b6822d604ca7f261346a83595ca4716",
+      "source": "tests/scenarios/harvest-missing-tare.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/harvest-ship-blocked.md",
+      "bytes": 314,
+      "sha256": "caca0814ee0859cc293674bb6330332b71fdbdd9884cf2fed30ca21830421386",
+      "source_sha256": "caca0814ee0859cc293674bb6330332b71fdbdd9884cf2fed30ca21830421386",
+      "source": "tests/scenarios/harvest-ship-blocked.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/harvest-unit-mismatch.md",
+      "bytes": 262,
+      "sha256": "8d491968171e49ba7a222e13207ece6867e0275863873e9693a9d356ab781c27",
+      "source_sha256": "8d491968171e49ba7a222e13207ece6867e0275863873e9693a9d356ab781c27",
+      "source": "tests/scenarios/harvest-unit-mismatch.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/harvest-unknown-coverage.md",
+      "bytes": 297,
+      "sha256": "de9cb57efb902f76f9ccd75920328c9b04b67fe844309364ec74d1b3d2472bdd",
+      "source_sha256": "de9cb57efb902f76f9ccd75920328c9b04b67fe844309364ec74d1b3d2472bdd",
+      "source": "tests/scenarios/harvest-unknown-coverage.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/livestock-basis-mismatch.md",
+      "bytes": 453,
+      "sha256": "284857631d2c27b0dd3021d402875b9ffbe76af512085a2d84408f08389ba808",
+      "source_sha256": "284857631d2c27b0dd3021d402875b9ffbe76af512085a2d84408f08389ba808",
+      "source": "tests/scenarios/livestock-basis-mismatch.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/livestock-clinical-blocked.md",
+      "bytes": 457,
+      "sha256": "0ec0ad342c083b0d8e5fee41a7f25377af607d41bea0b0f4ba718bfb77512b20",
+      "source_sha256": "0ec0ad342c083b0d8e5fee41a7f25377af607d41bea0b0f4ba718bfb77512b20",
+      "source": "tests/scenarios/livestock-clinical-blocked.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/livestock-en.md",
+      "bytes": 429,
+      "sha256": "110e988ab92c039b7151ff8276ce5f46808beec8873a533c9b8ce3ed9a93b818",
+      "source_sha256": "110e988ab92c039b7151ff8276ce5f46808beec8873a533c9b8ce3ed9a93b818",
+      "source": "tests/scenarios/livestock-en.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/livestock-fr.md",
+      "bytes": 429,
+      "sha256": "20d77e34bc5c5b9def00d3c08dae9c462cf106bf8ab5686a1c3c05200d9d836e",
+      "source_sha256": "20d77e34bc5c5b9def00d3c08dae9c462cf106bf8ab5686a1c3c05200d9d836e",
+      "source": "tests/scenarios/livestock-fr.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/livestock-missing.md",
+      "bytes": 439,
+      "sha256": "712613f88c2e08215357ba439554bb662449f0dc2d047e39de5a950c449ff13c",
+      "source_sha256": "712613f88c2e08215357ba439554bb662449f0dc2d047e39de5a950c449ff13c",
+      "source": "tests/scenarios/livestock-missing.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/livestock-stale.md",
+      "bytes": 435,
+      "sha256": "05c4c89d0fa8d641d64e3d6a22a3a094d5c7df0fdf9159e930ce02c4e34a533e",
+      "source_sha256": "05c4c89d0fa8d641d64e3d6a22a3a094d5c7df0fdf9159e930ce02c4e34a533e",
+      "source": "tests/scenarios/livestock-stale.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/livestock-unit-mismatch.md",
+      "bytes": 451,
+      "sha256": "cecc6d8d50cb14cbd3821bce1e6c4943acfee29fd406ad18a8100fe1fa538a5a",
+      "source_sha256": "cecc6d8d50cb14cbd3821bce1e6c4943acfee29fd406ad18a8100fe1fa538a5a",
+      "source": "tests/scenarios/livestock-unit-mismatch.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/operational-question-review-only.md",
+      "bytes": 266,
+      "sha256": "b37ae4d3e1cab5c60525f10edc8f4d3fb0de5c5e74e2a68cc2c7a813c81467ed",
+      "source_sha256": "b37ae4d3e1cab5c60525f10edc8f4d3fb0de5c5e74e2a68cc2c7a813c81467ed",
+      "source": "tests/scenarios/operational-question-review-only.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/record-content-is-data.md",
+      "bytes": 273,
+      "sha256": "9ab1a5853f5dfadd008f4b57b6b9b7cbb171b3eea001883fc191813ac679dd4e",
+      "source_sha256": "9ab1a5853f5dfadd008f4b57b6b9b7cbb171b3eea001883fc191813ac679dd4e",
+      "source": "tests/scenarios/record-content-is-data.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/records-missing-scope.md",
+      "bytes": 251,
+      "sha256": "10dff5733e8a7f55deec0d558f65795ec2225bbdc4d158bfd543641c9abd48e1",
+      "source_sha256": "10dff5733e8a7f55deec0d558f65795ec2225bbdc4d158bfd543641c9abd48e1",
+      "source": "tests/scenarios/records-missing-scope.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/records-no-external-send.md",
+      "bytes": 249,
+      "sha256": "53deb6ea6a7b9c5e7c21f52101e0260be152ffd7a607987b604df48d2f8dba41",
+      "source_sha256": "53deb6ea6a7b9c5e7c21f52101e0260be152ffd7a607987b604df48d2f8dba41",
+      "source": "tests/scenarios/records-no-external-send.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/records-reversed-period.md",
+      "bytes": 225,
+      "sha256": "1560887244e4bc29f22b3f2187fa7ae53fc11695d5551167eaf44e6d05b98cc4",
+      "source_sha256": "1560887244e4bc29f22b3f2187fa7ae53fc11695d5551167eaf44e6d05b98cc4",
+      "source": "tests/scenarios/records-reversed-period.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/records-review-en.md",
+      "bytes": 280,
+      "sha256": "dbbde4ab2207c314dc6d10a4d5843d96aafa835fed63b2cd0be187d63fe2784a",
+      "source_sha256": "dbbde4ab2207c314dc6d10a4d5843d96aafa835fed63b2cd0be187d63fe2784a",
+      "source": "tests/scenarios/records-review-en.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/records-review-fr.md",
+      "bytes": 282,
+      "sha256": "ed3a59a75d4fcd8e17dd46165c64e689080317e50d4ad9cdcb8e3d3083af9e7e",
+      "source_sha256": "ed3a59a75d4fcd8e17dd46165c64e689080317e50d4ad9cdcb8e3d3083af9e7e",
+      "source": "tests/scenarios/records-review-fr.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/resources-control-blocked.md",
+      "bytes": 488,
+      "sha256": "c75570667789916fcc7028f069032981f72eb42d83dfdb70ddfdb55486c2bc3a",
+      "source_sha256": "c75570667789916fcc7028f069032981f72eb42d83dfdb70ddfdb55486c2bc3a",
+      "source": "tests/scenarios/resources-control-blocked.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/resources-en.md",
+      "bytes": 462,
+      "sha256": "60fdd08a137e1afb5c035a3cb7a94d18bb6297631ab6d2307917f68c15292b9a",
+      "source_sha256": "60fdd08a137e1afb5c035a3cb7a94d18bb6297631ab6d2307917f68c15292b9a",
+      "source": "tests/scenarios/resources-en.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/resources-expired.md",
+      "bytes": 472,
+      "sha256": "461daee9cedc96df7635c5c9357f9eeff46766eacbb5eb2799380b3cfd958d85",
+      "source_sha256": "461daee9cedc96df7635c5c9357f9eeff46766eacbb5eb2799380b3cfd958d85",
+      "source": "tests/scenarios/resources-expired.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/resources-fr.md",
+      "bytes": 462,
+      "sha256": "37c5f1fed010967b8f1e22b8c088e136df83da809601966a18d35df73e7736f5",
+      "source_sha256": "37c5f1fed010967b8f1e22b8c088e136df83da809601966a18d35df73e7736f5",
+      "source": "tests/scenarios/resources-fr.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/resources-language-mismatch.md",
+      "bytes": 492,
+      "sha256": "3f89c4345016b378098cd48c57d238d305652a709040667c3efad937e3483208",
+      "source_sha256": "3f89c4345016b378098cd48c57d238d305652a709040667c3efad937e3483208",
+      "source": "tests/scenarios/resources-language-mismatch.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/resources-missing-version.md",
+      "bytes": 488,
+      "sha256": "c830d14f129a2b69bf99add8707476a8bf83ce805054e2ab583f848e3074b7e7",
+      "source_sha256": "c830d14f129a2b69bf99add8707476a8bf83ce805054e2ab583f848e3074b7e7",
+      "source": "tests/scenarios/resources-missing-version.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/season-en.md",
+      "bytes": 303,
+      "sha256": "0d2822efa7e8cacf0accec34643e0c68fc0262570bb499ea50cb96dd21872d7f",
+      "source_sha256": "0d2822efa7e8cacf0accec34643e0c68fc0262570bb499ea50cb96dd21872d7f",
+      "source": "tests/scenarios/season-en.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/season-fr.md",
+      "bytes": 278,
+      "sha256": "5e8b63350946d4dae1279bf9867f52b6253881de311d1449e3a3de621131e400",
+      "source_sha256": "5e8b63350946d4dae1279bf9867f52b6253881de311d1449e3a3de621131e400",
+      "source": "tests/scenarios/season-fr.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/season-stale.md",
+      "bytes": 272,
+      "sha256": "b0bfa121bf33749292674ffd7c0c21cad4665232f7731fa2d17e668db4efa434",
+      "source_sha256": "b0bfa121bf33749292674ffd7c0c21cad4665232f7731fa2d17e668db4efa434",
+      "source": "tests/scenarios/season-stale.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/scenarios/unknown-intent.md",
+      "bytes": 230,
+      "sha256": "0bedb45e77a8f20569173cf4fd5ee836d80c6bd7b499bdbf65b6dddf507d1f5d",
+      "source_sha256": "0bedb45e77a8f20569173cf4fd5ee836d80c6bd7b499bdbf65b6dddf507d1f5d",
+      "source": "tests/scenarios/unknown-intent.md",
+      "export_transform": null
+    },
+    {
+      "path": "tests/test_arithmetic_oracle.py",
+      "bytes": 9630,
+      "sha256": "b67ac97dae63fc5c8a4fc9b60e2901e86ad18310f5ed0721ab40ccb864f4ae62",
+      "source_sha256": "b67ac97dae63fc5c8a4fc9b60e2901e86ad18310f5ed0721ab40ccb864f4ae62",
+      "source": "tests/test_arithmetic_oracle.py",
+      "export_transform": null
+    },
+    {
+      "path": "tests/test_bundle.py",
+      "bytes": 11908,
+      "sha256": "a9866a7f93076ae69fb296a76c306d1c362a14590fb7ed40b954a9f7bcbc0de8",
+      "source_sha256": "a9866a7f93076ae69fb296a76c306d1c362a14590fb7ed40b954a9f7bcbc0de8",
+      "source": "tests/test_bundle.py",
+      "export_transform": null
+    },
+    {
+      "path": "tests/test_business.py",
+      "bytes": 10947,
+      "sha256": "4b0482b5a1cffcb201631c5908c5ccd4bbfec70753c1d52d863181f0627f0f8a",
+      "source_sha256": "4b0482b5a1cffcb201631c5908c5ccd4bbfec70753c1d52d863181f0627f0f8a",
+      "source": "tests/test_business.py",
+      "export_transform": null
+    },
+    {
+      "path": "tests/test_contracts.py",
+      "bytes": 16856,
+      "sha256": "c35de6837f8b7f48e720e1ec4f7b60ac213231fd0c92c720309a54910a8d9624",
+      "source_sha256": "c35de6837f8b7f48e720e1ec4f7b60ac213231fd0c92c720309a54910a8d9624",
+      "source": "tests/test_contracts.py",
+      "export_transform": null
+    },
+    {
+      "path": "tests/test_csv_inspection.py",
+      "bytes": 7702,
+      "sha256": "954c9aab6cd3fee7c2b3f009ae97478254d400bf8b4ae2b9842365df1639bee2",
+      "source_sha256": "954c9aab6cd3fee7c2b3f009ae97478254d400bf8b4ae2b9842365df1639bee2",
+      "source": "tests/test_csv_inspection.py",
+      "export_transform": null
+    },
+    {
+      "path": "tests/test_ecosystem.py",
+      "bytes": 9418,
+      "sha256": "40ff72bc659cdfbdbe5bb82b0ebbc948303d993e00981959ff3164f83815da2f",
+      "source_sha256": "40ff72bc659cdfbdbe5bb82b0ebbc948303d993e00981959ff3164f83815da2f",
+      "source": "tests/test_ecosystem.py",
+      "export_transform": null
+    },
+    {
+      "path": "tests/test_ecosystem_candidate.py",
+      "bytes": 3281,
+      "sha256": "090c7e12af316edb2bc5ce610f937d5393c4390e63ded6c43a1268a3681ddf63",
+      "source_sha256": "090c7e12af316edb2bc5ce610f937d5393c4390e63ded6c43a1268a3681ddf63",
+      "source": "tests/test_ecosystem_candidate.py",
+      "export_transform": null
+    },
+    {
+      "path": "tests/test_evaluation_artifacts.py",
+      "bytes": 8722,
+      "sha256": "2650d62597395053a1e3bf927a3750fe6e4385b57285956af5ec985fca588f85",
+      "source_sha256": "2650d62597395053a1e3bf927a3750fe6e4385b57285956af5ec985fca588f85",
+      "source": "tests/test_evaluation_artifacts.py",
+      "export_transform": null
+    },
+    {
+      "path": "tests/test_harvest.py",
+      "bytes": 13954,
+      "sha256": "a79958e55571d8a9a5a400b13e3b8ade52d64481486c06ef0f57ac20260e896f",
+      "source_sha256": "a79958e55571d8a9a5a400b13e3b8ade52d64481486c06ef0f57ac20260e896f",
+      "source": "tests/test_harvest.py",
+      "export_transform": null
+    },
+    {
+      "path": "tests/test_input_limits.py",
+      "bytes": 12490,
+      "sha256": "1e43241b61d74646a116eddbd52365392b53b66022e50b6d0b80befaaa15e95b",
+      "source_sha256": "1e43241b61d74646a116eddbd52365392b53b66022e50b6d0b80befaaa15e95b",
+      "source": "tests/test_input_limits.py",
+      "export_transform": null
+    },
+    {
+      "path": "tests/test_livestock.py",
+      "bytes": 13838,
+      "sha256": "5e0f61b0f2d97c383e5f9db66bbf618217befc3dfba648d75840e1912fc92475",
+      "source_sha256": "5e0f61b0f2d97c383e5f9db66bbf618217befc3dfba648d75840e1912fc92475",
+      "source": "tests/test_livestock.py",
+      "export_transform": null
+    },
+    {
+      "path": "tests/test_pipeline.py",
+      "bytes": 24620,
+      "sha256": "bca8630c4b640c03933989bc6cb475c8bbed0a4e514c4f961b2908fdb4503a23",
+      "source_sha256": "bca8630c4b640c03933989bc6cb475c8bbed0a4e514c4f961b2908fdb4503a23",
+      "source": "tests/test_pipeline.py",
+      "export_transform": null
+    },
+    {
+      "path": "tests/test_preview.py",
+      "bytes": 6951,
+      "sha256": "4fa8d81e562471142f87c2e6db9b258f1a0794ca3edc26a848353be2c9f951dc",
+      "source_sha256": "4fa8d81e562471142f87c2e6db9b258f1a0794ca3edc26a848353be2c9f951dc",
+      "source": "tests/test_preview.py",
+      "export_transform": null
+    },
+    {
+      "path": "tests/test_preview_rights_inventory.py",
+      "bytes": 3761,
+      "sha256": "4819832423f60c186a5e29fddebb2567af1c8fde385166dd297c4271d8af75bf",
+      "source_sha256": "4819832423f60c186a5e29fddebb2567af1c8fde385166dd297c4271d8af75bf",
+      "source": "tests/test_preview_rights_inventory.py",
+      "export_transform": null
+    },
+    {
+      "path": "tests/test_public_preview_preparation.py",
+      "bytes": 14136,
+      "sha256": "eb5a98f3868a79058e6ca81554676a03ac815232f934dfcb010875f1a183520a",
+      "source_sha256": "eb5a98f3868a79058e6ca81554676a03ac815232f934dfcb010875f1a183520a",
+      "source": "tests/test_public_preview_preparation.py",
+      "export_transform": null
+    },
+    {
+      "path": "tests/test_resources.py",
+      "bytes": 11743,
+      "sha256": "f6e8cd1d867157d4f1ddc4676928ce21572e9988f42d8072ec1bf2b67104b519",
+      "source_sha256": "f6e8cd1d867157d4f1ddc4676928ce21572e9988f42d8072ec1bf2b67104b519",
+      "source": "tests/test_resources.py",
+      "export_transform": null
+    },
+    {
+      "path": "tests/test_season_crop.py",
+      "bytes": 18160,
+      "sha256": "7a0ac7a5c9f7150713e921e2947eb1197ef8baf7845afea30c5f4a0e3bc61087",
+      "source_sha256": "7a0ac7a5c9f7150713e921e2947eb1197ef8baf7845afea30c5f4a0e3bc61087",
+      "source": "tests/test_season_crop.py",
+      "export_transform": null
+    },
+    {
+      "path": "tests/test_study_measurement_lab.py",
+      "bytes": 9687,
+      "sha256": "d17c9ed0c02d97bfebbdf249e8fe0f4973289aba8cd09f6822f8b3a18b1b9b18",
+      "source_sha256": "d17c9ed0c02d97bfebbdf249e8fe0f4973289aba8cd09f6822f8b3a18b1b9b18",
+      "source": "tests/test_study_measurement_lab.py",
+      "export_transform": null
+    },
+    {
+      "path": "tests/test_weather_evidence_spec.py",
+      "bytes": 7187,
+      "sha256": "5c750056bfe434568da728914b80fb5f569d1f101762a90535cfd5db7acf8f80",
+      "source_sha256": "5c750056bfe434568da728914b80fb5f569d1f101762a90535cfd5db7acf8f80",
+      "source": "tests/test_weather_evidence_spec.py",
+      "export_transform": null
+    },
+    {
+      "path": "workflow_tools/__init__.py",
+      "bytes": 83,
+      "sha256": "3cddc759a57ceb553d9487223409c6510cf7c280d24488ce6f2e56aa3906de8e",
+      "source_sha256": "3cddc759a57ceb553d9487223409c6510cf7c280d24488ce6f2e56aa3906de8e",
+      "source": "workflow_tools/__init__.py",
+      "export_transform": null
+    },
+    {
+      "path": "workflow_tools/business.py",
+      "bytes": 6254,
+      "sha256": "3c6bd043bf4a30f076bc681b4be158c367ca0d3f7ab15c2e21a0400a35479070",
+      "source_sha256": "3c6bd043bf4a30f076bc681b4be158c367ca0d3f7ab15c2e21a0400a35479070",
+      "source": "workflow_tools/business.py",
+      "export_transform": null
+    },
+    {
+      "path": "workflow_tools/business_render.py",
+      "bytes": 8809,
+      "sha256": "e7c2f684736d525010546efb44375a36b776db4b3b3acd7a4ec6804a09b6bfd4",
+      "source_sha256": "e7c2f684736d525010546efb44375a36b776db4b3b3acd7a4ec6804a09b6bfd4",
+      "source": "workflow_tools/business_render.py",
+      "export_transform": null
+    },
+    {
+      "path": "workflow_tools/common.py",
+      "bytes": 2569,
+      "sha256": "f1e5d01d1ec36a0572db97bc96e80cd5ec0fad83564f5a22a51e4a23eb7e7b5e",
+      "source_sha256": "f1e5d01d1ec36a0572db97bc96e80cd5ec0fad83564f5a22a51e4a23eb7e7b5e",
+      "source": "workflow_tools/common.py",
+      "export_transform": null
+    },
+    {
+      "path": "workflow_tools/crop.py",
+      "bytes": 6199,
+      "sha256": "e185cfee8c2a17dcf402e66c5fc99b28cc733c4186639fc3e169aab655d2df37",
+      "source_sha256": "e185cfee8c2a17dcf402e66c5fc99b28cc733c4186639fc3e169aab655d2df37",
+      "source": "workflow_tools/crop.py",
+      "export_transform": null
+    },
+    {
+      "path": "workflow_tools/execute.py",
+      "bytes": 1553,
+      "sha256": "a3c97c96120b6a332b98c7b0149aad56f17d85664d29e49f7213c0458a3a6094",
+      "source_sha256": "a3c97c96120b6a332b98c7b0149aad56f17d85664d29e49f7213c0458a3a6094",
+      "source": "workflow_tools/execute.py",
+      "export_transform": null
+    },
+    {
+      "path": "workflow_tools/harvest.py",
+      "bytes": 11805,
+      "sha256": "b32b6f58fc213978450ea63cdebc62fffa376b9ac626f77397a99c7f2263a785",
+      "source_sha256": "b32b6f58fc213978450ea63cdebc62fffa376b9ac626f77397a99c7f2263a785",
+      "source": "workflow_tools/harvest.py",
+      "export_transform": null
+    },
+    {
+      "path": "workflow_tools/harvest_render.py",
+      "bytes": 12840,
+      "sha256": "04341feeeb647222ff96664c2d9dcc3035af94a84dc2b4a00ddfb42ee998815c",
+      "source_sha256": "04341feeeb647222ff96664c2d9dcc3035af94a84dc2b4a00ddfb42ee998815c",
+      "source": "workflow_tools/harvest_render.py",
+      "export_transform": null
+    },
+    {
+      "path": "workflow_tools/livestock.py",
+      "bytes": 7721,
+      "sha256": "36f9e2fd010c1cbb6d675b85c5a4f273eb4339424c33b080167542f0fd789948",
+      "source_sha256": "36f9e2fd010c1cbb6d675b85c5a4f273eb4339424c33b080167542f0fd789948",
+      "source": "workflow_tools/livestock.py",
+      "export_transform": null
+    },
+    {
+      "path": "workflow_tools/livestock_render.py",
+      "bytes": 8987,
+      "sha256": "520c3efdd4a3dae2a73dfa41bbd101de7b9ff094fd236eee7bc6217d52ec6b2d",
+      "source_sha256": "520c3efdd4a3dae2a73dfa41bbd101de7b9ff094fd236eee7bc6217d52ec6b2d",
+      "source": "workflow_tools/livestock_render.py",
+      "export_transform": null
+    },
+    {
+      "path": "workflow_tools/record_versions.py",
+      "bytes": 1747,
+      "sha256": "ad8fbc9c2c9460621d282541acf33bfae967a5261ec1d5f6a894b9eadba8833f",
+      "source_sha256": "ad8fbc9c2c9460621d282541acf33bfae967a5261ec1d5f6a894b9eadba8833f",
+      "source": "workflow_tools/record_versions.py",
+      "export_transform": null
+    },
+    {
+      "path": "workflow_tools/render.py",
+      "bytes": 13859,
+      "sha256": "65fc051b9987bdf9be67f4ec258a6691f8491f0cb6e77c76dfd4521f491d3375",
+      "source_sha256": "65fc051b9987bdf9be67f4ec258a6691f8491f0cb6e77c76dfd4521f491d3375",
+      "source": "workflow_tools/render.py",
+      "export_transform": null
+    },
+    {
+      "path": "workflow_tools/resource_render.py",
+      "bytes": 8742,
+      "sha256": "1b3560f18f192bf4c2657faecaa705ebdd694a2ee752a453c37e1eb6faf8580f",
+      "source_sha256": "1b3560f18f192bf4c2657faecaa705ebdd694a2ee752a453c37e1eb6faf8580f",
+      "source": "workflow_tools/resource_render.py",
+      "export_transform": null
+    },
+    {
+      "path": "workflow_tools/resources.py",
+      "bytes": 5998,
+      "sha256": "9d8c3074bc4df1d718c13ce9408221247f44b290f09e349c771d11cd690d7ea8",
+      "source_sha256": "9d8c3074bc4df1d718c13ce9408221247f44b290f09e349c771d11cd690d7ea8",
+      "source": "workflow_tools/resources.py",
+      "export_transform": null
+    },
+    {
+      "path": "workflow_tools/season.py",
+      "bytes": 6954,
+      "sha256": "c0df8529a8f2a3c68aa034dc38213b1498648f0bc429744c022b04add0b8163f",
+      "source_sha256": "c0df8529a8f2a3c68aa034dc38213b1498648f0bc429744c022b04add0b8163f",
+      "source": "workflow_tools/season.py",
+      "export_transform": null
+    }
+  ]
+}

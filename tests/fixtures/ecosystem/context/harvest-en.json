@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "e04-harvest-en",
+  "workflow": "harvest-storage-delivery",
+  "goal": "Prepare local mass/lot and declared-delivery record review.",
+  "language": "en",
+  "enterprise_id": "SYN-ENT-01",
+  "jurisdiction": "CA-ON",
+  "period": {
+    "start": "2026-10-01",
+    "end": "2026-10-20"
+  },
+  "intent": "prepare_review",
+  "consequence": "preparatory",
+  "requested_actions": [
+    "read_selected",
+    "write_local_draft"
+  ],
+  "evidence_kind": "synthetic",
+  "entity_type": "lot",
+  "source_refs": [
+    "SYN:mass-lot-dispatch"
+  ]
+}

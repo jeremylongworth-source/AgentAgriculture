@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "id": "crop-production-review",
+  "workflow": "crop-production-review",
+  "version": "0.1.3",
+  "readiness": "synthetic-tested",
+  "description": {
+    "en": "Preserve crop observations/corrections and prepare an arithmetic-only local review packet.",
+    "fr": "Conserver les observations/corrections et préparer un dossier local avec calculs limités."
+  },
+  "requires_context": [
+    "enterprise_id",
+    "jurisdiction",
+    "period"
+  ],
+  "steps": [
+    {
+      "id": "review",
+      "skill": "farm-crop-observation-review",
+      "depends_on": [],
+      "output": "Source-linked evidence review with explicit unknown/method/time/context gaps."
+    },
+    {
+      "id": "prepare",
+      "skill": "farm-crop-review-handoff",
+      "depends_on": [
+        "review"
+      ],
+      "output": "Conditional local working brief, retained evidence/gaps and required review; no external action."
+    }
+  ],
+  "review_requirements": [
+    "inspect_supplied_source_meaning_and_scope",
+    "qualified_domain_review_for_operational_claims"
+  ],
+  "references": [
+    "docs/workflows/crop-review-helper.md",
+    "schemas/ecosystem/v1/crop-input.schema.json",
+    "schemas/ecosystem/v1/workflow-result.schema.json",
+    "workflow_tools/crop.py",
+    "workflow_tools/common.py",
+    "workflow_tools/render.py",
+    "workflow_tools/execute.py",
+    "scripts/run_farm_workflow.py"
+  ],
+  "evaluation": {
+    "structural": "passed",
+    "synthetic": "passed",
+    "live_agent": "evaluated",
+    "field": "not_evaluated"
+  },
+  "field_use_validated": false
+}

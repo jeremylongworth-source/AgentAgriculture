@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agentagriculture:ecosystem:result:1",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "task_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "workflow": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "language": {
+      "enum": [
+        "en",
+        "fr"
+      ]
+    },
+    "state": {
+      "enum": [
+        "input_invalid",
+        "blocked_scope",
+        "needs_context",
+        "not_implemented",
+        "ready_for_preparation"
+      ]
+    },
+    "composition_id": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 100
+      },
+      "minItems": 0,
+      "maxItems": 40,
+      "uniqueItems": true
+    },
+    "missing_context": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200
+      },
+      "minItems": 0,
+      "maxItems": 40,
+      "uniqueItems": true
+    },
+    "review_requirements": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 100
+      },
+      "minItems": 0,
+      "maxItems": 40,
+      "uniqueItems": true
+    },
+    "messages": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1200
+          }
+        },
+        "required": [
+          "code",
+          "text"
+        ]
+      }
+    },
+    "execution_allowed": {
+      "const": false
+    },
+    "operational_advice_allowed": {
+      "const": false
+    },
+    "field_use_validated": {
+      "const": false
+    },
+    "permissions_enforced": {
+      "const": false
+    },
+    "catalog_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  },
+  "required": [
+    "schema_version",
+    "task_id",
+    "workflow",
+    "language",
+    "state",
+    "composition_id",
+    "skills",
+    "missing_context",
+    "review_requirements",
+    "messages",
+    "execution_allowed",
+    "operational_advice_allowed",
+    "field_use_validated",
+    "permissions_enforced",
+    "catalog_sha256"
+  ]
+}

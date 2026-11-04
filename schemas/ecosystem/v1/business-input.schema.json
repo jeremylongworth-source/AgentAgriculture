@@ -1,0 +1,784 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agentagriculture:ecosystem:business-input:1",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "synthetic_only": {
+      "const": true
+    },
+    "task_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "enterprise_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "jurisdiction": {
+      "enum": [
+        "CA-BC",
+        "CA-AB",
+        "CA-SK",
+        "CA-MB",
+        "CA-ON",
+        "CA-QC",
+        "CA-NB",
+        "CA-NS",
+        "CA-PE",
+        "CA-NL",
+        "CA-YT",
+        "CA-NT",
+        "CA-NU"
+      ]
+    },
+    "period": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date"
+        },
+        "end": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "start",
+        "end"
+      ]
+    },
+    "as_of": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "currency": {
+      "enum": [
+        "CAD",
+        "USD",
+        "unknown"
+      ]
+    },
+    "scenarios": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "version": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 240
+          },
+          "accounting_basis": {
+            "enum": [
+              "cash",
+              "accrual",
+              "unknown"
+            ]
+          },
+          "coverage": {
+            "enum": [
+              "complete",
+              "partial",
+              "unknown"
+            ]
+          },
+          "coverage_source_ref": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 240
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "revenues": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80
+                },
+                "version": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80
+                },
+                "amount": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "pattern": "^(0|[1-9][0-9]{0,29})(\\.[0-9]{1,12})?$"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "amount_state": {
+                  "enum": [
+                    "actual_as_reported",
+                    "budgeted",
+                    "assumed",
+                    "estimated",
+                    "missing",
+                    "suppressed"
+                  ]
+                },
+                "currency": {
+                  "enum": [
+                    "CAD",
+                    "USD",
+                    "unknown"
+                  ]
+                },
+                "accounting_basis": {
+                  "enum": [
+                    "cash",
+                    "accrual",
+                    "unknown"
+                  ]
+                },
+                "period": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "start": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "end": {
+                      "type": "string",
+                      "format": "date"
+                    }
+                  },
+                  "required": [
+                    "start",
+                    "end"
+                  ]
+                },
+                "source_ref": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 240
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "recorded_at": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "note": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 240
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "version",
+                "amount",
+                "amount_state",
+                "currency",
+                "accounting_basis",
+                "period",
+                "source_ref",
+                "recorded_at",
+                "note"
+              ]
+            },
+            "maxItems": 50,
+            "minItems": 1
+          },
+          "variable_costs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80
+                },
+                "version": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80
+                },
+                "amount": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "pattern": "^(0|[1-9][0-9]{0,29})(\\.[0-9]{1,12})?$"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "amount_state": {
+                  "enum": [
+                    "actual_as_reported",
+                    "budgeted",
+                    "assumed",
+                    "estimated",
+                    "missing",
+                    "suppressed"
+                  ]
+                },
+                "currency": {
+                  "enum": [
+                    "CAD",
+                    "USD",
+                    "unknown"
+                  ]
+                },
+                "accounting_basis": {
+                  "enum": [
+                    "cash",
+                    "accrual",
+                    "unknown"
+                  ]
+                },
+                "period": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "start": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "end": {
+                      "type": "string",
+                      "format": "date"
+                    }
+                  },
+                  "required": [
+                    "start",
+                    "end"
+                  ]
+                },
+                "source_ref": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 240
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "recorded_at": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "note": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 240
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "version",
+                "amount",
+                "amount_state",
+                "currency",
+                "accounting_basis",
+                "period",
+                "source_ref",
+                "recorded_at",
+                "note"
+              ]
+            },
+            "maxItems": 50,
+            "minItems": 1
+          },
+          "excluded_cost_categories": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 240
+            },
+            "maxItems": 20,
+            "minItems": 1
+          },
+          "sensitivity": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80
+                },
+                "revenue_multiplier": {
+                  "type": "string",
+                  "pattern": "^(0|[1-9][0-9]{0,29})(\\.[0-9]{1,12})?$"
+                },
+                "variable_cost_multiplier": {
+                  "type": "string",
+                  "pattern": "^(0|[1-9][0-9]{0,29})(\\.[0-9]{1,12})?$"
+                },
+                "source_ref": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 240
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "held_assumptions": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 240
+                },
+                "version": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80
+                },
+                "recorded_at": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "revenue_multiplier",
+                "variable_cost_multiplier",
+                "source_ref",
+                "held_assumptions",
+                "version",
+                "recorded_at"
+              ]
+            },
+            "maxItems": 20,
+            "minItems": 0
+          }
+        },
+        "required": [
+          "id",
+          "version",
+          "label",
+          "accounting_basis",
+          "coverage",
+          "coverage_source_ref",
+          "revenues",
+          "variable_costs",
+          "excluded_cost_categories",
+          "sensitivity"
+        ]
+      },
+      "maxItems": 12,
+      "minItems": 0
+    },
+    "cash_reviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "version": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "coverage": {
+            "enum": [
+              "complete",
+              "partial",
+              "unknown"
+            ]
+          },
+          "coverage_source_ref": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 240
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "receipts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80
+                },
+                "version": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80
+                },
+                "amount": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "pattern": "^(0|[1-9][0-9]{0,29})(\\.[0-9]{1,12})?$"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "amount_state": {
+                  "enum": [
+                    "actual_as_reported",
+                    "budgeted",
+                    "assumed",
+                    "estimated",
+                    "missing",
+                    "suppressed"
+                  ]
+                },
+                "currency": {
+                  "enum": [
+                    "CAD",
+                    "USD",
+                    "unknown"
+                  ]
+                },
+                "accounting_basis": {
+                  "enum": [
+                    "cash",
+                    "accrual",
+                    "unknown"
+                  ]
+                },
+                "period": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "start": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "end": {
+                      "type": "string",
+                      "format": "date"
+                    }
+                  },
+                  "required": [
+                    "start",
+                    "end"
+                  ]
+                },
+                "source_ref": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 240
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "recorded_at": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "note": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 240
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "version",
+                "amount",
+                "amount_state",
+                "currency",
+                "accounting_basis",
+                "period",
+                "source_ref",
+                "recorded_at",
+                "note"
+              ]
+            },
+            "maxItems": 50,
+            "minItems": 1
+          },
+          "payments": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80
+                },
+                "version": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80
+                },
+                "amount": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "pattern": "^(0|[1-9][0-9]{0,29})(\\.[0-9]{1,12})?$"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "amount_state": {
+                  "enum": [
+                    "actual_as_reported",
+                    "budgeted",
+                    "assumed",
+                    "estimated",
+                    "missing",
+                    "suppressed"
+                  ]
+                },
+                "currency": {
+                  "enum": [
+                    "CAD",
+                    "USD",
+                    "unknown"
+                  ]
+                },
+                "accounting_basis": {
+                  "enum": [
+                    "cash",
+                    "accrual",
+                    "unknown"
+                  ]
+                },
+                "period": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "start": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "end": {
+                      "type": "string",
+                      "format": "date"
+                    }
+                  },
+                  "required": [
+                    "start",
+                    "end"
+                  ]
+                },
+                "source_ref": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 240
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "recorded_at": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "note": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 240
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "version",
+                "amount",
+                "amount_state",
+                "currency",
+                "accounting_basis",
+                "period",
+                "source_ref",
+                "recorded_at",
+                "note"
+              ]
+            },
+            "maxItems": 50,
+            "minItems": 1
+          }
+        },
+        "required": [
+          "id",
+          "version",
+          "coverage",
+          "coverage_source_ref",
+          "receipts",
+          "payments"
+        ]
+      },
+      "maxItems": 12,
+      "minItems": 0
+    },
+    "recipient_role": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "handover_purpose": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 240
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 240
+      },
+      "maxItems": 20,
+      "minItems": 0
+    }
+  },
+  "required": [
+    "schema_version",
+    "synthetic_only",
+    "task_id",
+    "enterprise_id",
+    "jurisdiction",
+    "period",
+    "as_of",
+    "currency",
+    "scenarios",
+    "cash_reviews",
+    "recipient_role",
+    "handover_purpose",
+    "notes"
+  ]
+}

@@ -1,0 +1,526 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agentagriculture:ecosystem:resource-input:1",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "synthetic_only": {
+      "const": true
+    },
+    "task_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "enterprise_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "jurisdiction": {
+      "enum": [
+        "CA-BC",
+        "CA-AB",
+        "CA-SK",
+        "CA-MB",
+        "CA-ON",
+        "CA-QC",
+        "CA-NB",
+        "CA-NS",
+        "CA-PE",
+        "CA-NL",
+        "CA-YT",
+        "CA-NT",
+        "CA-NU"
+      ]
+    },
+    "period": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date"
+        },
+        "end": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "start",
+        "end"
+      ]
+    },
+    "as_of": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "procedures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "version": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 40
+          },
+          "domain": {
+            "const": "routine_record_check"
+          },
+          "source_ref": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "language": {
+            "enum": [
+              "en",
+              "fr"
+            ]
+          },
+          "approval_status": {
+            "enum": [
+              "declared_approved",
+              "draft",
+              "unknown"
+            ]
+          },
+          "approval_ref": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "approval_recorded_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "effective_from": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "review_due": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "enterprise_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "jurisdiction": {
+            "anyOf": [
+              {
+                "enum": [
+                  "CA-BC",
+                  "CA-AB",
+                  "CA-SK",
+                  "CA-MB",
+                  "CA-ON",
+                  "CA-QC",
+                  "CA-NB",
+                  "CA-NS",
+                  "CA-PE",
+                  "CA-NL",
+                  "CA-YT",
+                  "CA-NT",
+                  "CA-NU"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "asset_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "role": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "translation_of_ref": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "fidelity_review_ref": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "stop_escalation_ref": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "steps": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 1200
+                }
+              },
+              "required": [
+                "id",
+                "text"
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 24,
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "version",
+          "domain",
+          "source_ref",
+          "language",
+          "approval_status",
+          "approval_ref",
+          "approval_recorded_at",
+          "effective_from",
+          "review_due",
+          "enterprise_id",
+          "jurisdiction",
+          "asset_id",
+          "role",
+          "translation_of_ref",
+          "fidelity_review_ref",
+          "stop_escalation_ref",
+          "steps"
+        ]
+      },
+      "minItems": 0,
+      "maxItems": 16,
+      "uniqueItems": true
+    },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "source_ref": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "recorded_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "procedure_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "procedure_version": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 40
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "asset_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "assigned_role": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "owner_next_role": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "due_on": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "resource_availability": {
+            "enum": [
+              "declared_available",
+              "unknown",
+              "unavailable"
+            ]
+          },
+          "completion_state": {
+            "enum": [
+              "open",
+              "claimed_complete",
+              "failed",
+              "unknown"
+            ]
+          },
+          "completion_evidence_ref": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "acknowledgement_state": {
+            "enum": [
+              "not_recorded",
+              "claimed_received"
+            ]
+          },
+          "acknowledgement_ref": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "competence_evidence_ref": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "exception_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            },
+            "minItems": 0,
+            "maxItems": 20,
+            "uniqueItems": true
+          },
+          "note": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1600
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "source_ref",
+          "recorded_at",
+          "procedure_id",
+          "procedure_version",
+          "asset_id",
+          "assigned_role",
+          "owner_next_role",
+          "due_on",
+          "resource_availability",
+          "completion_state",
+          "completion_evidence_ref",
+          "acknowledgement_state",
+          "acknowledgement_ref",
+          "competence_evidence_ref",
+          "exception_refs",
+          "note"
+        ]
+      },
+      "minItems": 1,
+      "maxItems": 24,
+      "uniqueItems": true
+    },
+    "handover_recipient_role": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "handover_purpose": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 240
+    }
+  },
+  "required": [
+    "schema_version",
+    "synthetic_only",
+    "task_id",
+    "enterprise_id",
+    "jurisdiction",
+    "period",
+    "as_of",
+    "procedures",
+    "tasks",
+    "handover_recipient_role",
+    "handover_purpose"
+  ]
+}

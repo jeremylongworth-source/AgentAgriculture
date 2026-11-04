@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "business-unknown-coverage",
+  "workflow": "business-stewardship-review",
+  "goal": "Review supplied business assumptions and gaps locally.",
+  "language": "en",
+  "enterprise_id": "SYN-ENT-01",
+  "jurisdiction": "CA-ON",
+  "period": {
+    "start": "2026-10-01",
+    "end": "2026-10-20"
+  },
+  "intent": "prepare_review",
+  "consequence": "preparatory",
+  "requested_actions": [
+    "read_selected",
+    "write_local_draft"
+  ],
+  "evidence_kind": "synthetic",
+  "entity_type": "enterprise",
+  "source_refs": [
+    "SYN:supplied-business-assumptions"
+  ]
+}

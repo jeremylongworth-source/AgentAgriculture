@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "id": "business-stewardship-review",
+  "workflow": "business-stewardship-review",
+  "version": "0.1.1",
+  "readiness": "synthetic-tested",
+  "description": {
+    "en": "Prepare a supplied-assumption business scenario and separate cash review.",
+    "fr": "PrÃ©parer un scÃ©nario Ã©conomique selon hypothÃ¨ses fournies et une rÃ©vision distincte de trÃ©sorerie."
+  },
+  "requires_context": [
+    "enterprise_id",
+    "jurisdiction",
+    "period"
+  ],
+  "steps": [
+    {
+      "id": "scenario",
+      "skill": "farm-business-scenario",
+      "depends_on": [],
+      "output": "Compatible known subsets, selected contribution/cash and conditional sensitivity with explicit scope."
+    },
+    {
+      "id": "handoff",
+      "skill": "farm-business-review-handoff",
+      "depends_on": [
+        "scenario"
+      ],
+      "output": "Local source-faithful business review with missing/excluded costs and authority limits."
+    }
+  ],
+  "review_requirements": [
+    "inspect_supplied_source_meaning_and_scope",
+    "qualified_domain_review_for_operational_claims"
+  ],
+  "references": [
+    "docs/workflows/business-scenario-helper.md",
+    "schemas/ecosystem/v1/business-input.schema.json",
+    "schemas/ecosystem/v1/workflow-result.schema.json",
+    "workflow_tools/business.py",
+    "workflow_tools/business_render.py",
+    "workflow_tools/common.py",
+    "workflow_tools/execute.py",
+    "scripts/run_farm_workflow.py"
+  ],
+  "evaluation": {
+    "structural": "passed",
+    "synthetic": "passed",
+    "live_agent": "evaluated",
+    "field": "not_evaluated"
+  },
+  "field_use_validated": false
+}

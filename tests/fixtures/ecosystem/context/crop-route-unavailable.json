@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "manual-en",
+  "workflow": "crop-production-review",
+  "goal": "Prepare my selected synthetic purchase and receiving records for local review.",
+  "language": "en",
+  "enterprise_id": "ENT-001",
+  "jurisdiction": "CA-ON",
+  "period": {
+    "start": "2026-09-01",
+    "end": "2026-09-30"
+  },
+  "intent": "prepare_review",
+  "consequence": "preparatory",
+  "requested_actions": [
+    "read_selected",
+    "write_local_draft"
+  ],
+  "evidence_kind": "synthetic",
+  "source_refs": [
+    "SYN:purchases",
+    "SYN:receiving"
+  ],
+  "entity_type": "block"
+}

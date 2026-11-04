@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "manual-fr",
+  "workflow": "records-to-review",
+  "goal": "Préparer un dossier de registres inventés pour révision locale.",
+  "language": "fr",
+  "enterprise_id": "ENT-001",
+  "jurisdiction": "CA-QC",
+  "period": {
+    "start": "2026-09-01",
+    "end": "2026-09-30"
+  },
+  "intent": "prepare_review",
+  "consequence": "preparatory",
+  "requested_actions": [
+    "read_selected",
+    "write_local_draft"
+  ],
+  "evidence_kind": "synthetic",
+  "source_refs": [
+    "SYN:purchases",
+    "SYN:receiving"
+  ],
+  "entity_type": "enterprise"
+}

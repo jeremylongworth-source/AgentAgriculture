@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0.0",
+  "id": "livestock-record-review",
+  "workflow": "livestock-record-review",
+  "version": "0.1.1",
+  "readiness": "synthetic-tested",
+  "description": {
+    "en": "Trace supplied animal/group/feed records and qualify explicit inventory arithmetic.",
+    "fr": "Tracer les registres des animaux/groupes/aliments et vÃ©rifier les calculs dÃ©clarÃ©s."
+  },
+  "requires_context": [
+    "enterprise_id",
+    "jurisdiction",
+    "period"
+  ],
+  "steps": [
+    {
+      "id": "events",
+      "skill": "farm-livestock-event-review",
+      "depends_on": [],
+      "output": "Source-linked animal/group events, revisions and context gaps."
+    },
+    {
+      "id": "stock",
+      "skill": "farm-feed-stock-review",
+      "depends_on": [
+        "events"
+      ],
+      "output": "Selected feed/group balances with exact unit/basis/coverage and unresolved states."
+    },
+    {
+      "id": "handoff",
+      "skill": "farm-livestock-review-handoff",
+      "depends_on": [
+        "events",
+        "stock"
+      ],
+      "output": "Minimal local review packet and professional questions without prescriptions."
+    }
+  ],
+  "review_requirements": [
+    "inspect_supplied_source_meaning_and_scope",
+    "qualified_domain_review_for_operational_claims"
+  ],
+  "references": [
+    "docs/workflows/livestock-record-helper.md",
+    "schemas/ecosystem/v1/livestock-input.schema.json",
+    "schemas/ecosystem/v1/workflow-result.schema.json",
+    "workflow_tools/livestock.py",
+    "workflow_tools/livestock_render.py",
+    "workflow_tools/record_versions.py",
+    "workflow_tools/common.py",
+    "workflow_tools/execute.py",
+    "scripts/run_farm_workflow.py"
+  ],
+  "evaluation": {
+    "structural": "passed",
+    "synthetic": "passed",
+    "live_agent": "evaluated",
+    "field": "not_evaluated"
+  },
+  "field_use_validated": false
+}

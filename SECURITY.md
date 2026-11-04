@@ -1,38 +1,31 @@
-# Security scope and private vulnerability reporting
+# Security scope and reporting status
 
-**Selected route: GitHub private vulnerability reporting. Activation is pending.**
-Target: [jeremylongworth-source/AgentAgriculture](https://github.com/jeremylongworth-source/AgentAgriculture).
-Read-only verification on 2026-10-17 found a private, empty repository. The reporting
-status API returned 404, which does not prove the feature enabled or disabled.
-This SECURITY.md does not enable reporting or establish a monitored channel/SLA.
-No remote/account/notification/credential setting was changed.
+Maintainer and security-report triage owner: Jeremy Longworth, explicitly accepted
+2026-11-03. No response SLA is promised. Responsibility acceptance does not verify
+notification delivery, monitoring or a working reporting endpoint.
 
-GitHub documents this feature for public repositories. Once the owner authorizes
-the reviewed public source release, an eligible repository administrator must
-separately enable it in Settings, Security and quality, Advanced Security,
-Private vulnerability reporting. The owner must confirm responsible triage and
-notifications; GitHub delivery depends on notification/watch settings. See the
-[official configuration instructions](https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/configure-vulnerability-reporting/configure-for-a-repository).
+Selected route: GitHub private vulnerability reporting for
+[jeremylongworth-source/AgentAgriculture](https://github.com/jeremylongworth-source/AgentAgriculture).
+Read-only checks on 2026-11-03 confirmed the repository remains private. The reporting
+API returned404; this does not establish enabled intake. No visibility, reporting,
+notification, account or credential setting was changed.
 
-After activation is verified, use the repository's Security > Advisories >
-Report a vulnerability button. The selected future
-[private reporting form](https://github.com/jeremylongworth-source/AgentAgriculture/security/advisories/new)
-is a prepared link, **not a verified working intake endpoint today**. If the button
-is absent, do not post sensitive details in public issues. No alternate private
-channel has been designated yet; hold sensitive details until an actual route is confirmed.
+GitHub's [configuration guidance](https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/configure-vulnerability-reporting/configure-for-a-repository)
+describes owner/admin enablement for public repositories and notification settings.
+Publication/settings changes require explicit owner authority. Before public launch,
+verify eligible repository state, reporting activation and actual owner notification
+arrangements. The [prepared form](https://github.com/jeremylongworth-source/AgentAgriculture/security/advisories/new)
+is not a verified working intake endpoint today. If it is unavailable, hold sensitive
+details; no alternate private channel has been designated. Do not use public issues
+for secrets, private farm records or sensitive vulnerability details.
 
-Use a minimal synthetic reproduction, affected version/host, expected and observed
-behavior, and impact. Do not send secrets, farm/participant records or private logs.
+Provide minimal synthetic reproduction, affected version/host, expected/observed
+behavior and impact only through a verified appropriate channel. No private records,
+credentials, participant information or raw sensitive logs belong in Git or AI tools.
 
-The local core reads explicitly selected files and writes inspectable snapshots.
-It makes no model/service call, stores no account credentials and sends no adviser
-copy. Escaping, authority declarations, immutable evidence and tested recovery
-reduce specific risks; they are not authentication, encryption, multiuser
-authorization or a complete security audit. Input bounds do not establish
-memory/time/disk guarantees; ignored folders are not access-control boundaries.
-
-Technical checks cover finite synthetic Windows x64 / Python 3.14.3 / local NTFS
-tasks. No production support SLA, regulated-use assurance, operational agronomy,
-other-host qualification or participant-session isolation is claimed. The separate
-post-launch study needs its own agreements/environment. Participant material does
-not enter this repository or AI tools under the existing policy.
+The record CLI reads selected files and writes local inspectable results; other
+workflow helpers accept invented inputs only. Skills do not enforce OS permissions,
+authenticate approvals or certify source truth. Bounds and checksum checks do not
+establish memory/time guarantees, cryptographic authenticity or OS isolation.
+Finite synthetic tests do not establish professional/regulated-use assurance, field
+benefit or other-host support. No study/focus-group program is planned.

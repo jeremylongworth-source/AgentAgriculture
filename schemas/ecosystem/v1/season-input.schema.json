@@ -1,0 +1,384 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agentagriculture:ecosystem:season-input:1",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "synthetic_only": {
+      "const": true
+    },
+    "task_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "enterprise_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "jurisdiction": {
+      "enum": [
+        "CA-BC",
+        "CA-AB",
+        "CA-SK",
+        "CA-MB",
+        "CA-ON",
+        "CA-QC",
+        "CA-NB",
+        "CA-NS",
+        "CA-PE",
+        "CA-NL",
+        "CA-YT",
+        "CA-NT",
+        "CA-NU"
+      ]
+    },
+    "period": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date"
+        },
+        "end": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "start",
+        "end"
+      ]
+    },
+    "as_of": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "location_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "weather_unit": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "max_weather_age_seconds": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 604800
+    },
+    "resources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "availability": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "start": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "end": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              },
+              "required": [
+                "start",
+                "end"
+              ]
+            },
+            "maxItems": 8,
+            "minItems": 0,
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "availability"
+        ]
+      },
+      "maxItems": 12,
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "windows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "start": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "end": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "weather": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "synthetic": {
+                "const": true
+              },
+              "source_id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              },
+              "kind": {
+                "enum": [
+                  "forecast",
+                  "observation"
+                ]
+              },
+              "location_id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              },
+              "unit": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              },
+              "value_state": {
+                "enum": [
+                  "measured",
+                  "predicted",
+                  "estimated",
+                  "missing",
+                  "trace",
+                  "suppressed"
+                ]
+              },
+              "value": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 60
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "quality": {
+                "enum": [
+                  "checked_for_fixture",
+                  "unreviewed"
+                ]
+              },
+              "retrieved_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "issued_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "observed_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "valid_start": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "valid_end": {
+                "type": "string",
+                "format": "date-time"
+              }
+            },
+            "required": [
+              "synthetic",
+              "source_id",
+              "kind",
+              "location_id",
+              "unit",
+              "value_state",
+              "value",
+              "quality",
+              "retrieved_at"
+            ],
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "kind": {
+                      "const": "forecast"
+                    }
+                  }
+                },
+                "then": {
+                  "required": [
+                    "issued_at",
+                    "valid_start",
+                    "valid_end"
+                  ]
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "kind": {
+                      "const": "observation"
+                    }
+                  }
+                },
+                "then": {
+                  "required": [
+                    "observed_at"
+                  ]
+                }
+              }
+            ]
+          },
+          "condition_status": {
+            "enum": [
+              "operator_candidate",
+              "not_candidate",
+              "unknown"
+            ]
+          },
+          "criterion_ref": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "start",
+          "end",
+          "weather",
+          "condition_status",
+          "criterion_ref"
+        ]
+      },
+      "maxItems": 8,
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          },
+          "duration_minutes": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 1440
+          },
+          "earliest": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "latest": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "resource_requirement_state": {
+            "enum": [
+              "declared",
+              "unknown"
+            ]
+          },
+          "resource_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 80
+            },
+            "maxItems": 12,
+            "minItems": 0,
+            "uniqueItems": true
+          },
+          "depends_on": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 80
+            },
+            "maxItems": 12,
+            "minItems": 0,
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "label",
+          "duration_minutes",
+          "earliest",
+          "latest",
+          "resource_requirement_state",
+          "resource_ids",
+          "depends_on"
+        ]
+      },
+      "maxItems": 12,
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "schema_version",
+    "synthetic_only",
+    "task_id",
+    "enterprise_id",
+    "jurisdiction",
+    "period",
+    "as_of",
+    "location_id",
+    "weather_unit",
+    "max_weather_age_seconds",
+    "resources",
+    "windows",
+    "tasks"
+  ]
+}

@@ -35,9 +35,8 @@ currently describe these initial research seeds; extend them with versioned evid
 when a later pack actually qualifies additional states. Preserve canonical reports
 and put new findings in separate dated records.
 
-Strategy revision 2026-10-17: an initial developer/research source preview may be
-published after its applicable technical/rights/privacy/claims and owner checks,
-without participant recruitment. The field study is separately planned after launch.
+The developer source preview follows the 2026-10-31 skillset direction.
+No participant study or focus group is planned.
 No registry evidence state changes: these are dated research seeds, all 13
 jurisdictions remain operationally unvalidated and no source is O-level. Supplied
 raw research snapshots are not part of the initial source draft. See the

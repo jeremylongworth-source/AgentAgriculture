@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "explain-record-workflow",
+  "workflow": "records-to-review",
+  "goal": "Explain how local record review preserves originals and unknowns; no actual records will be processed.",
+  "language": "en",
+  "enterprise_id": null,
+  "jurisdiction": "unknown",
+  "period": null,
+  "intent": "explain",
+  "consequence": "preparatory",
+  "requested_actions": [
+    "read_selected",
+    "write_local_draft"
+  ],
+  "evidence_kind": "synthetic",
+  "source_refs": [
+    "SYN:purchases",
+    "SYN:receiving"
+  ],
+  "entity_type": "enterprise"
+}

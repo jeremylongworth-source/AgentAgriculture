@@ -1,0 +1,4597 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agentagriculture:ecosystem:workflow-result:1",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "workflow": {
+          "const": "season-work-planning"
+        },
+        "task_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "language": {
+          "enum": [
+            "en",
+            "fr"
+          ]
+        },
+        "method_version": {
+          "const": "0.1.2"
+        },
+        "synthetic": {
+          "const": true
+        },
+        "execution_allowed": {
+          "const": false
+        },
+        "operational_advice_allowed": {
+          "const": false
+        },
+        "field_use_validated": {
+          "const": false
+        },
+        "user_review_required": {
+          "const": true
+        },
+        "required_reviews": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "maxItems": 20,
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "issues": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "maxItems": 100,
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "implementation_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "parsed_input_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "catalog_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "state": {
+          "enum": [
+            "conditional_options",
+            "no_supported_option"
+          ]
+        },
+        "weather_review": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "maxItems": 8,
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "tasks": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "maxItems": 12,
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "shared_resource_conflicts": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "maxItems": 256,
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "candidate_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 256
+        },
+        "alerts_checked": {
+          "const": false
+        },
+        "weather_lab_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "context": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enterprise_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 80
+            },
+            "jurisdiction": {
+              "enum": [
+                "CA-BC",
+                "CA-AB",
+                "CA-SK",
+                "CA-MB",
+                "CA-ON",
+                "CA-QC",
+                "CA-NB",
+                "CA-NS",
+                "CA-PE",
+                "CA-NL",
+                "CA-YT",
+                "CA-NT",
+                "CA-NU"
+              ]
+            },
+            "period": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "start": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "end": {
+                  "type": "string",
+                  "format": "date"
+                }
+              },
+              "required": [
+                "start",
+                "end"
+              ]
+            },
+            "as_of": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "period_date_basis": {
+              "const": "UTC"
+            }
+          },
+          "required": [
+            "enterprise_id",
+            "jurisdiction",
+            "period",
+            "as_of",
+            "period_date_basis"
+          ]
+        },
+        "resources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "availability": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "start": {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    "end": {
+                      "type": "string",
+                      "format": "date-time"
+                    }
+                  },
+                  "required": [
+                    "start",
+                    "end"
+                  ]
+                },
+                "maxItems": 8,
+                "minItems": 0,
+                "uniqueItems": true
+              }
+            },
+            "required": [
+              "id",
+              "availability"
+            ]
+          },
+          "maxItems": 12,
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "weather_policy": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "location_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            },
+            "weather_unit": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            },
+            "max_weather_age_seconds": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 604800
+            }
+          },
+          "required": [
+            "location_id",
+            "weather_unit",
+            "max_weather_age_seconds"
+          ]
+        }
+      },
+      "required": [
+        "schema_version",
+        "workflow",
+        "task_id",
+        "language",
+        "method_version",
+        "synthetic",
+        "execution_allowed",
+        "operational_advice_allowed",
+        "field_use_validated",
+        "user_review_required",
+        "required_reviews",
+        "issues",
+        "implementation_sha256",
+        "parsed_input_sha256",
+        "catalog_sha256",
+        "state",
+        "weather_review",
+        "tasks",
+        "shared_resource_conflicts",
+        "candidate_count",
+        "alerts_checked",
+        "weather_lab_sha256",
+        "context",
+        "resources",
+        "weather_policy"
+      ]
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "workflow": {
+          "const": "crop-production-review"
+        },
+        "task_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "language": {
+          "enum": [
+            "en",
+            "fr"
+          ]
+        },
+        "method_version": {
+          "const": "0.1.2"
+        },
+        "synthetic": {
+          "const": true
+        },
+        "execution_allowed": {
+          "const": false
+        },
+        "operational_advice_allowed": {
+          "const": false
+        },
+        "field_use_validated": {
+          "const": false
+        },
+        "user_review_required": {
+          "const": true
+        },
+        "required_reviews": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "maxItems": 20,
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "issues": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "maxItems": 100,
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "implementation_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "parsed_input_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "catalog_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "state": {
+          "enum": [
+            "review_draft",
+            "review_draft_with_gaps"
+          ]
+        },
+        "entities": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "maxItems": 32,
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "observations": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "maxItems": 200,
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "current_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "maxItems": 200,
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "comparisons": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "maxItems": 80,
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "context": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enterprise_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 80
+            },
+            "jurisdiction": {
+              "enum": [
+                "CA-BC",
+                "CA-AB",
+                "CA-SK",
+                "CA-MB",
+                "CA-ON",
+                "CA-QC",
+                "CA-NB",
+                "CA-NS",
+                "CA-PE",
+                "CA-NL",
+                "CA-YT",
+                "CA-NT",
+                "CA-NU"
+              ]
+            },
+            "period": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "start": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "end": {
+                  "type": "string",
+                  "format": "date"
+                }
+              },
+              "required": [
+                "start",
+                "end"
+              ]
+            },
+            "as_of": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "period_date_basis": {
+              "const": "UTC"
+            }
+          },
+          "required": [
+            "enterprise_id",
+            "jurisdiction",
+            "period",
+            "as_of",
+            "period_date_basis"
+          ]
+        }
+      },
+      "required": [
+        "schema_version",
+        "workflow",
+        "task_id",
+        "language",
+        "method_version",
+        "synthetic",
+        "execution_allowed",
+        "operational_advice_allowed",
+        "field_use_validated",
+        "user_review_required",
+        "required_reviews",
+        "issues",
+        "implementation_sha256",
+        "parsed_input_sha256",
+        "catalog_sha256",
+        "state",
+        "entities",
+        "observations",
+        "current_ids",
+        "comparisons",
+        "context"
+      ]
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "workflow": {
+          "const": "livestock-record-review"
+        },
+        "task_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "language": {
+          "enum": [
+            "en",
+            "fr"
+          ]
+        },
+        "method_version": {
+          "const": "livestock-0.1.0"
+        },
+        "synthetic": {
+          "const": true
+        },
+        "execution_allowed": {
+          "const": false
+        },
+        "operational_advice_allowed": {
+          "const": false
+        },
+        "field_use_validated": {
+          "const": false
+        },
+        "user_review_required": {
+          "const": true
+        },
+        "required_reviews": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "maxItems": 20,
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "issues": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "maxItems": 100,
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "implementation_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "parsed_input_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "catalog_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "context": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enterprise_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 80
+            },
+            "jurisdiction": {
+              "enum": [
+                "CA-BC",
+                "CA-AB",
+                "CA-SK",
+                "CA-MB",
+                "CA-ON",
+                "CA-QC",
+                "CA-NB",
+                "CA-NS",
+                "CA-PE",
+                "CA-NL",
+                "CA-YT",
+                "CA-NT",
+                "CA-NU"
+              ]
+            },
+            "period": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "start": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "end": {
+                  "type": "string",
+                  "format": "date"
+                }
+              },
+              "required": [
+                "start",
+                "end"
+              ]
+            },
+            "as_of": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "period_date_basis": {
+              "const": "UTC"
+            }
+          },
+          "required": [
+            "enterprise_id",
+            "jurisdiction",
+            "period",
+            "as_of",
+            "period_date_basis"
+          ]
+        },
+        "state": {
+          "enum": [
+            "review_draft",
+            "review_draft_with_gaps"
+          ]
+        },
+        "entities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "kind": {
+                "enum": [
+                  "animal",
+                  "group",
+                  "feed_lot"
+                ]
+              },
+              "species_as_reported": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 160
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "production_class_as_reported": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 160
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "identity_state": {
+                "enum": [
+                  "declared",
+                  "unknown"
+                ]
+              },
+              "identity_source_ref": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 160
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "kind",
+              "species_as_reported",
+              "production_class_as_reported",
+              "identity_state",
+              "identity_source_ref"
+            ]
+          },
+          "maxItems": 64,
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "max_snapshot_age_seconds": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 31536000
+        },
+        "records": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "original": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  "entity_id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  "kind": {
+                    "enum": [
+                      "opening",
+                      "receipt",
+                      "removal",
+                      "closing",
+                      "event"
+                    ]
+                  },
+                  "quantity": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "maxLength": 60,
+                        "pattern": "^(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "value_state": {
+                    "enum": [
+                      "measured",
+                      "estimated",
+                      "missing",
+                      "trace",
+                      "suppressed"
+                    ]
+                  },
+                  "unit": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 80
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "basis": {
+                    "enum": [
+                      "head_count",
+                      "as_fed",
+                      "dry_matter",
+                      null
+                    ]
+                  },
+                  "event_state": {
+                    "enum": [
+                      "observed",
+                      "planned",
+                      "unknown"
+                    ]
+                  },
+                  "observed_at": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "recorded_at": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "source_ref": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 160
+                  },
+                  "supersedes": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 80
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "correction_reason": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 600
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "note": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 2000
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "id",
+                  "entity_id",
+                  "kind",
+                  "quantity",
+                  "value_state",
+                  "unit",
+                  "basis",
+                  "event_state",
+                  "observed_at",
+                  "recorded_at",
+                  "source_ref",
+                  "supersedes",
+                  "correction_reason",
+                  "note"
+                ]
+              },
+              "current_as_of": {
+                "type": "boolean"
+              },
+              "superseded_by": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80
+                },
+                "maxItems": 160,
+                "minItems": 0,
+                "uniqueItems": true
+              },
+              "issues": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 160
+                },
+                "maxItems": 40,
+                "minItems": 0,
+                "uniqueItems": true
+              },
+              "revision_state": {
+                "enum": [
+                  "current",
+                  "retained_not_current",
+                  "conflicted"
+                ]
+              }
+            },
+            "required": [
+              "original",
+              "current_as_of",
+              "superseded_by",
+              "issues",
+              "revision_state"
+            ]
+          },
+          "maxItems": 160,
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "current_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "maxItems": 160,
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "reviews": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "review_id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "entity_id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "original_request": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  "entity_id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  "opening_id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  "movement_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 80
+                    },
+                    "maxItems": 100,
+                    "minItems": 0,
+                    "uniqueItems": true
+                  },
+                  "closing_id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  "coverage": {
+                    "enum": [
+                      "complete",
+                      "partial",
+                      "unknown"
+                    ]
+                  },
+                  "coverage_source_ref": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 160
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "id",
+                  "entity_id",
+                  "opening_id",
+                  "movement_ids",
+                  "closing_id",
+                  "coverage",
+                  "coverage_source_ref"
+                ]
+              },
+              "selected_record_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80
+                },
+                "maxItems": 102,
+                "uniqueItems": false
+              },
+              "source_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 160
+                },
+                "maxItems": 102,
+                "uniqueItems": true
+              },
+              "unit": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "basis": {
+                "enum": [
+                  "head_count",
+                  "as_fed",
+                  "dry_matter",
+                  null
+                ]
+              },
+              "listed_balance": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200,
+                    "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "complete_expected_closing": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200,
+                    "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "observed_minus_expected": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200,
+                    "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "closing_age_seconds": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200,
+                    "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "coverage_as_supplied": {
+                "enum": [
+                  "complete",
+                  "partial",
+                  "unknown"
+                ]
+              },
+              "status": {
+                "enum": [
+                  "arithmetic_only",
+                  "review_with_gaps"
+                ]
+              },
+              "issues": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 160
+                },
+                "maxItems": 80,
+                "uniqueItems": true
+              },
+              "physical_completeness_verified": {
+                "const": false
+              },
+              "nutrition_or_welfare_established": {
+                "const": false
+              }
+            },
+            "required": [
+              "review_id",
+              "entity_id",
+              "original_request",
+              "selected_record_ids",
+              "source_refs",
+              "unit",
+              "basis",
+              "listed_balance",
+              "complete_expected_closing",
+              "observed_minus_expected",
+              "closing_age_seconds",
+              "coverage_as_supplied",
+              "status",
+              "issues",
+              "physical_completeness_verified",
+              "nutrition_or_welfare_established"
+            ]
+          },
+          "maxItems": 16,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "schema_version",
+        "workflow",
+        "task_id",
+        "language",
+        "method_version",
+        "synthetic",
+        "execution_allowed",
+        "operational_advice_allowed",
+        "field_use_validated",
+        "user_review_required",
+        "required_reviews",
+        "issues",
+        "implementation_sha256",
+        "parsed_input_sha256",
+        "catalog_sha256",
+        "context",
+        "state",
+        "entities",
+        "max_snapshot_age_seconds",
+        "records",
+        "current_ids",
+        "reviews"
+      ]
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "workflow": {
+          "const": "resource-team-coordination"
+        },
+        "task_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "language": {
+          "enum": [
+            "en",
+            "fr"
+          ]
+        },
+        "method_version": {
+          "const": "resources-0.1.0"
+        },
+        "synthetic": {
+          "const": true
+        },
+        "execution_allowed": {
+          "const": false
+        },
+        "operational_advice_allowed": {
+          "const": false
+        },
+        "field_use_validated": {
+          "const": false
+        },
+        "user_review_required": {
+          "const": true
+        },
+        "required_reviews": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "maxItems": 20,
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "issues": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "maxItems": 100,
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "implementation_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "parsed_input_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "catalog_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "context": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enterprise_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 80
+            },
+            "jurisdiction": {
+              "enum": [
+                "CA-BC",
+                "CA-AB",
+                "CA-SK",
+                "CA-MB",
+                "CA-ON",
+                "CA-QC",
+                "CA-NB",
+                "CA-NS",
+                "CA-PE",
+                "CA-NL",
+                "CA-YT",
+                "CA-NT",
+                "CA-NU"
+              ]
+            },
+            "period": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "start": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "end": {
+                  "type": "string",
+                  "format": "date"
+                }
+              },
+              "required": [
+                "start",
+                "end"
+              ]
+            },
+            "as_of": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "period_date_basis": {
+              "const": "UTC"
+            }
+          },
+          "required": [
+            "enterprise_id",
+            "jurisdiction",
+            "period",
+            "as_of",
+            "period_date_basis"
+          ]
+        },
+        "state": {
+          "enum": [
+            "review_draft",
+            "review_draft_with_gaps"
+          ]
+        },
+        "procedures": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "version": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 40
+              },
+              "domain": {
+                "const": "routine_record_check"
+              },
+              "source_ref": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 160
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "language": {
+                "enum": [
+                  "en",
+                  "fr"
+                ]
+              },
+              "approval_status": {
+                "enum": [
+                  "declared_approved",
+                  "draft",
+                  "unknown"
+                ]
+              },
+              "approval_ref": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 160
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "approval_recorded_at": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "effective_from": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "review_due": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "enterprise_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "jurisdiction": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "CA-BC",
+                      "CA-AB",
+                      "CA-SK",
+                      "CA-MB",
+                      "CA-ON",
+                      "CA-QC",
+                      "CA-NB",
+                      "CA-NS",
+                      "CA-PE",
+                      "CA-NL",
+                      "CA-YT",
+                      "CA-NT",
+                      "CA-NU"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "asset_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "role": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "translation_of_ref": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 160
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "fidelity_review_ref": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 160
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "stop_escalation_ref": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 160
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "steps": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 80
+                    },
+                    "text": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 1200
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "text"
+                  ]
+                },
+                "minItems": 1,
+                "maxItems": 24,
+                "uniqueItems": true
+              }
+            },
+            "required": [
+              "id",
+              "version",
+              "domain",
+              "source_ref",
+              "language",
+              "approval_status",
+              "approval_ref",
+              "approval_recorded_at",
+              "effective_from",
+              "review_due",
+              "enterprise_id",
+              "jurisdiction",
+              "asset_id",
+              "role",
+              "translation_of_ref",
+              "fidelity_review_ref",
+              "stop_escalation_ref",
+              "steps"
+            ]
+          },
+          "minItems": 0,
+          "maxItems": 16,
+          "uniqueItems": true
+        },
+        "cards": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "task_id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "original_task": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  "source_ref": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 160
+                  },
+                  "recorded_at": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "procedure_id": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 80
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "procedure_version": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 40
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "asset_id": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 80
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "assigned_role": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 80
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "owner_next_role": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 80
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "due_on": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "resource_availability": {
+                    "enum": [
+                      "declared_available",
+                      "unknown",
+                      "unavailable"
+                    ]
+                  },
+                  "completion_state": {
+                    "enum": [
+                      "open",
+                      "claimed_complete",
+                      "failed",
+                      "unknown"
+                    ]
+                  },
+                  "completion_evidence_ref": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 160
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "acknowledgement_state": {
+                    "enum": [
+                      "not_recorded",
+                      "claimed_received"
+                    ]
+                  },
+                  "acknowledgement_ref": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 160
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "competence_evidence_ref": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 160
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "exception_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 160
+                    },
+                    "minItems": 0,
+                    "maxItems": 20,
+                    "uniqueItems": true
+                  },
+                  "note": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 1600
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "id",
+                  "source_ref",
+                  "recorded_at",
+                  "procedure_id",
+                  "procedure_version",
+                  "asset_id",
+                  "assigned_role",
+                  "owner_next_role",
+                  "due_on",
+                  "resource_availability",
+                  "completion_state",
+                  "completion_evidence_ref",
+                  "acknowledgement_state",
+                  "acknowledgement_ref",
+                  "competence_evidence_ref",
+                  "exception_refs",
+                  "note"
+                ]
+              },
+              "selected_procedure_ref": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 80
+                      },
+                      "version": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 40
+                      },
+                      "source_ref": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 160
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "language": {
+                        "enum": [
+                          "en",
+                          "fr"
+                        ]
+                      },
+                      "approval_status": {
+                        "enum": [
+                          "declared_approved",
+                          "draft",
+                          "unknown"
+                        ]
+                      },
+                      "approval_ref": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 160
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "approval_recorded_at": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "effective_from": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "review_due": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "format": "date"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "enterprise_id": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 80
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "jurisdiction": {
+                        "anyOf": [
+                          {
+                            "enum": [
+                              "CA-BC",
+                              "CA-AB",
+                              "CA-SK",
+                              "CA-MB",
+                              "CA-ON",
+                              "CA-QC",
+                              "CA-NB",
+                              "CA-NS",
+                              "CA-PE",
+                              "CA-NL",
+                              "CA-YT",
+                              "CA-NT",
+                              "CA-NU"
+                            ]
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "asset_id": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 80
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "role": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 80
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "translation_of_ref": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 160
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "fidelity_review_ref": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 160
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "version",
+                      "source_ref",
+                      "language",
+                      "approval_status",
+                      "approval_ref",
+                      "approval_recorded_at",
+                      "effective_from",
+                      "review_due",
+                      "enterprise_id",
+                      "jurisdiction",
+                      "asset_id",
+                      "role",
+                      "translation_of_ref",
+                      "fidelity_review_ref"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "supplied_procedure_sha256": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "quoted_steps": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 80
+                    },
+                    "text": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 1200
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "text"
+                  ]
+                },
+                "minItems": 0,
+                "maxItems": 24,
+                "uniqueItems": true
+              },
+              "stop_escalation_ref": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 160
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "state": {
+                "enum": [
+                  "review_draft",
+                  "review_draft_with_gaps"
+                ]
+              },
+              "issues": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 160
+                },
+                "minItems": 0,
+                "maxItems": 60,
+                "uniqueItems": true
+              },
+              "source_approval_verified": {
+                "const": false
+              },
+              "translation_fidelity_verified": {
+                "const": false
+              },
+              "completion_verified": {
+                "const": false
+              },
+              "receipt_verified": {
+                "const": false
+              },
+              "competence_established": {
+                "const": false
+              }
+            },
+            "required": [
+              "task_id",
+              "original_task",
+              "selected_procedure_ref",
+              "supplied_procedure_sha256",
+              "quoted_steps",
+              "stop_escalation_ref",
+              "state",
+              "issues",
+              "source_approval_verified",
+              "translation_fidelity_verified",
+              "completion_verified",
+              "receipt_verified",
+              "competence_established"
+            ]
+          },
+          "minItems": 1,
+          "maxItems": 24,
+          "uniqueItems": true
+        },
+        "handover": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "recipient_role": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "purpose": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 240
+            },
+            "open_or_unknown_task_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "minItems": 0,
+              "maxItems": 24,
+              "uniqueItems": true
+            },
+            "claimed_complete_task_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "minItems": 0,
+              "maxItems": 24,
+              "uniqueItems": true
+            },
+            "tasks_with_gaps": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "minItems": 0,
+              "maxItems": 24,
+              "uniqueItems": true
+            },
+            "receipt_verified": {
+              "const": false
+            },
+            "competence_established": {
+              "const": false
+            },
+            "sent": {
+              "const": false
+            }
+          },
+          "required": [
+            "recipient_role",
+            "purpose",
+            "open_or_unknown_task_ids",
+            "claimed_complete_task_ids",
+            "tasks_with_gaps",
+            "receipt_verified",
+            "competence_established",
+            "sent"
+          ]
+        }
+      },
+      "required": [
+        "schema_version",
+        "workflow",
+        "task_id",
+        "language",
+        "method_version",
+        "synthetic",
+        "execution_allowed",
+        "operational_advice_allowed",
+        "field_use_validated",
+        "user_review_required",
+        "required_reviews",
+        "issues",
+        "implementation_sha256",
+        "parsed_input_sha256",
+        "catalog_sha256",
+        "context",
+        "state",
+        "procedures",
+        "cards",
+        "handover"
+      ]
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "task_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "language": {
+          "enum": [
+            "en",
+            "fr"
+          ]
+        },
+        "synthetic": {
+          "const": true
+        },
+        "context": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enterprise_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 80
+            },
+            "jurisdiction": {
+              "enum": [
+                "CA-BC",
+                "CA-AB",
+                "CA-SK",
+                "CA-MB",
+                "CA-ON",
+                "CA-QC",
+                "CA-NB",
+                "CA-NS",
+                "CA-PE",
+                "CA-NL",
+                "CA-YT",
+                "CA-NT",
+                "CA-NU"
+              ]
+            },
+            "period": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "start": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "end": {
+                  "type": "string",
+                  "format": "date"
+                }
+              },
+              "required": [
+                "start",
+                "end"
+              ]
+            },
+            "as_of": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "period_date_basis": {
+              "const": "UTC"
+            }
+          },
+          "required": [
+            "enterprise_id",
+            "jurisdiction",
+            "period",
+            "as_of",
+            "period_date_basis"
+          ]
+        },
+        "execution_allowed": {
+          "const": false
+        },
+        "operational_advice_allowed": {
+          "const": false
+        },
+        "field_use_validated": {
+          "const": false
+        },
+        "user_review_required": {
+          "const": true
+        },
+        "required_reviews": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "maxItems": 20,
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "issues": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "maxItems": 100,
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "implementation_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "parsed_input_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "catalog_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "state": {
+          "enum": [
+            "review_draft",
+            "review_draft_with_gaps"
+          ]
+        },
+        "workflow": {
+          "const": "harvest-storage-delivery"
+        },
+        "method_version": {
+          "const": "harvest-0.1.0"
+        },
+        "lots": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "commodity_as_reported": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 240
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "identity_state": {
+                "enum": [
+                  "declared",
+                  "unknown"
+                ]
+              },
+              "identity_source_ref": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 240
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "commodity_as_reported",
+              "identity_state",
+              "identity_source_ref"
+            ]
+          },
+          "maxItems": 40
+        },
+        "max_closing_age_seconds": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 31536000
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 240
+          },
+          "maxItems": 20
+        },
+        "handover": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "recipient_role": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 240
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "purpose": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 240
+            },
+            "sent": {
+              "const": false
+            }
+          },
+          "required": [
+            "recipient_role",
+            "purpose",
+            "sent"
+          ]
+        },
+        "current_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "maxItems": 120
+        },
+        "physical_measurement_accuracy_verified": {
+          "const": false
+        },
+        "food_grade_shelf_life_established": {
+          "const": false
+        },
+        "records": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "original": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  "lot_id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  "kind": {
+                    "enum": [
+                      "opening",
+                      "receipt",
+                      "dispatch",
+                      "internal_move",
+                      "closing"
+                    ]
+                  },
+                  "observed_at": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "recorded_at": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "source_ref": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 240
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "supersedes": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 80
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "correction_reason": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 240
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "event_state": {
+                    "enum": [
+                      "observed",
+                      "planned",
+                      "unknown"
+                    ]
+                  },
+                  "movement_scope": {
+                    "enum": [
+                      "snapshot",
+                      "boundary",
+                      "within_enterprise",
+                      "unknown"
+                    ]
+                  },
+                  "from_location_id": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 80
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "to_location_id": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 80
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "gross": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "value": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "pattern": "^(0|[1-9][0-9]{0,29})(\\.[0-9]{1,12})?$"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "unit": {
+                        "anyOf": [
+                          {
+                            "enum": [
+                              "kg",
+                              "g",
+                              "lb",
+                              "crate",
+                              "L",
+                              "unknown"
+                            ]
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "state": {
+                        "enum": [
+                          "measured",
+                          "estimated",
+                          "missing",
+                          "trace",
+                          "suppressed"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "value",
+                      "unit",
+                      "state"
+                    ]
+                  },
+                  "tare": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "value": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "pattern": "^(0|[1-9][0-9]{0,29})(\\.[0-9]{1,12})?$"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "unit": {
+                        "anyOf": [
+                          {
+                            "enum": [
+                              "kg",
+                              "g",
+                              "lb",
+                              "crate",
+                              "L",
+                              "unknown"
+                            ]
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "state": {
+                        "enum": [
+                          "measured",
+                          "estimated",
+                          "missing",
+                          "trace",
+                          "suppressed"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "value",
+                      "unit",
+                      "state"
+                    ]
+                  },
+                  "note": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 240
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "id",
+                  "lot_id",
+                  "kind",
+                  "observed_at",
+                  "recorded_at",
+                  "source_ref",
+                  "supersedes",
+                  "correction_reason",
+                  "event_state",
+                  "movement_scope",
+                  "from_location_id",
+                  "to_location_id",
+                  "gross",
+                  "tare",
+                  "note"
+                ]
+              },
+              "current_as_of": {
+                "type": "boolean"
+              },
+              "revision_state": {
+                "enum": [
+                  "current",
+                  "retained_not_current",
+                  "conflicted"
+                ]
+              },
+              "superseded_by": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80
+                },
+                "maxItems": 100
+              },
+              "net_mass": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "quantity": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "unit": {
+                    "anyOf": [
+                      {
+                        "enum": [
+                          "kg",
+                          "g",
+                          "lb",
+                          "crate",
+                          "L",
+                          "unknown"
+                        ]
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "basis": {
+                    "const": "net_mass"
+                  },
+                  "issues": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 240
+                    },
+                    "maxItems": 100
+                  }
+                },
+                "required": [
+                  "quantity",
+                  "unit",
+                  "basis",
+                  "issues"
+                ]
+              },
+              "issues": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 240
+                },
+                "maxItems": 100
+              }
+            },
+            "required": [
+              "original",
+              "current_as_of",
+              "revision_state",
+              "superseded_by",
+              "net_mass",
+              "issues"
+            ]
+          },
+          "maxItems": 120
+        },
+        "lot_reviews": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "original_request": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  "lot_id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  "opening_id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  "movement_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 80
+                    },
+                    "maxItems": 100
+                  },
+                  "closing_id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  "coverage": {
+                    "enum": [
+                      "complete",
+                      "partial",
+                      "unknown"
+                    ]
+                  },
+                  "coverage_source_ref": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 240
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "snapshot_scope": {
+                    "enum": [
+                      "enterprise_lot",
+                      "location_only",
+                      "unknown"
+                    ]
+                  },
+                  "snapshot_scope_source_ref": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 240
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "id",
+                  "lot_id",
+                  "opening_id",
+                  "movement_ids",
+                  "closing_id",
+                  "coverage",
+                  "coverage_source_ref",
+                  "snapshot_scope",
+                  "snapshot_scope_source_ref"
+                ]
+              },
+              "selected_record_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80
+                },
+                "maxItems": 100
+              },
+              "unit": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "kg",
+                      "g",
+                      "lb",
+                      "crate",
+                      "L",
+                      "unknown"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "basis": {
+                "const": "net_mass"
+              },
+              "excluded_internal_move_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80
+                },
+                "maxItems": 100
+              },
+              "unselected_current_movement_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80
+                },
+                "maxItems": 100
+              },
+              "closing_age_seconds": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "listed_balance": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "complete_expected_closing": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "observed_minus_expected": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "issues": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 240
+                },
+                "maxItems": 100
+              },
+              "physical_completeness_verified": {
+                "const": false
+              }
+            },
+            "required": [
+              "original_request",
+              "selected_record_ids",
+              "unit",
+              "basis",
+              "excluded_internal_move_ids",
+              "unselected_current_movement_ids",
+              "closing_age_seconds",
+              "listed_balance",
+              "complete_expected_closing",
+              "observed_minus_expected",
+              "issues",
+              "physical_completeness_verified"
+            ]
+          },
+          "maxItems": 40
+        },
+        "delivery_reviews": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "original_commitment": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  "version": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  "lot_id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  "quantity": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "pattern": "^(0|[1-9][0-9]{0,29})(\\.[0-9]{1,12})?$"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "quantity_state": {
+                    "enum": [
+                      "declared",
+                      "estimated",
+                      "missing"
+                    ]
+                  },
+                  "unit": {
+                    "anyOf": [
+                      {
+                        "enum": [
+                          "kg",
+                          "g",
+                          "lb",
+                          "crate",
+                          "L",
+                          "unknown"
+                        ]
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "basis": {
+                    "anyOf": [
+                      {
+                        "enum": [
+                          "net_mass",
+                          "package_count",
+                          "unknown"
+                        ]
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "source_ref": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 240
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "issued_at": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "due_on": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "destination_id": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 80
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "dispatch_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 80
+                    },
+                    "maxItems": 100
+                  },
+                  "coverage": {
+                    "enum": [
+                      "complete",
+                      "partial",
+                      "unknown"
+                    ]
+                  },
+                  "coverage_source_ref": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 240
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "id",
+                  "version",
+                  "lot_id",
+                  "quantity",
+                  "quantity_state",
+                  "unit",
+                  "basis",
+                  "source_ref",
+                  "issued_at",
+                  "due_on",
+                  "destination_id",
+                  "dispatch_ids",
+                  "coverage",
+                  "coverage_source_ref"
+                ]
+              },
+              "listed_dispatch_quantity": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "dispatch_minus_declared": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "issues": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 240
+                },
+                "maxItems": 100
+              },
+              "delivery_or_acceptance_verified": {
+                "const": false
+              },
+              "legal_fulfilment_established": {
+                "const": false
+              }
+            },
+            "required": [
+              "original_commitment",
+              "listed_dispatch_quantity",
+              "dispatch_minus_declared",
+              "issues",
+              "delivery_or_acceptance_verified",
+              "legal_fulfilment_established"
+            ]
+          },
+          "maxItems": 40
+        }
+      },
+      "required": [
+        "schema_version",
+        "task_id",
+        "language",
+        "synthetic",
+        "context",
+        "execution_allowed",
+        "operational_advice_allowed",
+        "field_use_validated",
+        "user_review_required",
+        "required_reviews",
+        "issues",
+        "implementation_sha256",
+        "parsed_input_sha256",
+        "catalog_sha256",
+        "state",
+        "workflow",
+        "method_version",
+        "lots",
+        "max_closing_age_seconds",
+        "notes",
+        "handover",
+        "current_ids",
+        "physical_measurement_accuracy_verified",
+        "food_grade_shelf_life_established",
+        "records",
+        "lot_reviews",
+        "delivery_reviews"
+      ]
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "task_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "language": {
+          "enum": [
+            "en",
+            "fr"
+          ]
+        },
+        "synthetic": {
+          "const": true
+        },
+        "context": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enterprise_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 80
+            },
+            "jurisdiction": {
+              "enum": [
+                "CA-BC",
+                "CA-AB",
+                "CA-SK",
+                "CA-MB",
+                "CA-ON",
+                "CA-QC",
+                "CA-NB",
+                "CA-NS",
+                "CA-PE",
+                "CA-NL",
+                "CA-YT",
+                "CA-NT",
+                "CA-NU"
+              ]
+            },
+            "period": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "start": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "end": {
+                  "type": "string",
+                  "format": "date"
+                }
+              },
+              "required": [
+                "start",
+                "end"
+              ]
+            },
+            "as_of": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "period_date_basis": {
+              "const": "UTC"
+            }
+          },
+          "required": [
+            "enterprise_id",
+            "jurisdiction",
+            "period",
+            "as_of",
+            "period_date_basis"
+          ]
+        },
+        "execution_allowed": {
+          "const": false
+        },
+        "operational_advice_allowed": {
+          "const": false
+        },
+        "field_use_validated": {
+          "const": false
+        },
+        "user_review_required": {
+          "const": true
+        },
+        "required_reviews": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "maxItems": 20,
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "issues": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "maxItems": 100,
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "implementation_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "parsed_input_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "catalog_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "state": {
+          "enum": [
+            "review_draft",
+            "review_draft_with_gaps"
+          ]
+        },
+        "workflow": {
+          "const": "business-stewardship-review"
+        },
+        "method_version": {
+          "const": "business-0.1.0"
+        },
+        "currency": {
+          "enum": [
+            "CAD",
+            "USD",
+            "unknown"
+          ]
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 240
+          },
+          "maxItems": 20,
+          "minItems": 0
+        },
+        "handover": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "recipient_role": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 240
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "purpose": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 240
+            },
+            "sent": {
+              "const": false
+            }
+          },
+          "required": [
+            "recipient_role",
+            "purpose",
+            "sent"
+          ]
+        },
+        "tax_or_eligibility_established": {
+          "const": false
+        },
+        "actual_source_authenticity_verified": {
+          "const": false
+        },
+        "scenarios": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "original_scenario": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  "version": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  "label": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 240
+                  },
+                  "accounting_basis": {
+                    "enum": [
+                      "cash",
+                      "accrual",
+                      "unknown"
+                    ]
+                  },
+                  "coverage": {
+                    "enum": [
+                      "complete",
+                      "partial",
+                      "unknown"
+                    ]
+                  },
+                  "coverage_source_ref": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 240
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "revenues": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80
+                        },
+                        "version": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80
+                        },
+                        "amount": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "pattern": "^(0|[1-9][0-9]{0,29})(\\.[0-9]{1,12})?$"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "amount_state": {
+                          "enum": [
+                            "actual_as_reported",
+                            "budgeted",
+                            "assumed",
+                            "estimated",
+                            "missing",
+                            "suppressed"
+                          ]
+                        },
+                        "currency": {
+                          "enum": [
+                            "CAD",
+                            "USD",
+                            "unknown"
+                          ]
+                        },
+                        "accounting_basis": {
+                          "enum": [
+                            "cash",
+                            "accrual",
+                            "unknown"
+                          ]
+                        },
+                        "period": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "properties": {
+                            "start": {
+                              "type": "string",
+                              "format": "date"
+                            },
+                            "end": {
+                              "type": "string",
+                              "format": "date"
+                            }
+                          },
+                          "required": [
+                            "start",
+                            "end"
+                          ]
+                        },
+                        "source_ref": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "minLength": 1,
+                              "maxLength": 240
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "recorded_at": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "format": "date-time"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "note": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "minLength": 1,
+                              "maxLength": 240
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "version",
+                        "amount",
+                        "amount_state",
+                        "currency",
+                        "accounting_basis",
+                        "period",
+                        "source_ref",
+                        "recorded_at",
+                        "note"
+                      ]
+                    },
+                    "maxItems": 50,
+                    "minItems": 1
+                  },
+                  "variable_costs": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80
+                        },
+                        "version": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80
+                        },
+                        "amount": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "pattern": "^(0|[1-9][0-9]{0,29})(\\.[0-9]{1,12})?$"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "amount_state": {
+                          "enum": [
+                            "actual_as_reported",
+                            "budgeted",
+                            "assumed",
+                            "estimated",
+                            "missing",
+                            "suppressed"
+                          ]
+                        },
+                        "currency": {
+                          "enum": [
+                            "CAD",
+                            "USD",
+                            "unknown"
+                          ]
+                        },
+                        "accounting_basis": {
+                          "enum": [
+                            "cash",
+                            "accrual",
+                            "unknown"
+                          ]
+                        },
+                        "period": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "properties": {
+                            "start": {
+                              "type": "string",
+                              "format": "date"
+                            },
+                            "end": {
+                              "type": "string",
+                              "format": "date"
+                            }
+                          },
+                          "required": [
+                            "start",
+                            "end"
+                          ]
+                        },
+                        "source_ref": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "minLength": 1,
+                              "maxLength": 240
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "recorded_at": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "format": "date-time"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "note": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "minLength": 1,
+                              "maxLength": 240
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "version",
+                        "amount",
+                        "amount_state",
+                        "currency",
+                        "accounting_basis",
+                        "period",
+                        "source_ref",
+                        "recorded_at",
+                        "note"
+                      ]
+                    },
+                    "maxItems": 50,
+                    "minItems": 1
+                  },
+                  "excluded_cost_categories": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 240
+                    },
+                    "maxItems": 20,
+                    "minItems": 1
+                  },
+                  "sensitivity": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80
+                        },
+                        "revenue_multiplier": {
+                          "type": "string",
+                          "pattern": "^(0|[1-9][0-9]{0,29})(\\.[0-9]{1,12})?$"
+                        },
+                        "variable_cost_multiplier": {
+                          "type": "string",
+                          "pattern": "^(0|[1-9][0-9]{0,29})(\\.[0-9]{1,12})?$"
+                        },
+                        "source_ref": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "minLength": 1,
+                              "maxLength": 240
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "held_assumptions": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 240
+                        },
+                        "version": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80
+                        },
+                        "recorded_at": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "format": "date-time"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "revenue_multiplier",
+                        "variable_cost_multiplier",
+                        "source_ref",
+                        "held_assumptions",
+                        "version",
+                        "recorded_at"
+                      ]
+                    },
+                    "maxItems": 20,
+                    "minItems": 0
+                  }
+                },
+                "required": [
+                  "id",
+                  "version",
+                  "label",
+                  "accounting_basis",
+                  "coverage",
+                  "coverage_source_ref",
+                  "revenues",
+                  "variable_costs",
+                  "excluded_cost_categories",
+                  "sensitivity"
+                ]
+              },
+              "revenue_review": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "known_subset": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "included_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 80
+                    },
+                    "maxItems": 100,
+                    "minItems": 0
+                  },
+                  "excluded_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 80
+                    },
+                    "maxItems": 100,
+                    "minItems": 0
+                  },
+                  "rows": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80
+                        },
+                        "version": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80
+                        },
+                        "included_in_known_subset": {
+                          "type": "boolean"
+                        },
+                        "issues": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 240
+                          },
+                          "maxItems": 100,
+                          "minItems": 0
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "version",
+                        "included_in_known_subset",
+                        "issues"
+                      ]
+                    },
+                    "maxItems": 100,
+                    "minItems": 0
+                  }
+                },
+                "required": [
+                  "known_subset",
+                  "included_ids",
+                  "excluded_ids",
+                  "rows"
+                ]
+              },
+              "variable_cost_review": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "known_subset": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "included_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 80
+                    },
+                    "maxItems": 100,
+                    "minItems": 0
+                  },
+                  "excluded_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 80
+                    },
+                    "maxItems": 100,
+                    "minItems": 0
+                  },
+                  "rows": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80
+                        },
+                        "version": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80
+                        },
+                        "included_in_known_subset": {
+                          "type": "boolean"
+                        },
+                        "issues": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 240
+                          },
+                          "maxItems": 100,
+                          "minItems": 0
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "version",
+                        "included_in_known_subset",
+                        "issues"
+                      ]
+                    },
+                    "maxItems": 100,
+                    "minItems": 0
+                  }
+                },
+                "required": [
+                  "known_subset",
+                  "included_ids",
+                  "excluded_ids",
+                  "rows"
+                ]
+              },
+              "listed_contribution": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "complete_selected_contribution": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "sensitivity": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "original_assumption": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80
+                        },
+                        "revenue_multiplier": {
+                          "type": "string",
+                          "pattern": "^(0|[1-9][0-9]{0,29})(\\.[0-9]{1,12})?$"
+                        },
+                        "variable_cost_multiplier": {
+                          "type": "string",
+                          "pattern": "^(0|[1-9][0-9]{0,29})(\\.[0-9]{1,12})?$"
+                        },
+                        "source_ref": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "minLength": 1,
+                              "maxLength": 240
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "held_assumptions": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 240
+                        },
+                        "version": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80
+                        },
+                        "recorded_at": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "format": "date-time"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "revenue_multiplier",
+                        "variable_cost_multiplier",
+                        "source_ref",
+                        "held_assumptions",
+                        "version",
+                        "recorded_at"
+                      ]
+                    },
+                    "conditional_contribution": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "issues": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 240
+                      },
+                      "maxItems": 100,
+                      "minItems": 0
+                    }
+                  },
+                  "required": [
+                    "original_assumption",
+                    "conditional_contribution",
+                    "issues"
+                  ]
+                },
+                "maxItems": 20,
+                "minItems": 0
+              },
+              "issues": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 240
+                },
+                "maxItems": 100,
+                "minItems": 0
+              },
+              "net_profit": {
+                "type": "null"
+              },
+              "actual_results_verified": {
+                "const": false
+              },
+              "investment_or_lending_recommendation": {
+                "const": false
+              }
+            },
+            "required": [
+              "original_scenario",
+              "revenue_review",
+              "variable_cost_review",
+              "listed_contribution",
+              "complete_selected_contribution",
+              "sensitivity",
+              "issues",
+              "net_profit",
+              "actual_results_verified",
+              "investment_or_lending_recommendation"
+            ]
+          },
+          "maxItems": 12,
+          "minItems": 0
+        },
+        "cash_reviews": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "original_request": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  "version": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  "coverage": {
+                    "enum": [
+                      "complete",
+                      "partial",
+                      "unknown"
+                    ]
+                  },
+                  "coverage_source_ref": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 240
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "receipts": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80
+                        },
+                        "version": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80
+                        },
+                        "amount": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "pattern": "^(0|[1-9][0-9]{0,29})(\\.[0-9]{1,12})?$"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "amount_state": {
+                          "enum": [
+                            "actual_as_reported",
+                            "budgeted",
+                            "assumed",
+                            "estimated",
+                            "missing",
+                            "suppressed"
+                          ]
+                        },
+                        "currency": {
+                          "enum": [
+                            "CAD",
+                            "USD",
+                            "unknown"
+                          ]
+                        },
+                        "accounting_basis": {
+                          "enum": [
+                            "cash",
+                            "accrual",
+                            "unknown"
+                          ]
+                        },
+                        "period": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "properties": {
+                            "start": {
+                              "type": "string",
+                              "format": "date"
+                            },
+                            "end": {
+                              "type": "string",
+                              "format": "date"
+                            }
+                          },
+                          "required": [
+                            "start",
+                            "end"
+                          ]
+                        },
+                        "source_ref": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "minLength": 1,
+                              "maxLength": 240
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "recorded_at": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "format": "date-time"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "note": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "minLength": 1,
+                              "maxLength": 240
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "version",
+                        "amount",
+                        "amount_state",
+                        "currency",
+                        "accounting_basis",
+                        "period",
+                        "source_ref",
+                        "recorded_at",
+                        "note"
+                      ]
+                    },
+                    "maxItems": 50,
+                    "minItems": 1
+                  },
+                  "payments": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80
+                        },
+                        "version": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80
+                        },
+                        "amount": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "pattern": "^(0|[1-9][0-9]{0,29})(\\.[0-9]{1,12})?$"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "amount_state": {
+                          "enum": [
+                            "actual_as_reported",
+                            "budgeted",
+                            "assumed",
+                            "estimated",
+                            "missing",
+                            "suppressed"
+                          ]
+                        },
+                        "currency": {
+                          "enum": [
+                            "CAD",
+                            "USD",
+                            "unknown"
+                          ]
+                        },
+                        "accounting_basis": {
+                          "enum": [
+                            "cash",
+                            "accrual",
+                            "unknown"
+                          ]
+                        },
+                        "period": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "properties": {
+                            "start": {
+                              "type": "string",
+                              "format": "date"
+                            },
+                            "end": {
+                              "type": "string",
+                              "format": "date"
+                            }
+                          },
+                          "required": [
+                            "start",
+                            "end"
+                          ]
+                        },
+                        "source_ref": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "minLength": 1,
+                              "maxLength": 240
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "recorded_at": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "format": "date-time"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "note": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "minLength": 1,
+                              "maxLength": 240
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "version",
+                        "amount",
+                        "amount_state",
+                        "currency",
+                        "accounting_basis",
+                        "period",
+                        "source_ref",
+                        "recorded_at",
+                        "note"
+                      ]
+                    },
+                    "maxItems": 50,
+                    "minItems": 1
+                  }
+                },
+                "required": [
+                  "id",
+                  "version",
+                  "coverage",
+                  "coverage_source_ref",
+                  "receipts",
+                  "payments"
+                ]
+              },
+              "receipt_review": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "known_subset": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "included_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 80
+                    },
+                    "maxItems": 100,
+                    "minItems": 0
+                  },
+                  "excluded_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 80
+                    },
+                    "maxItems": 100,
+                    "minItems": 0
+                  },
+                  "rows": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80
+                        },
+                        "version": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80
+                        },
+                        "included_in_known_subset": {
+                          "type": "boolean"
+                        },
+                        "issues": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 240
+                          },
+                          "maxItems": 100,
+                          "minItems": 0
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "version",
+                        "included_in_known_subset",
+                        "issues"
+                      ]
+                    },
+                    "maxItems": 100,
+                    "minItems": 0
+                  }
+                },
+                "required": [
+                  "known_subset",
+                  "included_ids",
+                  "excluded_ids",
+                  "rows"
+                ]
+              },
+              "payment_review": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "known_subset": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "included_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 80
+                    },
+                    "maxItems": 100,
+                    "minItems": 0
+                  },
+                  "excluded_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 80
+                    },
+                    "maxItems": 100,
+                    "minItems": 0
+                  },
+                  "rows": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80
+                        },
+                        "version": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80
+                        },
+                        "included_in_known_subset": {
+                          "type": "boolean"
+                        },
+                        "issues": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 240
+                          },
+                          "maxItems": 100,
+                          "minItems": 0
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "version",
+                        "included_in_known_subset",
+                        "issues"
+                      ]
+                    },
+                    "maxItems": 100,
+                    "minItems": 0
+                  }
+                },
+                "required": [
+                  "known_subset",
+                  "included_ids",
+                  "excluded_ids",
+                  "rows"
+                ]
+              },
+              "listed_net_cash_movement": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "complete_selected_net_cash_movement": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "issues": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 240
+                },
+                "maxItems": 100,
+                "minItems": 0
+              },
+              "whole_farm_cash_flow_established": {
+                "const": false
+              }
+            },
+            "required": [
+              "original_request",
+              "receipt_review",
+              "payment_review",
+              "listed_net_cash_movement",
+              "complete_selected_net_cash_movement",
+              "issues",
+              "whole_farm_cash_flow_established"
+            ]
+          },
+          "maxItems": 12,
+          "minItems": 0
+        }
+      },
+      "required": [
+        "schema_version",
+        "task_id",
+        "language",
+        "synthetic",
+        "context",
+        "execution_allowed",
+        "operational_advice_allowed",
+        "field_use_validated",
+        "user_review_required",
+        "required_reviews",
+        "issues",
+        "implementation_sha256",
+        "parsed_input_sha256",
+        "catalog_sha256",
+        "state",
+        "workflow",
+        "method_version",
+        "currency",
+        "notes",
+        "handover",
+        "tax_or_eligibility_established",
+        "actual_source_authenticity_verified",
+        "scenarios",
+        "cash_reviews"
+      ]
+    }
+  ]
+}

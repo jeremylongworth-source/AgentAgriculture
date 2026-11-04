@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "manual-en",
+  "workflow": "records-to-review",
+  "goal": "Prepare my selected synthetic purchase and receiving records for local review.",
+  "language": "en",
+  "enterprise_id": "ENT-001",
+  "jurisdiction": "CA-ON",
+  "period": {
+    "start": "2026-09-01",
+    "end": "2026-09-30"
+  },
+  "intent": "prepare_review",
+  "consequence": "informational",
+  "requested_actions": [
+    "clinical_prescription"
+  ],
+  "evidence_kind": "synthetic",
+  "source_refs": [
+    "SYN:purchases",
+    "SYN:receiving"
+  ],
+  "entity_type": "enterprise"
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "skills": [
+    {
+      "id": "farm-task-intake",
+      "path": "skills/farm-task-intake/SKILL.md"
+    },
+    {
+      "id": "farm-record-reconciliation",
+      "path": "skills/farm-record-reconciliation/SKILL.md"
+    },
+    {
+      "id": "farm-adviser-package",
+      "path": "skills/farm-adviser-package/SKILL.md"
+    },
+    {
+      "id": "farm-weather-evidence",
+      "path": "skills/farm-weather-evidence/SKILL.md"
+    },
+    {
+      "id": "farm-work-options",
+      "path": "skills/farm-work-options/SKILL.md"
+    },
+    {
+      "id": "farm-crop-observation-review",
+      "path": "skills/farm-crop-observation-review/SKILL.md"
+    },
+    {
+      "id": "farm-crop-review-handoff",
+      "path": "skills/farm-crop-review-handoff/SKILL.md"
+    },
+    {
+      "id": "farm-livestock-event-review",
+      "path": "skills/farm-livestock-event-review/SKILL.md"
+    },
+    {
+      "id": "farm-feed-stock-review",
+      "path": "skills/farm-feed-stock-review/SKILL.md"
+    },
+    {
+      "id": "farm-livestock-review-handoff",
+      "path": "skills/farm-livestock-review-handoff/SKILL.md"
+    },
+    {
+      "id": "farm-procedure-task-card",
+      "path": "skills/farm-procedure-task-card/SKILL.md"
+    },
+    {
+      "id": "farm-team-handover",
+      "path": "skills/farm-team-handover/SKILL.md"
+    },
+    {
+      "id": "farm-net-mass-review",
+      "path": "skills/farm-net-mass-review/SKILL.md"
+    },
+    {
+      "id": "farm-lot-movement-review",
+      "path": "skills/farm-lot-movement-review/SKILL.md"
+    },
+    {
+      "id": "farm-delivery-record-handoff",
+      "path": "skills/farm-delivery-record-handoff/SKILL.md"
+    },
+    {
+      "id": "farm-business-scenario",
+      "path": "skills/farm-business-scenario/SKILL.md"
+    },
+    {
+      "id": "farm-business-review-handoff",
+      "path": "skills/farm-business-review-handoff/SKILL.md"
+    }
+  ],
+  "workflows": {
+    "records-to-review": "skillsets/records-to-review/manifest.json",
+    "season-work-planning": "skillsets/season-work-planning/manifest.json",
+    "crop-production-review": "skillsets/crop-production-review/manifest.json",
+    "livestock-record-review": "skillsets/livestock-record-review/manifest.json",
+    "resource-team-coordination": "skillsets/resource-team-coordination/manifest.json",
+    "harvest-storage-delivery": "skillsets/harvest-storage-delivery/manifest.json",
+    "business-stewardship-review": "skillsets/business-stewardship-review/manifest.json"
+  }
+}
