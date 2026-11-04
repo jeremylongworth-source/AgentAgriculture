@@ -18,7 +18,6 @@ packages.
 | Record engine | `0.1.0a3` |
 | Examples | Synthetic English and French workflows |
 | Verified Python setup | CPython 3.14.3 on Windows x64 |
-| Public release and wiki | Pending launch |
 
 ## Who this is for
 
@@ -127,7 +126,7 @@ reports.
 ## Documentation and contributions
 
 - [Roadmap](roadmap.md) and [preview scope](docs/release/initial-preview.md)
-- [GitHub wiki](https://github.com/jeremylongworth-source/AgentAgriculture/wiki), available after launch
+- [GitHub wiki](https://github.com/jeremylongworth-source/AgentAgriculture/wiki) once published
 - [Contributing and local checks](CONTRIBUTING.md)
 - [Security policy](SECURITY.md) for vulnerability reporting
 

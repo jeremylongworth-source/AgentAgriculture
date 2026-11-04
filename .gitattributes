@@ -1,0 +1,2 @@
+# Preserve the exact bytes in the source manifest and synthetic fixture digests.
+* -text
