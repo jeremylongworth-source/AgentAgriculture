@@ -7,6 +7,11 @@
   "reporting_route_selected": "https://github.com/jeremylongworth-source/AgentAgriculture",
   "files": [
     {
+      "path": ".github/FUNDING.yml",
+      "category": "ecosystem_source",
+      "rights_review": "MIT_project_owned_or_separate_notices"
+    },
+    {
       "path": ".python-version",
       "category": "ecosystem_source",
       "rights_review": "MIT_project_owned_or_separate_notices"

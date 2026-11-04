@@ -1,8 +1,13 @@
 {
   "scope": "ecosystem_developer_preview_candidate",
   "publication_authorized": false,
-  "tree_sha256": "6297f52b8a29efef45fd445e4a7570f160e06d4516720cd5eb09d6f0cb79a8f9",
+  "tree_sha256": "bfaa27a24bc54dac9de523c27a5ee68002e286509bed61e99796029a5d414e3f",
   "files": [
+    {
+      "path": ".github/FUNDING.yml",
+      "bytes": 31,
+      "sha256": "e9847b02340eaacaaa72f27fb20f2c45eaf6177a3060f7e794ba200f17f7396b"
+    },
     {
       "path": ".python-version",
       "bytes": 7,
@@ -50,8 +55,8 @@
     },
     {
       "path": "docs/release/ecosystem-files.json",
-      "bytes": 59723,
-      "sha256": "d66cedb73c317d952bdd1c3dbbb4bb0a3d6e2e1fd4a501daf831c7cbb77b917b"
+      "bytes": 59874,
+      "sha256": "a10dee670bc4ba5d6b62ae6a3e66ae7bd4a552418fb7d3409c3b269c041d359c"
     },
     {
       "path": "docs/release/initial-preview.md",
@@ -65,8 +70,8 @@
     },
     {
       "path": "docs/release/public-preview-files.json",
-      "bytes": 59723,
-      "sha256": "d66cedb73c317d952bdd1c3dbbb4bb0a3d6e2e1fd4a501daf831c7cbb77b917b"
+      "bytes": 59874,
+      "sha256": "a10dee670bc4ba5d6b62ae6a3e66ae7bd4a552418fb7d3409c3b269c041d359c"
     },
     {
       "path": "docs/release/public-provenance.json",
@@ -1732,6 +1737,14 @@
   "local_links": 172,
   "source_exports": [
     {
+      "path": ".github/FUNDING.yml",
+      "bytes": 31,
+      "sha256": "e9847b02340eaacaaa72f27fb20f2c45eaf6177a3060f7e794ba200f17f7396b",
+      "source_sha256": "e9847b02340eaacaaa72f27fb20f2c45eaf6177a3060f7e794ba200f17f7396b",
+      "source": ".github/FUNDING.yml",
+      "export_transform": null
+    },
+    {
       "path": ".python-version",
       "bytes": 7,
       "sha256": "5ab05f548328863dd73c057cc6bde305fc62a87522b3f28eadb9bbdd3b1409be",
@@ -1805,9 +1818,9 @@
     },
     {
       "path": "docs/release/ecosystem-files.json",
-      "bytes": 32172,
-      "sha256": "950672cb19d57f4214c26e116abea3d998f10c59b126616f8d1338735ad1961f",
-      "source_sha256": "950672cb19d57f4214c26e116abea3d998f10c59b126616f8d1338735ad1961f",
+      "bytes": 32264,
+      "sha256": "aed521eea8f3a11b9d7614366648245a8be909552583c9bb6ea04a0981a12cc2",
+      "source_sha256": "aed521eea8f3a11b9d7614366648245a8be909552583c9bb6ea04a0981a12cc2",
       "source": "docs/release/ecosystem-files.json",
       "export_transform": null
     },
