@@ -1,7 +1,7 @@
 {
   "scope": "ecosystem_developer_preview_candidate",
   "publication_authorized": false,
-  "tree_sha256": "09a526967d6217fe3fa4b1be5172cc4214972279c2a75595f3ef9d4d9b5e11e7",
+  "tree_sha256": "6297f52b8a29efef45fd445e4a7570f160e06d4516720cd5eb09d6f0cb79a8f9",
   "files": [
     {
       "path": ".python-version",
@@ -25,8 +25,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3345,
-      "sha256": "a706d0d3d902e900637f3d4f00846c0df528d076695e51f34580e1a205bb9f4a"
+      "bytes": 3854,
+      "sha256": "b00b05784c21ea41a8b3833fcffafe0b8fb441c36a02826fa646dbec5c40f1c9"
     },
     {
       "path": "SECURITY.md",
@@ -1729,7 +1729,7 @@
       "sha256": "c0df8529a8f2a3c68aa034dc38213b1498648f0bc429744c022b04add0b8163f"
     }
   ],
-  "local_links": 169,
+  "local_links": 172,
   "source_exports": [
     {
       "path": ".python-version",
@@ -1765,9 +1765,9 @@
     },
     {
       "path": "README.md",
-      "bytes": 3345,
-      "sha256": "a706d0d3d902e900637f3d4f00846c0df528d076695e51f34580e1a205bb9f4a",
-      "source_sha256": "a706d0d3d902e900637f3d4f00846c0df528d076695e51f34580e1a205bb9f4a",
+      "bytes": 3854,
+      "sha256": "b00b05784c21ea41a8b3833fcffafe0b8fb441c36a02826fa646dbec5c40f1c9",
+      "source_sha256": "b00b05784c21ea41a8b3833fcffafe0b8fb441c36a02826fa646dbec5c40f1c9",
       "source": "docs/release/ecosystem-public/README.md",
       "export_transform": null
     },
