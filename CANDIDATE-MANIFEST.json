@@ -1,7 +1,7 @@
 {
   "scope": "ecosystem_developer_preview_candidate",
   "publication_authorized": false,
-  "tree_sha256": "bfaa27a24bc54dac9de523c27a5ee68002e286509bed61e99796029a5d414e3f",
+  "tree_sha256": "217e066233639fc4e3cf5ab71e018a6fe23675082e5bf286b901aa3b7861744d",
   "files": [
     {
       "path": ".github/FUNDING.yml",
@@ -30,8 +30,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3854,
-      "sha256": "b00b05784c21ea41a8b3833fcffafe0b8fb441c36a02826fa646dbec5c40f1c9"
+      "bytes": 6983,
+      "sha256": "900f8f2d73f99b2df0f954990030d82e96322dcf33718c7fae14c90c1346f3a1"
     },
     {
       "path": "SECURITY.md",
@@ -1734,7 +1734,7 @@
       "sha256": "c0df8529a8f2a3c68aa034dc38213b1498648f0bc429744c022b04add0b8163f"
     }
   ],
-  "local_links": 172,
+  "local_links": 186,
   "source_exports": [
     {
       "path": ".github/FUNDING.yml",
@@ -1778,9 +1778,9 @@
     },
     {
       "path": "README.md",
-      "bytes": 3854,
-      "sha256": "b00b05784c21ea41a8b3833fcffafe0b8fb441c36a02826fa646dbec5c40f1c9",
-      "source_sha256": "b00b05784c21ea41a8b3833fcffafe0b8fb441c36a02826fa646dbec5c40f1c9",
+      "bytes": 6983,
+      "sha256": "900f8f2d73f99b2df0f954990030d82e96322dcf33718c7fae14c90c1346f3a1",
+      "source_sha256": "900f8f2d73f99b2df0f954990030d82e96322dcf33718c7fae14c90c1346f3a1",
       "source": "docs/release/ecosystem-public/README.md",
       "export_transform": null
     },

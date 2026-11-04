@@ -5,7 +5,29 @@ observations. AgentAgriculture combines 17 focused skills into seven workflows
 for organizing evidence, checking calculations, and preparing local review
 packages.
 
-**Developer preview** · Source-based setup · English and French examples
+[Quick start](#quick-start) · [Workflows](#choose-a-workflow) ·
+[Validation](#validation) · [Contributing](CONTRIBUTING.md) ·
+[Security](SECURITY.md) · [Sponsor](https://github.com/sponsors/jeremylongworth-source)
+
+## Release status
+
+| Item | Current state |
+| --- | --- |
+| Ecosystem preview | `ecosystem-preview-2026-11-03-rc1`, source-based developer preview |
+| Skill catalog | 17 individual skills and seven workflow compositions |
+| Record engine | `0.1.0a3` |
+| Examples | Synthetic English and French workflows |
+| Verified Python setup | CPython 3.14.3 on Windows x64 |
+| Public release and wiki | Pending launch |
+
+## Who this is for
+
+- AI agent builders looking for portable skills with explicit inputs, outputs,
+  and review boundaries.
+- Agriculture analysts, advisers, and operations teams evaluating ways to
+  organize records or prepare a handoff from supplied evidence.
+- Contributors extending the catalog, examples, routing scenarios, or
+  deterministic checks.
 
 ## Choose a workflow
 
@@ -19,7 +41,9 @@ packages.
 | Check net mass, trace lot movements, and review declared deliveries | [Harvest, storage, and delivery](skillsets/harvest-storage-delivery/README.md) |
 | Compare business scenarios using supplied cost and cash assumptions | [Business scenario review](skillsets/business-stewardship-review/README.md) |
 
-## Use a skill from source
+## Quick start
+
+### Use a skill from source
 
 1. Open the workflow guide and read its ordered `SKILL.md` files. For a single
    skill, start with the [catalog](router/catalog.json).
@@ -33,7 +57,7 @@ This manual setup works from the repository files. Python is needed to run the
 helpers and checks. Automatic skill discovery and installation are outside the
 verified setup.
 
-## Run a synthetic example
+### Run a synthetic example
 
 The verified environment is CPython 3.14.3 on Windows x64. From the repository
 root, run the crop observation example in PowerShell.
@@ -53,6 +77,42 @@ or [French walkthrough](examples/records-to-review/fr.md) and use the current
 version `0.1.0a3`. Its Python wheel contains the record CLI and schemas. The
 portable skill catalog is distributed as source.
 
+## How the project works
+
+A **skill** describes one task. A **composition** brings skills together in a
+defined order and identifies the references and inputs the agent needs. The
+**router** uses structured task context to select a workflow or ask for missing
+information. Deterministic helpers handle checks and calculations. People
+review outputs and decide what action to take.
+
+| Directory | Contents |
+| --- | --- |
+| [`skills/`](skills/) | Individual skill instructions and references |
+| [`skillsets/`](skillsets/) | Workflow guides, manifests, and source setup |
+| [`router/`](router/) and [`agents/`](agents/) | Catalog and agent routing guidance |
+| [`schemas/`](schemas/) and [`templates/`](templates/) | Input and output contracts and reusable forms |
+| [`scripts/`](scripts/) and [`src/`](src/) | Local commands and record engine |
+| [`examples/`](examples/) and [`tests/`](tests/) | Synthetic walkthroughs, fixtures, and checks |
+
+See the [ecosystem contracts](docs/architecture/ecosystem-contracts.md) for
+more about the package structure and routing.
+
+## Validation
+
+From the repository root, use the environment from the quick start.
+
+```powershell
+.venv/Scripts/python.exe scripts/validate_ecosystem.py
+.venv/Scripts/python.exe scripts/validate_contracts.py
+.venv/Scripts/python.exe -m unittest discover -s tests
+```
+
+The checks cover catalog structure, 42 deterministic routing scenarios,
+schema and registry contracts, and synthetic workflow behavior. The record
+CLI has also been exercised from a fresh offline install in English and
+French. Natural-language routing, live source integrations, and field outcomes
+require separate evidence.
+
 ## Preview scope
 
 The record CLI works with selected local records. The other executable workflow
@@ -64,8 +124,16 @@ Keep private farm records and credentials out of GitHub. Use invented data
 when reporting a problem. See the [security policy](SECURITY.md) for sensitive
 reports.
 
-## Project links
+## Documentation and contributions
 
 - [Roadmap](roadmap.md) and [preview scope](docs/release/initial-preview.md)
+- [GitHub wiki](https://github.com/jeremylongworth-source/AgentAgriculture/wiki), available after launch
 - [Contributing and local checks](CONTRIBUTING.md)
-- [MIT license](LICENSE) and [third-party notices](THIRD_PARTY_NOTICES.md)
+- [Security policy](SECURITY.md) for vulnerability reporting
+
+## License and support
+
+Project-owned code and documentation are available under the [MIT license](LICENSE).
+See the [third-party notices](THIRD_PARTY_NOTICES.md) for dependency and source
+rights. Jeremy Longworth maintains the project. Support ongoing development and
+maintenance through [GitHub Sponsors](https://github.com/sponsors/jeremylongworth-source).
